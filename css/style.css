@@ -1940,7 +1940,7 @@ Version:1.0
 }
 
 .most-popular .single-product {
-    margin: 5px 15px;
+    margin: 5px 20px;
 }
 /* Slider Nav */
 .most-popular .owl-nav {
@@ -2021,12 +2021,18 @@ Version:1.0
         margin-right: 10px;
     }
 
-    .product-area .nav-tabs li a.active,
-    .product-area .nav-tabs li:hover a {
-        background: #F7941D;
-        color: #fff;
-        border-color: transparent;
+    .product-area .nav-tabs li a.active {
+        color: #005993;
     }
+
+.nav-tabs .nav-link.active {
+    border: none !important;
+}
+
+.product-area .nav-tabs li:hover a {
+    color: #686868;
+    border: none;
+}
 /* Sinlge Product */
 .single-product {
     margin-top: 50px;
@@ -5727,6 +5733,10 @@ Version:1.0
             list-style-position: inside;
         }
 
+            .footer .links ul li::marker {
+                margin: 0;
+            }
+
             .footer .links ul li:last-child {
                 margin-bottom: 0;
             }
@@ -5737,8 +5747,8 @@ Version:1.0
             }
 
                 .footer .links ul li a:hover {
-                    color: #F7941D;
-                    padding-left: 10px;
+                    color: #005793;
+                    padding-left: 5px;
                 }
 
     .footer .social {
@@ -5799,14 +5809,6 @@ Version:1.0
 .lang-icon {
     width: 18px;
     margin-bottom: 3px;
-}
-
-.pl-0 {
-    padding-left: 0px;
-}
-
-.pr-0 {
-    padding-right: 0px;
 }
 
 .lang-content li:first-child {
@@ -6169,9 +6171,16 @@ a a {
     height: auto;
 }
 
+.home-slide-tablet .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .owl-theme .owl-dots {
-    position: relative;
-    bottom: 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 
@@ -6197,6 +6206,7 @@ a a {
 
     .nice-select .current {
         color: #005993;
+        font-size: 18px !important;
     }
 
 .access {
@@ -6216,7 +6226,7 @@ a a {
 .option-icon {
     position: absolute;
     height: 25px;
-    right: 20px;
+    right: 45px;
 }
 
 .banking .list .li {
@@ -6356,4 +6366,306 @@ body {
 
 .popular-slider .owl-stage-outer .owl-stage .owl-item {
     display: flex;
+}
+
+.topbar {
+    z-index: 999;
+}
+
+.owl-carousel {
+    touch-action: manipulation;
+}
+
+.app-download {
+    right: 23px;
+}
+
+.connect-left .row a img {
+    margin-right: 5px;
+    width: 30px;
+}
+
+.new-text li:not(:first-child) {
+    padding-top: 10px;
+}
+
+.new-text li {
+    text-align: justify;
+}
+
+.news-title {
+    text-align: justify;
+}
+
+.news-head ul li {
+    padding: 0px 20px !important;
+}
+
+    .news-head ul li a {
+        /*padding: 0px 20px !important;*/
+    }
+
+        .news-head ul li a:hover {
+            padding: 0px 20px !important;
+        }
+
+.pb-1px {
+    padding-bottom: 1px;
+}
+
+.blue-more {
+    color: #93d5f6 !important;
+    text-transform: uppercase;
+}
+
+.right-arrow {
+    fill: #93d5f6;
+    width: 10px;
+    height: 10px;
+}
+
+.none-overflow-x {
+    overflow-x: hidden;
+}
+
+.overflow-y {
+    overflow-y: auto;
+}
+
+.tbl-rate {
+    color: #686868;
+}
+
+    .tbl-rate tr td {
+        text-align: left;
+    }
+
+    .tbl-rate thead tr td {
+        border: none !important;
+    }
+
+.tab-pane.table td {
+    padding: 7px;
+    border: none !important;
+    text-align: left
+}
+
+    .tab-pane .table td:first-child {
+        font-weight: bold;
+    }
+
+.news-tab-item {
+    background: #fff;
+    table-layout: fixed;
+    border-radius: 10px;
+}
+
+.line-news {
+    height: 1px;
+    background: #eaf6fe;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+.rd-bt-10 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.pt-10px {
+    padding-top: 10px;
+}
+
+.news-section .tab-item {
+    max-height: 585px;
+    background: #eaf6fe;
+}
+
+.scroll-table {
+    overflow-y: auto;
+    max-height: 493px;
+}
+
+    /* width */
+    .scroll-table::-webkit-scrollbar {
+        width: 5px;
+        border-radius: 3px;
+    }
+
+    /* Track */
+    .scroll-table::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 3px;
+    }
+
+    /* Handle */
+    .scroll-table::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 3px;
+    }
+
+        /* Handle on hover */
+        .scroll-table::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+tool:after {
+    content: '\002B';
+    color: #686868;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.collapsible:not(:last-child) {
+    background-color: #fff;
+    color: white;
+    cursor: pointer;
+    padding: 5px 0px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    outline: none;
+    color: #686868;
+}
+
+.collapsible:after {
+    content: '\203A';
+    color: #686868;
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+    position: absolute;
+    right: 30px;
+}
+
+.collapsible:hover {
+    background: #7ed3f7;
+    color: #005973;
+}
+
+.collapsible.active {
+    border: none;
+    color: #005973;
+    background: #7ed3f7;
+}
+
+.table-content tr td a {
+    width: 100%;
+    display: block;
+}
+
+    .table-content tr td a:hover {
+        color: #005973;
+    }
+
+.table-content tr:hover {
+    background: #7ed3f7;
+}
+
+.collapsible.active:after {
+    content: "\02EF";
+    font-size: 45px;
+    position: absolute;
+    right: 27px;
+    color: #005973;
+    top: -10px;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+    .content tr td {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border-bottom: 1px solid #eee !important;
+    }
+
+    .content tr:last-child td {
+        border-bottom: none !important;
+    }
+
+.tool-panel .row .col-12:last-child label {
+    border-bottom: none !important;
+}
+
+
+.news-image {
+    min-height: 250px;
+    background: url(../images/Icon/box_body/Asset26.png) no-repeat;
+    background-size: cover;
+}
+
+.sale-slide .owl-stage-outer {
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+}
+
+
+.sale-info {
+    height: 250px;
+}
+
+.icon-w {
+    height: 35px;
+    width: 35px;
+    margin: 5px;
+}
+
+.vietin-icon {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 45px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.down-border {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    height: 45px;
+}
+
+.access:hover {
+    background-color: #005993;
+    color: #fff;
+}
+
+.img-selected {
+}
+
+    .right-contact .col-12 {
+        padding-top: 5px;
+    }
+
+    .right-contact img, .right-contact svg {
+        width: 35px;
+        height: 35px;
+    }
+
+.contact-detail {
+    height: 35px;
+    background: #fff;
+    position: absolute;
+    left: -145px;
+    width: 200px;
+    border-radius: 20px;
+    background: #005973;
+    color: #fff;
+}
+
+.icon-contact:hover .contact-detail {
+    display: block;
+}
+
+.contact-detail span {
+    line-height: 35px;
 }

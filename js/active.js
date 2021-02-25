@@ -1,74 +1,31 @@
-/* =====================================
-Template Name: Eshop
-Author Name: Naimur Rahman
-Author URI: http://www.wpthemesgrid.com/
-Description: Eshop - eCommerce HTML5 Template.
-Version:1.0
-========================================*/
-/*=======================================
-[Start Activation Code]
-=========================================
-	01. Mobile Menu JS
-	02. Sticky Header JS
-	03. Search JS
-	04. Slider Range JS
-	05. Home Slider JS
-	06. Popular Slider JS
-	07. Quick View Slider JS
-	08. Home Slider 4 JS
-	09. CountDown
-	10. Flex Slider JS
-	11. Cart Plus Minus Button
-	12. Checkbox JS
-	13. Extra Scroll JS
-	14. Product page Quantity Counter
-	15. Video Popup JS
-	16. Scroll UP JS
-	17. Nice Select JS
-	18. Others JS
-	19. Preloader JS
-=========================================
-[End Activation Code]
-=========================================*/
 (function ($) {
     "use strict";
     $(document).on('ready', function () {
         showTabletMenu();
+        showTabletProducts();
 		/*====================================
 		03. Sticky Header JS
 		======================================*/
         jQuery(window).on('scroll', function () {
             if ($(this).scrollTop() > 100) {
                 $('.header').addClass("sticky");
-            } else {
+            }
+            else {
                 $('.header').removeClass("sticky");
             }
         });
 
-		/*=======================
-		  Search JS JS
-		=========================*/
-        $('.top-search a').on("click", function () {
-            $('.search-top').toggleClass('active');
+        $(".icon-contact svg").on('click', function (e) {
+            var currIconClass = $(e.currentTarget)[0];
+            if ($(`.${currIconClass.id}-detail`)[0].classList.contains('hide')) {
+                $(`.${currIconClass.id}-detail`).removeClass('hide');
+            }
+            else {
+                $(`.${currIconClass.id}-detail`).addClass('hide');
+            }
         });
 
-		/*=======================
-		  Slider Range JS
-		=========================*/
-        //$(function () {
-        //    $("#slider-range").slider({
-        //        range: true,
-        //        min: 0,
-        //        max: 500,
-        //        values: [120, 250],
-        //        slide: function (event, ui) {
-        //            $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
-        //        }
-        //    });
-        //    $("#amount").val("$" + $("#slider-range").slider("values", 0) +
-        //        " - $" + $("#slider-range").slider("values", 1));
-        //});
-
+        collapseNews();
 		/*=======================
 		  Home Slider JS
 		=========================*/
@@ -87,86 +44,21 @@ Version:1.0
             itemsMobile: false
         });
 
-		/*=======================
-		  Popular Slider JS
-		=========================*/
-        $('.popular-slider').owlCarousel({
-            items: 1,
-            autoplay: false,
+        $(".sale-slide").owlCarousel({
+            navigation: true,
+            autoplay: true,
             autoplayTimeout: 5000,
-            smartSpeed: 400,
+            slideSpeed: 100,
             animateIn: 'fadeIn',
             animateOut: 'fadeOut',
-            autoplayHoverPause: true,
             loop: true,
-            nav: true,
-            merge: true,
-            dots: false,
-            navText: ['<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>'],
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                300: {
-                    items: 2,
-                },
-                480: {
-                    items: 3,
-                },
-                768: {
-                    items: 3,
-                },
-                991: {
-                    items:4,
-                },
-                1170: {
-                    items: 6,
-                },
-            }
-        });
-
-		/*===========================
-		  Quick View Slider JS
-		=============================*/
-        $('.quickview-slider-active').owlCarousel({
             items: 1,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            smartSpeed: 400,
-            autoplayHoverPause: true,
-            nav: true,
-            loop: true,
-            merge: true,
-            dots: false,
-            navText: ['<i class=" ti-arrow-left"></i>', '<i class=" ti-arrow-right"></i>'],
+            itemsDesktop: true,
+            itemsDesktopSmall: true,
+            itemsTablet: true,
+            itemsMobile: true
         });
 
-		/*===========================
-		  Home Slider 4 JS
-		=============================*/
-        $('.home-slider-4').owlCarousel({
-            items: 1,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            smartSpeed: 400,
-            autoplayHoverPause: true,
-            nav: true,
-            loop: true,
-            merge: true,
-            dots: false,
-            navText: ['<i class=" ti-arrow-left"></i>', '<i class=" ti-arrow-right"></i>'],
-        });
-
-		/*====================================
-		16. Flex Slider JS
-		======================================*/
-        (function ($) {
-            'use strict';
-            $('.flexslider-thumbnails').flexslider({
-                animation: "slide",
-                controlNav: "thumbnails",
-            });
-        })(jQuery);
 
 		/*=======================
 		  Extra Scroll JS
@@ -189,36 +81,48 @@ Version:1.0
                 $(this).parent("label").removeClass("checked");
             }
         });
-
-		/*==================================
-		 12. Product page Quantity Counter
-		 ===================================*/
-        $('.qty-box .quantity-right-plus').on('click', function () {
-            var $qty = $('.qty-box .input-number');
-            var currentVal = parseInt($qty.val(), 10);
-            if (!isNaN(currentVal)) {
-                $qty.val(currentVal + 1);
-            }
-        });
-        $('.qty-box .quantity-left-minus').on('click', function () {
-            var $qty = $('.qty-box .input-number');
-            var currentVal = parseInt($qty.val(), 10);
-            if (!isNaN(currentVal) && currentVal > 1) {
-                $qty.val(currentVal - 1);
-            }
-        });
-
-		/*=====================================
-		15.  Video Popup JS
-		======================================*/
-        $('.video-popup').magnificPopup({
-            type: 'iframe',
-            removalDelay: 300,
-            mainClass: 'mfp-fade'
-        });
     });
 
+    function changeImageType(type) {
+        var banners = $('.home-slide').find('img');
+        $.each(banners, (i, val) => {
+            var currSrcs = val.src.split('-');
+            var imgTypes = currSrcs[2].split('.');
+            currSrcs[2] = type + '.' + imgTypes[1];
+            banners[i].src = currSrcs.join('-');
+        })
+    }
+
+    function changeSlideTopImg() {
+        if (window.innerWidth > 767 && window.innerWidth < 992) {
+            changeImageType("tablet");
+        }
+        else if (window.innerWidth < 768) {
+            changeImageType("mobile");
+        }
+        else {
+            changeImageType("desktop");
+        }
+    }
+
+    function collapseNews() {
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    }
+
     function showTabletMenu() {
+        showTabletProducts();
+        changeSlideTopImg();
         if (window.innerWidth < 992) {
             $('.mobile-nav').html('');
             var mainMenu = $('.menu')[0].cloneNode(true);
@@ -248,13 +152,76 @@ Version:1.0
         }
     }
 
+    var popularSlide = $('.popular-slider')[0].cloneNode(true);
+
+    function showTabletProducts() {
+        var owl = $('.popular-slider').find('.owl-stage-outer');
+        if (window.innerWidth < 992) {
+            if (owl.length == 0) {
+                $('.popular-slider').owlCarousel({
+                    items: 1,
+                    autoplay: false,
+                    autoplayTimeout: 5000,
+                    smartSpeed: 4,
+                    animateIn: 'fadeIn',
+                    animateOut: 'fadeOut',
+                    autoplayHoverPause: true,
+                    loop: true,
+                    nav: true,
+                    merge: true,
+                    dots: false,
+                    navText: ['<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>'],
+                    responsive: {
+                        0: {
+                            items: 1,
+                        },
+                        300: {
+                            items: 2,
+                        },
+                        480: {
+                            items: 3,
+                        },
+                        768: {
+                            items: 3,
+                        },
+                        991: {
+                            items: 4,
+                        },
+                        1170: {
+                            items: 6,
+                        },
+                    }
+                });
+            }
+        }
+        else if (owl.length > 0) {
+            $('.product-slide').html('');
+            $('.product-slide').append(popularSlide);
+        }
+    }
+
     window.onresize = showTabletMenu;
 
 
-	/*====================================
-	18. Nice Select JS
-	======================================*/
+    /*====================================
+    18. Nice Select JS
+    ======================================*/
     $('select').niceSelect();
+    $('.nice-select').on('change', () => {
+        var selected = $("#banking-select").val();
+        if (selected == 0) {
+            $('.nice-select').removeClass('flex-item');
+        }
+        else {
+            $('.selected-nice').remove();
+            var selectLiTag = $('.banking').find('li')[selected];
+            var img = $(selectLiTag).find('img')[0].cloneNode(true);
+            $(img).addClass('selected-nice');
+            $('.current').after($(img))
+            $('.nice-select').removeClass('flex-item').addClass('flex-item');
+        }
+
+    })
     var div = document.createElement('div');
     div.style.position = 'absolute';
     div.style.height = '40px';
@@ -270,32 +237,9 @@ Version:1.0
     $(selectLiTags[3]).append('<img class="option-icon" src="images/Icon/right_box/Asset33.png" />');
     $(selectLiTags[4]).append('<img class="option-icon" src="images/Icon/right_box/Asset38.png" />');
 
-
-	/*=====================================
-	 Others JS
-	======================================*/
-    $(function () {
-        $("#slider-range").slider({
-            range: true,
-            min: 0,
-            max: 500,
-            values: [0, 500],
-            slide: function (event, ui) {
-                $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
-            }
-        });
-        $("#amount").val("$" + $("#slider-range").slider("values", 0) +
-            " - $" + $("#slider-range").slider("values", 1));
-    });
-
-	/*=====================================
-	  Preloader JS
-	======================================*/
-    //After 2s preloader is fadeOut
-    //$('.preloader').delay(2000).fadeOut('slow');
     setTimeout(function () {
         //After 2s, the no-scroll class of the body will be removed
         $('body').removeClass('no-scroll');
-    }, 2000); //Here you can change preloader time
+    }, 2000);
 
 })(jQuery);

@@ -308,7 +308,7 @@ Version:1.0
     }
 
     .most-popular .single-product {
-        margin: 20px 15px 0 15px;
+        margin: 0px 10px 0 10px;
     }
 
     .shop-home-list .shop-section-title {
@@ -426,6 +426,45 @@ Version:1.0
 }
 /* Mobile Screen */
 @media only screen and (max-width: 767px) {
+    .product-slide {
+        max-height: 160px;
+        display: flex;
+    }
+
+    .fav-icon {
+        padding-left: 15px !important;
+    }
+
+    .app-logo {
+        padding-bottom: 15px;
+    }
+
+    .popular-slider .owl-controls .owl-nav .owl-next {
+        display: flex;
+        align-items: center;
+    }
+
+    .popular-slider .owl-controls .owl-nav .owl-prev {
+        display: flex;
+        align-items: center;
+    }
+
+    .popular-slider .owl-stage .owl-item {
+        max-width: 160px;
+    }
+
+        .popular-slider .owl-stage .owl-item img {
+            max-width: 90px;
+        }
+
+    .product-content a {
+        font-size: 12px;
+    }
+
+    .top-slide {
+        display: inline;
+    }
+
     .breadcrumbs {
         padding: 90px 0 90px;
     }
@@ -763,7 +802,7 @@ Version:1.0
     }
 
     .product-area .nav-tabs .nav-item {
-        margin-bottom: 10px;
+        /*margin-bottom: 10px;*/
     }
 
     .small-banner {
@@ -805,7 +844,7 @@ Version:1.0
         }
 
     .most-popular .single-product {
-        margin: 20px 15px 0 15px;
+        margin: 20px 5px 0 5px;
     }
 
     .shop-home-list .shop-section-title {
@@ -1570,7 +1609,7 @@ Version:1.0
         }
 
     .product-area .nav-tabs .nav-item {
-        margin-bottom: 10px;
+        /*margin-bottom: 10px;*/
     }
 
     .small-banner {
@@ -1617,9 +1656,7 @@ Version:1.0
             font-size: 12px;
         }
 
-    .most-popular .single-product {
-        margin: 20px 15px 0 15px;
-    }
+
 
     .shop-home-list {
         padding-top: 0;
@@ -2049,6 +2086,11 @@ Version:1.0
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .top-slide {
+        display: contents;
+    }
+}
 
 @media only screen and (max-width: 991px) {
 
@@ -2115,7 +2157,7 @@ Version:1.0
     .banking {
         height: 130px;
         position: absolute;
-        z-index: 999;
+        z-index: 9;
         right: 0px;
         display: flex;
         align-items: center;
@@ -2156,13 +2198,144 @@ Version:1.0
     .right-arr {
         display: none;
     }
+
+    .header.sticky .topbar {
+        width: 100%;
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        animation: fadeInDown 1s both 0.2s;
+        -webkit-box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+        -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+        z-index: 999;
+    }
+
+    .line-mobile {
+        display: block;
+        top: 20px;
+        top: 13px;
+    }
+
+    .desktop-line {
+        display: none;
+    }
+
+    .popular-slider .owl-nav {
+        display: block;
+    }
+
+    .scroll-text {
+        display: none;
+    }
+
+    .connect-mobile {
+        display: none;
+    }
+
+    .tab-item {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .tablet-download {
+        display: block;
+    }
+
+    .news-content .owl-carousel {
+        position: absolute;
+        bottom: 0;
+    }
+
+        .news-content .owl-carousel .owl-stage-outer {
+            height: 100%;
+        }
+
+    .app-down {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .fav-icon {
+        padding-left: 0px;
+    }
+
+    .right-contact {
+        position: fixed;
+        right: -78%;
+        bottom: 100px;
+        z-index: 99999;
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 992px) {
+    .right-contact {
+        position: fixed;
+        right: -90%;
+        bottom: 100px;
+        z-index: 99999;
+        width: 100%;
+    }
+    .icon-contact {
+        padding-bottom: 10px;
+    }
+    .app-down {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .news-content .owl-carousel .owl-stage-outer {
+        height: 100%;
+    }
+
+    .news-content .owl-carousel {
+        position: absolute;
+        top: 1px;
+    }
+
+    .tablet-download {
+        display: none;
+    }
+
+    .pb-24px {
+        padding-bottom: 24px;
+    }
+
+    .footer-top .row .lisence {
+        padding: 0px;
+    }
+
+    .connect-left {
+        padding: 0px;
+    }
+
+    .connect-right {
+        padding-right: 0px;
+    }
+
+    .scroll-text {
+        display: block;
+    }
+
+    .popular-slider .owl-nav {
+        display: none;
+    }
+
+    .line-mobile {
+        display: none;
+    }
+
     .bank-section {
         position: absolute;
         top: 0px;
         width: 100%;
+    }
+
+    .popular-slider {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
     }
 
     .banking {
@@ -2170,7 +2343,7 @@ Version:1.0
         border: 1px solid #eee;
         height: 130px;
         position: absolute;
-        z-index: 99;
+        z-index: 9;
         right: 0px;
         top: 165px;
         display: flex;

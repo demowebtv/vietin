@@ -108,9 +108,21 @@
                     </div>
                 </div>
             </div>
+            <div class="position-relative top-line line-mobile">
+                <div class="menu-left"></div>
+                <div class="container z-999 top-border">
+                    <div class="row">
+                        <div class="col-lg-5 col-12">
+                        </div>
+                        <div class="col-lg-7 col-12 menu-top top-border">
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-right"></div>
+            </div>
         </div>
         <!-- Header Inner -->
-        <div class="position-relative top-line">
+        <div class="position-relative top-line desktop-line">
             <div class="menu-left"></div>
             <div class="container z-999 top-border">
                 <div class="row">
@@ -396,22 +408,22 @@
     </header>
     <!--/ End Header -->
     <!-- Slider Area -->
-    <section class="hero-slider position-relative">
+    <section class="hero-slider position-relative top-slide">
         <div class="row">
             <div class="owl-carousel owl-theme home-slide">
                 <div class="item">
                     <a href="#" target="_self">
-                        <img src="images/banner/banner1.png" />
+                        <img src="images/banner/banner-top-desktop.jpg" />
                     </a>
                 </div>
                 <div class="item">
                     <a href="#" target="_self">
-                        <img src="images/banner/banner2.png" />
+                        <img src="images/banner/banner-top-desktop.jpg" />
                     </a>
                 </div>
                 <div class="item">
                     <a href="#" target="_self">
-                        <img src="images/banner/banner3.png" />
+                        <img src="images/banner/banner-top-desktop.jpg" />
                     </a>
                 </div>
             </div>
@@ -424,14 +436,14 @@
                     <div class="col-lg-4 offset-lg-8 col-12">
                         <div class="col-12 banking">
                             <div class="col-12 pr-0 pl-0">
-                                <select class="nice-select w-100">
+                                <select class="nice-select w-100" id="banking-select">
                                     <option value="0" selected>INTERNET BANKING</option>
                                     <option value="1">Cá nhân</option>
                                     <option value="2">Doanh nghiệp</option>
                                     <option value="3">Trade Portal</option>
                                     <option value="4">Supply chance finance</option>
                                 </select>
-                                <button class="form-control access">TRUY CẬP</button>
+                                <button class="form-control access fs-14">TRUY CẬP</button>
                             </div>
                         </div>
                     </div>
@@ -450,10 +462,10 @@
     </section>
     <!--/ End Slider Area -->
     <!-- Start Most Popular -->
-    <div class="product-area most-popular pb-50">
+    <div class="product-area most-popular pb-24px">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 product-slide">
                     <div class="owl-carousel popular-slider">
                         <div class="single-product">
                             <div class="product-img">
@@ -521,169 +533,445 @@
         </div>
     </div>
     <!-- End Most Popular Area -->
-    <div class="product-area most-popular pb-50">
+    <div class="product-area pb-50">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-12 ">
-                    <div class="col-12 news-head">
-                        <div class="row text-center h-100 flex-item">
-                            <h5 class="blue-top w-100">TIN TỨC SỰ KIỆN</h5>
-                        </div>
-                    </div>
-                    <div class="col-12 pl-0 pr-0 news-content mt-1px">
-                        <div class="row text-center">
-                            <img class="w-100" src="images/Icon/box_body/Asset26.png" />
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="col-12">
-                                    <div class="row b-title">
-                                        <span class="news-title">Vietinbank Quảng Nam đào tạo kỹ năng bán hàng</span>
+            <div class="row news-section">
+                <div class="col-lg-4 col-12 mt-0 news-tab tab-item">
+                    <div class="row">
+                        <div class="col-12 pr-0 pl-0">
+                            <div class="col-12 news-head">
+                                <div class="row text-center h-100 flex-item">
+                                    <h6 class="blue-top w-100">TIN TỨC SỰ KIỆN</h6>
+                                </div>
+                            </div>
+                            <div class="col-12 pl-0 pr-0 news-content mt-1px">
+                                <div class="row text-center news-image">
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="col-12">
+                                            <div class="row b-title">
+                                                <span class="news-title">Vietinbank Quảng Nam đào tạo kỹ năng bán hàng</span>
+                                            </div>
+                                            <div class="row">
+                                                <ul class="new-text">
+                                                    <li class="pro-regular w-100 news-item">
+                                                        Vietin Bank kỷ niệm 30 năm thành lập và đón nhận các phần thưởng cao quý của Đảng và nhà nước
+                                                    </li>
+                                                    <li class="pro-regular w-100 news-item">
+                                                        Vietin Bank Lào khai trương CN Viêng Chăn
+                                                    </li>
+                                                    <li class="pro-regular w-100 news-item">
+                                                        Giải nhất trị giá 500 triệu đồng đã được trao cho khách hàng
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="row">
-                                        <ul class="new-text">
-                                            <li class="pro-regular w-100 news-item">
-                                                Vietin Bank kỷ niệm 30 năm thành lập và đón nhận các phần thưởng cao quý của Đảng và nhà nước
-                                            </li>
-                                        </ul>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 more text-right">
+                                        <a href="#" class="blue-more">Xem thêm</a>
+                                        <svg class="right-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve"><g>	<path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z" /></g></svg>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                    <div class="col-12 news">
 
+                </div>
+                <div class="col-lg-4 col-12 tab-item">
+                    <div class="row">
+                        <div class="col-12 p-0 pr-0">
+                            <div class="col-12 news-head flex-item">
+                                <ul class="nav nav-tabs row">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#rate"><h6>TỶ GIÁ</h6></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#interest"><h6>LÃI SUẤT</h6></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 pl-0 pr-0 bg-white mt-1px scroll-table">
+                                <div class="row text-center">
+                                    <div class="tab-content w-100">
+                                        <div class="tab-pane  container active" id="rate">
+                                            <table class="table tbl-rate">
+                                                <thead>
+                                                    <tr>
+                                                        <td class="font-weight-bold" style="width: 30%"></td>
+                                                        <td style="width: 40%">Mua vào</td>
+                                                        <td style="width: 30%">Bán ra</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="none-overflow-x overflow-y">
+                                                    <tr>
+                                                        <td>USD</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>EUR</td>
+                                                        <td>123123</td>
+                                                        <td>123123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>GBP</td>
+                                                        <td>123123</td>
+                                                        <td>123123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CNY</td>
+                                                        <td>123123</td>
+                                                        <td>123123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>JPY</td>
+                                                        <td>1231</td>
+                                                        <td>12312</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>NOK</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DKK</td>
+                                                        <td>12123</td>
+                                                        <td>123123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>AUD</td>
+                                                        <td>123123</td>
+                                                        <td>1223</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CAD</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CHF</td>
+                                                        <td>123</td>
+                                                        <td>23</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>HKD</td>
+                                                        <td>123</td>
+                                                        <td>12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>KRW</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>KRW</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>KRW</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>KRW</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="tab-pane  container active" id="interest">
+                                            <table class="table tbl-rate">
+                                                <thead>
+                                                    <tr>
+                                                        <td class="font-weight-bold" style="width: 30%"></td>
+                                                        <td style="width: 40%">Theo năm</td>
+                                                        <td style="width: 30%">Theo tháng</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="none-overflow-x overflow-y">
+                                                    <tr>
+                                                        <td>USD</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>EUR</td>
+                                                        <td>123123</td>
+                                                        <td>123123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>GBP</td>
+                                                        <td>123123</td>
+                                                        <td>123123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CNY</td>
+                                                        <td>123123</td>
+                                                        <td>123123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>JPY</td>
+                                                        <td>1231</td>
+                                                        <td>12312</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>NOK</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DKK</td>
+                                                        <td>12123</td>
+                                                        <td>123123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>AUD</td>
+                                                        <td>123123</td>
+                                                        <td>1223</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CAD</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CHF</td>
+                                                        <td>123</td>
+                                                        <td>23</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>HKD</td>
+                                                        <td>123</td>
+                                                        <td>12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>KRW</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>KRW</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>KRW</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>KRW</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 more text-right bg-white rd-bt-10 pt-10px">
+                                <a href="#" class="blue-more">Xem thêm</a>
+                                <svg class="right-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve"><g>	<path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z" /></g></svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                    <div class="col-12 news">
+                <div class="col-lg-4 col-12 news-tab tab-item">
+                    <div class="row h-100">
+                        <div class="col-12 pr-0 pl-0">
+                            <div class="row sale-info pb-4">
+                                <div class="col-12 news-head">
+                                    <div class="row text-center h-100 flex-item">
+                                        <h6 class="blue-top w-100">CÔNG CỤ VÀ TIỆN ÍCH</h6>
+                                    </div>
+                                </div>
+                                <div class="col-12 pl-0 pr-0 news-content mt-1px tool-panel h-100 scroll-table">
+                                    <div class="row">
+                                        <div class="col-12 bg-white">
+                                            <label class="collapsible w-100">Công cụ tính toán</label>
+                                            <div class="content">
+                                                <table class="table-content border-0">
+                                                    <tr><td><a href="#">option1</a></td></tr>
+                                                    <tr><td><a href="#">option2</a></td></tr>
+                                                    <tr><td><a href="#">option3</a></td></tr>
+                                                    <tr><td><a href="#">option4</a></td></tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 bg-white">
+                                            <label class="collapsible w-100">Biểu phí dịch vụ</label>
+                                            <div class="content">
+                                                <table class="table-content border-0">
+                                                    <tr><td><a href="#">option1</a></td></tr>
+                                                    <tr><td><a href="#">option2</a></td></tr>
+                                                    <tr><td><a href="#">option3</a></td></tr>
+                                                    <tr><td><a href="#">option4</a></td></tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 bg-white">
+                                            <label class="collapsible w-100">Tra cứu thông tin</label>
+                                            <div class="content">
+                                                <table class="table-content border-0">
+                                                    <tr><td><a href="#">option1</a></td></tr>
+                                                    <tr><td><a href="#">option2</a></td></tr>
+                                                    <tr><td><a href="#">option3</a></td></tr>
+                                                    <tr><td><a href="#">option4</a></td></tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 bg-white">
+                                            <label class="collapsible w-100">Tra cứu địa điểm</label>
+                                            <div class="content">
+                                                <table class="table-content border-0">
+                                                    <tr><td><a href="#">option1</a></td></tr>
+                                                    <tr><td><a href="#">option2</a></td></tr>
+                                                    <tr><td><a href="#">option3</a></td></tr>
+                                                    <tr><td><a href="#">option4</a></td></tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                </div>
+                            </div>
+                            <div class="row sale-info pt-4">
+                                <div class="col-12 news-head mt-4">
+                                    <div class="row text-center h-100 align-center">
+                                        <h6 class="blue-top w-100">ƯU ĐÃI MỚI NHẤT</h6>
+                                    </div>
+                                </div>
+                                <div class="col-12 pl-0 pr-0 news-content h-100 align-center mt-1px">
+                                    <div class="row text-center">
+                                        <div class="row h-100">
+                                            <div class="owl-carousel owl-theme sale-slide h-100">
+                                                <div class="item">
+                                                    <a href="#" target="_self">
+                                                        <img src="images/Untitled.png" />
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" target="_self">
+                                                        <img src="images/Untitled.png" />
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" target="_self">
+                                                        <img src="images/Untitled.png" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ti-close" aria-hidden="true"></span></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row no-gutters">
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                            <!-- Product Slider -->
-                            <div class="product-gallery">
-                                <div class="quickview-slider-active">
-                                    <div class="single-slider">
-                                        <img src="https://via.placeholder.com/569x528" alt="#">
-                                    </div>
-                                    <div class="single-slider">
-                                        <img src="https://via.placeholder.com/569x528" alt="#">
-                                    </div>
-                                    <div class="single-slider">
-                                        <img src="https://via.placeholder.com/569x528" alt="#">
-                                    </div>
-                                    <div class="single-slider">
-                                        <img src="https://via.placeholder.com/569x528" alt="#">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Product slider -->
+    <div class="product-area">
+        <div class="container position-relative">
+            <div class="row right-contact">
+                <div class="col-12">
+                    <div class="col-6 contact-detail hide phonex-detail">
+                        <span>1900 558 868</span>
+                    </div>
+                    <div class="col-6">
+                        <div class="phone icon-contact">
+                            <a>
+                                <svg class="phonex" version="1.1" id="phonex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><circle style="fill:#d71249;" cx="256" cy="256" r="256" /><path style="fill:#FAFAFA;" d="M384,308.928c-27.616,0-53.952-6.016-78.24-17.888c-3.808-1.824-8.224-2.112-12.256-0.736	c-4.032,1.408-7.328,4.352-9.184,8.16l-11.52,23.84c-34.56-19.84-63.232-48.544-83.104-83.104l23.872-11.52	c3.84-1.856,6.752-5.152,8.16-9.184c1.376-4.032,1.12-8.448-0.736-12.256c-11.904-24.256-17.92-50.592-17.92-78.24	c0-8.832-7.168-16-16-16H128c-8.832,0-16,7.168-16,16c0,149.984,122.016,272,272,272c8.832,0,16-7.168,16-16v-59.072	C400,316.096,392.832,308.928,384,308.928z" /><g></svg>
+                            </a>
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                            <div class="quickview-content">
-                                <h2>Flared Shift Dress</h2>
-                                <div class="quickview-ratting-review">
-                                    <div class="quickview-ratting-wrap">
-                                        <div class="quickview-ratting">
-                                            <i class="yellow fa fa-star"></i>
-                                            <i class="yellow fa fa-star"></i>
-                                            <i class="yellow fa fa-star"></i>
-                                            <i class="yellow fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <a href="#"> (1 customer review)</a>
-                                    </div>
-                                    <div class="quickview-stock">
-                                        <span><i class="fa fa-check-circle-o"></i> in stock</span>
-                                    </div>
-                                </div>
-                                <h3>$29.00</h3>
-                                <div class="quickview-peragraph">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste laborum ad impedit pariatur esse optio tempora sint ullam autem deleniti nam in quos qui nemo ipsum numquam.</p>
-                                </div>
-                                <div class="size">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-12">
-                                            <h5 class="title">Size</h5>
-                                            <select>
-                                                <option selected="selected">s</option>
-                                                <option>m</option>
-                                                <option>l</option>
-                                                <option>xl</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-6 col-12">
-                                            <h5 class="title">Color</h5>
-                                            <select>
-                                                <option selected="selected">orange</option>
-                                                <option>purple</option>
-                                                <option>black</option>
-                                                <option>pink</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="quantity">
-                                    <!-- Input Order -->
-                                    <div class="input-group">
-                                        <div class="button minus">
-                                            <button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
-                                                <i class="ti-minus"></i>
-                                            </button>
-                                        </div>
-                                        <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1">
-                                        <div class="button plus">
-                                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
-                                                <i class="ti-plus"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <!--/ End Input Order -->
-                                </div>
-                                <div class="add-to-cart">
-                                    <a href="#" class="btn">Add to cart</a>
-                                    <a href="#" class="btn min"><i class="ti-heart"></i></a>
-                                    <a href="#" class="btn min"><i class="fa fa-compress"></i></a>
-                                </div>
-                                <div class="default-social">
-                                    <h4 class="share-now">Share:</h4>
-                                    <ul>
-                                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a class="youtube" href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                        <li><a class="dribbble" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-6 contact-detail hide locate-detail">
+                        <span>Mạng lưới, CN, PGD</span>
+                    </div>
+                    <div class="col-6">
+                        <div class="phone icon-contact">
+                            <a>
+                                <svg class="locate" fill="#005993" version="1.1" id="locate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M256,112c-56.248,0-89.832,35.16-89.832,94.048c0,33.512,44.528,110.936,89.816,172.752			c45.016-62.024,89.848-138.488,89.848-172.752C345.832,147.16,312.248,112,256,112z M255.904,246.344			c-21.792,0-39.456-17.664-39.456-39.456s17.664-39.456,39.456-39.456s39.456,17.664,39.456,39.456			S277.696,246.344,255.904,246.344z" />	</g></g><g>	<g>		<path d="M256,0C114.616,0,0,114.616,0,256s114.616,256,256,256s256-114.616,256-256S397.384,0,256,0z M270.992,412.32L256,432			l-14.904-19.68c-10.968-14.336-106.928-142.448-106.928-206.272C134.168,129.48,181.96,80,256,80s121.832,49.48,121.832,126.048			C377.832,269.776,281.864,397.888,270.992,412.32z" />	</g></g></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-6 contact-detail hide msg-detail">
+                        <span>Chat với chúng tôi</span>
+                    </div>
+                    <div class="col-6">
+                        <div class="phone icon-contact">
+                            <a>
+                                <svg class="msg" height="512" id="msg" viewBox="0 0 128 128" width="512" xmlns="http://www.w3.org/2000/svg"><g id="Circle_Grid" data-name="Circle Grid"><circle cx="64" cy="64" fill="#005993" r="64" /></g><g id="icon"><path d="m44.567 69.534c0 12.1 13.485 21.91 30.112 21.91a39.345 39.345 0 0 0 13.905-2.471c9.411 7 16.916 4.6 16.916 4.6a26.541 26.541 0 0 1 -8.359-9.437c4.771-3.877 7.662-8.99 7.662-14.6 0-12.092-13.485-21.9-30.124-21.9s-30.112 9.806-30.112 21.898z" fill="#fff" /><path d="m87.241 57.293c0 12.862-14.328 23.28-31.994 23.28a41.818 41.818 0 0 1 -14.774-2.625c-10 7.443-17.973 4.887-17.973 4.887a28.217 28.217 0 0 0 8.882-10.027c-5.07-4.119-8.142-9.552-8.142-15.515 0-12.847 14.328-23.265 32.007-23.265s31.994 10.418 31.994 23.265z" fill="#f2c55a" /><g fill="#fff"><path d="m42.437 57.294a4.3 4.3 0 1 1 -4.3-4.3 4.3 4.3 0 0 1 4.3 4.3z" /><path d="m59.172 57.294a4.3 4.3 0 1 1 -4.3-4.3 4.3 4.3 0 0 1 4.3 4.3z" /><path d="m75.906 57.294a4.3 4.3 0 1 1 -4.3-4.3 4.3 4.3 0 0 1 4.3 4.3z" /></g></g></svg>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Modal end -->
+    <div class="product-area pb-50 tablet-download">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-0 app-logo">
+                    <div class="row align-center">
+                        <div class="col-3 fav-icon">
+                            <div class="vietin-icon">
+                                <img class="icon-w" src="images/Icon/favicon.ico" />
+                            </div>
+                        </div>
+                        <div class="col-9 pl-0">
+                            <div class="row">
+                                <div class="col-12 blue-top">
+                                    <a href="#" class="app-down">Tải ứng dụng</a>
+                                </div>
+                                <div class="col-12 blue-top">
+                                    <a href="#" class="app-down">Vietin iPay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 align-center app-logo">
+                    <div class="row align-center down-border">
+                        <div class="col-3 pr-0">
+                            <img class="icon-w" src="images/banner/appstore.jpg" />
+                        </div>
+                        <div class="col-9 pl-0">
+                            <a href="#" class="app-down">Ap Store</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 align-center app-logo">
+                    <div class="row align-center down-border">
+                        <div class="col-3 pr-0">
+                            <img class="icon-w" src="images/banner/googleplay.jpg" />
+                        </div>
+                        <div class="col-9 pl-0">
+                            <a href="#" class="app-down">Google Play</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Start Footer Area -->
     <footer class="footer">
         <!-- Footer Top -->
         <div class="footer-top section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2 col-md-6 col-12">
+                    <div class="col-lg-2 col-sm-6 col-12">
                         <!-- Single Widget -->
                         <div class="single-footer links">
                             <ul>
@@ -695,7 +983,7 @@
                         </div>
                         <!-- End Single Widget -->
                     </div>
-                    <div class="col-lg-2 col-md-6 col-12">
+                    <div class="col-lg-2 col-sm-6 col-12">
                         <!-- Single Widget -->
                         <div class="single-footer links">
                             <ul>
@@ -714,49 +1002,65 @@
                             <div class="contact">
                                 <span class="blue-top">Trụ sở chính: 108 Trần Hưng Đạo, Hà Nội</span>
                                 <ul class="address-bot">
-                                    <li><a href="#">Tải tài liệu</a></li>
-                                    <li><a href="#">Sitemap</a></li>
-                                    <li><a href="#">Kết nối với chúng tôi</a></li>
+                                    <li><a href="#">T: 1900 558 868/ (84) 24 3491 8868</a></li>
+                                    <li><a href="#">F: 84 3492 1032</a></li>
+                                    <li><a href="#">E: contact@vietinbank.vn</a></li>
                                 </ul>
                             </div>
                             <!-- End Single Widget -->
                         </div>
                         <!-- End Single Widget -->
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-4 col-md-6 col-12 single-footer">
                         <div class="row">
-                            <div class="col-12 pr-0 pl-0">
+                            <div class="col-12 lisence">
                                 <span class="blue-top">&#169;2014 - Bản quyền thuộc về Ngân hàng TMCP Công Thương Việt Nam</span>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 pl-0">
+                            <div class="col-12 lisence">
                                 <span class="blue-top">Giấy phép số 22/GP-TTĐT của bộ TTTT</span>
                             </div>
                         </div>
-                        <div class="row pt-10">
-                            <div class="col-6 pl-0">
-                                <a href="#">
-                                    <span>
-                                        <svg class="social-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve"><g><path style="fill:#3B5998;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659		S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z" />                                    <path style="fill:#FFFFFF;" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055		v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366		C154.791,104.556,158.341,100.277,163.394,100.277z" /> </g></svg>
-                                    </span>
-                                </a>
-                                <a href="#">
-                                    <span>
-                                        <svg class="ml-10" height="30px" fill="#005793" viewBox="0 0 512 512" width="30px" xmlns="http://www.w3.org/2000/svg"><path d="m224.113281 303.960938 83.273438-47.960938-83.273438-47.960938zm0 0" /><path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm159.960938 256.261719s0 51.917969-6.585938 76.953125c-3.691406 13.703125-14.496094 24.507812-28.199219 28.195312-25.035156 6.589844-125.175781 6.589844-125.175781 6.589844s-99.878906 0-125.175781-6.851562c-13.703125-3.6875-24.507813-14.496094-28.199219-28.199219-6.589844-24.769531-6.589844-76.949219-6.589844-76.949219s0-51.914062 6.589844-76.949219c3.6875-13.703125 14.757812-24.773437 28.199219-28.460937 25.035156-6.589844 125.175781-6.589844 125.175781-6.589844s100.140625 0 125.175781 6.851562c13.703125 3.6875 24.507813 14.496094 28.199219 28.199219 6.851562 25.035157 6.585938 77.210938 6.585938 77.210938zm0 0" /></svg>
-                                    </span>
-                                </a>
+                        <div class="row pt-10 connect-mobile">
+                            <div class="col-5 pl-0">
+                                <span class="blue-top connect">Kết nối với chúng tôi</span>
                             </div>
-                            <div class="col-6 text-right contact">
-                                <div class="row" id="scrollUp">
-                                    <div class="col-8 pr-0 text-right">
+                            <div class="col-7 p-0 position-absolute app-download">
+                                <span class="blue-top connect">Tải iPay mobile tại:</span>
+                            </div>
+                        </div>
+                        <div class="row pt-10">
+                            <div class="col-md-6 col-sm-5 col-7 connect-left">
+                                <div class="row">
+                                    <a href="#">
+                                        <img class="pl-10" src="images/Icon/fb.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/Icon/youtube.png" />
+                                    </a>
+                                    <a href="#" class="connect-mobile">
+                                        <img src="images/Icon/linkedin.png" />
+                                    </a>
+                                    <a href="#" class="connect-mobile">
+                                        <img src="images/Icon/appstore.png" />
+                                    </a>
+                                    <a href="#" class="connect-mobile">
+                                        <img src="images/Icon/chplay.png" />
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 col-sm-7 col-5 text-right contact connect-right">
+                                <div class="row flex-item" id="scrollUp">
+                                    <div class="col-10 text-right">
                                         <a href="#">
                                             <span class="blue-top font-weight-bold">
                                                 VỀ ĐẦU TRANG
                                             </span>
                                         </a>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-2 p-0">
                                         <a href="#">
                                             <svg class="social-icon" fill="#055793" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M256,0C114.833,0,0,114.833,0,256s114.833,256,256,256s256-114.853,256-256S397.167,0,256,0z M256,472.341			c-119.275,0-216.341-97.046-216.341-216.341S136.725,39.659,256,39.659c119.295,0,216.341,97.046,216.341,216.341			S375.275,472.341,256,472.341z" />	</g></g><g>	<g>		<path d="M369.227,283.365l-99.148-99.148c-7.734-7.694-20.226-7.694-27.96,0l-99.148,99.148c-6.365,7.416-6.365,18.382,0,25.798			c7.119,8.309,19.651,9.28,27.96,2.161L256,226.256l85.267,85.069c7.734,7.694,20.226,7.694,27.96,0			C376.921,303.591,376.921,291.098,369.227,283.365z" />	</g></g></svg>
                                         </a>
