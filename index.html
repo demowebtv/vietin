@@ -17,13 +17,10 @@
     <!-- StyleSheet -->
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- Magnific Popup -->
-    <!--<link rel="stylesheet" href="css/magnific-popup.min.css">-->
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.css">
+	<!-- Font Import -->
     <link rel="stylesheet" href="css/font.css">
-    <!-- Fancybox -->
-    <!--<link rel="stylesheet" href="css/jquery.fancybox.min.css">-->
     <!-- Themify Icons -->
     <link rel="stylesheet" href="css/themify-icons.css">
     <!-- Nice Select CSS -->
@@ -36,7 +33,6 @@
     <link rel="stylesheet" href="css/owl-carousel.css">
     <!-- Slicknav -->
     <link rel="stylesheet" href="css/slicknav.min.css">
-
     <!-- Eshop StyleSheet -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -63,12 +59,11 @@
                             </div>
                         </div>
                         <div class="row search-panel">
-                            <div class="col-lg-2 col-md-2 col-sm-2 col-12 flex-end pl-0">
-                                <a href="#" class="flex-end">
-                                    <img class="lang-icon" src="images/Icon/flag/united-kingdom.svg" />
-                                    <span class="top-menu blue-top">ENG</span>
-                                    <img class="right-arr" src="images/Icon/header/Asset7.png" />
-                                </a>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-12 flex-end pl-0 lang-select">
+                                <select class="nice-select" id="lang-select">
+                                    <option value="0" selected>ENG</option>
+                                    <option value="1">VIE</option>
+                                </select>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 left-logo text-center">
                                 <a href="#" class="single-icon m-auto">
@@ -149,7 +144,7 @@
                                                     <a href="#" class="menu1-text">Cá nhân </a>
                                                     <div class="dropdown menu2">
                                                         <div class="row">
-                                                            <div class="col-lg-4 col-12">
+                                                            <div class="col-lg-5 left-item col-12">
                                                                 <ul class="menu2-left">
                                                                     <li>
                                                                         <a href="#">Gửi tiết kiệm<i class="fa fa-chevron-right top-menu"></i></a>
@@ -267,7 +262,7 @@
                                                     <a href="#">Doanh nghiệp</a>
                                                     <div class="dropdown menu2">
                                                         <div class="row">
-                                                            <div class="col-lg-4 col-12">
+                                                            <div class="col-lg-5 left-item col-12">
                                                                 <ul class="menu2-left">
                                                                     <li>
                                                                         <a href="#">Tiền gửi<i class="fa fa-chevron-right top-menu"></i></a>
@@ -295,10 +290,10 @@
                                                                             <div class="col-12">
                                                                                 <div class="row">
                                                                                     <div class="col-6 pr-0 br-1">
-                                                                                        <a href="#" class="p-0 text-center  menu-btn-left">SME</a>
+                                                                                        <a href="#" class="p-0 text-center menu-btn-left justify-content-center">SME</a>
                                                                                     </div>
                                                                                     <div class="col-6 pl-0 pr-15">
-                                                                                        <a href="#" class="p-0 text-center menu-btn-right">FDI</a>
+                                                                                        <a href="#" class="p-0 text-center menu-btn-right justify-content-center">FDI</a>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -316,7 +311,7 @@
                                                     <a href="#">Kết nối thương mại</a>
                                                     <div class="dropdown menu2">
                                                         <div class="row">
-                                                            <div class="col-lg-4 col-12">
+                                                            <div class="col-lg-5 left-item col-12">
                                                                 <ul class="menu2-left">
                                                                     <li>
                                                                         <a href="#">Tìm đối tác nhập khẩu tại Việt Nam<i class="fa fa-chevron-right top-menu"></i></a>
@@ -355,7 +350,7 @@
                                                     <a href="#" class="border-bottom-0 pr-0">Tin tức</a>
                                                     <div class="dropdown menu2">
                                                         <div class="row">
-                                                            <div class="col-lg-4 col-12">
+                                                            <div class="col-lg-5 left-item col-12">
                                                                 <ul class="menu2-left">
                                                                     <li>
                                                                         <a href="#">Tin tức sự kiện</a>
@@ -517,14 +512,42 @@
                                 <a href="#">Thẻ tín dụng</a>
                             </div>
                         </div>
-                        <div class="single-product">
+                        <div class="single-product" onclick="showOtherServices()">
                             <div class="product-img">
-                                <a class="slide-content" href="#">
+                                <a class="slide-content">
                                     <img class="default-img" src="images/Icon/utils/6.jpg" alt="#">
                                 </a>
                             </div>
                             <div class="product-content">
-                                <a href="#">Dịch vụ khác</a>
+                                <a>Dịch vụ khác</a>
+                            </div>
+                        </div>
+                        <div class="col-4 other-service hide">
+                            <div class="row service-all">
+                                <div class="col-6">
+                                    <a href="#">
+                                        <img class="default-img" src="images/banner/other-service-1.jpg" alt="#">
+                                        <span class="blue-top">Khách hàng ưu tiên</span>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        <img class="default-img" src="images/banner/other-service-2.jpg" alt="#">
+                                        <span class="blue-top">Ngân hàng số</span>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        <img class="default-img" src="images/banner/other-service-3.jpg" alt="#">
+                                        <span class="blue-top">Bảo hiểm</span>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        <img class="default-img" src="images/banner/other-service-4.jpg" alt="#">
+                                        <span class="blue-top">VietinBank Loyalty</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -537,7 +560,7 @@
         <div class="container">
             <div class="row news-section">
                 <div class="col-lg-4 col-12 mt-0 news-tab tab-item">
-                    <div class="row">
+                    <div class="row bg-white radius-10px">
                         <div class="col-12 pr-0 pl-0">
                             <div class="col-12 news-head">
                                 <div class="row text-center h-100 flex-item">
@@ -545,13 +568,18 @@
                                 </div>
                             </div>
                             <div class="col-12 pl-0 pr-0 news-content mt-1px">
-                                <div class="row text-center news-image">
+                                <div class="row text-center">
+                                    <a href="#" class="w-100 news-image">
+
+                                    </a>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="col-12">
                                             <div class="row b-title">
-                                                <span class="news-title">Vietinbank Quảng Nam đào tạo kỹ năng bán hàng</span>
+                                                <a href="#" class="news-title">
+                                                    <span>Vietinbank Quảng Nam đào tạo kỹ năng bán hàng</span>
+                                                </a>
                                             </div>
                                             <div class="row">
                                                 <ul class="new-text">
@@ -559,10 +587,16 @@
                                                         Vietin Bank kỷ niệm 30 năm thành lập và đón nhận các phần thưởng cao quý của Đảng và nhà nước
                                                     </li>
                                                     <li class="pro-regular w-100 news-item">
-                                                        Vietin Bank Lào khai trương CN Viêng Chăn
+                                                        Vietin Bank Lào khai trương CN Viêng Chăn 
+                                                        <a href="#">
+                                                            <svg class="news-icon" height="15px" viewBox="0 -87 432 432" width="15px" xmlns="http://www.w3.org/2000/svg"><path d="m278.90625 0h-248.90625c-16.5625.0195312-29.9804688 13.4375-30 30v197.421875c.0195312 16.5625 13.4375 29.980469 30 30h248.90625c16.558594-.019531 29.980469-13.4375 30-30v-197.421875c-.019531-16.5625-13.441406-29.9804688-30-30zm0 0" /><path d="m328.90625 169.800781 103.09375 56.285157v-194.105469l-103.09375 56.285156zm0 0" /></svg>
+                                                        </a>
                                                     </li>
                                                     <li class="pro-regular w-100 news-item">
                                                         Giải nhất trị giá 500 triệu đồng đã được trao cho khách hàng
+                                                        <a href="#">
+                                                            <svg class="news-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 420.8 420.8" style="enable-background:new 0 0 420.8 420.8;" xml:space="preserve"><g>	<g>		<g>			<path d="M406.8,96.4c-8.4-8.8-20-14-33.2-14h-66.4v-0.8c0-10-4-19.6-10.8-26c-6.8-6.8-16-10.8-26-10.8h-120				c-10.4,0-19.6,4-26.4,10.8c-6.8,6.8-10.8,16-10.8,26v0.8h-66c-13.2,0-24.8,5.2-33.2,14c-8.4,8.4-14,20.4-14,33.2v199.2				C0,342,5.2,353.6,14,362c8.4,8.4,20.4,14,33.2,14h326.4c13.2,0,24.8-5.2,33.2-14c8.4-8.4,14-20.4,14-33.2V129.6				C420.8,116.4,415.6,104.8,406.8,96.4z M400,328.8h-0.4c0,7.2-2.8,13.6-7.6,18.4s-11.2,7.6-18.4,7.6H47.2				c-7.2,0-13.6-2.8-18.4-7.6c-4.8-4.8-7.6-11.2-7.6-18.4V129.6c0-7.2,2.8-13.6,7.6-18.4s11.2-7.6,18.4-7.6h77.2				c6,0,10.8-4.8,10.8-10.8V81.2c0-4.4,1.6-8.4,4.4-11.2s6.8-4.4,11.2-4.4h119.6c4.4,0,8.4,1.6,11.2,4.4c2.8,2.8,4.4,6.8,4.4,11.2				v11.6c0,6,4.8,10.8,10.8,10.8H374c7.2,0,13.6,2.8,18.4,7.6s7.6,11.2,7.6,18.4V328.8z" />			<path d="M210.4,130.8c-27.2,0-52,11.2-69.6,28.8c-18,18-28.8,42.4-28.8,69.6s11.2,52,28.8,69.6c18,18,42.4,28.8,69.6,28.8				s52-11.2,69.6-28.8c18-18,28.8-42.4,28.8-69.6s-11.2-52-28.8-69.6C262.4,142,237.6,130.8,210.4,130.8z M264.8,284				c-14,13.6-33.2,22.4-54.4,22.4S170,297.6,156,284c-14-14-22.4-33.2-22.4-54.4c0-21.2,8.8-40.4,22.4-54.4				c14-14,33.2-22.4,54.4-22.4s40.4,8.8,54.4,22.4c14,14,22.4,33.2,22.4,54.4C287.6,250.8,278.8,270,264.8,284z" />			<circle cx="352.8" cy="150" r="19.6" />		</g>	</g></g></svg>
+                                                        </a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -792,10 +826,13 @@
                                         <h6 class="blue-top w-100">CÔNG CỤ VÀ TIỆN ÍCH</h6>
                                     </div>
                                 </div>
-                                <div class="col-12 pl-0 pr-0 news-content mt-1px tool-panel h-100 scroll-table">
+                                <div class="col-12 pl-0 pr-0 news-content mt-1px tool-panel h-100 scroll-table bg-white">
                                     <div class="row">
                                         <div class="col-12 bg-white">
-                                            <label class="collapsible w-100">Công cụ tính toán</label>
+                                            <label class="collapsible w-100" data-index="1">
+                                                Công cụ tính toán
+                                                <svg class="tool-right-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve"><g>	<path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></g></svg>
+                                            </label>
                                             <div class="content">
                                                 <table class="table-content border-0">
                                                     <tr><td><a href="#">option1</a></td></tr>
@@ -806,7 +843,10 @@
                                             </div>
                                         </div>
                                         <div class="col-12 bg-white">
-                                            <label class="collapsible w-100">Biểu phí dịch vụ</label>
+                                            <label class="collapsible w-100" data-index="2">
+                                                Biểu phí dịch vụ
+                                                <svg class="tool-right-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve"><g>	<path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></g></svg>
+                                            </label>
                                             <div class="content">
                                                 <table class="table-content border-0">
                                                     <tr><td><a href="#">option1</a></td></tr>
@@ -817,7 +857,10 @@
                                             </div>
                                         </div>
                                         <div class="col-12 bg-white">
-                                            <label class="collapsible w-100">Tra cứu thông tin</label>
+                                            <label class="collapsible w-100" data-index="3">
+                                                Tra cứu thông tin
+                                                <svg class="tool-right-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve"><g>	<path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></g></svg>
+                                            </label>
                                             <div class="content">
                                                 <table class="table-content border-0">
                                                     <tr><td><a href="#">option1</a></td></tr>
@@ -828,7 +871,10 @@
                                             </div>
                                         </div>
                                         <div class="col-12 bg-white">
-                                            <label class="collapsible w-100">Tra cứu địa điểm</label>
+                                            <label class="collapsible w-100" data-index="4">
+                                                Tra cứu địa điểm
+                                                <svg class="tool-right-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve"><g>	<path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></g></svg>
+                                            </label>
                                             <div class="content">
                                                 <table class="table-content border-0">
                                                     <tr><td><a href="#">option1</a></td></tr>
@@ -848,7 +894,7 @@
                                         <h6 class="blue-top w-100">ƯU ĐÃI MỚI NHẤT</h6>
                                     </div>
                                 </div>
-                                <div class="col-12 pl-0 pr-0 news-content h-100 align-center mt-1px">
+                                <div class="col-12 pl-0 pr-0 news-content h-100 align-center mt-1px bg-white">
                                     <div class="row text-center">
                                         <div class="row h-100">
                                             <div class="owl-carousel owl-theme sale-slide h-100">
@@ -900,7 +946,7 @@
                     <div class="col-6">
                         <div class="phone icon-contact">
                             <a>
-                                <svg class="locate" fill="#005993" version="1.1" id="locate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M256,112c-56.248,0-89.832,35.16-89.832,94.048c0,33.512,44.528,110.936,89.816,172.752			c45.016-62.024,89.848-138.488,89.848-172.752C345.832,147.16,312.248,112,256,112z M255.904,246.344			c-21.792,0-39.456-17.664-39.456-39.456s17.664-39.456,39.456-39.456s39.456,17.664,39.456,39.456			S277.696,246.344,255.904,246.344z" />	</g></g><g>	<g>		<path d="M256,0C114.616,0,0,114.616,0,256s114.616,256,256,256s256-114.616,256-256S397.384,0,256,0z M270.992,412.32L256,432			l-14.904-19.68c-10.968-14.336-106.928-142.448-106.928-206.272C134.168,129.48,181.96,80,256,80s121.832,49.48,121.832,126.048			C377.832,269.776,281.864,397.888,270.992,412.32z" />	</g></g></svg>
+                                <svg class="locate" fill="#005993" version="1.1" id="locate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><circle style="fill:#D3D3D8;" cx="256" cy="256" r="256" /><path style="fill:#9E9EA2;" d="M512,256c0-1.053-0.027-2.1-0.04-3.15L362.741,103.631L188,135l-30,76l98.185,240.859l54.253,54.321	C425.668,481.222,512,378.702,512,256z" /><g>	<path style="fill:#FF3636;" d="M398.022,161.981c-13.781-44.559-50.072-80.85-94.631-94.631C287.772,62.526,271.694,60,256.075,60		c-31.927,0-62.704,9.876-88.429,29.171c-38.129,28.021-60.868,72.811-60.868,120.126c0,32.615,10.336,63.624,29.859,89.579		L256.075,452l119.438-153.124C404.683,259.828,412.952,209.987,398.022,161.981z M256.075,289.688		c-44.33,0-80.391-36.061-80.391-80.391s36.061-80.391,80.391-80.391s80.391,36.061,80.391,80.391S300.405,289.688,256.075,289.688z		" /></g><path style="fill:#F40000;" d="M375.513,298.876L256.075,452V289.688c44.33,0,80.391-36.061,80.391-80.391	s-36.061-80.391-80.391-80.391V60c15.619,0,31.697,2.526,47.316,7.35c44.559,13.781,80.85,50.072,94.631,94.631	C412.952,209.987,404.683,259.828,375.513,298.876z" /><g></svg>
                             </a>
                         </div>
                     </div>
@@ -923,7 +969,7 @@
     <div class="product-area pb-50 tablet-download">
         <div class="container">
             <div class="row align-center">
-                <div class="col-0 app-logo">
+                <div class="col-4 col-sm-12 app-logo">
                     <div class="row align-center">
                         <div class="col-3 fav-icon">
                             <div class="vietin-icon">
@@ -1115,6 +1161,6 @@
     <script src="js/easing.js"></script>
     <!-- Active JS -->
     <script src="js/active.js"></script>
-    <script src="../js/home.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>

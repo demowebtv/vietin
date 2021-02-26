@@ -15,14 +15,13 @@
             }
         });
 
-        $(".icon-contact svg").on('click', function (e) {
+        $(".icon-contact svg").on('mouseover', function (e) {
             var currIconClass = $(e.currentTarget)[0];
-            if ($(`.${currIconClass.id}-detail`)[0].classList.contains('hide')) {
-                $(`.${currIconClass.id}-detail`).removeClass('hide');
-            }
-            else {
-                $(`.${currIconClass.id}-detail`).addClass('hide');
-            }
+            $(`.${currIconClass.id}-detail`).removeClass('hide');
+        });
+        $(".icon-contact svg").on('mouseout', function (e) {
+            var currIconClass = $(e.currentTarget)[0];
+            $(`.${currIconClass.id}-detail`).removeClass('hide').addClass('hide');
         });
 
         collapseNews();
@@ -81,15 +80,19 @@
                 $(this).parent("label").removeClass("checked");
             }
         });
+
     });
+
 
     function changeImageType(type) {
         var banners = $('.home-slide').find('img');
         $.each(banners, (i, val) => {
-            var currSrcs = val.src.split('-');
-            var imgTypes = currSrcs[2].split('.');
-            currSrcs[2] = type + '.' + imgTypes[1];
-            banners[i].src = currSrcs.join('-');
+            var paths = val.src.split('/');
+			var currSrcs = paths[paths.length - 1].split('-');
+            var imgTypes = currSrcs[currSrcs.length - 1].split('.');
+            currSrcs[currSrcs.length - 1] = `${type}.${imgTypes[imgTypes.length - 1]}`;
+			paths[paths.length - 1] = currSrcs.join('-');
+            banners[i].src = paths.join('/');
         })
     }
 
@@ -109,7 +112,17 @@
         var coll = document.getElementsByClassName("collapsible");
         for (var i = 0; i < coll.length; i++) {
             coll[i].addEventListener("click", function () {
+                var index = this.dataset.index;
+                $(".collapsible").each((i, elm) => {
+                    if ($(elm).data('index') != index) {
+                        $(elm).removeClass('active');
+                        var content = elm.nextSibling.nextElementSibling;
+                        content.style.maxHeight = null;
+                    }
+                })
+
                 this.classList.toggle("active");
+                var arrow = this.children[0];
                 var content = this.nextElementSibling;
                 if (content.style.maxHeight) {
                     content.style.maxHeight = null;
@@ -207,21 +220,23 @@
     18. Nice Select JS
     ======================================*/
     $('select').niceSelect();
-    $('.nice-select').on('change', () => {
+    //append image to each option on change event
+    $('.banking .nice-select').on('change', () => {
         var selected = $("#banking-select").val();
+        $('.selected-nice').remove();
         if (selected == 0) {
-            $('.nice-select').removeClass('flex-item');
+            $('.banking .nice-select').removeClass('flex-item');
         }
         else {
-            $('.selected-nice').remove();
             var selectLiTag = $('.banking').find('li')[selected];
             var img = $(selectLiTag).find('img')[0].cloneNode(true);
             $(img).addClass('selected-nice');
-            $('.current').after($(img))
-            $('.nice-select').removeClass('flex-item').addClass('flex-item');
+            $('.banking .current').after($(img))
+            $('.banking .nice-select').removeClass('flex-item').addClass('flex-item');
         }
-
     })
+
+    //append image to each option
     var div = document.createElement('div');
     div.style.position = 'absolute';
     div.style.height = '40px';
@@ -229,13 +244,36 @@
     div.style.top = '0px';
     div.style.right = '30px';
     div.style.backgroundColor = '#eee';
-    $('.nice-select').append(div);
+    $('.banking .nice-select').append(div);
 
     var selectLiTags = $('.banking').find('li');
     $(selectLiTags[1]).append('<img class="option-icon" src="images/Icon/right_box/Asset31.png" />');
     $(selectLiTags[2]).append('<img class="option-icon" src="images/Icon/right_box/Asset32.png" />');
     $(selectLiTags[3]).append('<img class="option-icon" src="images/Icon/right_box/Asset33.png" />');
     $(selectLiTags[4]).append('<img class="option-icon" src="images/Icon/right_box/Asset38.png" />');
+
+
+    //append image to each option on change event
+    $('.lang-select .current').prepend('<img class="lang-select-icon" src="images/Icon/flag/united-kingdom.svg" />')
+    $('.lang-select .nice-select').on('change', () => {
+        $('.lang-select .current .lang-select-icon').remove();
+        var selected = $("#lang-select").val();
+        var selectLiTag = $('.lang-select').find('li')[selected];
+        var img = $(selectLiTag).find('img')[0].cloneNode(true);
+        $('.lang-select .current').prepend($(img))
+    })
+
+    var lang = document.createElement('div');
+    lang.style.position = 'absolute';
+    lang.style.height = '40px';
+    lang.style.width = '1px';
+    lang.style.top = '0';
+    lang.style.left = '0';
+    $('.lang-select .nice-select').append(lang);
+
+    var langSelectLiTags = $('.lang-select').find('li');
+    $(langSelectLiTags[0]).prepend('<img class="lang-select-icon" src="images/Icon/flag/united-kingdom.svg" />');
+    $(langSelectLiTags[1]).prepend('<img class="lang-select-icon" src="images/Icon/flag/vietnam.svg" />');
 
     setTimeout(function () {
         //After 2s, the no-scroll class of the body will be removed

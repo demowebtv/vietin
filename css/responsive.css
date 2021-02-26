@@ -91,21 +91,11 @@ Version:1.0
         height: 45px;
     }
 
-    .header.shop .nice-select {
-        height: 44px;
-        line-height: 44px;
-        font-size: 13px;
-    }
-
-        .header.shop .nice-select .list li {
-            font-size: 13px;
+        .header.shop .search-bar .btnn {
+            height: 45px;
+            line-height: 45px;
+            font-size: 14px;
         }
-
-    .header.shop .search-bar .btnn {
-        height: 45px;
-        line-height: 45px;
-        font-size: 14px;
-    }
 
     .header.shop .search-bar {
         width: 445px;
@@ -426,6 +416,32 @@ Version:1.0
 }
 /* Mobile Screen */
 @media only screen and (max-width: 767px) {
+    .lang-select .nice-select .current {
+        bottom: -10px !important;
+        width: 100%;
+        left: -7px;
+        z-index: 99999;
+    }
+
+    .lang-select .nice-select {
+        height: 20px;
+        line-height: 20px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+        .lang-select .nice-select .list li {
+            font-size: 13px;
+        }
+
+        .lang-select .nice-select .list {
+            width: 30px;
+        }
+
+    .contact-detail {
+        left: -130px !important;
+    }
+
     .product-slide {
         max-height: 160px;
         display: flex;
@@ -1332,6 +1348,10 @@ Version:1.0
 }
 /* Mobile Screen */
 @media only screen and (max-width: 450px) {
+    .lang-select .nice-select:after {
+        right: -5px;
+    }
+
     .site-header.sticky .header-bottom {
         position: absolute;
         z-index: 999;
@@ -2093,6 +2113,13 @@ Version:1.0
 }
 
 @media only screen and (max-width: 991px) {
+    .lang-select .nice-select:after {
+        display: none;
+    }
+
+    .lang-select .nice-select .current {
+        color: #7ed3f7;
+    }
 
     .menu2-left li a {
         border-bottom: 1px solid #eee;
@@ -2270,6 +2297,24 @@ Version:1.0
 }
 
 @media only screen and (min-width: 992px) {
+    .menu2-right li:last-child a {
+        border-bottom: none !important;
+    }
+
+    .menu2 .left-item {
+        border-right: 1px solid #eee;
+    }
+
+    .menu2-right {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+        .menu2-right li:last-child a {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
     .right-contact {
         position: fixed;
         right: -90%;
@@ -2277,9 +2322,11 @@ Version:1.0
         z-index: 99999;
         width: 100%;
     }
+
     .icon-contact {
         padding-bottom: 10px;
     }
+
     .app-down {
         font-size: 18px;
         font-weight: bold;
@@ -2374,8 +2421,8 @@ Version:1.0
         height: 100%;
         display: none;
         position: absolute;
-        right: -200%;
-        width: 200%;
+        right: -170%;
+        width: 170%;
         margin-left: 0px;
         top: 0px;
         z-index: 1;
@@ -2399,7 +2446,7 @@ Version:1.0
         visibility: hidden;
     }
 
-    .menu2 .row .col-lg-4 {
+    .menu2 .row .left-item {
         padding-right: 0px;
     }
 }
