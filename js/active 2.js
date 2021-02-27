@@ -6,7 +6,7 @@
 		/*====================================
 		03. Sticky Header JS
 		======================================*/
-        jQuery(window).on('scroll', () => {
+        jQuery(window).on('scroll', function () {
             if ($(this).scrollTop() > 100) {
                 $('.header').addClass("sticky");
             }
@@ -15,57 +15,14 @@
             }
         });
 
-        $('.menu1-text').on('mouseover', (e) => {
-            var menu1 = $(e.currentTarget)[0];
-            var dropdown = menu1.nextElementSibling;
-            var menu2 = $(dropdown).find('.left-item');
-            if (menu2.length > 0) {
-                menu2 = menu2[0];
-                menu2.dataset.height = menu2.scrollHeight;
-                console.log(menu2.scrollHeight);
-            }
-        });
-        $('.link-menu2').on('mouseover', (e) => {
-            if (window.innerWidth > 991) {
-                var menu2 = $(e.currentTarget)[0];
-                var totalLeft = menu2.offsetParent.firstElementChild.children.length;
-                var totalright = menu2.nextElementSibling.children.length;
-
-                var menu3Heigth = menu2.nextElementSibling.scrollHeight;
-                console.log(menu2.nextElementSibling);
-
-                if (totalLeft < totalright) {
-                    $(menu2.offsetParent).height(menu3Heigth);
-                }
-                else {
-                    $(menu2.offsetParent).height(menu2.offsetParent.dataset.height);
-                }
-            }
-        });
-
-        $(".icon-contact svg").on('mouseover', (e) => {
+        $(".icon-contact svg").on('mouseover', function (e) {
             var currIconClass = $(e.currentTarget)[0];
             $(`.${currIconClass.id}-detail`).removeClass('hide');
         });
-
-        $(".contact-detail").on('mouseleave', (e) => {
-            var currentItem = $(e.currentTarget)[0];
-            $(currentItem).removeClass('hide').addClass('hide');;
-        });
-
-        $(".icon-contact svg").on('mouseleave', (e) => {
+        $(".icon-contact svg").on('mouseout', function (e) {
             var currIconClass = $(e.currentTarget)[0];
-            var relatedTarget = $(e.relatedTarget)[0];
-            console.log(relatedTarget.className);
-            if (`${relatedTarget.className}` === 'col-6') {
-                $(`.${currIconClass.id}-detail`).removeClass('hide');
-            }
-            else {
-                $(`.${currIconClass.id}-detail`).removeClass('hide').addClass('hide');
-            }
+            $(`.${currIconClass.id}-detail`).removeClass('hide').addClass('hide');
         });
-
-
 
         collapseNews();
 		/*=======================
@@ -105,13 +62,25 @@
 		/*=======================
 		  Extra Scroll JS
 		=========================*/
-        $('#scrollUp').on("click", (e) => {
+        $('#scrollUp').on("click", function (e) {
             var anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $(anchor.attr('href')).offset().top - 0
             }, 900);
             e.preventDefault();
         });
+
+		/*===============================
+		10. Checkbox JS
+		=================================*/
+        $('input[type="checkbox"]').change(function () {
+            if ($(this).is(':checked')) {
+                $(this).parent("label").addClass("checked");
+            } else {
+                $(this).parent("label").removeClass("checked");
+            }
+        });
+
     });
 
 
@@ -119,10 +88,10 @@
         var banners = $('.home-slide').find('img');
         $.each(banners, (i, val) => {
             var paths = val.src.split('/');
-            var currSrcs = paths[paths.length - 1].split('-');
+			var currSrcs = paths[paths.length - 1].split('-');
             var imgTypes = currSrcs[currSrcs.length - 1].split('.');
             currSrcs[currSrcs.length - 1] = `${type}.${imgTypes[imgTypes.length - 1]}`;
-            paths[paths.length - 1] = currSrcs.join('-');
+			paths[paths.length - 1] = currSrcs.join('-');
             banners[i].src = paths.join('/');
         })
     }
@@ -153,6 +122,7 @@
                 })
 
                 this.classList.toggle("active");
+                var arrow = this.children[0];
                 var content = this.nextElementSibling;
                 if (content.style.maxHeight) {
                     content.style.maxHeight = null;
@@ -305,7 +275,7 @@
     $(langSelectLiTags[0]).prepend('<img class="lang-select-icon" src="images/Icon/flag/united-kingdom.svg" />');
     $(langSelectLiTags[1]).prepend('<img class="lang-select-icon" src="images/Icon/flag/vietnam.svg" />');
 
-    setTimeout(() => {
+    setTimeout(function () {
         //After 2s, the no-scroll class of the body will be removed
         $('body').removeClass('no-scroll');
     }, 2000);

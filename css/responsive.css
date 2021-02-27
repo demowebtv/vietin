@@ -7,6 +7,10 @@ Version:1.0
 ========================================*/
 /* Tablet Screen */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .top-slide {
+        display: contents;
+    }
+
     .section {
         padding: 50px 0px;
     }
@@ -2106,13 +2110,8 @@ Version:1.0
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .top-slide {
-        display: contents;
-    }
-}
-
 @media only screen and (max-width: 991px) {
+
     .lang-select .nice-select:after {
         display: none;
     }
@@ -2265,6 +2264,10 @@ Version:1.0
         margin-bottom: 20px;
     }
 
+        .tab-item:last-child {
+            height: 570px;
+        }
+
     .tablet-download {
         display: block;
     }
@@ -2294,9 +2297,29 @@ Version:1.0
         z-index: 99999;
         width: 100%;
     }
+
+    .pb-40px {
+        padding-bottom: 40px;
+    }
+
+    .slicknav_nav .slicknav_item a {
+        display: inline-grid;
+    }
+
+    .search-panel {
+        align-items: flex-end;
+    }
 }
 
 @media only screen and (min-width: 992px) {
+    .pb-40px {
+        padding-bottom: 30px;
+    }
+
+    .most-popular .single-product {
+        width: 16.6666667%;
+    }
+
     .menu2-right li:last-child a {
         border-bottom: none !important;
     }
@@ -2413,8 +2436,7 @@ Version:1.0
     }
 
     .search-panel {
-        height: 35px;
-        padding-top: 10px;
+        height: 30px;
     }
 
     .menu2-right {
@@ -2448,5 +2470,9 @@ Version:1.0
 
     .menu2 .row .left-item {
         padding-right: 0px;
+    }
+
+    .menu1 {
+        max-height: 46px;
     }
 }
