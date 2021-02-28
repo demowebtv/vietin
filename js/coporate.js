@@ -1,7 +1,6 @@
 (function ($) {
     "use strict";
     $(document).on('ready', function () {
-       
 		/*====================================
 		Sticky Header JS
 		======================================*/
@@ -14,6 +13,13 @@
             }
         });
 
+        $('.menu').slicknav({
+            prependTo: ".mobile-nav",
+            duration: 300,
+            animateIn: 'fadeIn',
+            animateOut: 'fadeOut',
+            closeOnClick: true,
+        });
 		/*=======================
 		  Extra Scroll JS
 		=========================*/
@@ -26,28 +32,21 @@
         });
     });
 
+
     /*====================================
     Nice Select JS
     ======================================*/
     $('select').niceSelect();
-    //append image to each option on change event
-    $('.banking .nice-select').on('change', () => {
-        var selected = $("#banking-select").val();
-        $('.selected-nice').remove();
-        if (selected == 0) {
-            $('.banking .nice-select').removeClass('flex-item');
-        }
-        else {
-            var selectLiTag = $('.banking').find('li')[selected];
-            var img = $(selectLiTag).find('img')[0].cloneNode(true);
-            $(img).addClass('selected-nice');
-            $('.banking .current').after($(img))
-            $('.banking .nice-select').removeClass('flex-item').addClass('flex-item');
-        }
-    })
+
+    var selectLiTags = $('.banking').find('li');
+    $(selectLiTags[1]).append('<img class="option-icon" src="images/Icon/right_box/Asset31.png" />');
+    $(selectLiTags[2]).append('<img class="option-icon" src="images/Icon/right_box/Asset32.png" />');
+    $(selectLiTags[3]).append('<img class="option-icon" src="images/Icon/right_box/Asset33.png" />');
+    $(selectLiTags[4]).append('<img class="option-icon" src="images/Icon/right_box/Asset38.png" />');
+
 
     //append image to each option on change event
-    $('.lang-select .current').prepend('<img class="lang-select-icon" src="images/Icon/flag/united-kingdom.svg" />')
+    $('.lang-select .current').prepend('<img class="lang-select-icon" src="images/Icon/eng.jpg" />')
     $('.lang-select .nice-select').on('change', () => {
         $('.lang-select .current .lang-select-icon').remove();
         var selected = $("#lang-select").val();
@@ -65,8 +64,9 @@
     $('.lang-select .nice-select').append(lang);
 
     var langSelectLiTags = $('.lang-select').find('li');
-    $(langSelectLiTags[0]).prepend('<img class="lang-select-icon" src="images/Icon/flag/united-kingdom.svg" />');
-    $(langSelectLiTags[1]).prepend('<img class="lang-select-icon" src="images/Icon/flag/vietnam.svg" />');
+    $(langSelectLiTags[0]).prepend('<img class="lang-select-icon" src="images/Icon/eng.jpg" />');
+    $(langSelectLiTags[1]).prepend('<img class="lang-select-icon" src="images/Icon/vi.jpg" />');
+
 
 
     setTimeout(() => {
