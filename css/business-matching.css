@@ -172,12 +172,6 @@ body {
     padding: 0px 5px;
 }
 
-.top-slide {
-    background: url(../images/shutterstock_191691677_huge.jpg) no-repeat;
-    background-size: contain;
-    max-height: 500px;
-}
-
 .branch-info img {
     width: 50px;
 }
@@ -268,7 +262,12 @@ body {
 .service-text {
     padding: 2px 30px;
     font-weight: bold;
+    width: 100%;
 }
+
+    .service-text:hover span {
+        color: #005993;
+    }
 
 .service-icon {
     width: 30px;

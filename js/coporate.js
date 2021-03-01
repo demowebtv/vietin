@@ -32,7 +32,6 @@
         });
     });
 
-
     /*====================================
     Nice Select JS
     ======================================*/
@@ -67,11 +66,21 @@
     $(langSelectLiTags[0]).prepend('<img class="lang-select-icon" src="images/Icon/eng.jpg" />');
     $(langSelectLiTags[1]).prepend('<img class="lang-select-icon" src="images/Icon/vi.jpg" />');
 
-
-
     setTimeout(() => {
         //After 2s, the no-scroll class of the body will be removed
         $('body').removeClass('no-scroll');
     }, 2000);
 
 })(jQuery);
+
+function showSearchBox() {
+    $('.search-left').addClass('hide');
+    $('.search-full').removeClass('hide');
+    $('.search-box').focus();
+}
+
+function showSearchOnLeave() {
+    $('.search-left').removeClass('hide');
+    $('.search-full').addClass('hide');
+    $('.search-box').val('');
+}

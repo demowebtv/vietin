@@ -1,0 +1,308 @@
+﻿.hero-slider {
+    max-height: 500px;
+}
+
+@media only screen and (max-width: 450px) {
+    .desc1 {
+        font-size: 30px !important;
+        font-weight: 900 !important;
+    }
+
+    .desc2 {
+        font-size: 20px !important;
+        font-weight: 100 !important;
+    }
+
+    .desc3 {
+        font-size: 20px !important;
+        font-weight: 100 !important;
+    }
+
+    .top-desc .row:not(:first-child) {
+        margin-top: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about-item {
+        padding-top: 30px;
+    }
+
+    .about-title span {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .right-img {
+        padding-bottom: 30px;
+    }
+
+        .right-img:last-child {
+            padding-top: 30px;
+        }
+}
+
+.about-item img {
+    height: 100%;
+    width: 100%;
+}
+
+.about-text {
+    position: absolute;
+    bottom: 0;
+}
+
+    .about-text span {
+        color: #fff;
+        width: 100%;
+    }
+
+
+.about-title {
+    margin-top: 15px;
+}
+
+    .about-title span {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+.about-detail {
+    line-height: 18px;
+    margin: 8px 0px 12px 0px;
+}
+
+    .about-detail span {
+        font-size: 13px;
+    }
+
+.about-title2 {
+    margin-top: 10px;
+}
+
+    .about-title2 span {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+.about-detail2 {
+    line-height: 18px;
+    font-size: 11px;
+    margin: 5px 0px 8px 0px;
+}
+
+.title-bot {
+    background: #2d5366;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    bottom: 0;
+}
+
+.video-play {
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+
+    .video-play img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+.play-icon {
+    position: absolute;
+}
+
+.tbl-rates {
+    margin-top: 5px;
+}
+
+    .tbl-rates tbody tr td {
+        font-weight: 200;
+        padding: 0;
+        border: none;
+        line-height: 13px;
+        font-size: 12px;
+    }
+
+    .tbl-rates thead tr td {
+        padding: 0;
+        border: none;
+    }
+
+.service-text {
+    padding-right: 20px;
+}
+
+
+.service-title .head-title {
+    padding: 5px 20px 5px 30px;
+}
+
+.efast {
+    padding: 5px 0px;
+}
+
+.top-title {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.desc1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.desc2 {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.desc3 {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.top-desc .row:not(:first-child) {
+    margin-top: 30px;
+}
+
+.top-desc .row:first-child {
+    margin-top: 0px !important;
+}
+
+.hero-slider .owl-carousel {
+    max-height: 500px;
+}
+
+.intro {
+    width: 100%;
+}
+
+.video-info {
+    position: absolute;
+    bottom: 15px;
+}
+
+.video-title {
+    margin-top: 10px;
+}
+
+    .video-title span {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+.video-detail {
+    line-height: 18px;
+    margin: 5px 0px 8px 0px;
+}
+
+    .video-detail span {
+        font-size: 11px;
+    }
+
+.play {
+    z-index: 99
+}
+
+.right-img img {
+    max-height: 450px;
+}
+
+.quick {
+    border: 1px solid #eee;
+}
+
+.quick1 {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+.quick-title {
+    text-align: center;
+    color: #686868;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    max-height: 27px;
+}
+
+.quick-link {
+    color: #686868;
+    width: 100%;
+}
+
+    .quick-link span {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .quick-link:hover span {
+        color: #005993;
+    }
+
+.award-detail span {
+    width: 100%;
+    display: block;
+    color: #686868;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.db-arrow {
+    width: 10px;
+}
+
+.award-detail {
+    padding-top: 15px;
+}
+
+    .award-detail span:first-child {
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+
+    .award-detail span:not(:first-child) {
+        font-size: 12px;
+    }
+
+.img-award {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    background: url(../images/coporate/foot.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 15px;
+    height: 15px;
+    margin: 5px 5px;
+    background: transparent;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border-radius: 30px;
+    border: 1px solid #fff;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #fff;
+}
+
+.video-bg {
+    background: #eee;
+    border-radius: 5px;
+}

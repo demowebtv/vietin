@@ -1665,7 +1665,6 @@ a a {
     bottom: 0;
 }
 
-
 .nice-select ul {
     width: 100%;
 }
@@ -1814,39 +1813,39 @@ body {
     padding-top: 8px;
 }
 
-.popular-slider .owl-controls .owl-nav .owl-next {
+.service-slider .owl-controls .owl-nav .owl-next {
     background: transparent !important;
     font-size: 25px;
     color: #005993;
     padding: 0;
 }
 
-    .popular-slider .owl-controls .owl-nav .owl-next i {
+    .service-slider .owl-controls .owl-nav .owl-next i {
         position: absolute;
     }
 
-    .popular-slider .owl-controls .owl-nav .owl-next:hover {
+    .service-slider .owl-controls .owl-nav .owl-next:hover {
         color: #005993;
     }
 
-.popular-slider .owl-controls .owl-nav .owl-prev {
+.service-slider .owl-controls .owl-nav .owl-prev {
     background: transparent !important;
     color: #005993;
     font-size: 25px;
     padding: 0;
 }
 
-    .popular-slider .owl-controls .owl-nav .owl-prev i {
+    .service-slider .owl-controls .owl-nav .owl-prev i {
         position: absolute;
         left: -6px;
     }
 
-    .popular-slider .owl-controls .owl-nav .owl-prev:hover {
+    .service-slider .owl-controls .owl-nav .owl-prev:hover {
         color: #005993;
         font-weight: 600;
     }
 
-.popular-slider .owl-stage-outer .owl-stage .owl-item {
+.service-slider .owl-stage-outer .owl-stage .owl-item {
     display: flex;
 }
 
@@ -2461,4 +2460,12 @@ tool:after {
 
 .justify-center {
     justify-content: center;
+}
+
+.ml-15px {
+    margin-left: 15px;
+}
+
+.mr-15px {
+    margin-right: 15px;
 }

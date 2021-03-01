@@ -1,0 +1,35 @@
+﻿@media only screen and (min-width: 992px) {
+    .most-popular .single-product {
+        width: 100%;
+        margin: 0px 20px;
+    }
+}
+
+.service-slider .owl-stage .owl-item {
+    max-width: 100%;
+}
+
+    .service-slider .owl-stage .owl-item img {
+        max-width: 100%;
+    }
+
+.service-slider .owl-nav {
+    display: block;
+}
+
+.most-popular .owl-nav {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -25px;
+}
+
+.single-product .product-img {
+    max-width: none;
+}
+
+/*.most-popular .owl-carousel .owl-item {
+    max-width: 100% !important;
+    max-width: 100% !important;
+}*/
