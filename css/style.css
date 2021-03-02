@@ -325,15 +325,6 @@
         border: none;
     }
 
-    .header.v3 .topbar {
-        padding: 0;
-    }
-
-        .header.v3 .topbar .inner-content {
-            border-bottom: 1px solid #eee;
-            padding: 12px 0px;
-        }
-
     .header .right-nav li a {
         color: #333;
     }
@@ -1462,6 +1453,7 @@
 
 .top-menu ul li a {
     font-family: 'myriadpro-semibold', sans-serif;
+    font-size: 12px;
 }
 
 .top-menu {
@@ -1682,7 +1674,7 @@ a a {
 }
 
     .banking .nice-select span {
-        font-weight: 600;
+        font-family: 'myriadpro-bold',sans-serif !important;
     }
 
     .banking .nice-select .current {
@@ -1690,8 +1682,14 @@ a a {
         font-size: 18px !important;
     }
 
+.nice-select .option {
+    font-size: 16px;
+    font-family: 'myriadpro-bold',sans-serif !important;
+}
+
 .access {
-    font-weight: 600;
+    font-weight: bold;
+    font-family: 'myriadpro-bold',sans-serif !important;
 }
 
 .flex-item {
@@ -1726,17 +1724,13 @@ body {
 
 .product-content a {
     font-family: 'myriadpro-bold', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .product-content {
     margin-top: 0px !important;
 }
 
-.most-popular .owl-carousel .owl-item {
-    width: 185px !important;
-    height: 185px !important;
-}
 
 .flex-end {
     display: flex;
@@ -1807,6 +1801,7 @@ body {
     list-style: outside;
     margin-left: 15px;
     padding-right: 15px;
+    color: #919191;
 }
 
 .address-bot {
@@ -1924,7 +1919,14 @@ body {
 
     .tbl-rate thead tr td {
         border: none !important;
+        font-size: 16px;
+        font-family: 'myriadpro-bold',sans-serif;
     }
+
+        .tbl-rate thead tr td:first-child {
+            border: none !important;
+            font-family: 'myriadpro-bold',sans-serif;
+        }
 
 .tab-pane.table td {
     padding: 7px;
@@ -1970,7 +1972,7 @@ body {
 }
 
 .price-height {
-    max-height: 507px;
+    max-height: 425px;
 }
 
 /* width */
@@ -2004,11 +2006,19 @@ tool:after {
     margin-left: 5px;
 }
 
+.news-content .row .col-12:first-child .collapsible {
+    margin-top: 10px;
+}
+
+    .news-content .row .col-12:first-child .collapsible .tool-right-arrow {
+        top: 25px;
+    }
+
 .collapsible:not(:last-child) {
     background-color: #fff;
     color: white;
     cursor: pointer;
-    padding: 5px 0px;
+    padding: 8px 0px;
     width: 100%;
     border-bottom: 1px solid #eee;
     text-align: left;
@@ -2055,6 +2065,8 @@ tool:after {
 
 .collapsible {
     padding-left: 10px !important;
+    font-family: 'myriadpro-bold',sans-serif;
+    font-size: 16px;
 }
 
 .table-content tr td a {
@@ -2097,7 +2109,7 @@ tool:after {
 }
 
 .news-image {
-    min-height: 250px;
+    min-height: 200px;
     background: url(../images/Icon/box_body/Asset26.png) no-repeat;
     background-size: cover;
 }
@@ -2106,10 +2118,10 @@ tool:after {
     border-bottom-right-radius: 10px !important;
     border-bottom-left-radius: 10px !important;
 }
-
-
-.sale-info {
-    height: 44%;
+.sale-slide .owl-dots {
+    position: relative;
+    width: 100%;
+    bottom: 15px;
 }
 
 .icon-w {
@@ -2235,7 +2247,7 @@ tool:after {
 .tool-right-arrow {
     position: absolute;
     right: 30px;
-    top: 12px;
+    top: 15px;
     fill: #93d5f6;
     width: 10px;
     height: 10px;
@@ -2249,7 +2261,7 @@ tool:after {
         clear: initial;
         margin: 0;
         height: 30px;
-        width: 80px;
+        width: 75px;
         border: none;
         text-align: center;
         background: transparent;
@@ -2293,7 +2305,7 @@ tool:after {
             content: '';
             display: block;
             height: 8px;
-            margin-top: -4px;
+            margin-top: -6px;
             pointer-events: none;
             position: absolute;
             right: 12px;
@@ -2353,7 +2365,7 @@ tool:after {
 }
 
 .new-text li {
-    line-height: 24px;
+    line-height: 20px;
 }
 
 .news-icon {
@@ -2468,4 +2480,46 @@ tool:after {
 
 .mr-15px {
     margin-right: 15px;
+}
+
+.block {
+    display: block;
+}
+
+.nice-select .option {
+    color: #686868 !important;
+    font-family: 'myriadpro-bold',sans-serif !important;
+}
+
+.title-head {
+    font-size: 18px;
+    margin-top: 3px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+label {
+    display: inline-block;
+    margin: 0px;
+}
+
+.sale-info:last-child{
+    margin-top: 9px;
+}
+
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 1px;
+}
+
+.form-control:focus {
+    color: #686868;
+    background-color: #fff;
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
 }

@@ -19,7 +19,7 @@
 
     $('.solution-slider').owlCarousel({
         items: 1,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 5000,
         smartSpeed: 400,
         animateIn: 'fadeIn',
@@ -28,14 +28,14 @@
         loop: true,
         nav: true,
         merge: true,
-        dots: false,
+        dots: true,
         navText: ['<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>'],
         responsive: {
             0: {
                 items: 1,
             },
             300: {
-                items: 1,
+                items: 2,
             },
             480: {
                 items: 2,

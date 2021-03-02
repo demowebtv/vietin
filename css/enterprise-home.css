@@ -1,7 +1,7 @@
 ﻿@media only screen and (min-width: 992px) {
     .most-popular .single-product {
-        width: 100%;
-        margin: 0px 20px;
+        width: auto;
+        margin: 0px 15px;
     }
 }
 
@@ -29,7 +29,60 @@
     max-width: none;
 }
 
-/*.most-popular .owl-carousel .owl-item {
-    max-width: 100% !important;
-    max-width: 100% !important;
-}*/
+.product-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-content {
+    position: absolute;
+    background: #005993;
+    opacity: 0.7;
+    height: 90px;
+    width: 100%;
+    bottom: 0;
+}
+
+.single-product {
+    position: relative;
+}
+
+.product-content a {
+    color: #fff;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-family: 'myriadpro-regular',sans-serif;
+    padding: 0px 40px;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    background: none;
+}
+
+.most-popular .owl-carousel .owl-nav div:hover {
+    color: #005993;
+    background: none;
+}
+
+.ti-angle-right, .ti-angle-left {
+    font-size: 30px;
+    font-weight: bold;
+    color: #005993;
+}
+
+.solution-slider .owl-controls .owl-dots {
+    bottom: -40px;
+}
+
+.care {
+    margin-top: 100px;
+}
+
+.blue-top {
+    color: #005993 !important;
+}

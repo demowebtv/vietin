@@ -21,7 +21,7 @@
 
     $(".sale-slide").owlCarousel({
         navigation: true,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 5000,
         slideSpeed: 100,
         animateIn: 'fadeIn',

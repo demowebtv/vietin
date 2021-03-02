@@ -2263,11 +2263,11 @@
         position: absolute;
         bottom: 0;
     }
-
+    /*
         .news-content .owl-carousel .owl-stage-outer {
             height: 100%;
         }
-
+*/
     .app-down {
         font-size: 14px;
         font-weight: bold;
@@ -2299,6 +2299,10 @@
 }
 
 @media only screen and (min-width: 992px) {
+    .sale-info {
+        height: 35%;
+    }
+
     .pb-40px {
         padding-bottom: 30px;
     }

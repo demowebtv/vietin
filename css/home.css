@@ -1,2 +1,9 @@
-﻿body {
+﻿
+.most-popular .owl-carousel .owl-item {
+    width: 185px !important;
+    height: 185px !important;
+}
+
+.menu1-text span {
+    font-family: 'myriadpro-semibold',sans-serif;
 }
