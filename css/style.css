@@ -501,7 +501,7 @@
             height: 100%;
             font-size: 16px;
             padding: 11px 20px;
-            font-weight: 500;
+            font-weight: bold;
             display: block;
             position: relative;
             -webkit-transition: all 0.1s ease;
@@ -1683,11 +1683,11 @@ a a {
 
     .banking .nice-select .current {
         color: #005993;
-        font-size: 18px !important;
+        font-size: 18px !important;font-weight: bold;
     }
 
 .nice-select .option {
-    font-size: 16px;
+    font-size: 16px;font-weight: bold;
     font-family: 'myriadpro-bold',sans-serif !important;
 }
 
@@ -2489,7 +2489,7 @@ tool:after {
 
 .nice-select .option {
     color: #686868 !important;
-    font-family: 'myriadpro-bold',sans-serif !important;
+    font-family: 'myriadpro-bold',sans-serif !important;font-weight: bold;
 }
 
 .title-head {
