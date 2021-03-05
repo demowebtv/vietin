@@ -529,8 +529,8 @@
 
     .header .nav li .dropdown li a {
         font-weight: 400;
-        line-height: 17px;
-        font-size: 13px;
+        line-height: 18px;
+        font-size: 16px;
         color: #686868;
     }
 
@@ -1728,7 +1728,7 @@ body {
 
 .product-content a {
     font-family: 'myriadpro-bold', sans-serif;
-    font-size: 16px;
+    font-size: 16px;font-weight: 600;
 }
 
 .product-content {
@@ -2071,7 +2071,7 @@ tool:after {
 .collapsible {
     padding-left: 10px !important;
     font-family: 'myriadpro-bold',sans-serif;
-    font-size: 16px;
+    font-size: 16px;font-weight: 600;
 }
 
 .table-content tr td a {
@@ -2531,7 +2531,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 
 
 .menu1-text span {
-    font-family: 'myriadpro-semibold',sans-serif;
+    font-family: 'myriadpro-semibold',sans-serif;font-weight: 600;
 }
 
 .app-logo {
