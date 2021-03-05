@@ -1,0 +1,36 @@
+﻿@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (max-width: 450px) {
+}
+
+.icon-tk {
+    max-width: 50px;
+}
+
+.icon-text {
+    color: #005993;
+    text-transform: uppercase;
+}
+
+.left-icon {
+}
+.detail-account{
+    line-height: 20px;
+}
+
+.detail-account ul {
+    padding-left: 15px;
+}
+
+    .detail-account ul li {
+        list-style: outside;
+    }
+
+.left-icon-first {
+    position: absolute;
+    top: -20px;
+}

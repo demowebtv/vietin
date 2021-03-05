@@ -2,7 +2,7 @@ $(document).on('ready', function () {
     $(".home-slide").owlCarousel({
         navigation: true,
         autoplay: true,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 3000,
         slideSpeed: 100,
         animateIn: 'fadeIn',
         animateOut: 'fadeOut',

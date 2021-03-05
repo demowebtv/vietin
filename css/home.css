@@ -1,9 +1,16 @@
-﻿
-.most-popular .owl-carousel .owl-item {
-    width: 185px !important;
-    height: 185px !important;
+﻿.border-rate {
+    height: 3px;
+    border-radius: 1px;
+    position: relative;
+    bottom: 2px;
 }
 
-.menu1-text span {
-    font-family: 'myriadpro-semibold',sans-serif;
+.blue {
+    background: #005993;
+}
+
+.nav-link {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
