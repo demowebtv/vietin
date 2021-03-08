@@ -1,0 +1,36 @@
+﻿.right-image {
+    max-width: 60%;
+}
+
+.left-icon {
+    max-width: 35px;
+}
+
+    .left-icon img {
+        margin-bottom: 10px;
+    }
+
+@media only screen and (max-width:767px) {
+    .content-detail {
+        padding-left: 0;
+    }
+
+    .right-image {
+        max-width: 100% !important;
+    }
+}
+
+@media only screen and (max-width:991px) {
+
+}
+
+@media only screen and (min-width:768px ) {
+    .content-detail {
+        padding-left: 90px;
+        padding-right: 15px;
+    }
+
+        .content-detail .col-12 {
+            margin-bottom: 15px;
+        }
+}

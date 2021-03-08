@@ -14,3 +14,17 @@
     width: 100%;
     height: 100%;
 }
+
+
+.otherx span {
+    font-family: 'myriadpro-bold',sans-serif;
+    font-size: 16px;
+}
+
+.otherx img {
+    max-width: 90px;
+}
+
+.service-all .otherx a img {
+    margin: auto;
+}

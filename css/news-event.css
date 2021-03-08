@@ -1,0 +1,81 @@
+﻿@media only screen and (max-width:450px) {
+}
+
+@media only screen and (max-width: 767px) {
+    .news-link .col-12 .row .col-12 {
+        padding-right: 0px;
+        padding-bottom: 30px;
+    }
+
+    .news-link .col-12 .pt-30px {
+        padding-top: 0px;
+    }
+
+    .search-sec .row .col-9 {
+        padding-left: 0px;
+    }
+
+    .more {
+        padding-bottom: 0px !important;
+    }
+}
+
+.double-chevron {
+    margin: 0px 2px;
+    padding: 3px 0px 0px 0px;
+}
+
+.title-news {
+    color: #005993;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.date-about {
+    line-height: 10px;
+    padding-top: 15px;
+}
+
+.btn-search:hover {
+    background-color: #005993;
+    color: #fff;
+}
+
+.btn-search {
+    height: 35px;
+    background: #eaf6fe;
+    border-radius: 8px;
+    border: 1px solid #7ed3f7;
+    display: block;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #005993;
+}
+
+.input-search {
+    background: #eaf6fe;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid #7ed3f7;
+    color: #7ed3f7;
+}
+
+.menu-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.head-link {
+    padding: 10px 0px 15px 0px;
+}
+
+    .head-link ul {
+        display: inline-flex;
+    }
+
+        .head-link ul li {
+            font-size: 12px;
+            font-family: 'myriadpro-regular';
+            color: #686868;
+        }

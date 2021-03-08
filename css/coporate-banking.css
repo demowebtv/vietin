@@ -23,7 +23,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .about-item {
         padding-top: 30px;
     }
@@ -34,6 +34,22 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .award-details {
+        margin-left: 15px;
+        border-left: 1px solid #eee;
+        margin-top: 30px;
+        padding-top: 0px;
+    }
+
+        .award-details .quick1 {
+            margin-right: 15px;
+        }
+
+    .img-award {
+        margin-right: 15px;
+        border-right: 1px solid #eee;
+    }
+
     .right-img {
         padding-bottom: 30px;
     }
@@ -229,6 +245,10 @@
     border-right: 1px solid #eee;
 }
 
+.quick-title span {
+    padding-top: 3px;
+}
+
 .quick-title {
     text-align: center;
     color: #686868;
@@ -236,6 +256,13 @@
     font-weight: bold;
     border-bottom: 1px solid #eee;
     max-height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.srv-arrow {
+    width: 20px;
+    padding-left: 2px;
 }
 
 .quick-link {
@@ -281,8 +308,6 @@
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     border-left: 1px solid #eee;
-    background: url(../images/coporate/foot.jpg) no-repeat;
-    background-size: cover;
     height: 100%;
 }
 

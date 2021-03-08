@@ -15,6 +15,18 @@
         top: 100%;
         right: 0;
     }
+
+    .single-product:hover .product-content {
+        padding: 0px !important;
+    }
+
+    .service-more span {
+        line-height: 14px;
+    }
+
+    .product-content .row a .row:last-child .col-12 {
+        bottom: 0 !important;
+    }
 }
 
 .service-slider .owl-stage .owl-item {
@@ -69,7 +81,7 @@
     font-weight: 100;
     text-transform: uppercase;
     font-family: 'myriadpro-regular',sans-serif;
-    padding: 0px 40px;
+    /*padding: 0px 40px;*/
 }
 
 .owl-theme .owl-nav [class*='owl-'] {
@@ -98,3 +110,45 @@
 .blue-top {
     color: #005993 !important;
 }
+
+.service-more {
+    padding-top: 15px;
+    opacity: 0.8;
+}
+
+    .service-more span {
+        font-family: 'myriadpro-regular',sans-serif !important;
+        text-transform: none;
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+
+.product-content .row a .row:last-child .col-12 {
+    bottom: 15px;
+}
+
+.product-content .row a .row:not(:first-child) {
+    display: none;
+}
+
+.single-product:hover .bg-content {
+    height: 100%;
+    cursor: pointer;
+}
+
+.single-product:hover .product-content {
+    height: 100%;
+    width: 100%;
+    padding: 0px 30px;
+}
+
+    .single-product:hover .product-content .row a .row:not(:first-child) {
+        display: block;
+    }
+
+    .single-product:hover .product-content a {
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+    }

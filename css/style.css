@@ -1,4 +1,4 @@
-.btn {
+s.btn {
     position: relative;
     font-weight: 500;
     font-size: 14px;
@@ -15,10 +15,10 @@
     text-transform: uppercase;
 }
 
-    .btn:hover {
-        color: #fff;
-        background: #fff;
-    }
+.btn:hover {
+    color: #fff;
+    background: #fff;
+}
 
 #scrollUp {
     right: 10px;
@@ -1503,6 +1503,10 @@
     font-size: 12px;
 }
 
+.footer ul li a {
+    font-size: 12px;
+}
+
 .footer a {
     font-size: 12px;
 }
@@ -1761,7 +1765,7 @@ body {
 }
 
 .news-head {
-    height: 55px;
+    height: 50px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom: 2px solid #eaf6fe;
@@ -2458,6 +2462,10 @@ tool:after {
     padding-left: 5px;
 }
 
+.pl-15px {
+    padding-left: 15px;
+}
+
 .italic {
     font-style: italic;
     font-size: 12px;
@@ -2624,4 +2632,87 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 
 .desktop-foot {
     padding-bottom: 15px;
+}
+
+.connect-right {
+    padding: 0px;
+}
+
+.l-0 {
+    left: 0;
+}
+
+
+.p-15px {
+    padding: 15px;
+}
+
+.opc-8 {
+    opacity: 0.8;
+}
+
+
+.btn-blue {
+    color: #005993 !important;
+    background-color: #73d3f7;
+    border-radius: 5px;
+    height: 35px;
+    display: block;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+    .btn-blue:hover {
+        color: #fff !important;
+        background-color: #005993;
+    }
+
+.b-0 {
+    bottom: 0;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.mt-30px {
+    margin-top: 30px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.plr-30px {
+    padding: 0px 30px;
+}
+
+
+.bg-blue-top {
+    background: #005993;
+}
+
+.lh-10 {
+    line-height: 10px;
+}
+
+.color-red {
+    color: #d61047 !important;
+}
+
+.pt-60px {
+    padding-top: 60px;
 }

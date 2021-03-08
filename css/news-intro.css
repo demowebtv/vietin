@@ -1,0 +1,164 @@
+﻿@media only screen and (max-width:400px) {
+}
+
+@media only screen and (max-width:540px) {
+    .btn-blue {
+        margin-right: 15px;
+        font-size: 16px !important;
+        padding: 5px 3px !important;
+        word-break: break-word;
+        line-height: 14px;
+        text-align: center;
+    }
+
+    .intro-about {
+        padding-top: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .intro-btn, .text-intro, .intro3, .more-fat {
+        padding-bottom: 0px !important;
+    }
+
+    .img-intro:nth-child(2) {
+        padding-top: 30px !important;
+        padding-bottom: 0px !important;
+    }
+
+    .btn-view {
+        font-size: 16px !important;
+    }
+
+    .system, .fatca, .award {
+        padding-bottom: 0px !important;
+    }
+
+    .btn-border {
+        background: #005993;
+    }
+
+    .text-intro, .intro-btn {
+        padding-bottom: 0px !important;
+    }
+
+    .img-intro {
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+
+    .intro-about {
+        padding: 0px !important;
+    }
+
+    .news-link .col-12:last-child {
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .system, .award {
+        padding-top: 15px !important;
+    }
+
+    .tablet-download {
+        margin: 0px;
+    }
+
+    .img-intro {
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .btn-border .col-12 {
+        padding-right: 0px;
+    }
+
+    .news-link .col-12:first-child {
+        padding-top: 0px;
+    }
+
+    .pr-30pc {
+        padding-right: 0px !important;
+    }
+
+    .news-link .col-12:last-child .row .img-intro {
+        padding-top: 0px;
+    }
+
+    .img-intro {
+        padding-right: 0px;
+    }
+
+    .text-intro {
+        padding: 0px;
+    }
+
+    .intro-about {
+        padding: 15px 0px;
+    }
+
+    .intro-btn {
+        position: unset !important;
+    }
+}
+
+.menu-link {
+    padding: 5px 0px;
+}
+
+.intro-about {
+    padding-top: 15px;
+}
+
+    .intro-about span {
+        font-size: 16px;
+        display: block;
+    }
+
+.btn-blue {
+    margin-right: 15px;
+    font-size: 18px;
+    font-family: 'myriadpro-bold',sans-serif;
+    padding: 5px 15px;
+}
+
+    .btn-blue:last-child {
+        margin-right: 0;
+    }
+
+.btn-border {
+    height: 1px;
+    position: absolute;
+    bottom: -8px;
+}
+
+.pr-35pc {
+    padding-right: 35%;
+}
+
+.pr-30pc {
+    padding-right: 30%;
+}
+
+.border-bot {
+}
+
+.btn-view {
+    background: #eaf6fe;
+    border: 1px solid #7ed3f7;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #005993;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+    .btn-view:hover {
+        background: #005993;
+        border: none;
+        color: #fff;
+    }

@@ -11,6 +11,12 @@
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 830px) {
+    .news-sec {
+        padding-bottom: 30px;
+    }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .right-contact {
         position: fixed;
@@ -478,6 +484,8 @@
     .app-logo {
         padding-bottom: 15px;
     }
+
+
 
     .service-slider .owl-controls .owl-nav .owl-next {
         display: flex;
@@ -1366,9 +1374,28 @@
         width: 100%;
     }
 }
+
+@media only screen and (min-width: 451px) and (max-width: 640px) {
+    .news-sec {
+        padding-bottom: 20px;
+    }
+}
 /* Mobile Screen */
 @media only screen and (max-width: 450px) {
+    .otherx span {
+        font-size: 12px !important;
+    }
+    .service-all .otherx img {
+        max-width: 60px !important;
+    }
 
+    .app-logo:nth-child(2) {
+        padding-left: 0px;
+    }
+
+    .app-logo:nth-child(3) .row .col-12 {
+        padding-left: 0px;
+    }
 
     .right-contact {
         position: fixed;
@@ -1416,21 +1443,17 @@
             padding: 0px;
         }
 
-    .app-logo {
-        padding-right: 0px;
+    .app-logo:last-child {
+        padding-left: 0px;
     }
-
-        .app-logo:last-child {
-            padding-left: 0px;
-        }
 
     .down-border {
         height: 30px;
     }
 
     .icon-w {
-        height: 15px;
-        width: 15px;
+        height: 20px;
+        width: 20px;
     }
 
     .vietin-icon {
@@ -2193,6 +2216,18 @@
 
 @media only screen and (max-width: 991px) {
 
+    #contact li, #sitemap li, #rightmap li {
+        line-height: 20px;
+    }
+
+    .address-bot li {
+        line-height: 12px;
+    }
+
+    .connect-left a:nth-child(2) {
+        padding-left: 5px;
+    }
+
     .top-15 {
         padding-top: 15px;
     }
@@ -2358,6 +2393,7 @@
 
     .tablet-download {
         display: block;
+        padding-bottom: 15px;
     }
 
     .news-content .owl-carousel {
@@ -2396,6 +2432,15 @@
 
     .single-footer {
         padding-top: 0 !important;
+    }
+
+    .app-logo .row .col-12 {
+        padding-right: 0px;
+    }
+
+    .fdi-menu {
+        border-top: 1px solid #eee !important;
+        border-right: 1px solid #eee !important;
     }
 }
 
@@ -2536,8 +2581,8 @@
         height: 100%;
         display: none;
         position: absolute;
-        right: -190%;
-        width: 190%;
+        right: -170%;
+        width: 170%;
         margin-left: 0px;
         top: 0px;
         z-index: 1;
