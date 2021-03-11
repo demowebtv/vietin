@@ -35,20 +35,22 @@ let imgType = {
             if (window.innerWidth > 991) {
                 let menu2 = $(e.currentTarget)[0];
                 let totalLeft = menu2.offsetParent.firstElementChild.children.length;
-                let totalright = menu2.nextElementSibling.children.length;
+                if (menu2.nextElementSibling) {
+                    let totalright = menu2.nextElementSibling.children.length;
 
-                let menu3Heigth = menu2.nextElementSibling.scrollHeight;
+                    let menu3Heigth = menu2.nextElementSibling.scrollHeight;
 
-                if (totalLeft < totalright) {
-                    $(menu2.offsetParent).height(menu3Heigth);
-                }
-                else {
-                    $(menu2.offsetParent).height(menu2.offsetParent.dataset.height);
+                    if (totalLeft < totalright) {
+                        $(menu2.offsetParent).height(menu3Heigth);
+                    }
+                    else {
+                        $(menu2.offsetParent).height(menu2.offsetParent.dataset.height);
+                    }
                 }
             }
         });
 
-        $(".icon-contact svg").on('mouseover', (e) => {
+        $(".icon-contact img").on('mouseover', (e) => {
             let currIconClass = $(e.currentTarget)[0];
             $(`.${currIconClass.id}-detail`).removeClass('hide');
         });
@@ -58,7 +60,7 @@ let imgType = {
             $(currentItem).removeClass('hide').addClass('hide');;
         });
 
-        $(".icon-contact svg").on('mouseleave', (e) => {
+        $(".icon-contact img").on('mouseleave', (e) => {
             let currIconClass = $(e.currentTarget)[0];
             let relatedTarget = $(e.relatedTarget)[0];
             if (`${relatedTarget.className}` === 'col-6') {

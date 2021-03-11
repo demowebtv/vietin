@@ -1382,9 +1382,15 @@
 }
 /* Mobile Screen */
 @media only screen and (max-width: 450px) {
+
+    .top-icon {
+        padding-bottom: 15px !important;
+    }
+
     .otherx span {
         font-size: 12px !important;
     }
+
     .service-all .otherx img {
         max-width: 60px !important;
     }
@@ -2467,7 +2473,6 @@
     }
 
     .menu2-right {
-        border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
 

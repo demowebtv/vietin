@@ -18,10 +18,11 @@
         let elmClass = elm.target.classList;
         if (!otherService.classList.contains('hide') && !elmClass.contains('otherx')) {
             $(otherService).addClass('hide');
+            $('.other-product').removeClass('bt-2').addClass('pb-2px');
             $('#service-carousel').trigger('play.owl.autoplay');
-
         }
         else {
+            $('.other-product').removeClass('pb-2px').addClass('bt-2');
             $('#service-carousel').trigger('stop.owl.autoplay');
         }
     }
