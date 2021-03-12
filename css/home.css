@@ -28,3 +28,9 @@
 .service-all .otherx a img {
     margin: auto;
 }
+
+@media only screen and (min-width: 992px) {
+    .more-news {
+        position: absolute;
+    }
+}

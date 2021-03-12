@@ -16,4 +16,13 @@ $(document).on('ready', function () {
     $('address-select2').niceSelect();
     $('city-select2').niceSelect();
     $('branch-select2').niceSelect();
+
+    $('.child-menu li a').on('click', (e) => {
+        $('#top-intro-mobile').text(e.target.innerHTML);
+        $('.child-menu').toggleClass('hide');
+        $('.child-menu').toggleClass('block');
+        let index = $(e.currentTarget).data('index');
+        $('.tab-pane').removeClass('active').removeClass('show');
+        $($('.tab-pane')[index]).addClass('active').addClass('show');
+    })
 });

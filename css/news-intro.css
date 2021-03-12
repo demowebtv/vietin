@@ -4,7 +4,7 @@
 @media only screen and (max-width:540px) {
     .btn-blue {
         margin-right: 15px;
-        font-size: 16px !important;
+        font-size: 14px !important;
         padding: 5px 3px !important;
         word-break: break-word;
         line-height: 14px;
@@ -14,15 +14,27 @@
     .intro-about {
         padding-top: 15px !important;
     }
+
+    .news-about .container .row:last-child {
+        padding-top: 15px !important;
+    }
+
+        .news-about .container .row:last-child .col-12 {
+            padding: 0px 30px;
+        }
+
+    .intro-about span:first-child {
+        color: #686868 !important;
+    }
+
+    .intro-btn {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 @media only screen and (max-width: 767px) {
     .intro-btn, .text-intro, .intro3, .more-fat {
-        padding-bottom: 0px !important;
-    }
-
-    .img-intro:nth-child(2) {
-        padding-top: 30px !important;
         padding-bottom: 0px !important;
     }
 
@@ -73,6 +85,24 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .last-button {
+        padding-top: 30px !important;
+    }
+
+    .btn-border {
+        background: #686868 !important;
+    }
+
+    .text-intro:nth-child(2n+1) {
+        order: 2 !important;
+        padding-top: 15px !important;
+    }
+
+    .img-intro:nth-child(2n) {
+        padding-top: 0px !important;
+        padding-bottom: 0 !important;
+    }
+
     .btn-border .col-12 {
         padding-right: 0px;
     }

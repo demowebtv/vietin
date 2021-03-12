@@ -1560,6 +1560,14 @@ span {
     margin-right: 15px;
 }
 
+.menu2-left li:first-child {
+    padding-top: 15px;
+}
+
+.menu2-right li:first-child {
+    padding-top: 15px;
+}
+
 .menu2-left li:hover .menu2-right {
     display: block;
     background-color: #fff;
@@ -1601,7 +1609,7 @@ span {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 a {
@@ -2128,7 +2136,7 @@ tool:after {
 .sale-slide .owl-dots {
     position: relative;
     width: 100%;
-    bottom: 15px;
+    bottom: 20px;
 }
 
 .icon-w {
@@ -2489,7 +2497,7 @@ tool:after {
 }
 
 .block {
-    display: block;
+    display: block !important;
 }
 
 .nice-select .option {
@@ -2713,3 +2721,4 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 .pt-60px {
     padding-top: 60px;
 }
+

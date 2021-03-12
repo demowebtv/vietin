@@ -71,6 +71,15 @@ let imgType = {
             }
         });
 
+        if ($('.bread2').length > 0 & $('.child-menu').length > 0) {
+            $('.bread2').on('click', (e) => { 
+                if (window.innerWidth <= 450) {
+                    $('.child-menu').toggleClass('hide');
+                    $('.child-menu').toggleClass('block');
+                }
+            });
+        }
+
 		/*=======================
 		  Extra Scroll JS
 		=========================*/

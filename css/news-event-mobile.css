@@ -13,27 +13,8 @@
         font-family: 'myriadpro-bold',sans-serif;
     }
 
-    .news-about {
-        background: #7ed3f7 !important;
-        height: 30px !important;
-    }
-
-        .news-about .container {
-            height: 100% !important;
-            display: flex !important;
-            align-items: center !important;
-        }
-
     .head-link {
         padding: 0px !important;
-    }
-
-    .right-icon-news {
-        display: block !important;
-        position: absolute !important;
-        right: 0px !important;
-        top: 0px !important;
-        top: 7px !important;
     }
 
     .news-link .row .col-sm-6 {

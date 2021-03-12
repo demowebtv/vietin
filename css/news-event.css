@@ -1,4 +1,57 @@
 ﻿@media only screen and (max-width: 450px) {
+    .bread2 {
+        display: block !important;
+    }
+
+    .bread3 {
+        display: none !important;
+    }
+
+    .top-intro-dk {
+        display: none !important;
+    }
+
+    #top-intro-mobile {
+        display: block !important;
+        padding-top: 15px !important;
+    }
+
+    .child-menu {
+        position: absolute;
+        top: 30px;
+        left: 15px;
+        background: #73d3f7;
+        z-index: 9;
+        left: -17px;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    .bread-right {
+        width: 100%;
+        position: relative;
+    }
+
+        .bread-right a {
+            display: block;
+            width: 100%;
+        }
+
+    .child-menu li a {
+        display: block;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .child-menu li a {
+        border-bottom: 1px solid #eee;
+        max-height: 25px;
+        display: flex;
+        align-items: center;
+    }
+
     .to-top-icon {
         display: block !important;
         position: relative;
@@ -42,6 +95,53 @@
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
         }
+
+    /*News menu*/
+    .news-about .container .head-link .col-12 {
+        padding: 0px 30px;
+    }
+
+    .news-about .container .news-link {
+        padding: 0px 15px;
+        padding-top: 15px;
+    }
+
+    .news-about .container {
+        padding: 0 !important;
+    }
+
+    .bread-left {
+        display: none !important;
+    }
+
+    .bread-right a {
+        color: #005993;
+        font-family: 'myriadpro-bold',sans-serif;
+        font-size: 14px;
+    }
+
+    .news-about .container .head-link {
+        padding: 0px !important;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        background: #73d3f7;
+    }
+
+    .right-icon-news {
+        display: block !important;
+        position: absolute !important;
+        right: 30px !important;
+        top: 7px !important;
+    }
+
+    .news-about .container .head-link {
+        padding: 0px !important;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        background: #73d3f7;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -131,4 +231,8 @@
     display: none;
     height: 30px;
     width: 30px;
+}
+
+
+@media only screen and (max-width: 991px) {
 }
