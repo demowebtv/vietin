@@ -122,6 +122,7 @@
         width: 100%;
         display: block;
         text-align: left;
+        font-size: 14px;
     }
 
 .product-content .row a .row:last-child .col-12 {

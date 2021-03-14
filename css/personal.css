@@ -1,0 +1,213 @@
+﻿
+@media only screen and (max-width: 991px) {
+    .bank-section {
+        height: 400px;
+        background-color: #73d3f7;
+        margin-bottom: 30px;
+    }
+
+    .banking-content {
+        position: absolute;
+        top: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .banking {
+        border-radius: 0;
+        border: none;
+        height: auto;
+        box-shadow: none;
+        background-color: transparent;
+    }
+}
+
+.blue {
+    background: #005993;
+}
+
+.double-chevron {
+    position: absolute;
+    right: 0;
+}
+
+.personal-options {
+    display: block;
+}
+
+.personal-item {
+    background: #c9e8fb;
+    border-radius: 5px;
+    padding: 0px 15px;
+    margin: 0px 0px 2px 0px;
+    display: flex;
+    align-items: center;
+    color: #005993;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+    .personal-item span {
+        padding-left: 10px;
+    }
+
+    .personal-item img {
+        max-width: 20px;
+    }
+
+    .personal-item .endow {
+        top: 25px;
+    }
+
+        .personal-item .endow a {
+            padding: 1px 10px;
+        }
+
+.personal-options a {
+    background: #c9e8fb;
+    border-radius: 5px;
+    padding: 2px 0px 2px 15px;
+    margin: 0px 0px 2px 0px;
+    display: flex;
+    align-items: center;
+    color: #005993;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+}
+
+    .personal-options a img {
+        max-width: 20px;
+    }
+
+    .personal-options a:hover {
+        background: #7ed3f7;
+        color: #005993;
+    }
+
+    .personal-options a span {
+        line-height: 15px;
+        display: block;
+        padding-left: 10px;
+    }
+
+.manual {
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.register, .tool {
+    background: #005993;
+    color: #fff;
+    margin-top: 2px;
+    border-radius: 5px;
+    padding: 2px 0px;
+    border: 1px solid #ccc;
+}
+
+    .register a, .tool a {
+        display: flex;
+        align-items: center;
+    }
+
+        .register a span, .tool a span {
+            padding-left: 10px;
+        }
+
+    .register svg, .tool svg {
+        position: absolute;
+        right: 15px;
+    }
+
+.e-bank {
+    text-align: center;
+    padding-top: 5px;
+}
+
+    .e-bank a {
+        text-align: center;
+        padding-right: 20px;
+        text-transform: uppercase;
+        color: #005993;
+    }
+
+
+.login-btn {
+    padding-right: 7.5px;
+}
+
+    .login-btn .row, .regis-btn .row {
+        background: #686868;
+        text-align: center;
+    }
+
+        .login-btn .row a, .regis-btn .row a {
+            color: #fff;
+            display: block;
+            width: 100%;
+        }
+
+.regis-btn {
+    padding-left: 7.5px;
+}
+
+
+.download-icon {
+    position: absolute;
+    left: 25px;
+}
+
+.endow {
+    display: none;
+    position: absolute;
+    top: 28px;
+    background: #fff;
+    border-radius: 5px;
+    z-index: 99;
+    width: 100%;
+    left: 0;
+    padding: 0px 10px;
+    box-shadow: 0px 3px 5px #3333334d;
+    border: 1px solid #eee;
+}
+
+    .endow li a {
+        text-transform: none;
+    }
+
+        .endow li a:hover {
+            background: #7ed3f7;
+            color: #005993;
+        }
+
+    .endow li:first-child {
+        padding-top: 5px;
+    }
+
+.personal-item:hover .endow {
+    display: block !important;
+}
+
+.tool:hover .endow {
+    display: block !important;
+}
+
+.personal-item, .tool {
+    position: relative;
+}
+
+    .tool .endow li a {
+        background: #c9e8fb;
+        padding: 1px 10px;
+        border-radius: 5px;
+        color: #005993;
+    }
+
+        .tool .endow li a:first-child {
+            margin-bottom: 5px;
+        }
+
+        .tool .endow li a:hover {
+            background: #7ed3f7;
+        }

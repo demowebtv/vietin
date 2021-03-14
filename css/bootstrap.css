@@ -742,6 +742,7 @@ pre {
 .col-11,
 .col-12,
 .col-2,
+.col-2-5,
 .col-3,
 .col-4,
 .col-5,
@@ -838,6 +839,12 @@ pre {
     -ms-flex: 0 0 16.666667%;
     flex: 0 0 16.666667%;
     max-width: 16.666667%
+}
+
+.col-2-5 {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%
 }
 
 .col-3 {
@@ -1032,6 +1039,12 @@ pre {
     }
 
     .col-sm-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%
+    }
+
+    .col-sm-2-5 {
         -ms-flex: 0 0 16.666667%;
         flex: 0 0 16.666667%;
         max-width: 16.666667%
@@ -1239,6 +1252,12 @@ pre {
         max-width: 16.666667%
     }
 
+    .col-md-2-5 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%
+    }
+
     .col-md-3 {
         -ms-flex: 0 0 25%;
         flex: 0 0 25%;
@@ -1433,6 +1452,12 @@ pre {
         -ms-flex: 0 0 8.333333%;
         flex: 0 0 8.333333%;
         max-width: 8.333333%
+    }
+
+    .col-lg-2-5 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%
     }
 
     .col-lg-2 {
@@ -9272,4 +9297,3 @@ a.text-dark:hover {
 .invisible {
     visibility: hidden !important
 }
-

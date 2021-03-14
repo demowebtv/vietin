@@ -1203,7 +1203,7 @@ s.btn {
     }
 
         .footer .links ul li {
-            margin-bottom: 8px;
+            margin-bottom: 5px;
             list-style: outside;
             list-style-position: inside;
         }
@@ -1718,7 +1718,11 @@ a a {
 .option-icon {
     position: absolute;
     height: 25px;
-    right: 45px;
+    right: 15px;
+}
+
+.selected-nice {
+    right: 55px !important;
 }
 
 .banking .list .li {
@@ -2529,9 +2533,9 @@ label {
 
 input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
     color: #666;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    padding: 1px;
+    border: 1px solid #73d3f7;
+    border-radius: 5px;
+    padding: 1px 1px 1px 10px;
 }
 
 .form-control:focus {
@@ -2722,3 +2726,34 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     padding-top: 60px;
 }
 
+.menu-hover {
+    background-color: #C9E8FB !important;
+    color: #005993 !important;
+}
+
+.menu-btn-left, .menu-btn-right {
+    padding: 6px 0px !important;
+}
+
+.foot-group-icon a img {
+    max-width: 30px;
+    margin-right: 5px;
+}
+
+.pt-2px {
+    padding-top: 2px;
+}
+
+.pb-2px {
+    padding-bottom: 2px;
+}
+
+.pr-7-5{
+    padding-right: 7.5px !important;
+}
+.pl-7-5{
+    padding-left: 7.5px !important;
+}
+.color-red2 {
+    color:#ef5d67 ;
+}

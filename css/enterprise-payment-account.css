@@ -135,10 +135,11 @@ body {
     width: 100%;
     text-align: center;
     cursor: pointer;
-    height: 30px;
+    height: 26px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 4px;
 }
 
 .long-head-text {

@@ -190,5 +190,5 @@
     .btn-view:hover {
         background: #005993;
         border: none;
-        color: #fff;
+        color: #fff !important;
     }

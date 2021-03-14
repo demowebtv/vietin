@@ -7,6 +7,13 @@ let imgType = {
 (function ($) {
     "use strict";
     $(document).on('ready', function () {
+
+        $(function () {
+            if ($(".datepicker").length > 0) {
+                $(".datepicker").datepicker({ format: 'dd/mm/yyyy' });
+            }
+        });
+
 		/*====================================
 		Sticky Header JS
 		======================================*/
@@ -18,6 +25,8 @@ let imgType = {
                 $('.header').removeClass("sticky");
             }
         });
+
+        loadTreeMenu();
 
         showTabletMenu();
 
@@ -37,7 +46,6 @@ let imgType = {
                 let totalLeft = menu2.offsetParent.firstElementChild.children.length;
                 if (menu2.nextElementSibling) {
                     let totalright = menu2.nextElementSibling.children.length;
-
                     let menu3Heigth = menu2.nextElementSibling.scrollHeight;
 
                     if (totalLeft < totalright) {
@@ -47,6 +55,38 @@ let imgType = {
                         $(menu2.offsetParent).height(menu2.offsetParent.dataset.height);
                     }
                 }
+            }
+        });
+
+        $('.link-menu2').on('mouseleave', (e) => {
+            if (window.innerWidth > 991) {
+                if (e.relatedTarget && e.relatedTarget.offsetParent && (e.relatedTarget.offsetParent.className === 'menu2-right' || e.relatedTarget.className === 'menu2-right')) {
+                    $(e.currentTarget).addClass('menu-hover');
+                }
+                else {
+                    $(e.currentTarget).removeClass('menu-hover');
+                }
+            }
+        });
+
+        $('.menu2-right li a').on('mouseleave', (e) => {
+            let parent = e.currentTarget.closest('.menu2-right').previousElementSibling;
+            let hoveredNode = e.relatedTarget.innerText;
+            if (parent.innerText !== hoveredNode && e.relatedTarget.className === 'link-menu2') {
+                $(parent).removeClass('menu-hover');
+            }
+
+            if (e.relatedTarget.offsetParent &&
+                e.relatedTarget.offsetParent.className !== 'menu2-right' &&
+                !e.relatedTarget.offsetParent.classList.contains('left-item')) {
+                $('.link-menu2').removeClass('menu-hover');
+            }
+        });
+        $('.menu2-right').on('mouseleave', (e) => {
+            let parent = e.currentTarget.previousElementSibling;
+            let hoveredNode = e.relatedTarget.innerText;
+            if (parent.innerText !== hoveredNode && e.relatedTarget.className === 'link-menu2') {
+                $(parent).removeClass('menu-hover');
             }
         });
 
@@ -72,7 +112,7 @@ let imgType = {
         });
 
         if ($('.bread2').length > 0 & $('.child-menu').length > 0) {
-            $('.bread2').on('click', (e) => { 
+            $('.bread2').on('click', (e) => {
                 if (window.innerWidth <= 450) {
                     $('.child-menu').toggleClass('hide');
                     $('.child-menu').toggleClass('block');
@@ -96,37 +136,6 @@ let imgType = {
     Nice Select JS
     ======================================*/
     $('select').niceSelect();
-    //append image to each option on change event
-    $('.banking .nice-select').on('change', () => {
-        let selected = $("#banking-select").val();
-        $('.selected-nice').remove();
-        if (selected == 0) {
-            $('.banking .nice-select').removeClass('flex-item');
-        }
-        else {
-            let selectLiTag = $('.banking').find('li')[selected];
-            let img = $(selectLiTag).find('img')[0].cloneNode(true);
-            $(img).addClass('selected-nice');
-            $('.banking .current').after($(img))
-            $('.banking .nice-select').addClass('flex-item');
-        }
-    })
-
-    //append image to each option
-    let div = document.createElement('div');
-    div.style.position = 'absolute';
-    div.style.height = '40px';
-    div.style.width = '1px';
-    div.style.top = '0px';
-    div.style.right = '30px';
-    div.style.backgroundColor = '#eee';
-    $('.banking .nice-select').append(div);
-
-    let selectLiTags = $('.banking').find('li');
-    $(selectLiTags[1]).append('<img class="option-icon" src="images/Icon/right_box/Asset31.png" />');
-    $(selectLiTags[2]).append('<img class="option-icon" src="images/Icon/right_box/Asset32.png" />');
-    $(selectLiTags[3]).append('<img class="option-icon" src="images/Icon/right_box/Asset33.png" />');
-    $(selectLiTags[4]).append('<img class="option-icon" src="images/Icon/right_box/Asset38.png" />');
 
     //append image to each option on change event
     $('.lang-select .current').prepend('<img class="lang-select-icon" src="images/Icon/flag/united-kingdom.svg" />')
@@ -217,9 +226,18 @@ function showTabletProducts() {
     }
 }
 
+function setOffsetSelectWidth() {
+    if ($('.banking .nice-select .current').length > 0) {
+        var currWidth = ($('.banking .nice-select .current')[0]).offsetWidth;
+        $($('.banking .nice-select .list')[0]).width(currWidth);
+    }
+}
+
 function showTabletMenu() {
     changeSlideTopImg();
     showTabletProducts();
+    setOffsetSelectWidth();
+
     if (window.innerWidth < 992) {
         $('.mobile-nav').html('');
         let mainMenu = $('.menu')[0].cloneNode(true);
@@ -251,7 +269,15 @@ function showTabletMenu() {
 
 function changeImageType(type) {
     if ($('.home-slide').length > 0) {
-        let banners = $('.home-slide').find('img');
+        let allImgSrc = [];
+        let banners = [];
+        $('.home-slide').find('img').each((i, img) => {
+            if (allImgSrc.indexOf(img.src) < 0) {
+                banners.push(img);
+                allImgSrc.push(img.src);
+            }
+        })
+
         $.each(banners, (i, val) => {
             let paths = val.src.split('/');
             let currSrcs = paths[paths.length - 1].split('-');
@@ -260,10 +286,23 @@ function changeImageType(type) {
                 if (imgTypes[0] === imgType.DESKTOP || imgTypes[0] === imgType.TABLET || imgTypes[0] === imgType.MOBILE) {
                     currSrcs[currSrcs.length - 1] = `${type}.${imgTypes[imgTypes.length - 1]}`;
                     paths[paths.length - 1] = currSrcs.join('-');
-                    banners[i].src = paths.join('/');
+                    let imgSrc = paths.join('/');
+                    if (isImageExists(imgSrc)) {
+                        banners[i].src = imgSrc;
+                    }
                 }
             }
         })
+    }
+}
+
+function isImageExists(imageUrl) {
+    var image = new Image();
+    image.src = imageUrl;
+    if (image.width == 0) {
+        return false;
+    } else {
+        return true;
     }
 }
 
@@ -289,4 +328,15 @@ function showSearchOnLeave() {
     $('.search-left').removeClass('hide');
     $('.search-full').addClass('hide');
     $('.search-box').val('');
+}
+
+function loadTreeMenu() {
+    let menu2Left = $('.link-menu2');
+    if (menu2Left.length > 0) {
+        $('.link-menu2').each((index, elm) => {
+            if (elm.nextElementSibling) {
+                $(elm).append('<i class="fa fa-chevron-right top-menu"></i>');
+            }
+        })
+    }
 }

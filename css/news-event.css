@@ -145,6 +145,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+    .paging-panel {
+        padding-left: 0px;
+    }
     .news-link .col-12 .row .col-12 {
         padding-right: 0px;
         padding-bottom: 30px;
@@ -235,4 +238,35 @@
 
 
 @media only screen and (max-width: 991px) {
+
 }
+
+.paging {
+    display: inline-flex;
+    width: 100%;
+    border-radius: 5px;
+    align-items: center;
+    border: 1px solid #7ed3f7;
+}
+
+    .paging li {
+        padding: 5px 14px;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        margin: auto;
+    }
+        .paging li:first-child {
+            border-right: 1px solid #7ed3f7;
+        }
+        
+        .paging li:last-child {
+            border-left: 1px solid #7ed3f7;
+        }
+
+        .paging li a {
+            color: #005993;
+            display: block;
+            width: 100%;
+            font-family: 'myriadpro-bold',sans-serif;
+        }
