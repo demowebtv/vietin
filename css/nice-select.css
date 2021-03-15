@@ -160,6 +160,7 @@
     text-align: left;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
+    border-top: 1px solid #EBEBEB;
 }
 
 .nice-select .option:hover {
