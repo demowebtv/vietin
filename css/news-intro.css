@@ -153,7 +153,7 @@
     margin-right: 15px;
     font-size: 18px;
     font-family: 'myriadpro-bold',sans-serif;
-    padding: 5px 15px;
+    padding: 8px 15px;
 }
 
     .btn-blue:last-child {
@@ -181,7 +181,7 @@
     background: #eaf6fe;
     border: 1px solid #7ed3f7;
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 10px;
     color: #005993;
     font-size: 18px;
     text-transform: uppercase;

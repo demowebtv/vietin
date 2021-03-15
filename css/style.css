@@ -2665,7 +2665,6 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     color: #005993 !important;
     background-color: #73d3f7;
     border-radius: 5px;
-    height: 35px;
     display: block;
     padding: 5px;
     display: flex;

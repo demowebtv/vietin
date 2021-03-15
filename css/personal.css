@@ -48,6 +48,23 @@
     cursor: pointer;
 }
 
+.breadcum {
+    height: 45px;
+    background: #1177cb;
+}
+
+
+    .breadcum a:after {
+        content: '|';
+        color: white;
+        padding: 0px 10px;
+    }
+
+    .breadcum a:hover {
+        font-weight: bold;
+    }
+
+
     .personal-item span {
         padding-left: 10px;
     }

@@ -18,9 +18,10 @@
 }
 
 .product-tab {
-    display: flex;
-    justify-content: space-around;
-    height: 70px;
+  display: flex;
+  justify-content: space-around;
+  height: 95px;
+  padding: 20px 0;
 }
 
     .product-tab a {
@@ -191,22 +192,6 @@ input {
 .nice-select .option.selected {
     color: #005793 !important;
 }
-
-.breadcum {
-    height: 45px;
-    background: #7ed3f7;
-}
-
-
-    .breadcum a:after {
-        content: '|';
-        color: white;
-        padding: 0px 10px;
-    }
-
-    .breadcum a:hover {
-        color: #005993 !important;
-    }
 
 
 .main-options {
