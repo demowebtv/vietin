@@ -8,7 +8,6 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
 }
 
 @media only screen and (min-width: 992px) {
@@ -56,6 +55,61 @@
     box-shadow: 0px 10px 5px -3px rgb(0 0 0 / 46%);
 }
 
-    .product-item:hover .product-title {
-        background: #005993;
+.product-item:hover .product-title {
+    background: #005993;
+}
+
+
+.btn-contact {
+    display: block;
+    padding: 2px 40px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 5px;
+    background: #ef5d67;
+}
+
+    .btn-contact:hover {
+        box-shadow: 0px 10px 5px -3px rgb(0 0 0 / 46%);
+    }
+        .btn-contact:hover .contact-item {
+           display: block;
+        }
+
+.contact-item {
+    display: none;
+    position: absolute;
+    top: 25px;
+    background: #ef5d67;
+    z-index: 99;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+    .contact-item li a {
+        padding: 5px 10px;
+        display: block;
+        width: 100%;
+    }
+
+        .contact-item li a:hover {
+            color: #005993;
+            background: #7ed3f7;
+        }
+
+    .contact-item li:first-child a {
+        border-bottom: 1px solid #eee;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .contact-item li:last-child a{
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
     }

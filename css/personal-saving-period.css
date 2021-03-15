@@ -6,7 +6,7 @@
         padding-top: 0px;
     }
 
-    .register-content .text-right{
+    .register-content .text-right {
         text-align: left !important;
     }
 }
@@ -21,7 +21,6 @@
     display: flex;
     justify-content: space-around;
     height: 70px;
-    background: #c9e8fb;
 }
 
     .product-tab a {
@@ -43,6 +42,10 @@
     }
 
         .product-tab li a.active span {
+            color: #fff;
+        }
+
+        .product-tab li a span {
             color: #005993;
         }
 
@@ -187,4 +190,29 @@ input {
 
 .nice-select .option.selected {
     color: #005793 !important;
-}   
+}
+
+.breadcum {
+    height: 45px;
+    background: #7ed3f7;
+}
+
+
+    .breadcum a:after {
+        content: '|';
+        color: white;
+        padding: 0px 10px;
+    }
+
+    .breadcum a:hover {
+        color: #005993 !important;
+    }
+
+
+.main-options {
+    background: url(../images/personal/icon/Background_pc.png) repeat-x;
+}
+
+.nav-tabs {
+    border-bottom: 0;
+}

@@ -2521,10 +2521,6 @@
         width: 16.6666667%;
     }
 
-    .menu2-right li:last-child a {
-        border-bottom: none !important;
-    }
-
     .menu2 .left-item {
         border-right: 1px solid #eee;
     }
@@ -2678,6 +2674,6 @@
 
 @media only screen and (min-width: 1500px) {
     .right-contact {
-        right: -79%;
+        right: -86%;
     }
 }
