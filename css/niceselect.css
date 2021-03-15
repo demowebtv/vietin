@@ -164,6 +164,7 @@
         transition: all 0.2s;
         display: flex;
         align-items: center;
+        border-top: 1px solid #EBEBEB;
     }
 
         .nice-select .option:first-child {
@@ -198,4 +199,3 @@
     background: #2f3341 none repeat scroll 0 0;
     border-radius: 0;
 }
-
