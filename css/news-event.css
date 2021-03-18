@@ -131,7 +131,7 @@
     .right-icon-news {
         display: block !important;
         position: absolute !important;
-        right: 30px !important;
+        right: 0;
         top: 7px !important;
     }
 

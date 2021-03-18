@@ -1,0 +1,158 @@
+﻿@media only screen and (max-width:450px) {
+    .transfer-sec .row .col-4 {
+        order: 1 !important;
+    }
+
+    .transfer-sec .row .col-8 {
+        order: 2 !important;
+    }
+
+    .transfer-sec .nice-select {
+        border-left: 1px solid #ced4da !important;
+        border-top-left-radius: 5px !important;
+        border-bottom-left-radius: 5px !important;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: 0;
+    }
+    .transfer-sec input {
+        border-top-right-radius: 5px !important;
+        border-bottom-right-radius: 5px !important;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 991px) {
+}
+
+.br-1 {
+    border-right: 2px solid #dfeffc;
+}
+
+.bt-1 {
+    border-top: 2px solid #dfeffc;
+}
+
+.bb-1 {
+    border-bottom: 2px solid #dfeffc;
+}
+
+.bl-1 {
+    border-left: 2px solid #dfeffc;
+}
+
+.blue-x {
+    color: #dfeffc;
+}
+
+.tbl-rate-all thead {
+    background: #c9e8fb;
+}
+
+
+.w-2 {
+    width: 20%;
+}
+
+.w-4 {
+    width: 40%;
+}
+
+.tbl-rate-all thead tr td {
+    text-align: center;
+    color: #3c3e39;
+}
+
+.tbl-rate-all tbody tr td {
+    color: #686868;
+    text-align: center;
+}
+
+    .tbl-rate-all tbody tr td:first-child {
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    .tbl-rate-all tbody tr td:not(:last-child) {
+        border-right: 2px solid #dfeffc;
+    }
+
+.tbl-rate-all tbody tr:nth-child(2n) {
+    background: #dfeffc;
+}
+
+.transfer-sec {
+    display: inline-flex;
+}
+
+    .transfer-sec .nice-select {
+        justify-content: center;
+    }
+
+    .transfer-sec input {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border: 1px solid #ced4da;
+        height: 35px;
+    }
+
+    .transfer-sec .nice-select {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left: 0;
+        display: flex;
+        align-items: center;
+        height: 35px;
+        margin: 0;
+        padding: 0;
+    }
+
+        .transfer-sec .nice-select:active, .nice-select.open, .nice-select:focus {
+            border-color: #ced4da;
+        }
+
+        .transfer-sec .nice-select:after {
+            border-bottom: 2px solid #005993;
+            border-right: 2px solid #005993;
+            top: 46%;
+        }
+
+        .transfer-sec .nice-select .current {
+            margin-top: 3px;
+            width: 100%;
+            text-align: center;
+        }
+
+    .transfer-sec .list .option {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        max-height: 35px;
+        min-height: 35px;
+        line-height: 35px;
+    }
+
+    .transfer-sec .list li {
+        position: relative;
+    }
+
+.transfer1, .transfer2 {
+    display: flex;
+    align-items: center;
+}
+
+.transfer-icon {
+    top: 6px;
+    position: absolute;
+    left: 15px;
+    max-width: 20px;
+}

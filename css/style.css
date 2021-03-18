@@ -2747,12 +2747,54 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     padding-bottom: 2px;
 }
 
-.pr-7-5{
+.pr-7-5 {
     padding-right: 7.5px !important;
 }
-.pl-7-5{
+
+.pl-7-5 {
     padding-left: 7.5px !important;
 }
+
 .color-red2 {
-    color:#ef5d67 ;
+    color: #ef5d67;
+}
+
+.black-gray {
+    color: #3c3e39;
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+}
+
+:-moz-placeholder {
+    font-style: italic;
+}
+
+::-moz-placeholder {
+    font-style: italic;
+}
+
+:-ms-input-placeholder {
+    font-style: italic;
+}
+
+.pt-10px {
+    padding-top: 10px;
+}
+
+.lang-select .nice-select .option {
+    border-top: 0px;
+}
+
+.pt-5px {
+    padding-top: 5px;
+}
+
+.mt-3px {
+    margin-top: 3px;
+}
+
+.mt-2px {
+    margin-top: 2px;
 }

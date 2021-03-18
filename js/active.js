@@ -147,14 +147,6 @@ let imgType = {
         $('.lang-select .current').prepend($(img))
     })
 
-    let lang = document.createElement('div');
-    lang.style.position = 'absolute';
-    lang.style.height = '40px';
-    lang.style.width = '1px';
-    lang.style.top = '0';
-    lang.style.left = '0';
-    $('.lang-select .nice-select').append(lang);
-
     let langSelectLiTags = $('.lang-select').find('li');
     $(langSelectLiTags[0]).prepend('<img class="lang-select-icon" src="images/Icon/flag/united-kingdom.svg" />');
     $(langSelectLiTags[1]).prepend('<img class="lang-select-icon" src="images/Icon/flag/vietnam.svg" />');
