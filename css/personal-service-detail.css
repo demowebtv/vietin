@@ -83,6 +83,9 @@
     background: #005993;
 }
 
+.service-item {
+    padding: 0px 70px 25px 70px;
+}
 
     .service-item:last-child {
         border: 0;
@@ -111,6 +114,9 @@
         list-style-type: circle;
     }
 
+.priority-item .service-item{
+    padding: 0px 150px;
+}
 
 .dash-border .row{
     padding-top: 15px;

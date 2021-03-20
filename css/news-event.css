@@ -1,4 +1,8 @@
 ﻿@media only screen and (max-width: 450px) {
+    .p-sm-0 {
+        padding: 0px !important;
+    }
+
     .bread2 {
         display: block !important;
     }
@@ -98,7 +102,7 @@
 
     /*News menu*/
     .news-about .container .head-link .col-12 {
-        padding: 0px 30px;
+        padding: 0px 15px;
     }
 
     .news-about .container .news-link {
@@ -148,6 +152,7 @@
     .paging-panel {
         padding-left: 0px;
     }
+
     .news-link .col-12 .row .col-12 {
         padding-right: 0px;
         padding-bottom: 30px;
@@ -238,7 +243,6 @@
 
 
 @media only screen and (max-width: 991px) {
-
 }
 
 .paging {
@@ -256,10 +260,11 @@
         text-align: center;
         margin: auto;
     }
+
         .paging li:first-child {
             border-right: 1px solid #7ed3f7;
         }
-        
+
         .paging li:last-child {
             border-left: 1px solid #7ed3f7;
         }

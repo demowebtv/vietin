@@ -19,6 +19,14 @@
 }
 
 @media only screen and (max-width:450px) {
+    .rate-container {
+        overflow-x: auto;
+    }
+
+    .rate-section {
+        overflow: hidden;
+    }
+
     .bottom-btn {
         justify-content: start !important;
     }
@@ -221,6 +229,9 @@ iframe {
     background: #73d3f7;
     border-radius: 5px;
     padding: 5px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
     .btn-calculate:hover {
@@ -230,4 +241,8 @@ iframe {
 
 .m-display {
     display: none;
+}
+
+.tbl-top-rate {
+    min-width: 700px;
 }

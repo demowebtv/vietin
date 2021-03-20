@@ -1,4 +1,10 @@
 ﻿
+@media only screen and (max-width: 450px) {
+    .p-sm-0 {
+        padding: 0px !important;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     .bank-section {
         height: 400px;
@@ -65,21 +71,21 @@
     }
 
 
-    .personal-item span {
-        padding-left: 10px;
-    }
+.personal-item span {
+    padding-left: 10px;
+}
 
-    .personal-item img {
-        max-width: 20px;
-    }
+.personal-item img {
+    max-width: 20px;
+}
 
-    .personal-item .endow {
-        top: 25px;
-    }
+.personal-item .endow {
+    top: 25px;
+}
 
-        .personal-item .endow a {
-            padding: 1px 10px;
-        }
+    .personal-item .endow a {
+        padding: 1px 10px;
+    }
 
 .personal-options a {
     background: #c9e8fb;

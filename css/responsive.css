@@ -459,7 +459,7 @@
     .lang-select .nice-select .current {
         bottom: -10px !important;
         width: 100%;
-        left: -7px;
+        left: 0;
         z-index: 99999;
     }
 
@@ -1384,11 +1384,16 @@
 }
 /* Mobile Screen */
 @media only screen and (max-width: 450px) {
-/*    .container {
+    .container {
         padding-left: 0px !important;
         padding-right: 0px !important;
     }
-*/
+
+    .plr-15px {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
     .p-m-0 {
         padding: 0 !important;
     }
@@ -1420,8 +1425,6 @@
     .desktop-head {
         display: none !important;
     }
-
-
 
     .pt-sm-15px {
         padding-top: 15px !important;
@@ -1498,8 +1501,9 @@
 
     .app-down {
         font-size: 10px !important;
-        display: flex;
         align-items: center;
+        display: block;
+        height: 100%;
     }
 
     .news-sec {
@@ -1583,11 +1587,15 @@
         display: none;
     }
 
+    .menu2-left li:first-child {
+        padding-top: 0 !important;
+    }
+
     .slicknav_nav {
         clear: both;
         color: #fff;
         margin: 0;
-        padding-top: 15px;
+        padding-bottom: 7px;
     }
 
         .slicknav_nav li a {
@@ -1633,10 +1641,6 @@
             margin: 0;
             padding: 6px 0;
             font-weight: 500;
-        }
-
-        .slicknav_nav li:last-child a {
-            padding-bottom: 0px;
         }
 
     .slicknav_menu .slicknav_icon-bar {
@@ -2533,7 +2537,7 @@
     }
 
     #scrollUp a:first-child {
-        padding-right: 10px;
+        padding-right: 5px;
     }
 
     #scrollUp a:last-child {

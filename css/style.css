@@ -1204,12 +1204,19 @@ s.btn {
 
         .footer .links ul li {
             margin-bottom: 5px;
-            list-style: outside;
-            list-style-position: inside;
         }
 
-            .footer .links ul li::marker {
-                margin: 0;
+            .footer .links ul li:before {
+                content: '.';
+                color: #005993;
+                font-size: 24px;
+                content: '.';
+                color: #005993;
+                font-size: 30px;
+                line-height: 10px !important;
+                position: relative;
+                bottom: 2px;
+                padding-right: 5px;
             }
 
             .footer .links ul li:last-child {
@@ -1378,6 +1385,8 @@ s.btn {
 .mobile-nav {
     position: absolute;
     bottom: 0;
+    right: 15px;
+    padding-right: 0;
 }
 
 .slicknav_nav {
@@ -1387,7 +1396,6 @@ s.btn {
     width: 100%;
     padding: 0px 15px;
     z-index: 99999;
-    right: 15px;
 }
 
 .slicknav_parent a {
@@ -1826,7 +1834,7 @@ body {
 }
 
 .address-bot {
-    padding-top: 8px;
+    padding-top: 5px;
 }
 
 .service-slider .owl-controls .owl-nav .owl-next {
@@ -1874,7 +1882,7 @@ body {
 }
 
 .app-download {
-    right: 23px;
+    right: 10px;
 }
 
 .connect-left .row a img {
@@ -2032,7 +2040,7 @@ tool:after {
         top: 25px;
     }
 
-.collapsible:not(:last-child) {
+.collapsible {
     background-color: #fff;
     color: white;
     cursor: pointer;
@@ -2280,7 +2288,7 @@ tool:after {
         text-align: center;
         background: transparent;
         text-transform: capitalize;
-        padding: 0 0 0 20px;
+        padding: 0;
         line-height: 50px;
         font-size: 14px;
         font-weight: 400;
@@ -2640,7 +2648,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 }
 
 .desktop-foot {
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 
 .connect-right {

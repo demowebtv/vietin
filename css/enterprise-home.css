@@ -81,7 +81,6 @@
     font-weight: 100;
     text-transform: uppercase;
     font-family: 'myriadpro-regular',sans-serif;
-    /*padding: 0px 40px;*/
 }
 
 .owl-theme .owl-nav [class*='owl-'] {
@@ -153,3 +152,7 @@
         width: 100%;
         padding: 0px;
     }
+
+.product-content span {
+    font-family: 'svn-gilroy-medium',sans-serif;
+}

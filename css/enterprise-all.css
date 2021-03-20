@@ -1,0 +1,37 @@
+﻿@media only screen and (max-width: 450px) {
+    .pl-sm-0 {
+        padding-left: 0 !important;
+    }
+
+    .pl-sm-7-5 {
+        padding-left: 7.5px;
+    }
+}
+
+span, a {
+    font-family: 'svn-gilroy-regular',sans-serif;
+}
+
+.top-menu ul li a {
+    font-family: 'svn-gilroy-semibold',sans-serif;
+}
+
+.menu1-text span {
+    font-family: 'svn-gilroy-bold',sans-serif;
+}
+
+.right-contact a {
+    font-family: 'svn-gilroy-bold',sans-serif;
+}
+
+.lang-select .nice-select:after {
+    margin-top: -4px;
+}
+
+.single-footer {
+    padding-left: 0px;
+}
+
+body, button, input, select, optgroup, textarea {
+    font-family: 'svn-gilroy-regular',sans-serif;
+}
