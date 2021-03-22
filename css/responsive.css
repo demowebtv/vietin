@@ -1384,6 +1384,30 @@
 }
 /* Mobile Screen */
 @media only screen and (max-width: 450px) {
+    .pl-sm-15px {
+        padding-left: 15px !important;
+    }
+
+    .pr-sm-15px {
+        padding-right: 15px !important;
+    }
+
+    .pt-sm-15px {
+        padding-top: 15px !important;
+    }
+
+    .pb-sm-15px {
+        padding-bottom: 15px !important;
+    }
+
+    .mobile {
+        display: block !important;
+    }
+
+    .desktop {
+        display: none !important;
+    }
+
     .container {
         padding-left: 0px !important;
         padding-right: 0px !important;
@@ -1500,11 +1524,17 @@
     }
 
     .app-down {
-        font-size: 10px !important;
+        font-size: 12px !important;
         align-items: center;
         display: block;
         height: 100%;
     }
+
+        .app-down span {
+            display: block;
+            height: 100%;
+            margin-top: 1px;
+        }
 
     .news-sec {
         padding-bottom: 0px;
@@ -1735,19 +1765,14 @@
         color: #333;
     }
 
-    .header.shop.v3 .topbar .inner-content {
-        border: none;
-        padding: 0;
-    }
-
-    .header.shop .list-main li a {
-        color: #333;
-    }
-
-        .header.shop .list-main li a:hover {
-            color: #fff;
-            text-decoration: underline;
+        .header.shop .list-main li a {
+            color: #333;
         }
+
+            .header.shop .list-main li a:hover {
+                color: #fff;
+                text-decoration: underline;
+            }
 
     .header.shop .top-left .list-main li i {
         color: #fff;
@@ -2528,19 +2553,31 @@
 
 @media only screen and (min-width: 992px) {
 
-    .connect-mobile {
-        margin-top: 5px;
+    .mobile-head {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: flex;
     }
 
     .connect-mobile {
         margin-top: 5px;
     }
 
-    #scrollUp a:first-child {
+    .connect-mobile {
+        margin-top: 5px;
+    }
+
+    .scrollUp a:first-child {
         padding-right: 5px;
     }
 
-    #scrollUp a:last-child {
+    .scrollUp a:last-child {
         padding-bottom: 2px;
     }
 
@@ -2719,8 +2756,4 @@
     .right-contact {
         right: -86%;
     }
-}
-
-.mobile-head {
-    display: none;
 }

@@ -123,7 +123,7 @@ let imgType = {
 		/*=======================
 		  Extra Scroll JS
 		=========================*/
-        $('#scrollUp').on("click", (e) => {
+        $('.scrollUp').on("click", (e) => {
             let anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $(anchor.attr('href')).offset().top - 0
@@ -138,7 +138,7 @@ let imgType = {
     $('select').niceSelect();
 
     //append image to each option on change event
-    $('.lang-select .current').prepend('<img class="lang-select-icon" src="images/Icon/flag/united-kingdom.svg" />')
+    $('.lang-select .current').prepend('<img class="lang-select-icon" src="images/icon/flag/united-kingdom.svg" />')
     $('.lang-select .nice-select').on('change', () => {
         $('.lang-select .current .lang-select-icon').remove();
         let selected = $("#lang-select").val();
@@ -148,8 +148,8 @@ let imgType = {
     })
 
     let langSelectLiTags = $('.lang-select').find('li');
-    $(langSelectLiTags[0]).prepend('<img class="lang-select-icon" src="images/Icon/flag/united-kingdom.svg" />');
-    $(langSelectLiTags[1]).prepend('<img class="lang-select-icon" src="images/Icon/flag/vietnam.svg" />');
+    $(langSelectLiTags[0]).prepend('<img class="lang-select-icon" src="images/icon/flag/united-kingdom.svg" />');
+    $(langSelectLiTags[1]).prepend('<img class="lang-select-icon" src="images/icon/flag/vietnam.svg" />');
 
     setTimeout(() => {
         //After 2s, the no-scroll class of the body will be removed
@@ -225,11 +225,17 @@ function setOffsetSelectWidth() {
     }
 }
 
+function loadRightContactBtn() {
+
+}
+
 function showTabletMenu() {
     changeSlideTopImg();
     showTabletProducts();
     setOffsetSelectWidth();
-
+    loadRightContactBtn();
+    showProducts();
+    showBorrowOptions();
     if (window.innerWidth < 992) {
         $('.mobile-nav').html('');
         let mainMenu = $('.menu')[0].cloneNode(true);
@@ -330,5 +336,69 @@ function loadTreeMenu() {
                 $(elm).append('<i class="fa fa-chevron-right top-menu"></i>');
             }
         })
+    }
+}
+
+let solutionSlides = $('.solution-slider').length > 0 ? $('.solution-slider')[0].cloneNode(true) : null;
+function showProducts() {
+    if (!solutionSlides) {
+        return;
+    }
+
+    let owl = $('.solution-slider').find('.owl-stage-outer');
+    if (window.innerWidth > 450) {
+        if (owl.length == 0) {
+            $('.solution-slider').owlCarousel({
+                items: 1,
+                autoplay: false,
+                autoplayTimeout: 3000,
+                smartSpeed: 400,
+                animateIn: 'fadeIn',
+                animateOut: 'fadeOut',
+                autoplayHoverPause: true,
+                loop: true,
+                nav: true,
+                merge: true,
+                dots: true,
+                navText: ['<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>'],
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    300: {
+                        items: 2,
+                    },
+                    480: {
+                        items: 2,
+                    },
+                    768: {
+                        items: 3,
+                    },
+                    1170: {
+                        items: 4,
+                    },
+                }
+            });
+        }
+    }
+    else {
+        $('.product-slide').html('');
+        $('.product-slide').append(solutionSlides);
+        $('.solution-slider').css('display', 'block');
+    }
+}
+
+function showBorrowOptions() {
+    let amount = $('.head-amount');
+    if (amount.length == 0) {
+        return;
+    }
+
+    if (window.innerWidth <= 450) {
+        let headItems = $('.head-item');
+        $(headItems[0]).append($('.row-detail'));
+    }
+    else {
+        $(amount).after($('.row-detail'));
     }
 }

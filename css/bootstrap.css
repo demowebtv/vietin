@@ -7981,10 +7981,6 @@ a.bg-dark:hover {
         margin-left: 3rem !important
     }
 
-    .p-sm-0 {
-        padding: 0 !important
-    }
-
     .pt-sm-0,
     .py-sm-0 {
         padding-top: 0 !important
@@ -8000,10 +7996,10 @@ a.bg-dark:hover {
         padding-bottom: 0 !important
     }
 
-    .pl-sm-0,
+/*    .pl-sm-0,
     .px-sm-0 {
         padding-left: 0 !important
-    }
+    }*/
 
     .p-sm-1 {
         padding: .25rem !important

@@ -1,0 +1,82 @@
+﻿@media only screen and (max-width: 450px) {
+    .connect-left .row a img {
+        margin-right: 7px !important;
+    }
+
+    .connect-left a {
+        padding-left: 0px !important;
+    }
+
+    .scrollUp img:first-child {
+        margin-left: 7px !important;
+    }
+
+    .scrollUp img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .pl-sm-0 {
+        padding-left: 0 !important;
+    }
+
+    .pl-sm-7-5 {
+        padding-left: 7.5px;
+    }
+
+    .mobile {
+        display: block !important;
+    }
+
+    .desktop {
+        display: none !important;
+    }
+}
+
+span, a {
+    font-family: 'svn-gilroy-regular',sans-serif;
+}
+
+.top-menu ul li a {
+    font-family: 'svn-gilroy-semibold',sans-serif;
+}
+
+.menu1-text span {
+    font-family: 'svn-gilroy-bold',sans-serif;
+}
+
+.right-contact a {
+    font-family: 'svn-gilroy-bold',sans-serif;
+}
+
+.lang-select .nice-select .current, .lang-select .nice-select .option {
+    font-family: 'myriadpro-semibold',sans-serif !important;
+}
+
+.single-footer {
+    padding-left: 0px;
+}
+
+body, button, input, select, optgroup, textarea {
+    font-family: 'svn-gilroy-regular',sans-serif;
+}
+
+.cat-nav-head ul li a {
+    font-family: 'svn-gilroy-bold',sans-serif;
+}
+
+.phone-contact a {
+    font-family: 'myriadpro-bold',sans-serif !important;
+}
+
+.news-more {
+    font-family: 'svn-gilroy-medium-italic',sans-serif !important;
+}
+
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}

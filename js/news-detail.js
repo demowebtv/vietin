@@ -1,3 +1,0 @@
-﻿$(document).on('ready', function () {
-  
-});

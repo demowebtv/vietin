@@ -1,0 +1,38 @@
+﻿.top-slides {
+    background: url(../../images/fdi/shutterstock_552445588_supersize.jpg) no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.title span {
+    font-size: 35px;
+}
+
+.title {
+    border-bottom: 2px solid #eee;
+    border-top: 0px;
+}
+
+.first-row {
+    padding-top: 30px;
+}
+
+    .first-row span {
+        font-weight: bold;
+    }
+
+.detail-image {
+    padding: 20px 0px;
+}
+
+    .detail-image img {
+        max-width: 80%;
+    }
+
+.img-desc {
+    border-bottom: 1px solid #eee;
+}
+
+.img-desc span {
+    font-size: 12px;
+}

@@ -1,0 +1,122 @@
+﻿@media only screen and (max-width: 450px) {
+}
+
+@media only screen and (max-width: 991px) {
+    .product-title {
+        padding: 5px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+.product-item .row {
+    border: 1px solid #ccc;
+}
+
+    .product-item .row .col-12 {
+        padding: 0px;
+    }
+
+.product-detail {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px 15px 5px 15px;
+    color: #fff;
+    background: linear-gradient(0deg, #686868, transparent);
+    line-height: 14px;
+}
+
+.product-title {
+    color: #005993;
+    background: url(../../images/personal/priority/bg-head.png) no-repeat;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    padding: 5px 15px;
+    font-family: 'myriadpro-bold',sans-serif;
+    text-transform: uppercase;
+}
+
+.product-item img {
+    width: 100%;
+    max-height: 230px;
+}
+
+.product-item:hover .product-title {
+    color: #fff;
+}
+
+.product-item .row .col-12 {
+    box-shadow: 0px 10px 5px -3px rgb(0 0 0 / 46%);
+}
+
+.product-item:hover .product-title {
+    background: #005993;
+}
+
+
+.btn-contact {
+    display: block;
+    padding: 2px 50px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 5px;
+    background: #ef5d67;
+    z-index: 100;
+}
+
+    .btn-contact svg {
+        position: absolute;
+        left: 20px;
+    }
+
+    .btn-contact:hover {
+        box-shadow: 0px 10px 5px -3px rgb(0 0 0 / 46%);
+    }
+
+        .btn-contact:hover .contact-item {
+            display: block;
+        }
+
+.contact-item {
+    display: none;
+    position: absolute;
+    top: 25px;
+    background: #ef5d67;
+    z-index: 99;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+    .contact-item li a {
+        padding: 5px 10px;
+        display: block;
+        width: 100%;
+    }
+
+        .contact-item li a:hover {
+            color: #005993;
+            background: #7ed3f7;
+        }
+
+    .contact-item li:first-child a {
+        border-bottom: 1px solid #eee;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .contact-item li:last-child a {
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }

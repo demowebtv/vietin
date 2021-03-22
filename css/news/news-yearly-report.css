@@ -1,0 +1,67 @@
+﻿@media only screen and (max-width: 450px) {
+    .pr-sm-0 {
+        padding-right: 0px !important;
+    }
+
+    .report-title {
+        padding: 5px 0px !important;
+    }
+
+        .report-title span {
+            font-size: 14px !important;
+        }
+
+    .report-version {
+        font-size: 10px !important;
+        line-height: 18px;
+    }
+
+    .report-header .col-12 {
+        padding: 10px 30px !important;
+    }
+
+    .report-group:nth-child(2) {
+        order: 1 !important;
+    }
+
+    .report-banner {
+        margin-top: 15px !important;
+        background: url(../../images/news/banner/baocao-banner-mobile.jpg) no-repeat !important;
+        background-size: cover !important;
+        height: 200px;
+    }
+}
+
+.report-header .col-12 {
+    padding: 15px 30px;
+}
+
+.report-item {
+    padding: 0px 15px;
+}
+
+.report-title {
+    background: #c9e8fb;
+    padding: 15px 0px;
+    border-bottom: 3px solid #7ed3f7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+    .report-title span {
+        margin-top: 5px;
+    }
+
+.report-vi {
+    padding-right: 30px;
+}
+
+.report-en {
+    padding-left: 30px;
+}
+
+.report-banner {
+    background: url(../../images/news/banner/baocao-banner.jpg) no-repeat;
+    background-size: cover;
+    height: 300px;
+}

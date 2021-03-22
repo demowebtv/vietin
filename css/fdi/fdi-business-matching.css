@@ -1,0 +1,402 @@
+﻿.container {
+    max-width: 1170px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .title span {
+        font-size: 22px !important;
+    }
+
+    .title2 span {
+        font-size: 18px !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (max-width: 450px) {
+    .title2 span {
+        font-size: 15px !important;
+    }
+
+    .top-img {
+        min-height: 80px !important;
+    }
+
+    .top-img {
+        min-height: 60px !important;
+    }
+
+    .content-title {
+        font-size: 14px !important;
+    }
+
+    .title-desc {
+        font-size: 11px !important;
+    }
+
+    .content-text {
+        font-size: 12px !important;
+        padding-top: 15px !important;
+        text-align: justify;
+    }
+
+    .content-business {
+        padding-top: 15px !important;
+    }
+
+    .to-top-icon {
+        display: block !important;
+        position: relative;
+        top: 0;
+        right: 0;
+        float: right;
+    }
+
+    .to-top {
+        display: none !important;
+    }
+
+    .bottom-icon {
+        padding-bottom: 10px !important;
+    }
+
+    .social-icon {
+        position: absolute !important;
+        bottom: -15px !important;
+        right: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .text-menu:after {
+        display: none;
+    }
+
+    .title span {
+        font-size: 18px !important;
+    }
+
+    .more-detail {
+        height: 20px;
+    }
+
+    .china-icon {
+        text-align: left !important;
+        padding-left: 0px !important;
+    }
+
+    .china-text {
+        text-align: left !important;
+    }
+
+    .content-business:not(:first-child) {
+        padding-top: 30px;
+    }
+
+    .branch-icon:not(:first-child) {
+        padding-top: 20px;
+    }
+
+    .left-cp {
+        padding: 0;
+    }
+
+    .foot-item {
+        padding-top: 30px;
+    }
+
+    .foot-title {
+        text-align: left;
+    }
+
+    .footer-logo {
+        margin-top: 20px;
+    }
+
+    .footer-download {
+        margin-top: 20px;
+    }
+}
+
+.list-main li a {
+    font-size: 18px;
+}
+
+.header .nav li a {
+    font-size: 13px;
+    font-weight: 200;
+    padding: 11px 15px;
+}
+
+.lang-select .nice-select {
+    padding-left: 0px;
+}
+
+.footer-app {
+    height: 40px;
+}
+
+.footer-top {
+    padding: 7px 0px;
+    text-align: right;
+}
+
+.footer span {
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.footer-download {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-h {
+    height: 35px;
+}
+
+.footer-link {
+    background-color: #f8fcff;
+}
+
+body {
+    background-color: #fff;
+}
+
+.foot-title {
+    border-bottom: 2px solid #93d5f5;
+    padding: 0;
+}
+
+.footer ul li {
+    list-style: outside;
+}
+
+    .footer ul li a {
+        display: block;
+        color: #686868;
+    }
+
+.link-info {
+    margin-top: 10px;
+}
+
+.foot-icon {
+    width: 25px;
+}
+
+.plr-5px {
+    padding: 0px 5px;
+}
+
+.branch-info img {
+    width: 50px;
+}
+
+.branch-info {
+    padding: 30px 0px;
+}
+
+.branch-text {
+    align-content: flex-end;
+    display: grid;
+}
+
+.title {
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+}
+
+.title2 {
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+}
+
+.title span {
+    font-weight: 600;
+    font-size: 24px;
+    padding: 5px 0px;
+    color: #686868;
+    height: 31px;
+}
+
+.title2 span {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px 0px;
+    color: #686868;
+    height: 30px;
+}
+
+.top-img {
+    background: url(../../images/fdi/AI_Image.jpg) no-repeat;
+    background-size: contain;
+    min-height: 200px;
+    margin-top: 20px;
+}
+
+.content-title {
+    color: #005993;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.content-text {
+    padding-top: 25px;
+    font-size: 16px;
+}
+
+.content-text {
+    text-align: justify;
+}
+
+.more-detail {
+    height: 25px;
+}
+
+.service-title .head-title {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px 30px;
+}
+
+.service-title {
+    background: #93d5f5;
+}
+
+.service-content {
+    background: #ecf7fb;
+}
+
+.service-text:first-child {
+    padding-top: 15px;
+}
+
+.service-text:last-child {
+    padding-bottom: 15px;
+}
+
+.service-text {
+    padding: 2px 30px;
+    font-weight: bold;
+    width: 100%;
+}
+
+    .service-text:hover span {
+        color: #005993;
+    }
+
+.service-icon {
+    width: 30px;
+}
+
+.service-detail {
+    color: #fff;
+    font-size: 12px !important;
+    margin-top: 2px;
+}
+
+.service-action {
+    position: absolute;
+    right: 40px;
+    top: 4px;
+}
+
+.efast {
+    max-width: 100px;
+    padding: 15px 0px;
+}
+
+.srv-arrow {
+    width: 26px;
+    padding-left: 2px;
+}
+
+.pl-12px {
+    padding-left: 12px;
+}
+
+.service-text span {
+    font-size: 13px;
+}
+
+.title-desc {
+    font-size: 13px;
+}
+
+.top-slides {
+    background: url(../../images/fdi/shutterstock_191691677_huge.jpg) no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.lang-select-icon {
+    width: 55px;
+}
+
+.lang-select .nice-select .list {
+    background-color: #93d5f5;
+    border: none;
+}
+
+.lang-select .nice-select:after {
+    display: none !important;
+}
+
+.text-menu:after {
+    content: '.';
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    bottom: 3px;
+    left: 17px;
+}
+
+.desc {
+    color: #fff;
+}
+
+.desc1 {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.desc2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.top-desc .row:first-child {
+    margin-top: 40px;
+}
+
+.top-desc .row:nth-child(2) {
+    margin-top: 10px;
+}
+
+.bot {
+    float: right;
+    width: 50px;
+    height: 2px;
+    background: #fff;
+}
+
+.pt-60px {
+    padding-top: 60px;
+}
+
+.desc3 {
+    font-size: 16px;
+    width: 100%;
+}
+
+.to-top-icon {
+    display: none;
+    height: 30px;
+    width: 30px;
+}

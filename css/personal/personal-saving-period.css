@@ -1,0 +1,203 @@
+﻿@media only screen and (max-width: 450px) {
+}
+
+@media only screen and (max-width: 991px) {
+    .main-content {
+        padding-top: 0px;
+    }
+
+    .register-content .text-right {
+        text-align: left !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+.product-tab {
+  display: flex;
+  justify-content: space-around;
+  height: 95px;
+  padding: 20px 0;
+}
+
+    .product-tab a {
+        display: inline-grid;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .product-tab a:hover span {
+            color: #005993;
+        }
+
+    .product-tab li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+        .product-tab li a.active span {
+            color: #fff;
+        }
+
+        .product-tab li a span {
+            color: #005993;
+        }
+
+
+.tab-product {
+    display: block;
+}
+
+.head-img {
+    height: 30px;
+    width: 30px;
+}
+
+.product-tab li:nth-child(1) .head-img {
+    background: url(../../images/personal/icon/Loiichsanpham_icon.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.product-tab li:nth-child(2) .head-img {
+    background: url(../../images/personal/icon/Dacdiemsanpham_icon.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.product-tab li:nth-child(3) .head-img {
+    background: url(../../images/personal/icon/Dieukiensudung_icon.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.product-tab li:nth-child(4) .head-img {
+    background: url(../../images/personal/icon/Hosothutuc_icon.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.product-tab li:nth-child(5) .head-img {
+    background: url(../../images/personal/icon/Dangkytructuyen_icon.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.product-tab li:nth-child(1):hover .head-img {
+    background: url(../../images/personal/icon/Loiichsanpham_Hover_icon.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.product-tab li:nth-child(2):hover .head-img {
+    background: url(../../images/personal/icon/Dacdiemsanpham_Hover_icon.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.product-tab li:nth-child(3):hover .head-img {
+    background: url(../../images/personal/icon/Dieukiensudung_Hover_icon.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.product-tab li:nth-child(4):hover .head-img {
+    background: url(../../images/personal/icon/Hosothutuc_Hover_icon.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.product-tab li:nth-child(5):hover .head-img {
+    background: url(../../images/personal/icon/Dangkytructuyen_Hover_icon.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.benefit-content li {
+    list-style: outside;
+    list-style-type: square;
+}
+
+.benefit-content {
+    padding-top: 30px;
+}
+
+.detail-content li {
+    list-style: none;
+}
+
+    .detail-content li:before {
+        content: ' - ';
+    }
+
+
+.register-content {
+    border-right: 1px solid #e4e5e7;
+    border-bottom: 1px solid #e4e5e7;
+    border-left: 1px solid #e4e5e7;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.head-regis {
+    background: #e4e5e7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px 30px;
+}
+
+
+.btn {
+    padding: 5px 15px;
+    color: #fff !important;
+    background: #e02828;
+    padding-right: 15px;
+    border-radius: 5px;
+}
+
+.nice-select {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-height: 30px;
+    margin-bottom: 6px;
+}
+
+.pb-10px {
+    padding-bottom: 10px;
+}
+
+.register-content .col-12 {
+    padding-bottom: 5px;
+}
+
+.nice-select .option {
+    font-family: 'myriadpro-regular',sans-serif !important;
+    line-height: 30px !important;
+    height: 30px !important;
+    min-height: 30px;
+}
+
+input {
+    padding-left: 18px !important;
+}
+
+.nice-select .option.selected {
+    color: #005793 !important;
+}
+
+
+.main-options {
+    background: url(../../images/personal/icon/Background_pc.png) repeat-x;
+}
+
+.nav-tabs {
+    border-bottom: 0;
+}

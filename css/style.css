@@ -3,7 +3,7 @@ s.btn {
     font-weight: 500;
     font-size: 14px;
     color: #fff;
-    background: #333;
+    background: #686868;
     display: inline-block;
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -20,14 +20,14 @@ s.btn {
     background: #fff;
 }
 
-#scrollUp {
+.scrollUp {
     right: 10px;
     z-index: 33;
     bottom: 10px;
     text-align: center;
 }
 
-    #scrollUp i {
+    .scrollUp i {
         height: 40px;
         width: 40px;
         line-height: 40px;
@@ -43,10 +43,14 @@ s.btn {
         box-shadow: 0px 4px 19px #00000038;
     }
 
-        #scrollUp i:hover {
+        .scrollUp i:hover {
             background: #fff;
             color: #fff;
         }
+
+    .scrollUp img {
+        max-width: 30px;
+    }
 /*======================================
 	01. Header CSS
 ========================================*/
@@ -79,11 +83,6 @@ s.btn {
     display: block !important;
 }
 
-.header.v3 .navbar-expand-lg .navbar-collapse {
-    display: block !important;
-    background: #333;
-}
-
 .header .nav li a i {
     font-size: 12px;
 }
@@ -96,9 +95,9 @@ s.btn {
     border-radius: 5px;
     top: 90%;
     z-index: 999;
-    -webkit-box-shadow: 0px 3px 5px #3333334d;
-    -moz-box-shadow: 0px 3px 5px #3333334d;
-    box-shadow: 0px 3px 5px #3333334d;
+    -webkit-box-shadow: 0px 3px 5px #6868683334d;
+    -moz-box-shadow: 0px 3px 5px #6868683334d;
+    box-shadow: 0px 3px 5px #6868683334d;
     transform-origin: 0 0 0;
     transform: scaleY(0.2);
     -webkit-transition: all 0.1s ease 0s;
@@ -153,7 +152,7 @@ s.btn {
     -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 3px 5px #3333334d;
+    box-shadow: 0px 3px 5px #6868683334d;
     transform-origin: 0 0 0;
     transform: scaleY(0.2);
     -webkit-transition: all 0.3s ease 0s;
@@ -244,7 +243,7 @@ s.btn {
 
 .header .list-main li {
     display: inline-block;
-    color: #333;
+    color: #686868;
     font-size: 12px;
     font-weight: 500;
     padding: 0px 13px;
@@ -326,7 +325,7 @@ s.btn {
     }
 
     .header .right-nav li a {
-        color: #333;
+        color: #686868;
     }
 
     .header .logo {
@@ -391,7 +390,7 @@ s.btn {
             text-align: center;
             font-size: 18px;
             color: #fff;
-            background: #333333;
+            background: #686868333;
             position: absolute;
             right: -2px;
             top: -1px;
@@ -422,25 +421,12 @@ s.btn {
         background: #005993;
     }
 
-    .header.v3 .middle-inner {
-        border: none;
-    }
-
     .header .header-inner {
         background: #005993;
     }
 
-    .header.v3 .header-inner {
-        background: transparent;
-    }
-
-    .header.v2 .header-inner {
-        background: #fff;
-        border-top: 1px solid #eee;
-    }
-
     .header .topbar p {
-        color: #333;
+        color: #686868;
     }
 
     .header .all-category {
@@ -522,7 +508,7 @@ s.btn {
     }
 
     .header .nav li .dropdown li a {
-        color: #333;
+        color: #686868;
         padding: 8px 15px;
         font-weight: 400;
     }
@@ -603,29 +589,17 @@ s.btn {
     color: #7ed3f7;
 }
 
-.header.sticky.v3 .header-inner .nav li a {
-    color: #005993;
-}
-
 .header.sticky .header-inner .nav li:hover a {
     color: #fff;
 }
 
-.header.sticky.v2 .header-inner .nav li:hover a {
-    color: #fff;
-}
-
 .header.sticky .header-inner .nav li .dropdown li a {
-    color: #333;
+    color: #686868;
 }
 
-.header.sticky.v2 .header-inner .nav li .dropdown li a {
-    color: #333;
-}
-
-.header.sticky .header-inner .nav li .dropdown li a:hover {
-    color: #005993;
-}
+    .header.sticky .header-inner .nav li .dropdown li a:hover {
+        color: #005993;
+    }
 
 .header.sticky .header-inner .nav li.active a {
     color: #fff;
@@ -642,16 +616,6 @@ s.btn {
     z-index: 999;
 }
 
-.header.sticky.v3 .header-inner {
-    box-shadow: none;
-}
-
-.header.sticky.v3 .navbar-expand-lg .navbar-collapse {
-    animation: fadeInDown 1s both 0.2s;
-    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
 /*======================================
 	End Header CSS
 ========================================*/
@@ -693,13 +657,13 @@ s.btn {
                 font-size: 20px;
                 display: block;
                 margin-bottom: 12px;
-                color: #333;
+                color: #686868;
                 font-weight: 700;
                 line-height: initial;
             }
 
         .hero-slider .hero-text p {
-            color: #333;
+            color: #686868;
             margin-bottom: 35px;
         }
 
@@ -709,7 +673,7 @@ s.btn {
 
         .hero-slider .hero-text .btn {
             color: #fff;
-            background: #333;
+            background: #686868;
             padding: 13px 30px;
             line-height: initial;
             border: none;
@@ -752,7 +716,7 @@ s.btn {
     height: 60px;
     width: 30px;
     line-height: 58px;
-    color: #333;
+    color: #686868;
     position: absolute;
     margin: 0;
     border-radius: 0;
@@ -797,7 +761,7 @@ s.btn {
     }
 
     .product-area .nav-tabs li a {
-        color: #333;
+        color: #686868;
         text-transform: uppercase;
         display: inline-block;
         position: relative;
@@ -925,7 +889,7 @@ s.btn {
 
         .single-product .product-img .product-action a {
             background-color: transparent;
-            color: #333;
+            color: #686868;
             display: block;
             font-size: 16px;
             display: inline-block;
@@ -986,7 +950,7 @@ s.btn {
         .single-product .product-img .product-action a:hover span {
             visibility: visible;
             opacity: 1;
-            color: #333;
+            color: #686868;
             background: #fff;
             margin-top: -12px;
         }
@@ -1019,7 +983,7 @@ s.btn {
         .single-product .product-img .product-action-2 a {
             display: block;
             background-color: transparent;
-            color: #333;
+            color: #686868;
             text-align: left;
             font-size: 12px;
             font-weight: 600;
@@ -1633,7 +1597,7 @@ a a {
 }
 
 .slicknav_nav {
-    box-shadow: 0px 3px 5px #3333334d;
+    box-shadow: 0px 3px 5px #6868683334d;
 }
 
 .slicknav_menu .menu1:last-child .slicknav_item {
@@ -2052,42 +2016,42 @@ tool:after {
     color: #686868;
 }
 
-.collapsible:hover {
-    background: #7ed3f7;
-    color: #005973;
-}
-
-    .collapsible:hover svg {
-        fill: #005973;
-        -webkit-transform-origin: 66% 66%;
-        -ms-transform-origin: 66% 66%;
-        transform-origin: 66% 66%;
-        -webkit-transform: rotate( 90deg );
-        -ms-transform: rotate(90deg);
-        transform: rotate( 90deg );
-        -webkit-transition: all 0.15s ease-in-out;
-        transition: all 0.15s ease-in-out;
-        right: 34px;
+    .collapsible:hover {
+        background: #7ed3f7;
+        color: #005973;
     }
 
-.collapsible.active {
-    border: none;
-    color: #005973;
-    background: #7ed3f7;
-}
+        .collapsible:hover svg {
+            fill: #005973;
+            -webkit-transform-origin: 66% 66%;
+            -ms-transform-origin: 66% 66%;
+            transform-origin: 66% 66%;
+            -webkit-transform: rotate( 90deg );
+            -ms-transform: rotate(90deg);
+            transform: rotate( 90deg );
+            -webkit-transition: all 0.15s ease-in-out;
+            transition: all 0.15s ease-in-out;
+            right: 34px;
+        }
 
-    .collapsible.active svg {
-        fill: #005973;
-        -webkit-transform-origin: 66% 66%;
-        -ms-transform-origin: 66% 66%;
-        transform-origin: 66% 66%;
-        -webkit-transform: rotate( 90deg );
-        -ms-transform: rotate(90deg);
-        transform: rotate( 90deg );
-        -webkit-transition: all 0.15s ease-in-out;
-        transition: all 0.15s ease-in-out;
-        right: 34px;
+    .collapsible.active {
+        border: none;
+        color: #005973;
+        background: #7ed3f7;
     }
+
+        .collapsible.active svg {
+            fill: #005973;
+            -webkit-transform-origin: 66% 66%;
+            -ms-transform-origin: 66% 66%;
+            transform-origin: 66% 66%;
+            -webkit-transform: rotate( 90deg );
+            -ms-transform: rotate(90deg);
+            transform: rotate( 90deg );
+            -webkit-transition: all 0.15s ease-in-out;
+            transition: all 0.15s ease-in-out;
+            right: 34px;
+        }
 
 .collapsible {
     padding-left: 10px !important;
@@ -2136,7 +2100,7 @@ tool:after {
 
 .news-image {
     min-height: 200px;
-    background: url(../images/Icon/box_body/Asset26.png) no-repeat;
+    background: url(../images/icon/box_body/Asset26.png) no-repeat;
     background-size: cover;
 }
 
@@ -2224,7 +2188,7 @@ tool:after {
 
 .service-all {
     border-radius: 10px;
-    box-shadow: 0px 3px 5px #3333334d;
+    box-shadow: 0px 3px 5px #6868683334d;
 }
 
     .service-all .col-6 {
@@ -2463,6 +2427,22 @@ tool:after {
     line-height: 12px;
 }
 
+.lh-14 {
+    line-height: 14px;
+}
+
+.lh-16 {
+    line-height: 16px;
+}
+
+.lh-18 {
+    line-height: 18px;
+}
+
+.lh-20 {
+    line-height: 20px;
+}
+
 .mt-15px {
     margin-top: 15px;
 }
@@ -2655,6 +2635,10 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     padding: 0px;
 }
 
+.connect-right img {
+    width: 30px;
+}
+
 .l-0 {
     left: 0;
 }
@@ -2805,4 +2789,16 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 
 .mt-2px {
     margin-top: 2px;
+}
+
+.scrollUp a span {
+    font-family: 'myriadpro-bold',sans-serif !important;
+}
+
+.mr-5px {
+    margin-right: 5px;
+}
+
+.pr-5px {
+    padding-right: 5px;
 }
