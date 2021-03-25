@@ -30,6 +30,10 @@
     .nav-bot {
         display: none !important;
     }
+
+    .child-menu {
+        box-shadow: 0px 3px 5px #3333334d !important;
+    }
 }
 
 .branch-tab li a {

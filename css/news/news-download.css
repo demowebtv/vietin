@@ -1,0 +1,40 @@
+﻿.doc-banner {
+    max-height: 400px;
+    background: url(../../images/news/banner/download.jpg) no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+@media only screen and (max-width: 767px){
+    .doc-banner {
+        max-height: 400px;
+        background: url(../../images/news/banner/download-small.jpg) no-repeat;
+        background-size: cover;
+        height: 300px !important;
+    }
+
+}
+
+.doc-item {
+    display: flex;
+    padding: 5px 15px;
+    border-bottom: 1px solid #7ed3f7;
+    position: relative;
+    align-items: center;
+}
+
+    .doc-item img {
+        max-width: 23px;
+        position: absolute;
+        right: 0;
+    }
+
+    .doc-item i {
+        position: absolute;
+        left: 0;
+    }
+
+    .doc-item span {
+        display: block;
+        margin-top: 1px;
+    }

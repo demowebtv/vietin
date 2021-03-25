@@ -11,10 +11,6 @@
         text-align: center;
     }
 
-    .intro-about {
-        padding-top: 15px !important;
-    }
-
     .news-about .container .row:last-child {
         padding-top: 15px !important;
     }
@@ -59,10 +55,6 @@
         padding-top: 30px;
     }
 
-    .intro-about {
-        padding: 0px !important;
-    }
-
     .news-link .col-12:last-child {
         padding-top: 0px;
     }
@@ -85,6 +77,24 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .fs-18 {
+        color: #686868 !important;
+        text-transform: none !important;
+    }
+
+    .btn-border .col-12 .bg-blue0 {
+        background: #ccc !important;
+    }
+
+    .system, .fatca, .award {
+        padding-top: 15px !important;
+    }
+
+    .intro-about {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+
     .last-button {
         padding-top: 30px !important;
     }
@@ -95,7 +105,6 @@
 
     .text-intro:nth-child(2n+1) {
         order: 2 !important;
-        padding-top: 15px !important;
     }
 
     .img-intro:nth-child(2n) {
@@ -127,10 +136,6 @@
         padding: 0px;
     }
 
-    .intro-about {
-        padding: 15px 0px;
-    }
-
     .intro-btn {
         position: unset !important;
     }
@@ -140,14 +145,10 @@
     padding: 5px 0px;
 }
 
-.intro-about {
-    padding-top: 15px;
+.intro-about span {
+    font-size: 16px;
+    display: block;
 }
-
-    .intro-about span {
-        font-size: 16px;
-        display: block;
-    }
 
 .btn-blue {
     margin-right: 15px;

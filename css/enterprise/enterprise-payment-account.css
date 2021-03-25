@@ -1,4 +1,12 @@
 ﻿@media only screen and (max-width: 450px) {
+    .head-image {
+        background: url(../../images/enterprise/banner/taikhoan-thanhtoan-mobile.png) no-repeat !important;
+    }
+
+    .head-detail {
+        padding: 5px !important;
+    }
+
     .icon-text {
         font-size: 14px !important;
     }
@@ -221,7 +229,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2px;
     font-family: 'svn-gilroy-medium',sans-serif;
     font-size: 16px;
 }
@@ -244,6 +251,12 @@ body {
     display: none;
 }
 
-.row-detail{
+.row-detail {
+}
 
+.head-image {
+    background: url(../../images/enterprise/banner/taikhoan-thanhtoan.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /*height: 745px;*/
 }

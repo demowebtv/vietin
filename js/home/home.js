@@ -56,6 +56,10 @@
         itemsMobile: true
     });
 
+    initInternetBankingOptions();
+});
+
+function initInternetBankingOptions() {
     //append image to each option on change event
     $('.banking .nice-select').on('change', () => {
         let selected = $("#banking-select").val();
@@ -91,8 +95,7 @@
     $(selectLiTags[2]).append('<img class="option-icon" src="images/icon/right_box/Asset32.png" />');
     $(selectLiTags[3]).append('<img class="option-icon" src="images/icon/right_box/Asset33.png" />');
     $(selectLiTags[4]).append('<img class="option-icon" src="images/icon/right_box/Asset38.png" />');
-});
-
+}
 
 
 function showOtherServices(elm) {

@@ -5,6 +5,7 @@ $(document).on('ready', function () {
     $('.branch-tab a').on('click', (e) => {
         var index = $(e.currentTarget).data('index');
         markBorderTab(index);
+        loadFeeTable(index);
     })
 
     $('.fee-item').on('mouseover', (e) => {
@@ -20,27 +21,23 @@ $(document).on('ready', function () {
         loadFeeTable($(e.target).data('index'));
     })
 
-    $('.personal-customer').on('click', (e) => {
-
-    })
     $('.child-menu li a').on('click', (e) => {
         let index = $(e.target).data('index');
         loadFeeTable(index);
         loadIntro(index);
         setTabDisplay(index);
+        markBorderTab(index);
+        loadBorderNav();
 
         $('.child-menu').removeClass('block');
         $('.child-menu').toggleClass('hide');
-    })
-
-    $('.enterprise-customer').on('click', (e) => {
-
     })
 
     loadFeeTable(11);
     markBorderTab(11);
     setTabDisplay(11);
     loadIntro(11);
+    loadBorderNav();
 });
 
 function loadIntro(index) {
@@ -68,22 +65,30 @@ function loadFeeTable(index) {
 }
 
 function markBorderTab(index) {
-    $('.nav-border').removeClass('bg-blue-top');
+    $('.nav-border2').removeClass('bg-blue-top');
+    let prefix = `${index}`.substring(0, 1);
     var border = $('.nav-border');
     for (var i = 0; i < border.length; i++) {
-        if ($(border[i]).data('index') == index) {
-            $(border[i]).addClass('bg-blue-top');
+        let currIndex = $(border[i]).data('index');
+        if (!`${currIndex}`.startsWith(prefix)) {
+            $(border[i]).addClass('hide');
+        }
+        else if (currIndex == index) {
+            $(border[i]).removeClass('hide');
+            $(border[i]).find('.nav-border2').addClass('bg-blue-top');
             break;
         }
     }
 }
 
 function setTabDisplay(index) {
-    let itemIndex = `${index}`.substring(0, 1);
+    let itemIndex = `${index} `.substring(0, 1);
     var border = $('.nav-border');
 
     for (var i = 0; i < border.length; i++) {
-        if (`${$(border[i]).data('index')}`.startsWith(itemIndex)) {
+        let currIndex = `${$(border[i]).data('index')}`;
+
+        if (currIndex.startsWith(itemIndex)) {
             $(border[i]).removeClass('hide');
         } else {
             $(border[i]).addClass('hide');
@@ -95,11 +100,33 @@ function setTabDisplay(index) {
     for (var i = 0; i < tabs.length; i++) {
         let tabContent = $(tabs[i]).find('a')[0];
 
-        if (`${$(tabContent).data('index')}`.startsWith(itemIndex)) {
+        if (`${$(tabContent).data('index')} `.startsWith(itemIndex)) {
             $(tabs[i]).removeClass('hide');
         } else {
             $(tabs[i]).addClass('hide');
         }
     }
+}
+
+function loadBorderNav() {
+    let allWidth = 0;
+    $('.branch-tab li').each((i, elm) => {
+        let a = $(elm).find('a')[0];
+        allWidth += a.offsetWidth;
+    })
+
+    $('.branch-tab').css('min-width', allWidth);
+    $('.nav-bot').css('min-width', allWidth);
+
+    $('.branch-tab li').each((i, elm) => {
+        let a = $(elm).find('a')[0];
+        let border = $('.nav-border')[i];
+        if (a.dataset.index == 15 || a.dataset.index == 23) {
+            $(border).width(a.offsetWidth - 30);
+        }
+        else {
+            $(border).width(a.offsetWidth - 20);
+        }
+    })
 }
 

@@ -24,7 +24,7 @@
         position: absolute;
         top: 30px;
         left: 15px;
-        background: #73d3f7;
+        background: #c9e8fb;
         z-index: 9;
         left: -17px;
     }
@@ -129,7 +129,7 @@
         height: 30px;
         display: flex;
         align-items: center;
-        background: #73d3f7;
+        background: #c9e8fb;
     }
 
     .right-icon-news {
@@ -137,14 +137,6 @@
         position: absolute !important;
         right: 0;
         top: 7px !important;
-    }
-
-    .news-about .container .head-link {
-        padding: 0px !important;
-        height: 30px;
-        display: flex;
-        align-items: center;
-        background: #73d3f7;
     }
 }
 
@@ -155,7 +147,6 @@
 
     .news-link .col-12 .row .col-12 {
         padding-right: 0px;
-        padding-bottom: 30px;
     }
 
     .news-link .col-12 .pt-30px {

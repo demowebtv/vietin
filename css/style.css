@@ -1353,6 +1353,14 @@ s.btn {
     padding-right: 0;
 }
 
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: flex;
+}
+
 .slicknav_nav {
     position: absolute;
     top: 41px;
@@ -2635,9 +2643,9 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     padding: 0px;
 }
 
-.connect-right img {
-    width: 30px;
-}
+    .connect-right img {
+        width: 30px;
+    }
 
 .l-0 {
     left: 0;
@@ -2727,7 +2735,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 }
 
 .foot-group-icon a img {
-    max-width: 30px;
+    width: 30px;
     margin-right: 5px;
 }
 

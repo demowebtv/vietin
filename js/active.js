@@ -14,9 +14,7 @@ let imgType = {
             }
         });
 
-		/*====================================
-		Sticky Header JS
-		======================================*/
+        // sticky menu
         jQuery(window).on('scroll', () => {
             if ($(this).scrollTop() > 100) {
                 $('.header').addClass("sticky");
@@ -26,90 +24,10 @@ let imgType = {
             }
         });
 
-        loadTreeMenu();
-
+        initMenu();
         showTabletMenu();
-
-        $('.menu1-text').on('mouseover', (e) => {
-            let menu1 = $(e.currentTarget)[0];
-            let dropdown = menu1.nextElementSibling;
-            let menu2 = $(dropdown).find('.left-item');
-            if (menu2.length > 0) {
-                menu2 = menu2[0];
-                menu2.dataset.height = menu2.scrollHeight;
-            }
-        });
-
-        $('.link-menu2').on('mouseover', (e) => {
-            if (window.innerWidth > 991) {
-                let menu2 = $(e.currentTarget)[0];
-                let totalLeft = menu2.offsetParent.firstElementChild.children.length;
-                if (menu2.nextElementSibling) {
-                    let totalright = menu2.nextElementSibling.children.length;
-                    let menu3Heigth = menu2.nextElementSibling.scrollHeight;
-
-                    if (totalLeft < totalright) {
-                        $(menu2.offsetParent).height(menu3Heigth);
-                    }
-                    else {
-                        $(menu2.offsetParent).height(menu2.offsetParent.dataset.height);
-                    }
-                }
-            }
-        });
-
-        $('.link-menu2').on('mouseleave', (e) => {
-            if (window.innerWidth > 991) {
-                if (e.relatedTarget && e.relatedTarget.offsetParent && (e.relatedTarget.offsetParent.className === 'menu2-right' || e.relatedTarget.className === 'menu2-right')) {
-                    $(e.currentTarget).addClass('menu-hover');
-                }
-                else {
-                    $(e.currentTarget).removeClass('menu-hover');
-                }
-            }
-        });
-
-        $('.menu2-right li a').on('mouseleave', (e) => {
-            let parent = e.currentTarget.closest('.menu2-right').previousElementSibling;
-            let hoveredNode = e.relatedTarget.innerText;
-            if (parent.innerText !== hoveredNode && e.relatedTarget.className === 'link-menu2') {
-                $(parent).removeClass('menu-hover');
-            }
-
-            if (e.relatedTarget.offsetParent &&
-                e.relatedTarget.offsetParent.className !== 'menu2-right' &&
-                !e.relatedTarget.offsetParent.classList.contains('left-item')) {
-                $('.link-menu2').removeClass('menu-hover');
-            }
-        });
-        $('.menu2-right').on('mouseleave', (e) => {
-            let parent = e.currentTarget.previousElementSibling;
-            let hoveredNode = e.relatedTarget.innerText;
-            if (parent.innerText !== hoveredNode && e.relatedTarget.className === 'link-menu2') {
-                $(parent).removeClass('menu-hover');
-            }
-        });
-
-        $(".icon-contact img").on('mouseover', (e) => {
-            let currIconClass = $(e.currentTarget)[0];
-            $(`.${currIconClass.id}-detail`).removeClass('hide');
-        });
-
-        $(".contact-detail").on('mouseleave', (e) => {
-            let currentItem = $(e.currentTarget)[0];
-            $(currentItem).removeClass('hide').addClass('hide');;
-        });
-
-        $(".icon-contact img").on('mouseleave', (e) => {
-            let currIconClass = $(e.currentTarget)[0];
-            let relatedTarget = $(e.relatedTarget)[0];
-            if (`${relatedTarget.className}` === 'col-6') {
-                $(`.${currIconClass.id}-detail`).removeClass('hide');
-            }
-            else {
-                $(`.${currIconClass.id}-detail`).addClass('hide');
-            }
-        });
+        initMenuLevel2();
+        initRightContact();
 
         if ($('.bread2').length > 0 & $('.child-menu').length > 0) {
             $('.bread2').on('click', (e) => {
@@ -130,13 +48,74 @@ let imgType = {
             }, 900);
             e.preventDefault();
         });
+
+        // on resize event
+        window.onresize = windowResizeHandle;
+        showTabletProducts();
+        showProducts();
     });
 
-    /*====================================
-    Nice Select JS
-    ======================================*/
+
     $('select').niceSelect();
 
+    initLanguageSelect();
+
+    setTimeout(() => {
+        //After 2s, the no-scroll class of the body will be removed
+        $('body').removeClass('no-scroll');
+    }, 2000);
+
+    initMobileMenu();
+})(jQuery);
+
+function windowResizeHandle() {
+    changeSlideTopImg();
+    showTabletProducts();
+    setOffsetSelectWidth();
+    showProducts();
+    showBorrowOptions();
+    showTabletMenu();
+    changeEnterpriseProductsImg();
+}
+
+function changeEnterpriseProductsImg() {
+    if (window.innerWidth <= 450 && $('.solution-slider').length > 0) {
+        let allImgSrc = [];
+        let products = [];
+        $('.solution-slider').find('img').each((i, img) => {
+            if (allImgSrc.indexOf(img.src) < 0) {
+                products.push(img);
+                allImgSrc.push(img.src);
+            }
+        })
+
+        $.each(products, (i, product) => {
+            let paths = product.src.split('/');
+            let currSrcs = paths[paths.length - 1].split('.');
+
+            if (currSrcs.length >= 2 && currSrcs[currSrcs.length - 2].indexOf(`-${imgType.MOBILE}`) < 0) {
+                currSrcs[currSrcs.length - 2] = `${currSrcs[currSrcs.length - 2]}-${imgType.MOBILE}`;
+                paths[paths.length - 1] = currSrcs.join('.');
+                let imgSrc = paths.join('/');
+                product.src = imgSrc;
+            }
+        })
+    }
+}
+
+function initMobileMenu() {
+    $('.mobile-nav').on('click', (e) => {
+        let menuButton = $('.slicknav_btn')[0];
+        if (menuButton.classList.contains('slicknav_collapsed')) {
+            $(".js").addClass('over-enable').removeClass('over-disable')
+        }
+        else {
+            $(".js").addClass('over-disable').removeClass('over-enable')
+        }
+    })
+}
+
+function initLanguageSelect() {
     //append image to each option on change event
     $('.lang-select .current').prepend('<img class="lang-select-icon" src="images/icon/flag/united-kingdom.svg" />')
     $('.lang-select .nice-select').on('change', () => {
@@ -150,25 +129,92 @@ let imgType = {
     let langSelectLiTags = $('.lang-select').find('li');
     $(langSelectLiTags[0]).prepend('<img class="lang-select-icon" src="images/icon/flag/united-kingdom.svg" />');
     $(langSelectLiTags[1]).prepend('<img class="lang-select-icon" src="images/icon/flag/vietnam.svg" />');
+}
 
-    setTimeout(() => {
-        //After 2s, the no-scroll class of the body will be removed
-        $('body').removeClass('no-scroll');
-    }, 2000);
+function initRightContact() {
+    $(".icon-contact img").on('mouseover', (e) => {
+        let currIconClass = $(e.currentTarget)[0];
+        $(`.${currIconClass.id}-detail`).removeClass('hide');
+    });
 
-    window.onresize = showTabletMenu;
+    $(".contact-detail").on('mouseleave', (e) => {
+        let currentItem = $(e.currentTarget)[0];
+        $(currentItem).removeClass('hide').addClass('hide');;
+    });
 
-    $('.mobile-nav').on('click', (e) => {
-        let menuButton = $('.slicknav_btn')[0];
-        if (menuButton.classList.contains('slicknav_collapsed')) {
-            $(".js").addClass('over-enable').removeClass('over-disable')
+    $(".icon-contact img").on('mouseleave', (e) => {
+        let currIconClass = $(e.currentTarget)[0];
+        let relatedTarget = $(e.relatedTarget)[0];
+        if (`${relatedTarget.className}` === 'col-6') {
+            $(`.${currIconClass.id}-detail`).removeClass('hide');
         }
         else {
-            $(".js").addClass('over-disable').removeClass('over-enable')
+            $(`.${currIconClass.id}-detail`).addClass('hide');
         }
-    })
+    });
+}
 
-})(jQuery);
+function initMenu() {
+    $('.menu1-text').on('mouseover', (e) => {
+        let menu1 = $(e.currentTarget)[0];
+        let dropdown = menu1.nextElementSibling;
+        let menu2 = $(dropdown).find('.left-item');
+        if (menu2.length > 0) {
+            menu2 = menu2[0];
+            menu2.dataset.height = menu2.scrollHeight;
+        }
+    });
+
+    $('.link-menu2').on('mouseover', (e) => {
+        if (window.innerWidth > 991) {
+            let menu2 = $(e.currentTarget)[0];
+            let totalLeft = menu2.offsetParent.firstElementChild.children.length;
+            if (menu2.nextElementSibling) {
+                let totalright = menu2.nextElementSibling.children.length;
+                let menu3Heigth = menu2.nextElementSibling.scrollHeight;
+
+                if (totalLeft < totalright) {
+                    $(menu2.offsetParent).height(menu3Heigth);
+                }
+                else {
+                    $(menu2.offsetParent).height(menu2.offsetParent.dataset.height);
+                }
+            }
+        }
+    });
+
+    $('.link-menu2').on('mouseleave', (e) => {
+        if (window.innerWidth > 991) {
+            if (e.relatedTarget && e.relatedTarget.offsetParent && (e.relatedTarget.offsetParent.className === 'menu2-right' || e.relatedTarget.className === 'menu2-right')) {
+                $(e.currentTarget).addClass('menu-hover');
+            }
+            else {
+                $(e.currentTarget).removeClass('menu-hover');
+            }
+        }
+    });
+
+    $('.menu2-right li a').on('mouseleave', (e) => {
+        let parent = e.currentTarget.closest('.menu2-right').previousElementSibling;
+        let hoveredNode = e.relatedTarget.innerText;
+        if (parent.innerText !== hoveredNode && e.relatedTarget.className === 'link-menu2') {
+            $(parent).removeClass('menu-hover');
+        }
+
+        if (e.relatedTarget.offsetParent &&
+            e.relatedTarget.offsetParent.className !== 'menu2-right' &&
+            !e.relatedTarget.offsetParent.classList.contains('left-item')) {
+            $('.link-menu2').removeClass('menu-hover');
+        }
+    });
+    $('.menu2-right').on('mouseleave', (e) => {
+        let parent = e.currentTarget.previousElementSibling;
+        let hoveredNode = e.relatedTarget.innerText;
+        if (parent.innerText !== hoveredNode && e.relatedTarget.className === 'link-menu2') {
+            $(parent).removeClass('menu-hover');
+        }
+    });
+}
 
 let serviceSlides = $('.service-slider').length > 0 ? $('.service-slider')[0].cloneNode(true) : null;
 function showTabletProducts() {
@@ -225,17 +271,7 @@ function setOffsetSelectWidth() {
     }
 }
 
-function loadRightContactBtn() {
-
-}
-
 function showTabletMenu() {
-    changeSlideTopImg();
-    showTabletProducts();
-    setOffsetSelectWidth();
-    loadRightContactBtn();
-    showProducts();
-    showBorrowOptions();
     if (window.innerWidth < 992) {
         $('.mobile-nav').html('');
         let mainMenu = $('.menu')[0].cloneNode(true);
@@ -276,8 +312,8 @@ function changeImageType(type) {
             }
         })
 
-        $.each(banners, (i, val) => {
-            let paths = val.src.split('/');
+        $.each(banners, (i, banner) => {
+            let paths = banner.src.split('/');
             let currSrcs = paths[paths.length - 1].split('-');
             if (currSrcs.length >= 2) {
                 let imgTypes = currSrcs[currSrcs.length - 1].split('.');
@@ -286,7 +322,7 @@ function changeImageType(type) {
                     paths[paths.length - 1] = currSrcs.join('-');
                     let imgSrc = paths.join('/');
                     if (isImageExists(imgSrc)) {
-                        banners[i].src = imgSrc;
+                        banner.src = imgSrc;
                     }
                 }
             }
@@ -328,7 +364,7 @@ function showSearchOnLeave() {
     $('.search-box').val('');
 }
 
-function loadTreeMenu() {
+function initMenuLevel2() {
     let menu2Left = $('.link-menu2');
     if (menu2Left.length > 0) {
         $('.link-menu2').each((index, elm) => {

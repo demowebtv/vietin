@@ -1,7 +1,4 @@
 ﻿$(document).on('ready', function () {
-    /*=======================
-      Home Slider JS
-    =========================*/
     $(".home-slide").owlCarousel({
         navigation: true,
         autoplay: true,
