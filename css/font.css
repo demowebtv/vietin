@@ -1,31 +1,4 @@
-﻿/*myriadpro start*/
-@font-face {
-    font-family: 'myriadpro-bold';
-    src: url('../fonts/myriadpro-bold.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'myriadpro-boldIt';
-    src: url('../fonts/myriadpro-boldIt.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'myriadpro-it';
-    src: url('../fonts/myriadpro-it.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'myriadpro-semibold';
-    src: url('../fonts/myriadpro-semibold.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'myriadpro-regular';
-    src: url('../fonts/myriadpro-regular.otf') format('opentype');
-}
-/*myriadpro end*/
-
-/*svn-gilroy start*/
+﻿/*svn-gilroy start*/
 @font-face {
     font-family: 'svn-gilroy-bold';
     src: url('../fonts/svn-gilroy-bold.otf') format('opentype');
@@ -56,26 +29,6 @@
     src: url('../fonts/svn-gilroy-semibold.otf') format('opentype');
 }
 /*svn-gilroy end*/
-
-.pro-regular {
-    font-family: 'myriadpro-regular',sans-serif;
-}
-
-.pro-bold {
-    font-family: 'myriadpro-bold',sans-serif;
-}
-
-.pro-italic {
-    font-family: 'myriadpro-it',sans-serif;
-}
-
-.pro-bold-italic {
-    font-family: 'myriadpro-boldIt',sans-serif;
-}
-
-.pro-semi-bold {
-    font-family: 'myriadpro-semibold',sans-serif;
-}
 
 .gilroy-bold {
     font-family: 'svn-gilroy-bold',sans-serif;

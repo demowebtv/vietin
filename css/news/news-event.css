@@ -120,7 +120,7 @@
 
     .bread-right a {
         color: #005993;
-        font-family: 'myriadpro-bold',sans-serif;
+        font-family: 'svn-gilroy-bold',sans-serif;
         font-size: 14px;
     }
 
@@ -218,7 +218,7 @@
 
         .head-link ul li {
             font-size: 12px;
-            font-family: 'myriadpro-regular';
+            font-family: 'svn-gilroy-regular';
             color: #686868;
         }
 
@@ -264,8 +264,7 @@
             color: #005993;
             display: block;
             width: 100%;
-            font-family: 'myriadpro-bold',sans-serif;
-            margin-top: 4px;
+            font-family: 'svn-gilroy-bold',sans-serif;
         }
 
             .paging li a svg {

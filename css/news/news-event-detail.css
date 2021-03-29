@@ -20,7 +20,7 @@
         }
 
             .more-links .container .news-link a {
-                font-family: 'myriadpro-bold',sans-serif;
+                font-family: 'svn-gilroy-bold',sans-serif;
             }
 
             .more-links .container .news-link .text-left:not(:first-child) .right-arrow {
@@ -28,7 +28,7 @@
             }
 
             .more-links .container .news-link .text-left:not(:first-child) a {
-                font-family: 'myriadpro-regular',sans-serif;
+                font-family: 'svn-gilroy-regular',sans-serif;
                 color: #686868 !important;
                 font-size: 12px;
             }
@@ -100,7 +100,7 @@
 
     .bread-right a {
         color: #005993;
-        font-family: 'myriadpro-bold',sans-serif;
+        font-family: 'svn-gilroy-bold',sans-serif;
         font-size: 14px;
     }
 

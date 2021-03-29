@@ -120,7 +120,7 @@ function loadLeaders(index) {
 function loadLeaderHtml(index, leader) {
     let html = '<div class="col-lg-3 col-md-3 col-6 text-center leader">';
     html += `<img src="${leader.img}" />`;
-    html += `<span class="pro-bold fs-16 blue-top block text-left pt-15px">${leader.name}</span>`
+    html += `<span class="gilroy-bold fs-16 blue-top block text-left pt-15px">${leader.name}</span>`
     html += `<span class="fs-16 blue-top block text-left">${leader.position}</span>`
     html += '</div>';
     $('.leader-content').append(html);

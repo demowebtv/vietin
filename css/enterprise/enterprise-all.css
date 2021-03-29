@@ -50,7 +50,7 @@ span, a {
 }
 
 .lang-select .nice-select .current, .lang-select .nice-select .option {
-    font-family: 'myriadpro-semibold',sans-serif !important;
+    font-family: 'svn-gilroy-semibold',sans-serif !important;
 }
 
 .single-footer {
@@ -66,7 +66,7 @@ body, button, input, select, optgroup, textarea {
 }
 
 .phone-contact a {
-    font-family: 'myriadpro-bold',sans-serif !important;
+    font-family: 'svn-gilroy-bold',sans-serif !important;
 }
 
 .news-more {

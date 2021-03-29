@@ -118,12 +118,12 @@ body {
 
 .product-title {
     color: #005993;
-    background: url(../images/personal/priority/bg-head.png) no-repeat;
+    background: url(../../images/personal/priority/bg-head.png) no-repeat;
     background-size: cover;
     display: block;
     width: 100%;
     padding: 5px 15px;
-    font-family: 'myriadpro-bold',sans-serif;
+    font-family: 'svn-gilroy-bold',sans-serif;
     text-transform: uppercase;
 }
 
@@ -273,12 +273,6 @@ body {
     font-size: 14px;
 }
 .service-star{width: 18px; margin-top: -5px;}
-
-.top-slides {
-    background: url(../images/shutterstock_191691677_huge.jpg) no-repeat;
-    background-size: cover;
-    height: 500px;
-}
 
 .lang-select-icon {
     width: 55px;

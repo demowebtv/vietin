@@ -1384,6 +1384,10 @@
 }
 /* Mobile Screen */
 @media only screen and (max-width: 450px) {
+    .pl-sm-7-5 {
+        padding-left: 7.5px !important;
+    }
+
     .pl-sm-15px {
         padding-left: 15px !important;
     }
@@ -1442,8 +1446,8 @@
         margin-bottom: 15px;
     }
 
-    .m-pro-bold {
-        font-family: 'myriadpro-bold',sans-serif;
+    .m-gilroy-bold {
+        font-family: 'svn-gilroy-bold',sans-serif;
     }
 
     .desktop-head {
@@ -2574,7 +2578,7 @@
     }
 
     .connect-mobile {
-        margin-top: 5px;
+        margin-top: 15px;
     }
 
     .scrollUp a:first-child {

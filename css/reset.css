@@ -1,5 +1,5 @@
 html {
-    font-family: 'myriadpro-regular', sans-serif;
+    font-family: 'svn-gilroy-regular', sans-serif;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -189,7 +189,7 @@ select,
 optgroup,
 textarea {
     color: #686868;
-    font-family: 'myriadpro-regular', sans-serif;
+    font-family: 'svn-gilroy-regular', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;

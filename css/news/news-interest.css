@@ -130,12 +130,12 @@
 
 .nice-select .option {
     color: #686868 !important;
-    font-family: 'myriadpro-regular',sans-serif !important;
+    font-family: 'svn-gilroy-regular',sans-serif !important;
     font-size: 14px;
 }
 
 .address-select .current {
-    font-family: 'myriadpro-it',sans-serif;
+    font-family: 'svn-gilroy-medium-italic',sans-serif;
 }
 
 .branch-table thead tr {
@@ -144,7 +144,7 @@
 
     .branch-table thead tr td {
         border: none;
-        font-family: 'myriadpro-bold',sans-serif;
+        font-family: 'svn-gilroy-bold',sans-serif;
         color: #686868;
         padding: 10px 0px;
         text-align: center;
@@ -192,7 +192,7 @@ iframe {
 .tbl-rate-all thead tr td {
     text-align: center;
     color: #3c3e39;
-    font-family: 'myriadpro-bold',sans-serif;
+    font-family: 'svn-gilroy-bold',sans-serif;
 }
 
 .tbl-rate-all tbody tr td {

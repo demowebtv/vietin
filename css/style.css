@@ -1168,6 +1168,7 @@ s.btn {
 
         .footer .links ul li {
             margin-bottom: 5px;
+            line-height: 15px;
         }
 
             .footer .links ul li:before {
@@ -1432,12 +1433,12 @@ s.btn {
     position: relative;
     left: -50px;
     top: 1px;
-    font-family: 'myriadpro-regular', sans-serif;
+    font-family: 'svn-gilroy-regular', sans-serif;
     font-size: 12px !important;
 }
 
 .top-menu ul li a {
-    font-family: 'myriadpro-semibold', sans-serif;
+    font-family: 'svn-gilroy-semibold', sans-serif;
     font-size: 12px;
 }
 
@@ -1446,7 +1447,7 @@ s.btn {
 }
 
 .cat-nav-head ul li a {
-    font-family: 'myriadpro-semibold', sans-serif;
+    font-family: 'svn-gilroy-semibold', sans-serif;
 }
 
 .phone-contact ul li a {
@@ -1492,7 +1493,7 @@ s.btn {
 }
 
 span {
-    font-family: 'myriadpro-regular', sans-serif;
+    font-family: 'svn-gilroy-regular', sans-serif;
 }
 
 .slicknav_nav {
@@ -1667,7 +1668,7 @@ a a {
 }
 
     .banking .nice-select span {
-        font-family: 'myriadpro-bold',sans-serif !important;
+        font-family: 'svn-gilroy-bold',sans-serif !important;
     }
 
     .banking .nice-select .current {
@@ -1677,12 +1678,12 @@ a a {
 
 .nice-select .option {
     font-size: 16px;
-    font-family: 'myriadpro-bold',sans-serif !important;
+    font-family: 'svn-gilroy-bold',sans-serif !important;
 }
 
 .access {
     font-weight: bold;
-    font-family: 'myriadpro-bold',sans-serif !important;
+    font-family: 'svn-gilroy-bold',sans-serif !important;
 }
 
 .flex-item {
@@ -1720,7 +1721,7 @@ body {
 }
 
 .product-content a {
-    font-family: 'myriadpro-bold', sans-serif;
+    font-family: 'svn-gilroy-bold', sans-serif;
     font-size: 16px;
 }
 
@@ -1781,7 +1782,7 @@ body {
     color: #686868;
     font-weight: 600;
     font-size: 16px;
-    font-family: 'myriadpro-bold', sans-serif;
+    font-family: 'svn-gilroy-bold', sans-serif;
     padding: 10px 0px 15px 0px;
 }
 
@@ -1806,7 +1807,7 @@ body {
 }
 
 .address-bot {
-    padding-top: 5px;
+    padding-top: 3px;
 }
 
 .service-slider .owl-controls .owl-nav .owl-next {
@@ -1855,6 +1856,10 @@ body {
 
 .app-download {
     right: 10px;
+}
+
+.app-down img {
+    height: 100%;
 }
 
 .connect-left .row a img {
@@ -1913,17 +1918,17 @@ body {
 
     .tbl-rate tbody tr td:first-child {
         padding-left: 10px;
-        font-family: 'myriadpro-bold',sans-serif;
+        font-family: 'svn-gilroy-bold',sans-serif;
     }
 
     .tbl-rate thead tr td {
         border: none !important;
-        font-family: 'myriadpro-bold',sans-serif;
+        font-family: 'svn-gilroy-bold',sans-serif;
     }
 
         .tbl-rate thead tr td:first-child {
             border: none !important;
-            font-family: 'myriadpro-bold',sans-serif;
+            font-family: 'svn-gilroy-bold',sans-serif;
         }
 
 .tab-pane.table td {
@@ -2063,7 +2068,7 @@ tool:after {
 
 .collapsible {
     padding-left: 10px !important;
-    font-family: 'myriadpro-bold',sans-serif;
+    font-family: 'svn-gilroy-bold',sans-serif;
     font-size: 16px;
 }
 
@@ -2108,7 +2113,7 @@ tool:after {
 
 .news-image {
     min-height: 200px;
-    background: url(../images/icon/box_body/Asset26.png) no-repeat;
+    background: url(../images/news/event/news-bg.png) no-repeat;
     background-size: cover;
 }
 
@@ -2141,7 +2146,7 @@ tool:after {
 
 .down-border {
     border-radius: 10px;
-    border: 1px solid #ccc;
+    /*border: 1px solid #ccc;*/
     height: 45px;
 }
 
@@ -2299,7 +2304,7 @@ tool:after {
             content: '';
             display: block;
             height: 8px;
-            margin-top: -6px;
+            margin-top: -4px;
             pointer-events: none;
             position: absolute;
             right: 12px;
@@ -2502,13 +2507,13 @@ tool:after {
 
 .nice-select .option {
     color: #686868 !important;
-    font-family: 'myriadpro-bold',sans-serif !important;
+    font-family: 'svn-gilroy-bold',sans-serif !important;
 }
 
 .title-head {
     font-size: 18px;
     margin-top: 3px;
-    font-family: 'myriadpro-bold',sans-serif !important;
+    font-family: 'svn-gilroy-bold',sans-serif !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2544,7 +2549,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 
 
 .menu1-text span {
-    font-family: 'myriadpro-semibold',sans-serif;
+    font-family: 'svn-gilroy-semibold',sans-serif;
 }
 
 .app-logo {
@@ -2800,7 +2805,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 }
 
 .scrollUp a span {
-    font-family: 'myriadpro-bold',sans-serif !important;
+    font-family: 'svn-gilroy-bold',sans-serif !important;
 }
 
 .mr-5px {

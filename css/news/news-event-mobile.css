@@ -10,7 +10,7 @@
     .head-link ul li:nth-child(3) {
         color: #005993;
         font-size: 14px;
-        font-family: 'myriadpro-bold',sans-serif;
+        font-family: 'svn-gilroy-bold',sans-serif;
     }
 
     .head-link {
@@ -25,8 +25,8 @@
             padding-right: 7.5px !important;
         }
 
-            .news-link .row .col-sm-6:nth-child(2n+1) .pro-bold,
-            .news-link .row .col-sm-6:nth-child(2n) .pro-bold {
+            .news-link .row .col-sm-6:nth-child(2n+1) .gilroy-bold,
+            .news-link .row .col-sm-6:nth-child(2n) .gilroy-bold {
                 font-size: 14px !important;
                 color: #686868 !important;
             }

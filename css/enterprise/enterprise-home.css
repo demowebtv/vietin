@@ -95,7 +95,7 @@
     color: #fff;
     font-weight: 100;
     text-transform: uppercase;
-    font-family: 'myriadpro-regular',sans-serif;
+    font-family: 'svn-gilroy-regular',sans-serif;
 }
 
 .owl-theme .owl-nav [class*='owl-'] {
@@ -131,7 +131,7 @@
 }
 
     .service-more span {
-        font-family: 'myriadpro-regular',sans-serif !important;
+        font-family: 'svn-gilroy-regular',sans-serif !important;
         text-transform: none;
         width: 100%;
         display: block;
