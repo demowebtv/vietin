@@ -18,8 +18,6 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
-
     .right-contact {
         position: fixed;
         right: -90%;
@@ -482,12 +480,6 @@
         max-height: 160px;
         display: flex;
     }
-
-    .app-logo {
-        padding-bottom: 15px;
-    }
-
-
 
     .service-slider .owl-controls .owl-nav .owl-next {
         display: flex;
@@ -1384,6 +1376,17 @@
 }
 /* Mobile Screen */
 @media only screen and (max-width: 450px) {
+    .left-logo a img {
+        max-height: 30px !important;
+    }
+
+    .service-slider .owl-controls .owl-nav .owl-prev,
+    .service-slider .owl-controls .owl-nav .owl-next {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
     .pl-sm-7-5 {
         padding-left: 7.5px !important;
     }
@@ -1498,14 +1501,6 @@
         max-width: 60px !important;
     }
 
-    .app-logo:nth-child(2) {
-        padding-left: 0px;
-    }
-
-    .app-logo:nth-child(3) .row .col-12 {
-        padding-left: 0px;
-    }
-
     .right-contact {
         position: fixed;
         right: -83%;
@@ -1534,14 +1529,15 @@
     .app-down {
         font-size: 12px !important;
         align-items: center;
-        display: block;
-        height: 100%;
+        display: inline-flex;
+        line-height: 15px;
+        height: 30px;
     }
 
         .app-down span {
-            display: block;
+            padding-left: 5px;
             height: 100%;
-            margin-top: 1px;
+            text-align: left !important;
         }
 
     .news-sec {
@@ -1572,8 +1568,11 @@
     }
 
     .icon-w {
-        height: 20px;
-        width: 20px;
+        width: 30px !important;
+        background: #fff !important;
+        border-radius: 10px !important;
+        padding: 5px;
+        box-shadow: 0px 0px 10px 0px #999;
     }
 
     .vietin-icon {
@@ -2573,14 +2572,6 @@
         display: flex;
     }
 
-    .connect-mobile {
-        margin-top: 5px;
-    }
-
-    .connect-mobile {
-        margin-top: 15px;
-    }
-
     .scrollUp a:first-child {
         padding-right: 5px;
     }
@@ -2722,8 +2713,8 @@
         height: 100%;
         display: none;
         position: absolute;
-        right: -170%;
-        width: 170%;
+        right: -173%;
+        width: 173%;
         margin-left: 0px;
         top: 0px;
         z-index: 1;
@@ -2758,6 +2749,12 @@
 
 .vietin-icon {
     box-shadow: 0px 0px 10px 0px #999;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .right-contact {
+        right: -94% !important;
+    }
 }
 
 @media only screen and (min-width: 1500px) {

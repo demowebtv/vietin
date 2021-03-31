@@ -7,8 +7,16 @@
 
 @media only screen and (max-width: 450px) {
 
-    .most-popular .single-product:first-child {
+    /* .most-popular .single-product:first-child {
         margin: 0 5px 0 5px;
+    }
+*/
+    .most-popular .single-product {
+        margin: 30px 0 0 0 !important;
+    }
+
+    .pt-sm-0px {
+        padding-top: 0px !important;
     }
 
     .care {
@@ -37,10 +45,6 @@
         line-height: 20px !important;
         font-size: 14px !important;
         padding: 0px 10px !important;
-    }
-
-    .product-content .row a .row:last-child .col-12 {
-        bottom: 0 !important;
     }
 }
 
@@ -81,7 +85,7 @@
 .bg-content {
     position: absolute;
     background: #005993;
-    opacity: 0.7;
+    opacity: 0.6;
     height: 90px;
     width: 100%;
     bottom: 0;
@@ -127,7 +131,6 @@
 
 .service-more {
     padding-top: 15px;
-    opacity: 0.8;
 }
 
     .service-more span {
@@ -170,4 +173,9 @@
 
 .product-content span {
     font-family: 'svn-gilroy-medium',sans-serif;
+}
+
+.more span {
+    font-family: 'svn-gilroy-medium-italic',sans-serif;
+    font-size: 12px;
 }

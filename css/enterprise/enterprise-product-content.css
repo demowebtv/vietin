@@ -59,6 +59,9 @@
     display: block;
     width: 100%;
 }
+.menu-expand-2 li:first-child a {
+    padding-top: 10px;
+}
 
 .fa-plus, .fa-minus {
     position: absolute;
@@ -76,8 +79,11 @@
 
     .lvl1-title span {
         color: #005993;
+        font-size: 14px;
     }
 
 .menu-expand-1 li:first-child .lvl1-title {
     border-top: 1px solid #7ed3f7 !important;
 }
+
+    

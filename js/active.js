@@ -396,7 +396,7 @@ function showProducts() {
                 nav: true,
                 merge: true,
                 dots: true,
-                navText: ['<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>'],
+                navText: ['<img src="images/icon/left-arrow.svg" />', '<img src="images/icon/right-arrow.svg" />'],
                 responsive: {
                     0: {
                         items: 1,

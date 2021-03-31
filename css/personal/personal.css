@@ -28,6 +28,34 @@
     }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1191px) {
+    .e-bank a {
+        text-align: left !important;
+        padding-right: 5px !important;
+    }
+
+    .banking-content a, .banking-content span {
+        font-size: 12px !important;
+        line-height: 15px !important;
+    }
+
+    .personal-options a {
+        padding: 0px 0px 0px 15px !important;
+    }
+
+    .personal-item {
+        padding: 0px !important;
+    }
+
+    .register, .tool {
+        padding: 0px !important;
+    }
+
+    .download-icon {
+        max-height: 25px;
+    }
+}
+
 .blue {
     background: #005993;
 }
@@ -234,3 +262,7 @@
         .tool .endow li a:hover {
             background: #7ed3f7;
         }
+
+.w-20px {
+    width: 20px;
+}

@@ -173,3 +173,13 @@
 .content {
     background: #fff;
 }
+
+.scroll-table .row .col-12 label{
+    max-height: 41px;
+}
+
+.lvl1-tool{
+    text-transform: uppercase;
+    display: flex;
+    width: 100%;
+}

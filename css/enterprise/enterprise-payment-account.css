@@ -179,6 +179,7 @@
 
     .detail-account ul li {
         list-style: inside;
+        color: black;
     }
 
 .left-icon-first {
@@ -225,7 +226,7 @@ body {
     width: 100%;
     text-align: center;
     cursor: pointer;
-    height: 26px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -53,3 +53,7 @@
 .gilroy-semibold {
     font-family: 'svn-gilroy-semibold',sans-serif;
 }
+
+.gray {
+    color: black !important;
+}

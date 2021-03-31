@@ -733,7 +733,7 @@ s.btn {
     }
 
 .most-popular .owl-carousel .owl-controls .owl-nav .owl-prev {
-    left: -22px;
+    left: -20px;
 }
 
 .most-popular .owl-carousel .owl-controls .owl-nav .owl-next {
@@ -1386,7 +1386,7 @@ s.btn {
 .slicknav_menu .slicknav_icon-bar:first-child {
     display: block;
     width: 18px;
-    height: 1px;
+    height: 3px;
     -webkit-border-radius: 1px;
     -moz-border-radius: 1px;
     border-radius: 1px;
@@ -1832,11 +1832,6 @@ body {
     padding: 0;
 }
 
-    .service-slider .owl-controls .owl-nav .owl-prev i {
-        position: absolute;
-        left: -6px;
-    }
-
     .service-slider .owl-controls .owl-nav .owl-prev:hover {
         color: #005993;
         font-weight: 600;
@@ -1986,20 +1981,28 @@ body {
 
 /* Track */
 .scroll-table::-webkit-scrollbar-track {
-    background: #f1f1f1;
     border-radius: 3px;
 }
 
 /* Handle */
 .scroll-table::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #eee;
     border-radius: 3px;
 }
 
     /* Handle on hover */
     .scroll-table::-webkit-scrollbar-thumb:hover {
-        background: #555;
+        background: #686868;
     }
+
+.scroll-table::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 50px;
+}
+
+.scroll-table::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+}
 
 tool:after {
     content: '\002B';
@@ -2128,12 +2131,6 @@ tool:after {
     bottom: 20px;
 }
 
-.icon-w {
-    height: 35px;
-    width: 35px;
-    margin: 5px;
-}
-
 .vietin-icon {
     background-color: #fff;
     border-radius: 10px;
@@ -2147,7 +2144,7 @@ tool:after {
 .down-border {
     border-radius: 10px;
     /*border: 1px solid #ccc;*/
-    height: 45px;
+    height: 30px;
 }
 
 .access:hover {
@@ -2814,4 +2811,17 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 
 .pr-5px {
     padding-right: 5px;
+}
+
+
+.lisence span {
+    line-height: 26px;
+}
+
+.connect-mobile {
+    padding-top: 15px;
+}
+
+.black {
+    color: black;
 }

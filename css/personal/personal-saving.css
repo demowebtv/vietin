@@ -29,7 +29,7 @@
 
 
 .saving-options {
-    margin-left: 15px;
+    margin-left: 17px;
     padding-top: 15px;
 }
 
@@ -37,6 +37,10 @@
         list-style: outside;
         list-style-type: square;
     }
+
+        .saving-options li a:hover {
+            color: #005993;
+        }
 
 .saving-item:last-child .saving-content {
     border: none;
