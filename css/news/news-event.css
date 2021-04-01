@@ -180,7 +180,7 @@
 
 .btn-search:hover {
     background-color: #005993;
-    color: #fff;
+    color: #fff !important;
 }
 
 .btn-search {

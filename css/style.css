@@ -1885,6 +1885,7 @@ body {
 .blue-more {
     color: #93d5f6 !important;
     text-transform: uppercase;
+    font-size: 12px !important;
 }
 
 .right-arrow {
@@ -1967,6 +1968,8 @@ body {
 
 .scroll-table {
     overflow-y: auto;
+    scrollbar-color: #eee #fff;
+    scrollbar-width: thin;
 }
 
 .price-height {
@@ -2198,7 +2201,7 @@ tool:after {
 
 .service-all {
     border-radius: 10px;
-    box-shadow: 0px 3px 5px #6868683334d;
+    box-shadow: 0px 3px 5px #686868;
 }
 
     .service-all .col-6 {

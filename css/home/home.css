@@ -72,7 +72,13 @@
     }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1130px) {
+    .more-news {
+        position: unset;
+    }
+}
+
+@media only screen and (min-width: 1131px) {
     .more-news {
         position: absolute;
     }
@@ -174,12 +180,66 @@
     background: #fff;
 }
 
-.scroll-table .row .col-12 label{
+.scroll-table .row .col-12 label {
     max-height: 41px;
 }
 
-.lvl1-tool{
-    text-transform: uppercase;
+.tool-all li:last-child span {
+    border: none;
+}
+
+.lvl1-tool:hover .right-small, .lvl2-title:hover .right-small {
+    fill: #005973;
+    -webkit-transform-origin: 66% 66%;
+    -ms-transform-origin: 66% 66%;
+    transform-origin: 66% 66%;
+    -webkit-transform: rotate( 90deg );
+    -ms-transform: rotate(90deg);
+    transform: rotate( 90deg );
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    right: 20px;
+}
+
+.lvl1-tool {
     display: flex;
+    cursor: pointer;
+    align-items: center;
+    position: relative;
     width: 100%;
+    padding: 12px 0px 12px 30px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+}
+
+    .lvl1-tool:hover {
+        background: #73d3f7;
+        color: #005993;
+    }
+
+.lvl2-tool li .lvl2-title:hover, .lvl2-tool li a:hover {
+    background: #73d3f7;
+    color: #005993;
+}
+
+.lvl2-title {
+    display: flex;
+    align-items: center;
+    font-family: 'svn-gilroy-bold',sans-serif;
+}
+
+.lvl2-tool a {
+    padding: 5px 10px;
+    margin-left: 30px;
+    display: flex;
+    border-bottom: 1px solid #eee;
+}
+
+.right-small {
+    position: absolute;
+    right: 15px;
+}
+
+li > ul, li > ol {
+    margin-left: 15px;
 }

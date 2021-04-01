@@ -1,4 +1,15 @@
 ﻿@media only screen and (max-width: 450px) {
+    .main-options {
+        height: 145px !important;
+    }
+
+    .product-tab li a{
+      font-size: 12px !important;
+    }
+
+    .product-tab li span{
+        padding: 0px 5px !important;
+    }
 }
 
 @media only screen and (max-width: 991px) {

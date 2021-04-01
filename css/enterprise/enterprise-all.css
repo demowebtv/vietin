@@ -110,3 +110,7 @@ body, button, input, select, optgroup, textarea {
 .connect {
     line-height: 20px;
 }
+
+.gray {
+    color: black !important;
+}

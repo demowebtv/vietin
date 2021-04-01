@@ -155,6 +155,9 @@ function initRightContact() {
 }
 
 function initMenu() {
+    $('.menu2').css('background', 'transparent');
+    $('.left-item').css('background', '#fff');
+
     $('.menu1-text').on('mouseover', (e) => {
         let menu1 = $(e.currentTarget)[0];
         let dropdown = menu1.nextElementSibling;
@@ -179,6 +182,10 @@ function initMenu() {
                 else {
                     $(menu2.offsetParent).height(menu2.offsetParent.dataset.height);
                 }
+            }
+            else {
+                $('.menu2').css('background', 'transparent');
+                $('.left-item').css('background', '#fff');
             }
         }
     });

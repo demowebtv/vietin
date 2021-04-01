@@ -1,6 +1,6 @@
 ﻿$(document).on('ready', function () {
-    collapseNews();
     showTabletProducts();
+    initCollapseTool();
 
     $('.nav-link').on('click', (e) => {
         if (e.currentTarget.classList.contains('rate1')) {
@@ -112,56 +112,30 @@ function showOtherServices(elm) {
     }
 }
 
-function collapseNews() {
-    let coll = document.getElementsByClassName("collapsible");
-    for (let i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-            let index = this.dataset.index;
-            if (`${index}`.indexOf('.') > -1) {
-                $(".collapsible").each((i, elm) => {
-                    if (elm.dataset.index != index && elm.dataset.index.indexOf('.') > -1 && `${elm.dataset.index}`.split('.')[0] == index.split('.')[0]) {
-                        $(elm).removeClass('active');
-                        let content = elm.nextSibling.nextElementSibling;
-                        content.style.maxHeight = null;
-                    }
-                })
+function initCollapseTool() {
+    $('.tool-all li').each((i, elm) => {
+        if ($(elm).find('.lvl2-tool').length > 0) {
+            $(elm).find('.lvl1-tool').append('<svg class="right-small" fill="#93d5f6" width="10px" height="10px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10.08"><defs></defs><title>Asset 6ldpi</title><g id="Layer_2" data-name="Layer 2"><g id="body"><path class="cls-1" d="M.28,9.8h0a1,1,0,0,1,0-1.36L3,5.72A1,1,0,0,0,3,4.36L.28,1.64A1,1,0,0,1,.28.28h0a1,1,0,0,1,1.36,0L5.72,4.36a1,1,0,0,1,0,1.36L1.64,9.8A1,1,0,0,1,.28,9.8Z"/></g></g></svg>');
+        }
+    })
+    
+    $('.lvl2-tool li').each((i, elm) => {
+        if ($(elm).find('.lvl3-tool').length > 0) {
+            $(elm).find('.lvl2-title').append('<svg class="right-small" fill="#93d5f6" width="10px" height="10px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10.08"><defs></defs><title>Asset 6ldpi</title><g id="Layer_2" data-name="Layer 2"><g id="body"><path class="cls-1" d="M.28,9.8h0a1,1,0,0,1,0-1.36L3,5.72A1,1,0,0,0,3,4.36L.28,1.64A1,1,0,0,1,.28.28h0a1,1,0,0,1,1.36,0L5.72,4.36a1,1,0,0,1,0,1.36L1.64,9.8A1,1,0,0,1,.28,9.8Z"/></g></g></svg>');
+        }
+    })
 
-                this.classList.toggle("active");
-                let content = this.nextElementSibling;
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            }
-            else {
-                $(".collapsible").each((i, elm) => {
-                    if ($(elm).data('index') != index) {
-                        $(elm).removeClass('active');
-                        let content = elm.nextSibling.nextElementSibling;
-                        content.style.maxHeight = null;
-                    }
-                })
+    $('.lvl1-tool').on('click', (elm) => {
+        if (elm.target.nextElementSibling) {
+            $(elm.target.nextElementSibling).toggleClass('hide');
+        }
+    })
 
-                this.classList.toggle("active");
-                let content = this.nextElementSibling;
-                let maxHeight = 0;
-                $(content).find('.table-content tbody tr').each((i, elm) => {
-                    var contentTbl = $(elm).find('td .content .table-content');
-                    if (contentTbl.length > 0 && (contentTbl[0]).clientHeight > maxHeight) {
-                        maxHeight = (contentTbl[0]).clientHeight;
-                    }
-                });
-
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = (content.scrollHeight + maxHeight) + "px";
-                }
-            }
-
-
-        });
-    }
+    $('.lvl2-title').on('click', (elm) => {
+        if (elm.target.nextElementSibling) {
+            $(elm.target.nextElementSibling).toggleClass('hide');
+        }
+    })
 }
+
 
