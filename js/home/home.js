@@ -23,9 +23,6 @@
         }
     }
 
-    /*=======================
-      Home Slider JS
-    =========================*/
     $(".home-slide").owlCarousel({
         navigation: true,
         autoplay: true,
@@ -96,7 +93,6 @@ function initInternetBankingOptions() {
     $(selectLiTags[3]).append('<img class="option-icon" src="images/icon/right_box/Asset33.png" />');
     $(selectLiTags[4]).append('<img class="option-icon" src="images/icon/right_box/Asset38.png" />');
 }
-
 
 function showOtherServices(elm) {
     let service = document.getElementById('other-services');

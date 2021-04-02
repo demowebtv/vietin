@@ -1,5 +1,5 @@
 ﻿.border-rate {
-    height: 3px;
+    height: 2px;
     border-radius: 1px;
     position: relative;
     bottom: 2px;
@@ -22,7 +22,7 @@
 }
 
 .other-service .otherx img {
-    max-width: 90px;
+    max-width: 50px;
 }
 
 .other-service .col-lg-6 {
@@ -70,6 +70,15 @@
         border-right: 1px solid #eee;
         border-bottom: 1px solid #eee;
     }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-top {
+        padding-bottom: 30px !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1130px) {
@@ -242,4 +251,30 @@
 
 li > ul, li > ol {
     margin-left: 15px;
+}
+
+.other-img {
+    max-height: 30px !important;
+    margin: 10px;
+}
+
+.single-product .product-img a img {
+    max-height: 70px;
+    max-width: 50px;
+}
+
+.connect-mobile {
+    padding-top: 7px;
+}
+
+.lisence {
+    line-height: 18px;
+}
+
+    .lisence span {
+        line-height: 18px;
+    }
+
+.more-news a, .blue-more {
+    font-family: 'svn-gilroy-bold',sans-serif;
 }

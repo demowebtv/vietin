@@ -266,3 +266,15 @@
 .w-20px {
     width: 20px;
 }
+
+.lisence {
+    line-height: 18px;
+}
+
+    .lisence span {
+        line-height: 18px;
+    }
+
+.connect-mobile {
+    padding-top: 4px;
+}

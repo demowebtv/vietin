@@ -807,8 +807,9 @@ s.btn {
 }
 
     .single-product .product-img a {
-        display: block;
+        display: flex;
         position: relative;
+        justify-content: center;
     }
 
         .single-product .product-img a img {
@@ -1364,7 +1365,7 @@ s.btn {
 
 .slicknav_nav {
     position: absolute;
-    top: 41px;
+    top: 21px;
     background-color: #fff;
     width: 100%;
     padding: 0px 15px;
@@ -1807,7 +1808,7 @@ body {
 }
 
 .address-bot {
-    padding-top: 3px;
+    padding-top: 1px;
 }
 
 .service-slider .owl-controls .owl-nav .owl-next {
@@ -2641,7 +2642,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 }
 
 .desktop-foot {
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
 }
 
 .connect-right {
@@ -2821,10 +2822,23 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     line-height: 26px;
 }
 
-.connect-mobile {
-    padding-top: 15px;
-}
-
 .black {
     color: black;
+}
+
+.single-icon {
+    z-index: 9999;
+    display: block;
+    height: 100%;
+}
+.slicknav_menu{
+    z-index: 2;
+}
+
+.mobile-nav, .slicknav_menu{
+    height: 0;
+}
+
+.slicknav_btn{
+    bottom: 19px;
 }

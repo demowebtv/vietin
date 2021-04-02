@@ -55,6 +55,10 @@ let imgType = {
         showProducts();
     });
 
+    setOffsetSelectWidth();
+    showBorrowOptions();
+    showTabletMenu();
+    changeSlideTopImg();
 
     $('select').niceSelect();
 
@@ -75,29 +79,82 @@ function windowResizeHandle() {
     showProducts();
     showBorrowOptions();
     showTabletMenu();
+}
+
+const solutionSlides = $('.solution-slider').length > 0 ? $('.solution-slider')[0].cloneNode(true) : null;
+function showProducts() {
+    if (!solutionSlides) {
+        return;
+    }
+
+    let owl = $('.solution-slider').find('.owl-stage-outer');
+    if (window.innerWidth > 450) {
+        if (owl.length == 0) {
+            $('.solution-slider').owlCarousel({
+                items: 1,
+                autoplay: false,
+                autoplayTimeout: 3000,
+                smartSpeed: 400,
+                animateIn: 'fadeIn',
+                animateOut: 'fadeOut',
+                autoplayHoverPause: true,
+                loop: true,
+                nav: true,
+                merge: true,
+                dots: true,
+                navText: ['<img src="images/icon/left-arrow.svg" />', '<img src="images/icon/right-arrow.svg" />'],
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    300: {
+                        items: 2,
+                    },
+                    480: {
+                        items: 2,
+                    },
+                    768: {
+                        items: 3,
+                    },
+                    1170: {
+                        items: 4,
+                    },
+                }
+            });
+        }
+    }
+    else {
+        $('.solution-slider').remove();
+        $('.product-slide').append(solutionSlides);
+        $('.solution-slider').css('display', 'block');
+    }
+
     changeEnterpriseProductsImg();
+
 }
 
 function changeEnterpriseProductsImg() {
-    if (window.innerWidth <= 450 && $('.solution-slider').length > 0) {
+    if ($('.solution-slider').length > 0) {
         let allImgSrc = [];
         let products = [];
-        $('.solution-slider').find('img').each((i, img) => {
-            if (allImgSrc.indexOf(img.src) < 0) {
-                products.push(img);
-                allImgSrc.push(img.src);
-            }
+        $('.solution-slider').find('.default-img').each((i, img) => {
+            products.push(img);
+            allImgSrc.push(img.src);
         })
 
         $.each(products, (i, product) => {
             let paths = product.src.split('/');
             let currSrcs = paths[paths.length - 1].split('.');
-
-            if (currSrcs.length >= 2 && currSrcs[currSrcs.length - 2].indexOf(`-${imgType.MOBILE}`) < 0) {
-                currSrcs[currSrcs.length - 2] = `${currSrcs[currSrcs.length - 2]}-${imgType.MOBILE}`;
-                paths[paths.length - 1] = currSrcs.join('.');
-                let imgSrc = paths.join('/');
-                product.src = imgSrc;
+            if (window.innerWidth <= 450) {
+                if (currSrcs.length >= 2 && currSrcs[currSrcs.length - 2].indexOf(`-${imgType.MOBILE}`) < 0) {
+                    currSrcs[currSrcs.length - 2] = `${currSrcs[currSrcs.length - 2]}-${imgType.MOBILE}`;
+                    paths[paths.length - 1] = currSrcs.join('.');
+                    let imgSrc = paths.join('/');
+                    product.src = imgSrc;
+                }
+            }
+            else {
+                product.src = `${product.src}`.replace(`-${imgType.MOBILE}`, '');
             }
         })
     }
@@ -313,10 +370,8 @@ function changeImageType(type) {
         let allImgSrc = [];
         let banners = [];
         $('.home-slide').find('img').each((i, img) => {
-            if (allImgSrc.indexOf(img.src) < 0) {
-                banners.push(img);
-                allImgSrc.push(img.src);
-            }
+            banners.push(img);
+            allImgSrc.push(img.src);
         })
 
         $.each(banners, (i, banner) => {
@@ -338,13 +393,10 @@ function changeImageType(type) {
 }
 
 function isImageExists(imageUrl) {
-    var image = new Image();
-    image.src = imageUrl;
-    if (image.width == 0) {
-        return false;
-    } else {
-        return true;
-    }
+    var http = new XMLHttpRequest();
+    http.open('HEAD', imageUrl, false);
+    http.send();
+    return http.status != 404;
 }
 
 function changeSlideTopImg() {
@@ -379,55 +431,6 @@ function initMenuLevel2() {
                 $(elm).append('<i class="fa fa-chevron-right top-menu"></i>');
             }
         })
-    }
-}
-
-let solutionSlides = $('.solution-slider').length > 0 ? $('.solution-slider')[0].cloneNode(true) : null;
-function showProducts() {
-    if (!solutionSlides) {
-        return;
-    }
-
-    let owl = $('.solution-slider').find('.owl-stage-outer');
-    if (window.innerWidth > 450) {
-        if (owl.length == 0) {
-            $('.solution-slider').owlCarousel({
-                items: 1,
-                autoplay: false,
-                autoplayTimeout: 3000,
-                smartSpeed: 400,
-                animateIn: 'fadeIn',
-                animateOut: 'fadeOut',
-                autoplayHoverPause: true,
-                loop: true,
-                nav: true,
-                merge: true,
-                dots: true,
-                navText: ['<img src="images/icon/left-arrow.svg" />', '<img src="images/icon/right-arrow.svg" />'],
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    300: {
-                        items: 2,
-                    },
-                    480: {
-                        items: 2,
-                    },
-                    768: {
-                        items: 3,
-                    },
-                    1170: {
-                        items: 4,
-                    },
-                }
-            });
-        }
-    }
-    else {
-        $('.product-slide').html('');
-        $('.product-slide').append(solutionSlides);
-        $('.solution-slider').css('display', 'block');
     }
 }
 

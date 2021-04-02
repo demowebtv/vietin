@@ -480,7 +480,7 @@
     <!-- Slider Area -->
     <section class="hero-slider position-relative top-slide">
         <div class="row">
-            <div class="owl-carousel owl-theme home-slide">
+            <div class="owl-carousel owl-theme home-slide vietin-slide" id="vietin-slide">
                 <div class="item">
                     <a href="#" target="_self">
                         <img src="images/banner/banner-top-desktop.jpg" />
@@ -533,7 +533,7 @@
     </section>
     <!--/ End Slider Area -->
     <!-- Start Most Popular -->
-    <div class="product-area most-popular pb-24px">
+    <div class="product-area most-popular pb-24px pt-30px">
         <div class="container">
             <div class="row position-relative plr-15px">
                 <div class="col-12 product-slide">
@@ -541,7 +541,7 @@
                         <div class="single-product pb-2px">
                             <div class="product-img">
                                 <a class="slide-content" href="#">
-                                    <img class="default-img" src="images/icon/utils/1.jpg" alt="#">
+                                    <img class="default-img" src="images/home/guit-tk.svg" />
                                 </a>
                             </div>
                             <div class="product-content">
@@ -551,7 +551,7 @@
                         <div class="single-product pb-2px">
                             <div class="product-img">
                                 <a class="slide-content" href="#">
-                                    <img class="default-img" src="images/icon/utils/2.jpg" alt="#">
+                                    <img class="default-img" src="images/home/tai-khoan-tt.svg" />
                                 </a>
                             </div>
                             <div class="product-content">
@@ -561,7 +561,7 @@
                         <div class="single-product pb-2px">
                             <div class="product-img">
                                 <a class="slide-content" href="#">
-                                    <img class="default-img" src="images/icon/utils/3.jpg" alt="#">
+                                    <img class="default-img" src="images/home/vay-tieu-dung.svg" />
                                 </a>
                             </div>
                             <div class="product-content">
@@ -571,7 +571,7 @@
                         <div class="single-product pb-2px">
                             <div class="product-img">
                                 <a class="slide-content" href="#">
-                                    <img class="default-img" src="images/icon/utils/4.jpg" alt="#">
+                                    <img class="default-img" src="images/home/vay-san-xuat.svg" />
                                 </a>
                             </div>
                             <div class="product-content">
@@ -581,7 +581,7 @@
                         <div class="single-product pb-2px">
                             <div class="product-img">
                                 <a class="slide-content" href="#">
-                                    <img class="default-img" src="images/icon/utils/5.jpg" alt="#">
+                                    <img class="default-img" src="images/home/card.svg" />
                                 </a>
                             </div>
                             <div class="product-content">
@@ -591,7 +591,7 @@
                         <div class="single-product other-product pb-2px otherx" onblur="hideOtherServices()" onclick="showOtherServices(this)">
                             <div class="product-img otherx">
                                 <a class="slide-content otherx">
-                                    <img class="default-img otherx" src="images/icon/utils/6.jpg" alt="#">
+                                    <img class="default-img otherx other-img" src="images/home/other-service.svg" />
                                 </a>
                             </div>
                             <div class="product-content otherx">
@@ -943,6 +943,7 @@
                                             <ul class="lvl2-tool hide">
                                                 <li><a>Báo cáo thường niên</a></li>
                                                 <li><a>Thu giữ/Bán đấu giá Tài sản bảo đảm</a></li>
+                                                <li><a>Điều kiện giao dịch</a></li>
                                                 <li><a>Tải tài liệu</a></li>
                                             </ul>
                                         </li>
@@ -1072,7 +1073,7 @@
     <!-- Start Footer Area -->
     <footer class="footer">
         <!-- Footer Top -->
-        <div class="footer-top section pb-0">
+        <div class="footer-top section">
             <div class="container">
                 <div class="row desktop-foot" id="footer-menu">
                     <div class="col-lg-2 col-3">
@@ -1154,7 +1155,9 @@
                             <div class="col-4 text-right contact connect-right flex-end justify-end">
                                 <div class="row flex-item scrollUp">
                                     <a href="#" class="flex-item">
-                                        <span class="blue-top font-weight-bold">VỀ ĐẦU TRANG</span>
+                                        <span class="blue-top font-weight-bold">
+                                            VỀ ĐẦU TRANG
+                                        </span>
                                     </a>
                                     <a href="#" class="flex-item">
                                         <img class="social-icon" src="images/icon/to-top.svg">
@@ -1165,7 +1168,7 @@
                     </div>
                 </div>
                 <div class="row mobile-foot" id="footer-menu">
-                    <div class="col-lg-2 pr-0 col-3">
+                    <div class="col-lg-2 pr-0 col-3 pl-sm-7-5">
                         <!-- Single Widget -->
                         <div class="single-footer links">
                             <ul id="contact">
@@ -1176,7 +1179,7 @@
                         </div>
                         <!-- End Single Widget -->
                     </div>
-                    <div class="col-lg-2 col-4 pr-0 pl-sm-7-5">
+                    <div class="col-lg-2 pr-0 col-4 pl-sm-7-5">
                         <!-- Single Widget -->
                         <div class="single-footer links">
                             <ul id="sitemap">
@@ -1187,7 +1190,7 @@
                         </div>
                         <!-- End Single Widget -->
                     </div>
-                    <div class="col-5 foot-mobile">
+                    <div class="col-5 foot-mobile pl-sm-7-5">
                         <div class="single-footer links">
                             <ul id="rightmap">
                                 <li class="right-map"><a href="#">Sitemap</a></li>
@@ -1217,42 +1220,44 @@
                                 <span class="blue-top">&#169;2014 - Bản quyền thuộc về Ngân hàng TMCP Công Thương Việt Nam Giấy phép số 22/GP-TTĐT của Bộ TTTT</span>
                             </div>
                         </div>
+                        <div class="row pt-10 connect-mobile">
+                            <div class="col-5 pl-0">
+                                <span class="blue-top connect">Kết nối với chúng tôi</span>
+                            </div>
+                            <div class="col-7 p-0 position-absolute app-download">
+                                <span class="blue-top connect">Tải iPay mobile tại:</span>
+                            </div>
+                        </div>
                         <div class="row pt-10 top-icon">
-                            <div class="col-5 connect-left">
+                            <div class="col-lg-7 col-md-6 col-sm-5 col-7 connect-left">
                                 <div class="row">
-                                    <div class="col-12 p-0">
-                                        <a href="#">
-                                            <img class="pl-10" src="images/icon/fb.svg" />
-                                        </a>
-                                        <a href="#">
-                                            <img src="images/icon/youtube.svg" />
-                                        </a>
-                                        <a href="#">
-                                            <img src="images/icon/linkedin.svg" />
-                                        </a>
-                                    </div>
+                                    <a href="#">
+                                        <img class="pl-10" src="images/icon/fb.svg" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/icon/youtube.svg" />
+                                    </a>
+                                    <a href="#" class="connect-mobile">
+                                        <img src="images/icon/linkedin.svg" />
+                                    </a>
+                                    <a href="#" class="connect-mobile">
+                                        <img src="images/icon/appstore.svg" />
+                                    </a>
+                                    <a href="#" class="connect-mobile">
+                                        <img src="images/icon/chplay.svg" />
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col-3 p-0 connect-left">
-                                <div class="row">
-                                    <div class="col-12 p-0">
-                                        <a href="#">
-                                            <img src="images/icon/appstore.svg" />
-                                        </a>
-                                        <a href="#">
-                                            <img src="images/icon/chplay.svg" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4 text-right contact connect-right">
+                            <div class="col-lg-5 col-md-6 col-sm-7 col-5">
                                 <div class="row flex-item scrollUp">
-                                    <div class="col-12 text-right">
-                                        <a href="#">
-                                            <img src="images/icon/foot-home.svg">
+                                    <div class="col-12 p-0 flex-item text-right justify-end">
+                                        <a href="#" class="mr-5px">
+                                            <span class="blue-top font-weight-bold">
+                                                VỀ ĐẦU TRANG
+                                            </span>
                                         </a>
                                         <a href="#">
-                                            <img src="images/icon/to-top.svg">
+                                            <img class="social-icon" src="images/icon/to-top.svg" />
                                         </a>
                                     </div>
                                 </div>

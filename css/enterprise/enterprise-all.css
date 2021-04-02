@@ -114,3 +114,7 @@ body, button, input, select, optgroup, textarea {
 .gray {
     color: black !important;
 }
+
+.title-news {
+    text-align: left !important;
+}
