@@ -13,6 +13,13 @@
         }
     })
 
+    $('.rate1').on('click', (e) => {
+        $('.rate-more').attr("href", "tintuc-tygia.html")
+    })
+    $('.rate2').on('click', (e) => {
+        $('.rate-more').attr("href", "tintuc-laisuat.html")
+    })
+
     document.onclick = (elm) => {
         let otherService = document.getElementById('other-services');
         let elmClass = elm.target.classList;

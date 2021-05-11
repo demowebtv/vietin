@@ -11,6 +11,24 @@
     }
 
 @media only screen and (max-width:450px) {
+    .comment-panel {
+        padding: 0px !important;
+    }
+
+    .comment {
+        border-radius: 0px !important;
+        margin-bottom: 0px !important;
+        border: none !important;
+    }
+
+    .more {
+        line-height: 18px !important;
+    }
+
+        .more a, .more span {
+            font-family: 'svn-gilroy-bold',sans-serif !important;
+        }
+
     .more-links {
         padding-top: 15px;
     }
@@ -89,7 +107,7 @@
             max-width: 35px;
             padding-left: 5px;
         }
- 
+
     .bread-left {
         display: none !important;
     }
@@ -164,4 +182,51 @@
 
 .share-bot {
     display: none;
+}
+
+.comment {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: #fff;
+}
+
+.login {
+    padding-right: 13px;
+}
+
+.top-regis {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid #eee;
+}
+
+.login:after {
+    content: "|";
+    color: #005993;
+    font-size: 11px;
+    position: absolute;
+    padding-left: 5px;
+    margin-right: 5px;
+}
+
+.question {
+    padding-left: 5px;
+}
+
+.btn-send {
+    width: 100px;
+    color: #fff !important;
+    background: #7ed3f7;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    text-transform: uppercase !important;
+    font-family: 'svn-gilroy-medium',sans-serif;
+    font-size: 12px;
+    padding: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 5px;
 }

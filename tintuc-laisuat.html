@@ -38,6 +38,8 @@
     <!-- Home css -->
     <link href="css/news/news-event.css" rel="stylesheet" />
     <link href="css/news/news-interest.css" rel="stylesheet" />
+    <link href="css/datepicker.css" rel="stylesheet" />
+
 </head>
 <body class="js">
     <!-- Header -->
@@ -151,7 +153,7 @@
                                                             <div class="col-lg-5 left-item col-12">
                                                                 <ul class="menu2-left">
                                                                     <li>
-                                                                        <a href="canhan-guitietkiem.html" class="link-menu2">Gửi tiết kiệm</a>
+                                                                        <a href="canhan-guitietkiem.html" class="link-menu2">Tiền gửi</a>
                                                                         <ul class="menu2-right">
                                                                             <li><a href="canhan-tietkiem-cokyhan.html">Tiết kiệm có kỳ hạn</a></li>
                                                                             <li><a href="#">Tiết kiệm không kỳ hạn</a></li>
@@ -168,7 +170,7 @@
                                                                         </ul>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="#" class="link-menu2">Vay vốn</a>
+                                                                        <a href="#" class="link-menu2">Tiền vay</a>
                                                                         <ul class="menu2-right">
                                                                             <li><a href="#">Cho vay mua, xây dựng sửa chữa nhà ở và nhận quyền sử dụng đất ở</a></li>
                                                                             <li><a href="#">Cho vay mua nhà dự án (Bao gồm Gói bảo hiểm kết hợp nhà dự án)</a></li>
@@ -196,17 +198,6 @@
                                                                         </ul>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="#" class="link-menu2">Tài khoản thanh toán </a>
-                                                                        <ul class="menu2-right">
-                                                                            <li><a href="#">Tài khoản thanh toán</a></li>
-                                                                            <li><a href="#">Tài khoản số đẹp</a></li>
-                                                                            <li><a href="#">Tài khoản V-Biz dành cho KHCN</a></li>
-                                                                            <li><a href="#">Gói tài khoản thanh toán đa tiện ích cho KHCN</a></li>
-                                                                            <li><a href="#">Gói tài khoản thanh toán dành cho Khách hàng ưu tiên</a></li>
-                                                                            <li><a href="#">Gói tài khoản thanh toán dành cho Khách hàng gửi tiết kiệm</a></li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li>
                                                                         <a href="#" class="link-menu2">Ngân hàng số </a>
                                                                         <ul class="menu2-right">
                                                                             <li><a href="#">VietinBank iPay</a></li>
@@ -216,12 +207,14 @@
                                                                         </ul>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="canhan-khachhang-uutien.html" class="link-menu2">Khách hàng ưu tiên </a>
+                                                                        <a href="#" class="link-menu2">Gói tài khoản thanh toán </a>
                                                                         <ul class="menu2-right">
-                                                                            <li><a href="#">Sản phẩm</a></li>
-                                                                            <li><a href="#">Đặc quyền</a></li>
-                                                                            <li><a href="#">Tri ân khách hàng</a></li>
-                                                                            <li><a href="#">Hội viên</a></li>
+                                                                            <li><a href="#">Tài khoản thanh toán</a></li>
+                                                                            <li><a href="#">Tài khoản số đẹp</a></li>
+                                                                            <li><a href="#">Tài khoản V-Biz dành cho KHCN</a></li>
+                                                                            <li><a href="#">Gói tài khoản thanh toán đa tiện ích cho KHCN</a></li>
+                                                                            <li><a href="#">Gói tài khoản thanh toán dành cho Khách hàng ưu tiên</a></li>
+                                                                            <li><a href="#">Gói tài khoản thanh toán dành cho Khách hàng gửi tiết kiệm</a></li>
                                                                         </ul>
                                                                     </li>
                                                                     <li>
@@ -242,7 +235,7 @@
                                                                         </ul>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="#" class="link-menu2">Dịch vụ khác </a>
+                                                                        <a href="#" class="link-menu2">Dịch vụ gia tăng </a>
                                                                         <ul class="menu2-right">
                                                                             <li><a href="#">Xác nhận số dư tiền gửi</a></li>
                                                                             <li><a href="#">Nhận và chi trả tài khoản, GTCG tại nhà</a></li>
@@ -776,15 +769,17 @@
                     <div class="col-12 tab-head">
                         <ul class="nav nav-tabs branch-tab justify-center">
                             <li><a class="active gilroy-bold" data-toggle="tab" data-index="0" href="#rate">Tính lãi tiền gửi</a></li>
-                            <li><a class="gilroy-bold" data-toggle="tab" data-index="1" href="#card">Tra cứu <br class="m-display" /> số dư/Thẻ tiết kiệm</a></li>
-                            <li><a class="gilroy-bold" data-toggle="tab" data-index="2" href="#contract">Tra cứu số dư<br class="m-display" /> Hợp đồng tiền gửi</a></li>
+                            <li><a class="gilroy-bold" data-toggle="tab" data-index="1" href="#pay">Tính lịch trả nợ theo dư nợ giảm dần</a></li>
+                            <li><a class="gilroy-bold" data-toggle="tab" data-index="2" href="#card">Tra cứu <br class="m-display" /> số dư/Thẻ tiết kiệm</a></li>
+                            <li><a class="gilroy-bold" data-toggle="tab" data-index="3" href="#contract">Tra cứu số dư<br class="m-display" /> Hợp đồng tiền gửi</a></li>
                         </ul>
                     </div>
                     <div class="col-12 nav-bot">
                         <div class="row justify-center">
-                            <div class="col-lg-3 col-md-3 col-4 p-0 nav-border bg-blue-top"></div>
-                            <div class="col-lg-3 col-md-3 col-4 p-0 nav-border"></div>
-                            <div class="col-lg-3 col-md-3 col-4 p-0 nav-border"></div>
+                            <div class="col-3 p-0 nav-border bg-blue-top"></div>
+                            <div class="col-3 p-0 nav-border"></div>
+                            <div class="col-3 p-0 nav-border"></div>
+                            <div class="col-3 p-0 nav-border"></div>
                         </div>
                     </div>
                 </div>
@@ -798,167 +793,523 @@
                     <div id="rate" class="tab-pane fade in active show">
                         <div class="row w-100">
                             <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px">
-                                <select class="address-select">
-                                    <option value="0" selected class="font-italic">Số tiền gửi</option>
-                                    <option value="1"></option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
-                                </select>
+                                <input type="text" class="form-control w-100 text-height gilroy-medium-italic fs-12" placeholder="Số tiền gửi">
                             </div>
-                            <div class="col-lg-6 col-md-6 col-12 pr-0 pl-sm-0px">
+                            <div class="col-lg-6 col-md-6 col-12 pr-0 pt-sm-15px pl-sm-0px">
                                 <select class="address-select">
                                     <option value="0" selected class="font-italic">Kỳ hạn</option>
-                                    <option value="1"></option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
+                                    <option value="1">1 Tháng</option>
+                                    <option value="2">2 Tháng</option>
+                                    <option value="3">3 Tháng</option>
+                                    <option value="4">4 Tháng</option>
+                                    <option value="5">5 Tháng</option>
+                                    <option value="6">6 Tháng</option>
+                                    <option value="7">7 Tháng</option>
+                                    <option value="8">8 Tháng</option>
+                                    <option value="9">9 Tháng</option>
+                                    <option value="10">10 Tháng</option>
+                                    <option value="11">11 Tháng</option>
+                                    <option value="12">12 Tháng</option>
+                                    <option value="13">13 Tháng</option>
+                                    <option value="24">24 Tháng</option>
+                                    <option value="36">36 Tháng</option>
                                 </select>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px">
-                                <select class="address-select">
-                                    <option value="0" selected class="font-italic">Ngày gửi tiền</option>
-                                    <option value="1"></option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
-                                </select>
+                            <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px pb-15px">
+                                <input type="text" class="form-control w-100 text-height datepicker gilroy-medium-italic fs-12" placeholder="Ngày gửi tiền">
                             </div>
-                            <div class="col-lg-6 col-md-6 col-12 pr-0 pl-sm-0px">
-                                <select class="address-select">
-                                    <option value="0" selected class="font-italic">Ngày đáo hạn</option>
-                                    <option value="1"></option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
-                                </select>
+                            <div class="col-lg-6 col-md-6 col-12 pr-0 pl-sm-0px pb-15px">
+                                <input type="text" class="form-control w-100 text-height datepicker gilroy-medium-italic fs-12" placeholder="Ngày đáo hạn">
                             </div>
-                            <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px">
-                                <select class="address-select">
-                                    <option value="0" selected class="font-italic">Lãi suất tiền gửi (%/năm)</option>
-                                    <option value="1"></option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
-                                </select>
+                            <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px pb-15px">
+                                <input type="text" class="form-control w-100 text-height gilroy-medium-italic fs-12" placeholder="Lãi suất tiền gửi (%/năm)">
                             </div>
                             <div class="col-lg-6 col-md-6 col-12 pr-0 pl-sm-0px">
-                                <select class="address-select">
+                                <select class="address-select interest-select nice-select" id="interest-select">
                                     <option value="0" selected class="font-italic">Phương thức tính lãi</option>
-                                    <option value="1"></option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
+                                    <option value="1">Trả lãi cuối kỳ</option>
+                                    <option value="2">Trả lãi đầu kỳ</option>
+                                    <option value="3">Trả lãi định kỳ</option>
                                 </select>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px pb-15px h-0 p-0">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 pr-0 pl-sm-0px pb-15px pay-interest hide">
+                                <select class="address-select nice-select">
+                                    <option value="0" selected class="font-italic">Kỳ trả lãi</option>
+                                    <option value="1">1 Tháng</option>
+                                    <option value="2">3 Tháng</option>
+                                    <option value="3">6 Tháng</option>
+                                    <option value="4">12 Tháng</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <div class="row w-100 text-center flex justify-center bottom-btn">
+                                    <div class="col-lg-3 col-md-4 col-8 pl-sm-0px">
+                                        <a class="btn-calculate calculate1"><span class="gilroy-bold mt-3px">Tính lãi tiền gửi</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 pr-0 pl-0 pt-15px rate-result1 hide">
+                                <table class="table tbl-rate-all">
+                                    <thead>
+                                        <tr>
+                                            <td class="br-1">Ngày</td>
+                                            <td class="br-1">Số tiền gửi</td>
+                                            <td class="br-1">Kỳ hạn</td>
+                                            <td class="br-1">Lãi suất</td>
+                                            <td class="br-1">Số tiền lãi nhận được</td>
+                                            <td class="">Số tiền gốc nhận được</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>01/05/2021</td>
+                                            <td>10.000.000</td>
+                                            <td>24 Tháng</td>
+                                            <td>6%/Năm</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01/08/2021</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>151.233</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01/11/2021</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>151.233</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01/02/2022</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>151.233</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01/5/2022</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>151.233</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01/08/2022</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>151.233</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pay" class="tab-pane fade in show">
+                        <div class="row w-100">
+                            <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px">
+                                <input type="text" class="form-control w-100 text-height gilroy-medium-italic fs-12" placeholder="Số tiền">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 pr-0 pt-sm-15px pl-sm-0px">
+                                <select class="address-select">
+                                    <option value="0" selected class="font-italic">Thời hạn vay</option>
+                                    <option value="1">1 Tháng</option>
+                                    <option value="2">2 Tháng</option>
+                                    <option value="3">3 Tháng</option>
+                                    <option value="4">4 Tháng</option>
+                                    <option value="5">5 Tháng</option>
+                                    <option value="6">6 Tháng</option>
+                                    <option value="7">7 Tháng</option>
+                                    <option value="8">8 Tháng</option>
+                                    <option value="9">9 Tháng</option>
+                                    <option value="10">10 Tháng</option>
+                                    <option value="11">11 Tháng</option>
+                                    <option value="12">12 Tháng</option>
+                                    <option value="13">13 Tháng</option>
+                                    <option value="24">24 Tháng</option>
+                                    <option value="36">36 Tháng</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px pb-15px">
+                                <input type="text" class="form-control w-100 text-height gilroy-medium-italic fs-12" placeholder="Lãi suất vay (%/năm)">
+                            </div>
+                            <div class="col-12">
+                                <div class="row w-100 text-center flex justify-center bottom-btn">
+                                    <div class="col-lg-3 col-md-4 col-8 pl-sm-0px">
+                                        <a class="btn-calculate calculate2"><span class="gilroy-bold mt-3px">Tính lãi trả nợ</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 pr-0 pl-0 pt-15px rate-result2 hide">
+                                <table class="table tbl-rate-all">
+                                    <thead>
+                                        <tr>
+                                            <td class="br-1">Kỳ trả lãi</td>
+                                            <td class="br-1">Số tiền gốc còn lại</td>
+                                            <td class="br-1">Số tiền gốc phải trả</td>
+                                            <td class="br-1">Số tiền lãi phải trả</td>
+                                            <td class="">Tổng tiền gốc và lãi</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>10,000,000</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>10,000,000</td>
+                                            <td>833,833</td>
+                                            <td>50,000</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>10,000,000</td>
+                                            <td>833,833</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>10,000,000</td>
+                                            <td>833,833</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>10,000,000</td>
+                                            <td>833,833</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>10,000,000</td>
+                                            <td>833,833</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>10,000,000</td>
+                                            <td>833,833</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>10,000,000</td>
+                                            <td>833,833</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>10,000,000</td>
+                                            <td>833,833</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>10,000,000</td>
+                                            <td>833,833</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>10,000,000</td>
+                                            <td>833,833</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>10,000,000</td>
+                                            <td>833,833</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="gilroy-semibold">Tổng</td>
+                                            <td class="gilroy-semibold"></td>
+                                            <td class="gilroy-semibold">10,000,000</td>
+                                            <td class="gilroy-semibold">325,000</td>
+                                            <td class="gilroy-semibold">10,325,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                     <div id="card" class="tab-pane fade in show">
                         <div class="row w-100">
                             <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px">
-                                <select class="address-select">
-                                    <option value="0" selected class="font-italic">Số tiền gửi</option>
-                                    <option value="1"></option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
-                                </select>
+                                <input type="text" class="form-control w-100 text-height gilroy-medium-italic fs-12" placeholder="Số tiền gửi">
                             </div>
-                            <div class="col-lg-6 col-md-6 col-12 pr-0 pl-sm-0px">
+                            <div class="col-lg-6 col-md-6 col-12 pr-0 pt-sm-15px pl-sm-0px">
                                 <select class="address-select">
                                     <option value="0" selected class="font-italic">Kỳ hạn</option>
-                                    <option value="1"></option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
+                                    <option value="1">1 Tháng</option>
+                                    <option value="2">2 Tháng</option>
+                                    <option value="3">3 Tháng</option>
+                                    <option value="4">4 Tháng</option>
+                                    <option value="5">5 Tháng</option>
+                                    <option value="6">6 Tháng</option>
+                                    <option value="7">7 Tháng</option>
+                                    <option value="8">8 Tháng</option>
+                                    <option value="9">9 Tháng</option>
+                                    <option value="10">10 Tháng</option>
+                                    <option value="11">11 Tháng</option>
+                                    <option value="12">12 Tháng</option>
+                                    <option value="13">13 Tháng</option>
+                                    <option value="24">24 Tháng</option>
+                                    <option value="36">36 Tháng</option>
                                 </select>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px">
-                                <select class="address-select">
-                                    <option value="0" selected class="font-italic">Ngày gửi tiền</option>
-                                    <option value="1"></option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
-                                </select>
+                            <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px pb-15px">
+                                <input type="text" class="form-control w-100 text-height datepicker gilroy-medium-italic fs-12" placeholder="Ngày gửi tiền">
                             </div>
-                            <div class="col-lg-6 col-md-6 col-12 pr-0 pl-sm-0px">
-                                <select class="address-select">
-                                    <option value="0" selected class="font-italic">Ngày đáo hạn</option>
-                                    <option value="1"></option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
-                                </select>
+                            <div class="col-lg-6 col-md-6 col-12 pr-0 pl-sm-0px pb-15px">
+                                <input type="text" class="form-control w-100 text-height datepicker gilroy-medium-italic fs-12" placeholder="Ngày đáo hạn">
                             </div>
-                            <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px">
-                                <select class="address-select">
-                                    <option value="0" selected class="font-italic">Lãi suất tiền gửi (%/năm)</option>
-                                    <option value="1"></option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
-                                </select>
+                            <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px pb-15px">
+                                <input type="text" class="form-control w-100 text-height gilroy-medium-italic fs-12" placeholder="Lãi suất tiền gửi (%/năm)">
                             </div>
                             <div class="col-lg-6 col-md-6 col-12 pr-0 pl-sm-0px">
-                                <select class="address-select">
+                                <select class="address-select interest-select nice-select" id="interest-select">
                                     <option value="0" selected class="font-italic">Phương thức tính lãi</option>
-                                    <option value="1"></option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
+                                    <option value="1">Trả lãi cuối kỳ</option>
+                                    <option value="2">Trả lãi đầu kỳ</option>
+                                    <option value="3">Trả lãi định kỳ</option>
                                 </select>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px pb-15px h-0 p-0">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 pr-0 pl-sm-0px pb-15px pay-interest hide">
+                                <select class="address-select nice-select">
+                                    <option value="0" selected class="font-italic">Kỳ trả lãi</option>
+                                    <option value="1">1 Tháng</option>
+                                    <option value="2">3 Tháng</option>
+                                    <option value="3">6 Tháng</option>
+                                    <option value="4">12 Tháng</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <div class="row w-100 text-center flex justify-center bottom-btn">
+                                    <div class="col-lg-3 col-md-4 col-8 pl-sm-0px">
+                                        <a class="btn-calculate calculate3"><span class="gilroy-bold mt-3px">Tính lãi tiền gửi</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 pr-0 pl-0 pt-15px rate-result3 hide">
+                                <table class="table tbl-rate-all">
+                                    <thead>
+                                        <tr>
+                                            <td class="br-1">Ngày</td>
+                                            <td class="br-1">Số tiền gửi</td>
+                                            <td class="br-1">Kỳ hạn</td>
+                                            <td class="br-1">Lãi suất</td>
+                                            <td class="br-1">Số tiền lãi nhận được</td>
+                                            <td class="">Số tiền gốc nhận được</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>01/05/2021</td>
+                                            <td>10,000,000</td>
+                                            <td>24 Tháng</td>
+                                            <td>6%/Năm</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01/08/2021</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>151,233</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01/11/2021</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>151,233</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01/02/2022</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>151,233</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01/5/2022</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>151,233</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01/08/2022</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>151,233</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                     <div id="contract" class="tab-pane fade in show">
                         <div class="row w-100">
                             <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px">
-                                <select class="address-select">
-                                    <option value="0" selected class="font-italic">Số tiền gửi</option>
-                                    <option value="1"></option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
-                                </select>
+                                <input type="text" class="form-control w-100 text-height gilroy-medium-italic fs-12" placeholder="Số tiền gửi">
                             </div>
-                            <div class="col-lg-6 col-md-6 col-12 pr-0 pl-sm-0px">
+                            <div class="col-lg-6 col-md-6 col-12 pr-0 pt-sm-15px pl-sm-0px">
                                 <select class="address-select">
                                     <option value="0" selected class="font-italic">Kỳ hạn</option>
-                                    <option value="1"></option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
+                                    <option value="1">1 Tháng</option>
+                                    <option value="2">2 Tháng</option>
+                                    <option value="3">3 Tháng</option>
+                                    <option value="4">4 Tháng</option>
+                                    <option value="5">5 Tháng</option>
+                                    <option value="6">6 Tháng</option>
+                                    <option value="7">7 Tháng</option>
+                                    <option value="8">8 Tháng</option>
+                                    <option value="9">9 Tháng</option>
+                                    <option value="10">10 Tháng</option>
+                                    <option value="11">11 Tháng</option>
+                                    <option value="12">12 Tháng</option>
+                                    <option value="13">13 Tháng</option>
+                                    <option value="24">24 Tháng</option>
+                                    <option value="36">36 Tháng</option>
                                 </select>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px">
-                                <select class="address-select">
-                                    <option value="0" selected class="font-italic">Ngày gửi tiền</option>
-                                    <option value="1"></option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
-                                </select>
+                            <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px pb-15px">
+                                <input type="text" class="form-control w-100 text-height datepicker gilroy-medium-italic fs-12" placeholder="Ngày gửi tiền">
                             </div>
-                            <div class="col-lg-6 col-md-6 col-12 pr-0 pl-sm-0px">
-                                <select class="address-select">
-                                    <option value="0" selected class="font-italic">Ngày đáo hạn</option>
-                                    <option value="1"></option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
-                                </select>
+                            <div class="col-lg-6 col-md-6 col-12 pr-0 pl-sm-0px pb-15px">
+                                <input type="text" class="form-control w-100 text-height datepicker gilroy-medium-italic fs-12" placeholder="Ngày đáo hạn">
                             </div>
-                            <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px">
-                                <select class="address-select">
-                                    <option value="0" selected class="font-italic">Lãi suất tiền gửi (%/năm)</option>
-                                    <option value="1"></option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
-                                </select>
+                            <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px pb-15px">
+                                <input type="text" class="form-control w-100 text-height gilroy-medium-italic fs-12" placeholder="Lãi suất tiền gửi (%/năm)">
                             </div>
                             <div class="col-lg-6 col-md-6 col-12 pr-0 pl-sm-0px">
-                                <select class="address-select">
+                                <select class="address-select interest-select nice-select" id="interest-select">
                                     <option value="0" selected class="font-italic">Phương thức tính lãi</option>
-                                    <option value="1"></option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
+                                    <option value="1">Trả lãi cuối kỳ</option>
+                                    <option value="2">Trả lãi đầu kỳ</option>
+                                    <option value="3">Trả lãi định kỳ</option>
                                 </select>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 pl-0 pr-sm-0px pb-15px h-0 p-0">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 pr-0 pl-sm-0px pb-15px pay-interest hide">
+                                <select class="address-select nice-select">
+                                    <option value="0" selected class="font-italic">Kỳ trả lãi</option>
+                                    <option value="1">1 Tháng</option>
+                                    <option value="2">3 Tháng</option>
+                                    <option value="3">6 Tháng</option>
+                                    <option value="4">12 Tháng</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <div class="row w-100 text-center flex justify-center bottom-btn">
+                                    <div class="col-lg-3 col-md-4 col-8 pl-sm-0px">
+                                        <a class="btn-calculate calculate4"><span class="gilroy-bold mt-3px">Tính lãi tiền gửi</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 pr-0 pl-0 pt-15px rate-result4 hide">
+                                <table class="table tbl-rate-all">
+                                    <thead>
+                                        <tr>
+                                            <td class="br-1">Ngày</td>
+                                            <td class="br-1">Số tiền gửi</td>
+                                            <td class="br-1">Kỳ hạn</td>
+                                            <td class="br-1">Lãi suất</td>
+                                            <td class="br-1">Số tiền lãi nhận được</td>
+                                            <td class="">Số tiền gốc nhận được</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>01/05/2021</td>
+                                            <td>10,000,000</td>
+                                            <td>24 Tháng</td>
+                                            <td>6%/Năm</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01/08/2021</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>151,233</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01/11/2021</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>151,233</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01/02/2022</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>151,233</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01/5/2022</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>151,233</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01/08/2022</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>151,233</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="row w-100 text-center flex justify-center bottom-btn">
-                    <div class="col-lg-3 col-md-4 col-8 pl-sm-0px">
-                        <a class="btn-calculate" href="#"><span class="gilroy-bold mt-3px">Tính lãi tiền gửi</span></a>
                     </div>
                 </div>
             </div>
@@ -1213,6 +1564,7 @@
     <script src="js/popper.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
     <!-- Slicknav JS -->
     <script src="js/slicknav.min.js"></script>
     <!-- Owl Carousel JS -->

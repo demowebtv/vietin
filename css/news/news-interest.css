@@ -44,7 +44,7 @@
     }
 
     .branch-tab li {
-        width: 33.333333% !important;
+        width: 25% !important;
         align-items: flex-end;
         display: flex;
         justify-content: center;
@@ -249,4 +249,13 @@ iframe {
 
 .tab-head .nav-tabs {
     border: none;
+}
+
+.text-height{
+    line-height: 31px;
+}
+
+.list{
+    max-height: 200px !important;
+    overflow: auto !important;
 }

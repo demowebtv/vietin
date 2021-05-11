@@ -1428,6 +1428,10 @@
         padding-bottom: 15px !important;
     }
 
+    .pb-sm-10px {
+        padding-bottom: 10px !important;
+    }
+
     .mobile {
         display: block !important;
     }
@@ -1490,10 +1494,6 @@
         padding-bottom: 30px !important;
     }
 
-    .pb-sm-15px {
-        margin-bottom: 15px !important;
-    }
-
     .mt-sm-15px {
         margin-top: 15px !important;
     }
@@ -1508,6 +1508,10 @@
 
     .mb-sm-15px {
         margin-bottom: 15px !important;
+    }
+
+    .mb-sm-10px {
+        margin-bottom: 10px !important;
     }
 
     .top-icon {
