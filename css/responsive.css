@@ -2346,6 +2346,10 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .head-phone {
+        display: none !important;
+    }
+
     .left-logo a img {
         max-height: 30px !important;
     }
@@ -2827,6 +2831,16 @@
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
     .right-contact {
         right: -94% !important;
+    }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1176px) {
+    .head-phone {
+        max-width: 30%;
+    }
+
+    .lang-select {
+        max-width: 15%;
     }
 }
 

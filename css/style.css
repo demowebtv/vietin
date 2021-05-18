@@ -1324,12 +1324,12 @@ s.btn {
 }
 
 .phone-icon {
-    height: 25px;
+    height: 20px;
 }
 
 .dot-icon {
     font-size: 4px !important;
-    padding: 21px 0px !important;
+    padding: 21px 0px 21px 7px !important;
 }
 
 .pr-0 {
@@ -1427,7 +1427,7 @@ s.btn {
 
 .search-control {
     position: relative;
-    left: -80px;
+    /*left: -80px;*/
 }
 
 .icon-right {
@@ -2255,6 +2255,7 @@ tool:after {
 
 .lang-select {
     height: 30px;
+    max-width: 10%;
 }
 
     .lang-select .nice-select {
@@ -2267,7 +2268,7 @@ tool:after {
         background: transparent;
         text-transform: capitalize;
         padding: 0;
-        line-height: 50px;
+        line-height: 54px;
         font-size: 14px;
         font-weight: 400;
     }
@@ -2831,14 +2832,33 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     display: block;
     height: 100%;
 }
-.slicknav_menu{
+
+.slicknav_menu {
     z-index: 2;
 }
 
-.mobile-nav, .slicknav_menu{
+.mobile-nav, .slicknav_menu {
     height: 0;
 }
 
-.slicknav_btn{
+.slicknav_btn {
     bottom: 19px;
 }
+
+.head-phone {
+    max-width: 25%;
+}
+
+.head-phone-item {
+    display: flex;
+    max-height: 30px;
+    align-items: center;
+    padding: 0;
+}
+
+    .head-phone-item li a {
+        color: #005993;
+        font-family: 'svn-gilroy-semibold',sans-serif;
+    }
+
+
