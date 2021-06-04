@@ -59,7 +59,37 @@
         itemsTablet: true,
         itemsMobile: true
     });
-
+    $('.chuyentien-slide').owlCarousel({
+        items: 4,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        smartSpeed: 500,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
+        autoplayHoverPause: true,
+        loop: true,
+        nav: true,
+        merge: true,
+        dots: false,
+        navText: ['<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>'],
+        responsive: {
+            0: {
+                items: 1,
+            },
+            300: {
+                items: 3,
+            },
+            480: {
+                items: 4,
+            },
+            768: {
+                items: 4,
+            },
+            1170: {
+                items: 4,
+            },
+        }
+    });
     initInternetBankingOptions();
 });
 

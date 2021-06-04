@@ -53,6 +53,7 @@ let imgType = {
         window.onresize = windowResizeHandle;
         showTabletProducts();
         showProducts();
+        showProduct();
     });
 
     setOffsetSelectWidth();
@@ -77,6 +78,7 @@ function windowResizeHandle() {
     showTabletProducts();
     setOffsetSelectWidth();
     showProducts();
+    showProduct();
     showBorrowOptions();
     showTabletMenu();
 }
@@ -127,6 +129,57 @@ function showProducts() {
         $('.solution-slider').remove();
         $('.product-slide').append(solutionSlides);
         $('.solution-slider').css('display', 'block');
+    }
+
+    changeEnterpriseProductsImg();
+
+}
+const solutionSlide = $('.chuyentien-sanpham-slider').length > 0 ? $('.chuyentien-sanpham-slider')[0].cloneNode(true) : null;
+function showProduct() {
+    if (!solutionSlide) {
+        return;
+    }
+
+    let owl = $('.chuyentien-sanpham-slider').find('.owl-stage-outer');
+    if (window.innerWidth > 450) {
+        if (owl.length == 0) {
+            $('.chuyentien-sanpham-slider').owlCarousel({
+                items: 1,
+                autoplay: false,
+                autoplayTimeout: 3000,
+                smartSpeed: 400,
+                animateIn: 'fadeIn',
+                animateOut: 'fadeOut',
+                autoplayHoverPause: true,
+                loop: true,
+                nav: true,
+                merge: true,
+                dots: true,
+                navText: ['<img src="images/icon/left-arrow.svg" />', '<img src="images/icon/right-arrow.svg" />'],
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    300: {
+                        items: 2,
+                    },
+                    480: {
+                        items: 2,
+                    },
+                    768: {
+                        items: 3,
+                    },
+                    1170: {
+                        items: 3,
+                    },
+                }
+            });
+        }
+    }
+    else {
+        $('.chuyentien-sanpham-slider').remove();
+        $('.product-slide').append(solutionSlide);
+        $('.chuyentien-sanpham-slider').css('display', 'block');
     }
 
     changeEnterpriseProductsImg();

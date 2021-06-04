@@ -1,0 +1,628 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='copyright' content=''>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title Tag  -->
+    <title>VietinBank</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icon/favicon.ico">
+    <!-- Web Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+    <!-- StyleSheet -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Font Import -->
+    <link rel="stylesheet" href="css/font.css">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/niceselect.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <!-- Eshop StyleSheet -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Home css -->
+    <link href="css/news/news-event.css" rel="stylesheet" />
+    <link href="css/news/news-event-mobile.css" rel="stylesheet" />
+    <link href="css/footer-icon.css" rel="stylesheet" />
+    <link href="css/datepicker.css" rel="stylesheet" />
+</head>
+<body class="js">
+    <!-- Header -->
+    <header class="header">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-12 col-12">
+                        <div class="row top-menu">
+                            <div class="col-lg-12 col-md-12 col-12 right-content fl-left pl-0">
+                                <ul class="list-main">
+                                    <li><a href="chuyentien-home.html-home.html">Trang chủ</a></li>
+                                    <li><a href="chuyentien-tintuc.html">Tin tức</a></li>
+                                    <li><a href="tintuc-gioithieu.html">Giới thiệu</a></li>
+                                    <li><a href="#">Tuyển dụng</a></li>
+                                    <li><a href="tintuc-danhsach-pgd.html">Mạng lưới</a></li>
+                                    <li><a href="tintuc-danhsach-pgd.html">Liên hệ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row search-panel">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-12 flex-end p-0 lang-select">
+                                <select class="nice-select" id="lang-select">
+                                    <option value="0" selected>ENG</option>
+                                    <option value="1">VIE</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 left-logo text-center">
+                                <a href="vietinbank-home.html" class="single-icon m-auto">
+                                    <img class="w-100" src="images/icon/logo.svg">
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-4 p-0 head-phone">
+                                <ul class="head-phone-item">
+                                    <li class="mr-0 flex-item">
+                                        <img class="phone-icon" src="images/icon/phone.svg">
+                                    </li>
+                                    <li class="pt-1"><a href="#" class="pr-0 pl-5">(84) 4 3942 8690/ 91</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12 search-right">
+                                <div class="row search-left search-control">
+                                    <div class="col-2 search-bar-top text-left">
+                                        <a onclick="showSearchBox()">
+                                            <img class="search-icon" src="images/icon/search.svg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row search-full hide search-control">
+                                    <div class="col-10 search-bar-top text-left">
+                                        <input type="text" class="form-control search-box" onblur="showSearchOnLeave()"
+                                               placeholder="Nhập từ khóa để tìm kiếm..."/>
+                                    </div>
+                                    <div class="col-2 search-bar-top text-left ">
+                                        <a href="#0" onclick="search()">
+                                            <img class="search-icon icon-right" src="images/icon/search.svg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mobile-nav"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-12 right-logo">
+                        <div class="row col-12 text-center h-100 m-auto pr-0">
+                            <a href="vietinbank-home.html" class="single-icon m-auto">
+                                <img class="w-100" src="images/icon/logo-money-transfer.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="position-relative top-line line-mobile">
+                <div class="menu-left"></div>
+                <div class="container z-999 top-border">
+                    <div class="row">
+                        <div class="col-lg-5 col-12">
+                        </div>
+                        <div class="col-lg-7 col-12 menu-top top-border">
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-right"></div>
+            </div>
+        </div>
+        <!-- Header Inner -->
+        <div class="position-relative top-line desktop-line">
+            <div class="menu-left"></div>
+            <div class="container z-999 top-border">
+                <div class="row">
+                    <div class="col-lg-5 col-12">
+                    </div>
+                    <div class="col-lg-7 col-12 menu-top top-border">
+                    </div>
+                </div>
+            </div>
+            <div class="menu-right"></div>
+        </div>
+        <div class="header-inner position-relative">
+            <div class="container z-999 menu-h">
+                <div class="cat-nav-head h-100">
+                    <div class="row h-100">
+                        <div class="col-lg-12 col-md-8 col-12 h-100 pr-0">
+                            <div class="menu-area h-100">
+                                <!-- Main Menu -->
+                                <nav class="navbar navbar-expand-lg h-100 position-relative">
+                                    <div class="navbar-collapse">
+                                        <div class="nav-inner">
+                                            <ul class="nav main-menu menu navbar-nav n-tblet position-relative">
+                                                <li class="menu1">
+                                                    <a href="" class="menu1-text">
+                                                        <div>
+                                                            <span>Chuyển tiền đi nước ngoài</span>
+                                                            <div class="menu-border"></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="menu1">
+                                                    <a href="" class="menu1-text">
+                                                        <div>
+                                                            <span>Nhận tiền từ nước ngoài về Việt Nam</span>
+                                                            <div class="menu-border"></div>
+                                                        </div>
+                                                    </a>
+
+                                                </li>
+                                                <li class="menu1">
+                                                    <a href="" class="menu1-text">
+                                                        <div>
+                                                            <span>Đối tác</span>
+                                                            <div class="menu-border"></div>
+                                                        </div>
+                                                    </a>
+
+                                                </li>
+                                                <li class="menu1">
+                                                    <a href="" class="menu1-text">
+                                                        <div>
+                                                            <span>Chương trình khuyến mại</span>
+                                                            <div class="menu-border"></div>
+                                                        </div>
+                                                    </a>
+
+                                                </li>
+                                                <li class="menu1">
+                                                    <a href="" class="menu1-text">
+                                                        <div>
+                                                            <span>Câu hỏi thường gặp</span>
+                                                            <div class="menu-border"></div>
+                                                        </div>
+                                                    </a>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <!--/ End Main Menu -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Header Inner -->
+    </header>
+    <!--/ End Header -->
+    <section class="news-about">
+        <div class="container">
+            <div class="row head-link">
+                <div class="col-12">
+                    <ul>
+                        <li class="bread-left"><a href="chuyentien-home.html">Trang chủ</a></li>
+                        <li class="bread-left">
+                            <svg class="double-chevron" height="10px" fill="#686868" viewBox="0 -32 426.66667 426" width="10px" xmlns="http://www.w3.org/2000/svg"><path d="m213.332031 181.667969c0 4.265625-1.277343 8.53125-3.625 11.730469l-106.667969 160c-3.839843 5.761718-10.238281 9.601562-17.707031 9.601562h-64c-11.730469 0-21.332031-9.601562-21.332031-21.332031 0-4.269531 1.28125-8.535157 3.625-11.734375l98.773438-148.265625-98.773438-148.269531c-2.34375-3.199219-3.625-7.464844-3.625-11.730469 0-11.734375 9.601562-21.335938 21.332031-21.335938h64c7.46875 0 13.867188 3.839844 17.707031 9.601563l106.667969 160c2.347657 3.199218 3.625 7.464844 3.625 11.734375zm0 0" /><path d="m426.667969 181.667969c0 4.265625-1.28125 8.53125-3.628907 11.730469l-106.664062 160c-3.839844 5.761718-10.242188 9.601562-17.707031 9.601562h-64c-11.734375 0-21.335938-9.601562-21.335938-21.332031 0-4.269531 1.28125-8.535157 3.628907-11.734375l98.773437-148.265625-98.773437-148.269531c-2.347657-3.199219-3.628907-7.464844-3.628907-11.730469 0-11.734375 9.601563-21.335938 21.335938-21.335938h64c7.464843 0 13.867187 3.839844 17.707031 9.601563l106.664062 160c2.347657 3.199218 3.628907 7.464844 3.628907 11.734375zm0 0" /></svg></i>
+                        </li>
+                        <li class="bread-right">
+                            <a href="chuyentien-tintuc.html">Tin tức</a>
+                            <svg class="right-icon-news" fill="#005993" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="10" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve"><g>	<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751		c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0		c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z" /></g></svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row news-link head-date flex-item">
+                <div class="col-12">
+                    <a class="gray fs-12" href="#">
+                        Thứ tư, 07/05/2021
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ End Header -->
+    <section class="news-contents-top">
+        <div class="container">
+            <div class="row pb-15px news-link flex-item">
+                <div class="col-12 pr-0 pr-sm-15px">
+                    <div class="row">
+                        <div class="col-lg-4 pl-0 col-md-4 col-12">
+                            <div class="row">
+                                <span class="title-news gilroy-bold">
+                                    Cùng kiều hối vietinbank chào xuân tân sửu
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span class="top-news-detail gilroy-medium-italic fs-14 mt-15px">
+                                    Nhằm tri ân khách hàng, từ ngày 01/01/2021 đến hết ngày 28/02/2021, VietinBank triển khai Chương trình khuyến mãi (CTKM) “Cùng kiều hối VietinBank chào Xuân Tân Sửu”. Các khách hàng sử dụng dịch vụ Western Union và Wells Fargo ExpressSend sẽ có cơ hội nhận hàng chục ngàn phần quà cùng lì xi đầu năm từ VietinBank.
+                                </span>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 bottom-10 more text-right">
+                                    <a href="#" class="blue-more gilroy-bold fs-14">Xem thêm</a>
+                                    <svg class="right-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve"><g>	<path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z" /></g></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 pl-0 col-md-8 col-12">
+                            <img src="images/chuyentien/new/new1.jpeg" class="w-100" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="all-news">
+        <div class="container">
+            <div class="row pt-15px pb-15px news-link flex-item">
+                <div class="row col-12 pr-0 pr-sm-15px">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 pl-0">
+                        <div class="row">
+                            <a href="chuyentien-tintuc-chitiet.html" class="new-list-img"><img src="images/chuyentien/new/new-3.png" /></a>
+                        </div>
+                        <div class="row">
+                            <span class="w-100 block fs-12 date-about">Thứ tư, 07/08/2019</span>
+                            <a href="chuyentien-tintuc-chitiet.html" class="w-100 block gilroy-bold fs-16 blue-top">Western Union online – Nhận tiền liền tay, rinh ngay quà tặng</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 pl-0">
+                        <div class="row">
+                            <a href="chuyentien-tintuc-chitiet.html" class="new-list-img"><img src="images/chuyentien/new/new-4.jpeg" /></a>
+                        </div>
+                        <div class="row">
+                            <span class="w-100 block fs-12 date-about">Thứ tư, 07/08/2019</span>
+                            <a href="chuyentien-tintuc-chitiet.html" class="w-100 block gilroy-bold fs-16 blue-top">CÔNG TY TNHH MTV CHUYỂN TIỀN TOÀN CẦU VIETINBANK  TUYỂN DỤNG CÁC VỊ TRÍ PHÒNG BAN  THÁNG 06/2020</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 pl-0">
+                        <div class="row">
+                            <a href="chuyentien-tintuc-chitiet.html" class="new-list-img"><img src="images/chuyentien/new/new-3.png" /></a>
+                        </div>
+                        <div class="row">
+                            <span class="w-100 block fs-12 date-about">Thứ tư, 07/08/2019</span>
+                            <a href="chuyentien-tintuc-chitiet.html" class="w-100 block gilroy-bold fs-16 blue-top">Kết quả quay số đợt 2 chương trình khuyến mãi “Giao dịch ngay, nhanh tay trúng lớn cùng Western Union”</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 pl-0 pt-15px">
+                        <div class="row">
+                            <a href="chuyentien-tintuc-chitiet.html" class="new-list-img"><img src="images/chuyentien/new/new-2.jpeg" /></a>
+                        </div>
+                        <div class="row">
+                            <span class="w-100 block fs-12 date-about">Thứ tư, 07/08/2019</span>
+                            <a href="chuyentien-tintuc-chitiet.html" class="w-100 block gilroy-bold fs-16 blue-top">Cảnh báo lừa đảo chiếm đoạt tài khoản ngân hàng</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 pl-0 pt-15px">
+                        <div class="row">
+                            <a href="chuyentien-tintuc-chitiet.html" class="new-list-img"><img src="images/chuyentien/new/new-5.jpeg" /></a>
+                        </div>
+                        <div class="row">
+                            <span class="w-100 block fs-12 date-about">Thứ tư, 07/08/2019</span>
+                            <a href="chuyentien-tintuc-chitiet.html" class="w-100 block gilroy-bold fs-16 blue-top">VietinBank triển khai chương trình khuyến mãi cho khách hàng dịch vụ Western Union online</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 pl-0 pt-15px">
+                        <div class="row">
+                            <a href="chuyentien-tintuc-chitiet.html" class="new-list-img"><img src="images/chuyentien/new/new-6.jpeg" /></a>
+                        </div>
+                        <div class="row">
+                            <span class="w-100 block fs-12 date-about">Thứ tư, 07/08/2019</span>
+                            <a href="chuyentien-tintuc-chitiet.html" class="w-100 block gilroy-bold fs-16 blue-top">Thông báo dừng nhận tiền mặt tại quầy dịch vụ Western Union đối với giao dịch nhận tiền từ các tổ chức, công ty</a>
+                        </div>
+                    </div>
+                    <div class="pt-15px col-lg-4 col-md-6 offset-lg-8 offset-md-6 col-12 search-sec">
+                        <div class="row">
+                            <div class="paging-panel col-12 pr-0">
+                                <ul class="paging">
+                                    <li>
+                                        <a href="#">
+                                            Trang 1/5
+                                            <svg version="1.1" class="right-arrow" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve"><g>	<g>		<path d="M198.608,246.104L382.664,62.04c5.068-5.056,7.856-11.816,7.856-19.024c0-7.212-2.788-13.968-7.856-19.032l-16.128-16.12			C361.476,2.792,354.712,0,347.504,0s-13.964,2.792-19.028,7.864L109.328,227.008c-5.084,5.08-7.868,11.868-7.848,19.084			c-0.02,7.248,2.76,14.028,7.848,19.112l218.944,218.932c5.064,5.072,11.82,7.864,19.032,7.864c7.208,0,13.964-2.792,19.032-7.864			l16.124-16.12c10.492-10.492,10.492-27.572,0-38.06L198.608,246.104z" />	</g></g></svg>
+                                        </a>
+                                    </li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#" class="blue-more">2</a></li>
+                                    <li><a href="#" class="blue-more">3</a></li>
+                                    <li><a href="#" class="blue-more">4</a></li>
+                                    <li><a href="#" class="blue-more">5</a></li>
+                                    <li>
+                                        <a href="#">
+                                            <svg class="right-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve"><g>	<path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></g></svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="product-area">
+        <div class="container position-relative">
+            <div class="row right-contact">
+                <div class="col-12">
+                    <div class="col-6 contact-detail hide phonex-detail">
+                        <a class="detail" href="#">1900 558 868</a>
+                    </div>
+                    <div class="col-6">
+                        <div class="phone icon-contact">
+                            <a>
+                                <img class="phonex" id="phonex" src="images/icon/phonecall.svg" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-6 contact-detail hide locate-detail">
+                        <a class="detail" href="#">Mạng lưới, CN, PGD, ATM</a>
+                    </div>
+                    <div class="col-6">
+                        <div class="phone icon-contact">
+                            <a>
+                                <img class="locate" id="locate" src="images/icon/locate.svg" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-6 contact-detail hide msg-detail">
+                        <a class="detail" href="#">Chat với chúng tôi</a>
+                    </div>
+                    <div class="col-6">
+                        <div class="phone icon-contact">
+                            <a>
+                                <img class="msg" id="msg" src="images/icon/message.svg" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Footer Area -->
+    <footer class="footer">
+        <!-- Footer Top -->
+        <div class="footer-top section">
+            <div class="container">
+                <div class="row desktop-foot" id="footer-menu">
+                    <div class="col-lg-2 col-3">
+                        <!-- Single Widget -->
+                        <div class="single-footer links">
+                            <ul id="contact">
+                                <li><a href="#">Liên hệ</a></li>
+                                <li><a href="#">Tin tức</a></li>
+                                <li><a href="#">Tuyển dụng</a></li>
+                                <li class="site-map"><a href="#">Nhà đầu tư</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-2 col-4">
+                        <!-- Single Widget -->
+                        <div class="single-footer links">
+                            <ul id="sitemap">
+                                <li><a href="#">Điều kiện giao dịch</a></li>
+                                <li><a href="#">Tải tài liệu</a></li>
+                                <li class="right-map"><a href="#">Sitemap</a></li>
+                                <li class="right-map"><a href="#">Kết nối với chúng tôi</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer links">
+                            <!-- Single Widget -->
+                            <div class="contact">
+                                <span class="blue-top">Trụ sở: Tầng 3, tòa nhà VietinBank, 126 Đội Cấn, Ba đình, Hà nội</span>
+                                <ul class="address-bot">
+                                    <li><a href="#">T: (84) 24 3942 8690/ (84) 24 3942 8691</a></li>
+                                    <li><a href="#">F: (84) 24 3942 8693</a></li>
+                                    <li><a href="#">E: kieuhoi@vietinbank.vn</a></li>
+                                </ul>
+                            </div>
+                            <!-- End Single Widget -->
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-4 col-12 single-footer">
+                        <div class="row">
+                            <div class="col-12 lisence">
+                                <span class="blue-top">&#169;2014 - Bản quyền thuộc về Ngân hàng TMCP Công Thương Việt Nam Giấy phép số 22/GP-TTĐT của Bộ TTTT</span>
+                            </div>
+                        </div>
+                        <div class="row connect-mobile">
+                            <div class="col-4 p-0">
+                                <div class="row">
+                                    <span class="blue-top connect">Kết nối với chúng tôi</span>
+                                </div>
+                                <div class="row foot-group-icon">
+                                    <a href="#">
+                                        <img class="pl-10" src="images/icon/fb.svg"/>
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/icon/youtube.svg"/>
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/icon/linkedin.svg"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-4 pr-0 app-download">
+                                <div class="row">
+                                    <span class="blue-top connect">Tải iPay mobile tại</span>
+                                </div>
+                                <div class="row foot-group-icon">
+                                    <a href="#">
+                                        <img src="images/icon/appstore.svg"/>
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/icon/chplay.svg"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-4 text-right contact connect-right flex-end justify-end">
+                                <div class="row flex-item scrollUp">
+                                    <a href="#" class="flex-item">
+                                        <span class="blue-top font-weight-bold">
+                                            VỀ ĐẦU TRANG
+                                        </span>
+                                    </a>
+                                    <a href="#" class="flex-item">
+                                        <img class="social-icon" src="images/icon/to-top.svg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mobile-foot" id="footer-menu">
+                    <div class="col-lg-2 pr-0 col-3 pl-sm-7-5">
+                        <!-- Single Widget -->
+                        <div class="single-footer links">
+                            <ul id="contact">
+                                <li><a href="#">Liên hệ</a></li>
+                                <li><a href="#">Tin tức</a></li>
+                                <li><a href="#">Tuyển dụng</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-2 pr-0 col-4 pl-sm-7-5">
+                        <!-- Single Widget -->
+                        <div class="single-footer links">
+                            <ul id="sitemap">
+                                <li class="site-map"><a href="#">Nhà đầu tư</a></li>
+                                <li><a href="#">Điều kiện giao dịch</a></li>
+                                <li><a href="#">Tải tài liệu</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-5 foot-mobile pl-sm-7-5">
+                        <div class="single-footer links">
+                            <ul id="rightmap">
+                                <li class="right-map"><a href="#">Sitemap</a></li>
+                                <li class="right-map"><a href="#">Kết nối với chúng tôi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 address-link">
+                        <!-- Single Widget -->
+                        <div class="single-footer links">
+                            <!-- Single Widget -->
+                            <div class="contact">
+                                <span class="blue-top">Trụ sở: Tầng 3, tòa nhà VietinBank, 126 Đội Cấn, Ba đình, Hà nội</span>
+                                <ul class="address-bot">
+                                    <li><a href="#">T: (84) 24 3942 8690/ (84) 24 3942 8691</a></li>
+                                    <li><a href="#">F: (84) 24 3942 8693</a></li>
+                                    <li><a href="#">E: kieuhoi@vietinbank.vn</a></li>
+                                </ul>
+                            </div>
+                            <!-- End Single Widget -->
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-4 col-12 single-footer">
+                        <div class="row">
+                            <div class="col-12 lisence">
+                                <span class="blue-top">&#169;2014 - Bản quyền thuộc về Ngân hàng TMCP Công Thương Việt Nam Giấy phép số 22/GP-TTĐT của Bộ TTTT</span>
+                            </div>
+                        </div>
+                        <div class="row pt-10 connect-mobile">
+                            <div class="col-5 pl-0">
+                                <span class="blue-top connect">Kết nối với chúng tôi</span>
+                            </div>
+                            <div class="col-7 p-0 position-absolute app-download">
+                                <span class="blue-top connect">Tải iPay mobile tại:</span>
+                            </div>
+                        </div>
+                        <div class="row pt-10 top-icon">
+                            <div class="col-lg-7 col-md-6 col-sm-5 col-7 connect-left">
+                                <div class="row">
+                                    <a href="#">
+                                        <img class="pl-10" src="images/icon/fb.svg"/>
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/icon/youtube.svg"/>
+                                    </a>
+                                    <a href="#" class="connect-mobile">
+                                        <img src="images/icon/linkedin.svg"/>
+                                    </a>
+                                    <a href="#" class="connect-mobile">
+                                        <img src="images/icon/appstore.svg"/>
+                                    </a>
+                                    <a href="#" class="connect-mobile">
+                                        <img src="images/icon/chplay.svg"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-6 col-sm-7 col-5">
+                                <div class="row flex-item scrollUp">
+                                    <div class="col-12 p-0 flex-item text-right justify-end">
+                                        <a href="#" class="mr-5px">
+                                            <span class="blue-top font-weight-bold">
+                                                VỀ ĐẦU TRANG
+                                            </span>
+                                        </a>
+                                        <a href="#">
+                                            <img class="social-icon" src="images/icon/to-top.svg"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-inner position-relative">
+            <div class="menu-left"></div>
+            <div class="container z-999 top-border">
+                <div class="row">
+                    <div class="col-lg-5 col-12">
+                    </div>
+                    <div class="col-lg-7 col-12 menu-top top-border">
+                    </div>
+                </div>
+            </div>
+            <div class="menu-right"></div>
+        </div>
+    </footer>
+    <!-- /End Footer Area -->
+    <!-- Jquery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Slicknav JS -->
+    <script src="js/slicknav.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="js/owl-carousel.js"></script>
+    <!-- Nice Select JS -->
+    <script src="js/nicesellect.js"></script>
+    <!-- ScrollUp JS -->
+    <script src="js/scrollup.js"></script>
+    <!-- Easing JS -->
+    <script src="js/easing.js"></script>
+    <!-- Active JS -->
+    <script src="js/active.js"></script>
+</body>
+</html>

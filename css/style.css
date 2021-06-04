@@ -726,12 +726,14 @@ s.btn {
     -moz-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
-
-    .most-popular .owl-carousel .owl-nav div:hover {
-        color: #fff;
-        background: #fff;
-    }
-
+.home-chuyentien .owl-carousel .owl-nav div{
+    margin: 0 20px; background: #dfe0e063;
+    height: 40px;
+    width: 30px;
+    line-height: 40px;
+}
+.home-chuyentien .owl-nav{margin-top: -20px;}
+.new-list-img{max-height: 240px; overflow: hidden;text-align: center;}
 .most-popular .owl-carousel .owl-controls .owl-nav .owl-prev {
     left: -20px;
 }
@@ -1765,7 +1767,15 @@ body {
     justify-content: center;
     width: 100%;
 }
-
+.br-b-blue{border-bottom: 2px solid #eaf6fe;}
+.chuyentien-title-head{
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid #eaf6fe;
+    width: 100%;
+    text-align: left;
+}
 .news-content {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -2548,7 +2558,9 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     outline: 0;
     box-shadow: none;
 }
-
+b,strong{
+    font-family: 'svn-gilroy-bold',sans-serif !important;
+}
 
 .menu1-text span {
     font-family: 'svn-gilroy-semibold',sans-serif;

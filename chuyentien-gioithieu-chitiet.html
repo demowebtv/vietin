@@ -1,0 +1,651 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='copyright' content=''>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title Tag  -->
+    <title>VietinBank</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icon/favicon.ico">
+    <!-- Web Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+          rel="stylesheet">
+
+    <!-- StyleSheet -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Font Import -->
+    <link rel="stylesheet" href="css/font.css">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/niceselect.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <!-- Eshop StyleSheet -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Home css -->
+    <link href="css/news/news-event.css" rel="stylesheet"/>
+    <link href="css/news/news-event-detail.css" rel="stylesheet"/>
+    <link href="css/datepicker.css" rel="stylesheet"/>
+</head>
+<body class="js">
+<!-- Header -->
+<header class="header">
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-md-12 col-12">
+                    <div class="row top-menu">
+                        <div class="col-lg-12 col-md-12 col-12 right-content fl-left pl-0">
+                            <ul class="list-main">
+                                <li><a href="chuyentien-home.html-home.html">Trang chủ</a></li>
+                                <li><a href="chuyentien-tintuc.html">Tin tức</a></li>
+                                <li><a href="tintuc-gioithieu.html">Giới thiệu</a></li>
+                                <li><a href="#">Tuyển dụng</a></li>
+                                <li><a href="tintuc-danhsach-pgd.html">Mạng lưới</a></li>
+                                <li><a href="tintuc-danhsach-pgd.html">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row search-panel">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-12 flex-end p-0 lang-select">
+                            <select class="nice-select" id="lang-select">
+                                <option value="0" selected>ENG</option>
+                                <option value="1">VIE</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 left-logo text-center">
+                            <a href="vietinbank-home.html" class="single-icon m-auto">
+                                <img class="w-100" src="images/icon/logo.svg">
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 p-0 head-phone">
+                            <ul class="head-phone-item">
+                                <li class="mr-0 flex-item">
+                                    <img class="phone-icon" src="images/icon/phone.svg">
+                                </li>
+                                <li class="pt-1"><a href="#" class="pr-0 pl-5">(84) 4 3942 8690/ 91</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12 search-right">
+                            <div class="row search-left search-control">
+                                <div class="col-2 search-bar-top text-left">
+                                    <a onclick="showSearchBox()">
+                                        <img class="search-icon" src="images/icon/search.svg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row search-full hide search-control">
+                                <div class="col-10 search-bar-top text-left">
+                                    <input type="text" class="form-control search-box" onblur="showSearchOnLeave()"
+                                           placeholder="Nhập từ khóa để tìm kiếm..."/>
+                                </div>
+                                <div class="col-2 search-bar-top text-left ">
+                                    <a href="#0" onclick="search()">
+                                        <img class="search-icon icon-right" src="images/icon/search.svg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mobile-nav"></div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-12 right-logo">
+                    <div class="row col-12 text-center h-100 m-auto pr-0">
+                        <a href="vietinbank-home.html" class="single-icon m-auto">
+                            <img class="w-100" src="images/icon/logo-money-transfer.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-relative top-line line-mobile">
+            <div class="menu-left"></div>
+            <div class="container z-999 top-border">
+                <div class="row">
+                    <div class="col-lg-5 col-12">
+                    </div>
+                    <div class="col-lg-7 col-12 menu-top top-border">
+                    </div>
+                </div>
+            </div>
+            <div class="menu-right"></div>
+        </div>
+    </div>
+    <!-- Header Inner -->
+    <div class="position-relative top-line desktop-line">
+        <div class="menu-left"></div>
+        <div class="container z-999 top-border">
+            <div class="row">
+                <div class="col-lg-5 col-12">
+                </div>
+                <div class="col-lg-7 col-12 menu-top top-border">
+                </div>
+            </div>
+        </div>
+        <div class="menu-right"></div>
+    </div>
+    <div class="header-inner position-relative">
+        <div class="container z-999 menu-h">
+            <div class="cat-nav-head h-100">
+                <div class="row h-100">
+                    <div class="col-lg-12 col-md-8 col-12 h-100 pr-0">
+                        <div class="menu-area h-100">
+                            <!-- Main Menu -->
+                            <nav class="navbar navbar-expand-lg h-100 position-relative">
+                                <div class="navbar-collapse">
+                                    <div class="nav-inner">
+                                        <ul class="nav main-menu menu navbar-nav n-tblet position-relative">
+                                            <li class="menu1">
+                                                <a href="" class="menu1-text">
+                                                    <div>
+                                                        <span>Chuyển tiền đi nước ngoài</span>
+                                                        <div class="menu-border"></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="menu1">
+                                                <a href="" class="menu1-text">
+                                                    <div>
+                                                        <span>Nhận tiền từ nước ngoài về Việt Nam</span>
+                                                        <div class="menu-border"></div>
+                                                    </div>
+                                                </a>
+
+                                            </li>
+                                            <li class="menu1">
+                                                <a href="" class="menu1-text">
+                                                    <div>
+                                                        <span>Đối tác</span>
+                                                        <div class="menu-border"></div>
+                                                    </div>
+                                                </a>
+
+                                            </li>
+                                            <li class="menu1">
+                                                <a href="" class="menu1-text">
+                                                    <div>
+                                                        <span>Chương trình khuyến mại</span>
+                                                        <div class="menu-border"></div>
+                                                    </div>
+                                                </a>
+
+                                            </li>
+                                            <li class="menu1">
+                                                <a href="" class="menu1-text">
+                                                    <div>
+                                                        <span>Câu hỏi thường gặp</span>
+                                                        <div class="menu-border"></div>
+                                                    </div>
+                                                </a>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                            <!--/ End Main Menu -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ End Header Inner -->
+</header>
+<!--/ End Header -->
+<section class="news-about">
+    <div class="container">
+        <div class="row head-link">
+            <div class="col-12">
+                <ul>
+                    <li class="bread-left"><a href="chuyentien-home.html">Trang chủ</a></li>
+                    <li class="bread-left">
+                        <svg class="double-chevron" height="10px" fill="#686868" viewBox="0 -32 426.66667 426"
+                             width="10px" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m213.332031 181.667969c0 4.265625-1.277343 8.53125-3.625 11.730469l-106.667969 160c-3.839843 5.761718-10.238281 9.601562-17.707031 9.601562h-64c-11.730469 0-21.332031-9.601562-21.332031-21.332031 0-4.269531 1.28125-8.535157 3.625-11.734375l98.773438-148.265625-98.773438-148.269531c-2.34375-3.199219-3.625-7.464844-3.625-11.730469 0-11.734375 9.601562-21.335938 21.332031-21.335938h64c7.46875 0 13.867188 3.839844 17.707031 9.601563l106.667969 160c2.347657 3.199218 3.625 7.464844 3.625 11.734375zm0 0"/>
+                            <path d="m426.667969 181.667969c0 4.265625-1.28125 8.53125-3.628907 11.730469l-106.664062 160c-3.839844 5.761718-10.242188 9.601562-17.707031 9.601562h-64c-11.734375 0-21.335938-9.601562-21.335938-21.332031 0-4.269531 1.28125-8.535157 3.628907-11.734375l98.773437-148.265625-98.773437-148.269531c-2.347657-3.199219-3.628907-7.464844-3.628907-11.730469 0-11.734375 9.601563-21.335938 21.335938-21.335938h64c7.464843 0 13.867187 3.839844 17.707031 9.601563l106.664062 160c2.347657 3.199218 3.628907 7.464844 3.628907 11.734375zm0 0"/>
+                        </svg>
+                        </i>
+                    </li>
+                    <li class="bread-right">
+                        <a href="chuyentien-gioithieu.html">Giới thiệu</a>
+                        <svg class="right-icon-news" fill="#005993" version="1.1" id="Capa_1"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                             y="0px" width="10" height="10" viewBox="0 0 451.847 451.847"
+                             style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve"><g>	<path
+                                d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751		c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0		c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/></g></svg>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ End Header -->
+<section class="news-contents-top">
+    <div class="container">
+        <div class="row mb-3 mx-3">
+            <div class="col-12 bg-white b-10 ">
+                <div class="col-12 pt-3 br-b-blue">
+                    <a class="title-news blue-top gilroy-bold" href="#">
+                        Giới thiệu
+                    </a>
+                </div>
+                <div class="col-12">
+                    <div class="homepage_box_left left p-1 py-3">
+                        <p><b>CÔNG TY TNHH MTV CHUYỂN TIỀN TOÀN CẦU NGÂN HÀNG TMCP CÔNG
+                            THƯƠNG VIỆT NAM</b></p>
+                        <p>Tên giao dịch bằng Tiếng Việt : Công ty chuyển tiền toàn cầu Ngân hàng công thương Việt
+                            nam</p>
+                        <p>Tên giao dịch bằng Tiếng Anh: Global Money Transfer</p>
+                        <p>Tên viết tắt: Công ty chuyển tiền toàn cầu</p>
+                        <p>Công ty TNHH chuyển tiền toàn cầu được thành lập theo quyết định số 1356/QĐ-HĐQT-NHCT của Chủ
+                            tịch HĐQT Ngân hàng TMCP công thương Việt nam cấp ngày 16/12/2011, có vốn điều lệ là 50 tỷ
+                            đồng,
+                            có trụ sở tại tầng 3, Tòa nhà Vietinbank- số 126 Đội cấn, Hà nội. Công ty chuyển tiền toàn
+                            cầu
+                            Vietinbank chính thức đi vào hoạt động từ ngày 10/02/2012.</p>
+                        <p>Tiền thân là Phòng dịch vụ kiểu hối của Ngân hàng TMCP Công thương Việt nam, một Ngân hàng
+                            thương
+                            mại lớn nhất Việt Nam, có quan hệ với trên 1000 đối tác là ngân hàng đại lý và công ty
+                            chuyển
+                            tiền nhanh trên toàn cầu, Công ty thừa hưởng lợi thế bao gồm hệ thống công nghệ hiện đại,
+                            mạng
+                            lưới hoạt động rộng khắp toàn quốc với 150 chi nhánh, 950 phòng giao dịch</p>
+                        <p><strong><u>Lĩnh vực hoạt động</u></strong></p>
+                        <p>Hoạt động trung gian tiền tệ:</p>
+                        <ul>
+                            <li>Chuyển tiền từ nước ngoài về Việt Nam cho người nhận tiền là cá nhân</li>
+                            <li>Chuyển tiền cá nhân từ Việt Nam đi nước ngoài</li>
+                            <li>Chuyển tiền của cá nhân trong phạm vi lãnh thổ Việt Nam</li>
+                            <li>Chuyển tiền của cá nhân ở các quốc gia khác nhau và trong phạm vi lãnh thổ quốc gia</li>
+                        </ul>
+                        <p>Dịch vụ thu đổi ngoại tệ<br>Các dịch vụ kiều hối khác theo quy định của pháp luật</p>
+                        <p><strong><u>Đối tượng</u></strong></p>
+                        <ul>
+                            <li>Người gửi tiền: người Việt Nam hoặc người nước ngoài đang sinh sống và làm việc ở nước
+                                ngoài
+                                muốn chuyển tiền cho người thân ở Việt Nam, hoặc chuyển cho bản thân với mục đích chi
+                                tiêu
+                                khi đi du lịch , công tác tại Việt Nam.
+                            </li>
+                            <li>Người nhận tiền: Cá nhân người Việt Nam hoặc người nước ngoài đang hiện diện tại Việt
+                                Nam.
+                            </li>
+                        </ul>
+                        <p><strong><u>Các sản phẩm dịch vụ</u></strong></p>
+                        <p><strong>Chuyển tiền từ nước ngoài về Việt Nam</strong></p>
+                        <p><strong>Chuyển qua hệ thống Ngân hàng</strong></p>
+                        <ul>
+                            <li>Thông qua hệ thống SWIFT, VietinBank có thể nhận được điện chuyển tiền của các ngân hàng
+                                tại
+                                khắp nơi trên thế giới.&nbsp;
+                            </li>
+                            <li>VietinBank triển khai các Hợp đồng chuyển tiền đặc biệt với nhiều ngân hàng quốc tế nhằm
+                                giúp khách hàng tiết kiệm thời gian, chi phí.
+                            </li>
+                        </ul>
+                        <p><strong>Dịch vụ chuyển tiền nhanh&nbsp;Western Union</strong></p>
+                        <ul>
+                            <li>Nhận và chi trả Western Union</li>
+                            <li>Chuyển tiền ra nước ngoài</li>
+                        </ul>
+                        <p><strong><u>Tầm nhìn: </u></strong></p>
+                        <p>Vietinbank Glogal Money Transfer phấn đấu trở thành công ty đáp ứng mọi nhu cầu về chuyển
+                            tiền,
+                            cung cấp cho khách hàng những sản phẩm dịch vụ tiện ích, nhanh chóng, an toàn với chất lượng
+                            dịch vụ tốt nhất và phí dịch vụ thấp nhất</p>
+                        <p><strong><u>Giá trị cốt lõi:</u></strong></p>
+                        <ul>
+                            <li>Mọi hoạt động đều hướng tới khách hàng</li>
+                            <li>Theo đuổi các chuẩn mực và ngày càng nâng cao sự chuyên nghiệp và hiện đại trong các
+                                hoạt
+                                động dịch vụ
+                            </li>
+                        </ul>
+                        <p><strong><u>Cam kết:</u></strong></p>
+                        <p><strong>Nhanh chóng:</strong></p>
+                        <ul>
+                            <li>Với&nbsp; hệ thống công nghệ hiện đại, giao dịch chuyển tiền kiều hối được xử lý tự
+                                động,
+                                nhanh chóng, chính xác.
+                            </li>
+                            <li>Tài khoản của người nhận được ghi có ngay khi Ngân hàng Công thương Việt Nam nhận được
+                                điện
+                                chuyển tiền từ nước ngoài và được hưởng lãi suất hấp dẫn.
+                            </li>
+                            <li>Người nhận có thể nhận được tiền ngay trong ngày nếu chuyển tiền qua đường Ngân hàng,
+                                trong
+                                vòng 10 phút nếu sử dụng dịch vụ chuyển tiền nhanh.
+                            </li>
+                        </ul>
+                        <p><strong>Thuận tiện:</strong></p>
+                        <ul>
+                            <li>Mạng lưới chi trả tiền kiều hối rộng khắp: Ngân hàng Công thương Việt Nam có mạng lưới
+                                trên
+                                150 chi nhánh và 950 phòng giao dịch trên toàn quốc.
+                            </li>
+                            <li>Người nhận tiền chỉ cần đem giấy chứng minh nhân dân đến bất cứ chi nhánh, phòng giao
+                                dịch
+                                thuận tiện nhất của Ngân hàng Công thương Việt Nam để lĩnh tiền.
+                            </li>
+                            <li>Trường hợp chuyển tiền về tài khoản thẻ ATM, người nhận tiền có thể lĩnh tiền tại bất cứ
+                                máy
+                                ATM nào của Ngân hàng Công thương Việt Nam, vào bất cứ thời gian nào.&nbsp;
+                            </li>
+                        </ul>
+                        <p><strong>An toàn:</strong></p>
+                        <ul>
+                            <li>Là một Ngân hàng lớn, uy tín và có nhiều kinh nghiệm trong dịch vụ chuyển tiền từ nước
+                                ngoài
+                                về Việt Nam, với hệ thống công nghệ hiện đại,&nbsp; xử lý tự động và bảo mật cao, Ngân
+                                hàng
+                                Công thương Việt nam cam kết món tiền sẽ được chuyển đến tay người nhận an toàn, chính
+                                xác,
+                                bảo mật cao.
+                            </li>
+                        </ul>
+                        <p><strong>Phí dịch vụ thấp:</strong></p>
+                        <ul>
+                            <li>Với việc thiết lập nhiều kênh chuyển tiền trực tiếp, việc chuyển tiền từ nước ngoài về
+                                Việt
+                                Nam qua Ngân hàng Công thương Việt Nam không phải qua các Ngân hàng trung gian vì vậy
+                                tiết
+                                kiệm đáng kể thời gian và chi phí.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="product-area">
+    <div class="container position-relative">
+        <div class="row right-contact">
+            <div class="col-12">
+                <div class="col-6 contact-detail hide phonex-detail">
+                    <a class="detail" href="#">1900 558 868</a>
+                </div>
+                <div class="col-6">
+                    <div class="phone icon-contact">
+                        <a>
+                            <img class="phonex" id="phonex" src="images/icon/phonecall.svg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-6 contact-detail hide locate-detail">
+                    <a class="detail" href="#">Mạng lưới, CN, PGD, ATM</a>
+                </div>
+                <div class="col-6">
+                    <div class="phone icon-contact">
+                        <a>
+                            <img class="locate" id="locate" src="images/icon/locate.svg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="col-6 contact-detail hide msg-detail">
+                    <a class="detail" href="#">Chat với chúng tôi</a>
+                </div>
+                <div class="col-6">
+                    <div class="phone icon-contact">
+                        <a>
+                            <img class="msg" id="msg" src="images/icon/message.svg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Start Footer Area -->
+<footer class="footer">
+    <!-- Footer Top -->
+    <div class="footer-top section">
+        <div class="container">
+            <div class="row desktop-foot" id="footer-menu">
+                <div class="col-lg-2 col-3">
+                    <!-- Single Widget -->
+                    <div class="single-footer links">
+                        <ul id="contact">
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Tuyển dụng</a></li>
+                            <li class="site-map"><a href="#">Nhà đầu tư</a></li>
+                        </ul>
+                    </div>
+                    <!-- End Single Widget -->
+                </div>
+                <div class="col-lg-2 col-4">
+                    <!-- Single Widget -->
+                    <div class="single-footer links">
+                        <ul id="sitemap">
+                            <li><a href="#">Điều kiện giao dịch</a></li>
+                            <li><a href="#">Tải tài liệu</a></li>
+                            <li class="right-map"><a href="#">Sitemap</a></li>
+                            <li class="right-map"><a href="#">Kết nối với chúng tôi</a></li>
+                        </ul>
+                    </div>
+                    <!-- End Single Widget -->
+                </div>
+                <div class="col-lg-4 col-12">
+                    <!-- Single Widget -->
+                    <div class="single-footer links">
+                        <!-- Single Widget -->
+                        <div class="contact">
+                            <span class="blue-top">Trụ sở: Tầng 3, tòa nhà VietinBank, 126 Đội Cấn, Ba đình, Hà nội</span>
+                            <ul class="address-bot">
+                                <li><a href="#">T: (84) 24 3942 8690/ (84) 24 3942 8691</a></li>
+                                <li><a href="#">F: (84) 24 3942 8693</a></li>
+                                <li><a href="#">E: kieuhoi@vietinbank.vn</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <!-- End Single Widget -->
+                </div>
+                <div class="col-lg-4 col-12 single-footer">
+                    <div class="row">
+                        <div class="col-12 lisence">
+                            <span class="blue-top">&#169;2014 - Bản quyền thuộc về Ngân hàng TMCP Công Thương Việt Nam Giấy phép số 22/GP-TTĐT của Bộ TTTT</span>
+                        </div>
+                    </div>
+                    <div class="row connect-mobile">
+                        <div class="col-4 p-0">
+                            <div class="row">
+                                <span class="blue-top connect">Kết nối với chúng tôi</span>
+                            </div>
+                            <div class="row foot-group-icon">
+                                <a href="#">
+                                    <img class="pl-10" src="images/icon/fb.svg"/>
+                                </a>
+                                <a href="#">
+                                    <img src="images/icon/youtube.svg"/>
+                                </a>
+                                <a href="#">
+                                    <img src="images/icon/linkedin.svg"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 pr-0 app-download">
+                            <div class="row">
+                                <span class="blue-top connect">Tải iPay mobile tại</span>
+                            </div>
+                            <div class="row foot-group-icon">
+                                <a href="#">
+                                    <img src="images/icon/appstore.svg"/>
+                                </a>
+                                <a href="#">
+                                    <img src="images/icon/chplay.svg"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 text-right contact connect-right flex-end justify-end">
+                            <div class="row flex-item scrollUp">
+                                <a href="#" class="flex-item">
+                                        <span class="blue-top font-weight-bold">
+                                            VỀ ĐẦU TRANG
+                                        </span>
+                                </a>
+                                <a href="#" class="flex-item">
+                                    <img class="social-icon" src="images/icon/to-top.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mobile-foot" id="footer-menu">
+                <div class="col-lg-2 pr-0 col-3 pl-sm-7-5">
+                    <!-- Single Widget -->
+                    <div class="single-footer links">
+                        <ul id="contact">
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Tuyển dụng</a></li>
+                        </ul>
+                    </div>
+                    <!-- End Single Widget -->
+                </div>
+                <div class="col-lg-2 pr-0 col-4 pl-sm-7-5">
+                    <!-- Single Widget -->
+                    <div class="single-footer links">
+                        <ul id="sitemap">
+                            <li class="site-map"><a href="#">Nhà đầu tư</a></li>
+                            <li><a href="#">Điều kiện giao dịch</a></li>
+                            <li><a href="#">Tải tài liệu</a></li>
+                        </ul>
+                    </div>
+                    <!-- End Single Widget -->
+                </div>
+                <div class="col-5 foot-mobile pl-sm-7-5">
+                    <div class="single-footer links">
+                        <ul id="rightmap">
+                            <li class="right-map"><a href="#">Sitemap</a></li>
+                            <li class="right-map"><a href="#">Kết nối với chúng tôi</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 address-link">
+                    <!-- Single Widget -->
+                    <div class="single-footer links">
+                        <!-- Single Widget -->
+                        <div class="contact">
+                            <span class="blue-top">Trụ sở: Tầng 3, tòa nhà VietinBank, 126 Đội Cấn, Ba đình, Hà nội</span>
+                            <ul class="address-bot">
+                                <li><a href="#">T: (84) 24 3942 8690/ (84) 24 3942 8691</a></li>
+                                <li><a href="#">F: (84) 24 3942 8693</a></li>
+                                <li><a href="#">E: kieuhoi@vietinbank.vn</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <!-- End Single Widget -->
+                </div>
+                <div class="col-lg-4 col-12 single-footer">
+                    <div class="row">
+                        <div class="col-12 lisence">
+                            <span class="blue-top">&#169;2014 - Bản quyền thuộc về Ngân hàng TMCP Công Thương Việt Nam Giấy phép số 22/GP-TTĐT của Bộ TTTT</span>
+                        </div>
+                    </div>
+                    <div class="row pt-10 connect-mobile">
+                        <div class="col-5 pl-0">
+                            <span class="blue-top connect">Kết nối với chúng tôi</span>
+                        </div>
+                        <div class="col-7 p-0 position-absolute app-download">
+                            <span class="blue-top connect">Tải iPay mobile tại:</span>
+                        </div>
+                    </div>
+                    <div class="row pt-10 top-icon">
+                        <div class="col-lg-7 col-md-6 col-sm-5 col-7 connect-left">
+                            <div class="row">
+                                <a href="#">
+                                    <img class="pl-10" src="images/icon/fb.svg"/>
+                                </a>
+                                <a href="#">
+                                    <img src="images/icon/youtube.svg"/>
+                                </a>
+                                <a href="#" class="connect-mobile">
+                                    <img src="images/icon/linkedin.svg"/>
+                                </a>
+                                <a href="#" class="connect-mobile">
+                                    <img src="images/icon/appstore.svg"/>
+                                </a>
+                                <a href="#" class="connect-mobile">
+                                    <img src="images/icon/chplay.svg"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6 col-sm-7 col-5">
+                            <div class="row flex-item scrollUp">
+                                <div class="col-12 p-0 flex-item text-right justify-end">
+                                    <a href="#" class="mr-5px">
+                                            <span class="blue-top font-weight-bold">
+                                                VỀ ĐẦU TRANG
+                                            </span>
+                                    </a>
+                                    <a href="#">
+                                        <img class="social-icon" src="images/icon/to-top.svg"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-inner position-relative">
+        <div class="menu-left"></div>
+        <div class="container z-999 top-border">
+            <div class="row">
+                <div class="col-lg-5 col-12">
+                </div>
+                <div class="col-lg-7 col-12 menu-top top-border">
+                </div>
+            </div>
+        </div>
+        <div class="menu-right"></div>
+    </div>
+</footer>
+<!-- /End Footer Area -->
+<!-- Jquery -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.0.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Slicknav JS -->
+<script src="js/slicknav.min.js"></script>
+<!-- Owl Carousel JS -->
+<script src="js/owl-carousel.js"></script>
+<!-- Nice Select JS -->
+<script src="js/nicesellect.js"></script>
+<!-- ScrollUp JS -->
+<script src="js/scrollup.js"></script>
+<!-- Easing JS -->
+<script src="js/easing.js"></script>
+<!-- Active JS -->
+<script src="js/active.js"></script>
+</body>
+</html>

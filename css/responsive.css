@@ -447,7 +447,9 @@
 }
 /* Mobile Screen */
 @media only screen and (max-width: 767px) {
-
+    .new-list-img {
+        max-height: 120px;
+    }
     .fdi a {
         border-top: 1px solid #eee;
         border-bottom: 1px solid #eee;
@@ -1381,6 +1383,9 @@
 }
 /* Mobile Screen */
 @media only screen and (max-width: 450px) {
+    .new-list-img {
+        max-height: 100px;
+    }
     .app-down span {
         padding-left: 5px !important;
         font-size: 12px !important;
