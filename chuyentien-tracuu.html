@@ -1,0 +1,1089 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='copyright' content=''>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title Tag  -->
+    <title>VietinBank</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icon/favicon.ico">
+    <!-- Web Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+          rel="stylesheet">
+
+    <!-- StyleSheet -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Font Import -->
+    <link rel="stylesheet" href="css/font.css">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/niceselect.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <!-- Eshop StyleSheet -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Home css -->
+    <link href="css/news/news-event.css" rel="stylesheet"/>
+    <link href="css/news/news-interest.css" rel="stylesheet"/>
+    <link href="css/datepicker.css" rel="stylesheet"/>
+</head>
+<body class="js">
+<!-- Header -->
+<header class="header">
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-md-12 col-12">
+                    <div class="row top-menu">
+                        <div class="col-lg-12 col-md-12 col-12 right-content fl-left pl-0">
+                            <ul class="list-main">
+                                <li><a href="chuyentien-home.html">Trang chủ</a></li>
+                                <li><a href="chuyentien-tintuc.html">Tin tức</a></li>
+                                <li><a href="chuyentien-gioithieu.html">Giới thiệu</a></li>
+                                <li><a href="#">Tuyển dụng</a></li>
+                                <li><a href="">Mạng lưới</a></li>
+                                <li><a href="">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row search-panel">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-12 flex-end p-0 lang-select">
+                            <select class="nice-select" id="lang-select">
+                                <option value="0" selected>ENG</option>
+                                <option value="1">VIE</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 left-logo text-center">
+                            <a href="vietinbank-home.html" class="single-icon m-auto">
+                                <img class="w-100" src="images/icon/logo.svg">
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 p-0 head-phone">
+                            <ul class="head-phone-item">
+                                <li class="mr-0 flex-item">
+                                    <img class="phone-icon" src="images/icon/phone.svg">
+                                </li>
+                                <li class="pt-1"><a href="#" class="pr-0 pl-5">(84) 4 3942 8690/ 91</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12 search-right">
+                            <div class="row search-left search-control">
+                                <div class="col-2 search-bar-top text-left">
+                                    <a onclick="showSearchBox()">
+                                        <img class="search-icon" src="images/icon/search.svg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row search-full hide search-control">
+                                <div class="col-10 search-bar-top text-left">
+                                    <input type="text" class="form-control search-box" onblur="showSearchOnLeave()"
+                                           placeholder="Nhập từ khóa để tìm kiếm..."/>
+                                </div>
+                                <div class="col-2 search-bar-top text-left ">
+                                    <a href="#0" onclick="search()">
+                                        <img class="search-icon icon-right" src="images/icon/search.svg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mobile-nav"></div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-12 right-logo">
+                    <div class="row col-12 text-center h-100 m-auto pr-0">
+                        <a href="vietinbank-home.html" class="single-icon m-auto">
+                            <img class="w-100" src="images/icon/logo-money-transfer.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-relative top-line line-mobile">
+            <div class="menu-left"></div>
+            <div class="container z-999 top-border">
+                <div class="row">
+                    <div class="col-lg-5 col-12">
+                    </div>
+                    <div class="col-lg-7 col-12 menu-top top-border">
+                    </div>
+                </div>
+            </div>
+            <div class="menu-right"></div>
+        </div>
+    </div>
+    <!-- Header Inner -->
+    <div class="position-relative top-line desktop-line">
+        <div class="menu-left"></div>
+        <div class="container z-999 top-border">
+            <div class="row">
+                <div class="col-lg-5 col-12">
+                </div>
+                <div class="col-lg-7 col-12 menu-top top-border">
+                </div>
+            </div>
+        </div>
+        <div class="menu-right"></div>
+    </div>
+    <div class="header-inner position-relative">
+        <div class="container z-999 menu-h">
+            <div class="cat-nav-head h-100">
+                <div class="row h-100">
+                    <div class="col-lg-12 col-md-8 col-12 h-100 pr-0">
+                        <div class="menu-area h-100">
+                            <!-- Main Menu -->
+                            <nav class="navbar navbar-expand-lg h-100 position-relative">
+                                <div class="navbar-collapse">
+                                    <div class="nav-inner">
+                                        <ul class="nav main-menu menu navbar-nav n-tblet position-relative">
+                                            <li class="menu1">
+                                                <a href="" class="menu1-text">
+                                                    <div>
+                                                        <span>Chuyển tiền đi nước ngoài</span>
+                                                        <div class="menu-border"></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="menu1">
+                                                <a href="" class="menu1-text">
+                                                    <div>
+                                                        <span>Nhận tiền từ nước ngoài về Việt Nam</span>
+                                                        <div class="menu-border"></div>
+                                                    </div>
+                                                </a>
+
+                                            </li>
+                                            <li class="menu1">
+                                                <a href="" class="menu1-text">
+                                                    <div>
+                                                        <span>Đối tác</span>
+                                                        <div class="menu-border"></div>
+                                                    </div>
+                                                </a>
+
+                                            </li>
+                                            <li class="menu1">
+                                                <a href="" class="menu1-text">
+                                                    <div>
+                                                        <span>Chương trình khuyến mại</span>
+                                                        <div class="menu-border"></div>
+                                                    </div>
+                                                </a>
+
+                                            </li>
+                                            <li class="menu1">
+                                                <a href="" class="menu1-text">
+                                                    <div>
+                                                        <span>Câu hỏi thường gặp</span>
+                                                        <div class="menu-border"></div>
+                                                    </div>
+                                                </a>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                            <!--/ End Main Menu -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ End Header Inner -->
+</header>
+<!--/ End Header -->
+<section class="news-about">
+    <div class="container">
+        <div class="row head-link">
+            <div class="col-12">
+                <ul>
+                    <li class="bread-right">
+                        <a href="#" class="bread1">Tra cứu sản phẩm</a>
+                        <svg class="right-icon-news" fill="#005993" version="1.1" id="Capa_1"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                             y="0px" width="10" height="10" viewBox="0 0 451.847 451.847"
+                             style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve"><g>	<path
+                                d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751		c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0		c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/></g></svg>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container pb-15px pt-sm-15px">
+    <div class="row">
+        <div class="col-12">
+            <span class="fs-16 blue-top gilroy-bold">Tra cứu sản phẩm</span>
+        </div>
+    </div>
+</div>
+
+<!--/ End Header -->
+<div class="container pb-15px plr-sm-0px">
+    <div class="row">
+        <div class="col-12">
+
+            <div class="row w-100">
+                <div class="col-lg-4 col-md-4 col-12 pl-0 pr-sm-0px">
+                    <label>Tôi Muốn</label>
+                    <select class="address-select" id="select-chose">
+                        <option value="1">Nhận tiền</option>
+                        <option value="2">Chuyển tiền</option>
+                    </select>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12 pr-0 pl-sm-0px">
+                    <label id="label_to">Tiền tới</label>
+                    <select id="country" name="country" class="form-control">
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Quần đảo Aland">Quần đảo Aland</option>
+                        <option value="Albania">Albania</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="American Samoa">American Samoa</option>
+                        <option value="Andorra">Andorra</option>
+                        <option value="Angola">Angola</option>
+                        <option value="Anguilla">Anguilla</option>
+                        <option value="Nam Cực">Nam Cực</option>
+                        <option value="Antigua và Barbuda">Antigua và Barbuda</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Armenia">Armenia</option>
+                        <option value="Aruba">Aruba</option>
+                        <option value="Châu Úc">Châu Úc</option>
+                        <option value="Áo">Áo</option>
+                        <option value="Azerbaijan">Azerbaijan</option>
+                        <option value="Bahamas">Bahamas</option>
+                        <option value="Bahrain">Bahrain</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Barbados">Barbados</option>
+                        <option value="Belarus">Belarus</option>
+                        <option value="nước Bỉ">nước Bỉ</option>
+                        <option value="Belize">Belize</option>
+                        <option value="Benin">Benin</option>
+                        <option value="Bermuda">Bermuda</option>
+                        <option value="Bhutan">Bhutan</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Bonaire, Sint Eustatius và Saba">Bonaire, Sint Eustatius và Saba</option>
+                        <option value="Bosnia và Herzegovina">Bosnia và Herzegovina</option>
+                        <option value="Botswana">Botswana</option>
+                        <option value="Đảo Bouvet">Đảo Bouvet</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Lãnh thổ Ấn Độ Dương thuộc Anh">Lãnh thổ Ấn Độ Dương thuộc Anh</option>
+                        <option value="Vương quốc Bru-nây">Vương quốc Bru-nây</option>
+                        <option value="Bungari">Bungari</option>
+                        <option value="Burkina Faso">Burkina Faso</option>
+                        <option value="Burundi">Burundi</option>
+                        <option value="Campuchia">Campuchia</option>
+                        <option value="Cameroon">Cameroon</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Cape Verde">Cape Verde</option>
+                        <option value="Quần đảo Cayman">Quần đảo Cayman</option>
+                        <option value="Cộng hòa trung phi">Cộng hòa trung phi</option>
+                        <option value="Chad">Chad</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Trung Quốc">Trung Quốc</option>
+                        <option value="Đảo giáng sinh">Đảo giáng sinh</option>
+                        <option value="Quần đảo Cocos (Keeling)">Quần đảo Cocos (Keeling)</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Comoros">Comoros</option>
+                        <option value="Congo">Congo</option>
+                        <option value="Congo, Cộng hòa Dân chủ Congo">Congo, Cộng hòa Dân chủ Congo</option>
+                        <option value="Quần đảo Cook">Quần đảo Cook</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Cote D'Ivoire">Cote D'Ivoire</option>
+                        <option value="Croatia">Croatia</option>
+                        <option value="Cuba">Cuba</option>
+                        <option value="rượu cam bì">rượu cam bì</option>
+                        <option value="Síp">Síp</option>
+                        <option value="Cộng hòa Séc">Cộng hòa Séc</option>
+                        <option value="Đan mạch">Đan mạch</option>
+                        <option value="Djibouti">Djibouti</option>
+                        <option value="Dominica">Dominica</option>
+                        <option value="Cộng hòa Dominica">Cộng hòa Dominica</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Ai cập">Ai cập</option>
+                        <option value="El Salvador">El Salvador</option>
+                        <option value="Equatorial Guinea">Equatorial Guinea</option>
+                        <option value="Eritrea">Eritrea</option>
+                        <option value="Estonia">Estonia</option>
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="Quần đảo Falkland (Malvinas)">Quần đảo Falkland (Malvinas)</option>
+                        <option value="Quần đảo Faroe">Quần đảo Faroe</option>
+                        <option value="Fiji">Fiji</option>
+                        <option value="Phần Lan">Phần Lan</option>
+                        <option value="Nước pháp">Nước pháp</option>
+                        <option value="Guiana thuộc Pháp">Guiana thuộc Pháp</option>
+                        <option value="Polynesia thuộc Pháp">Polynesia thuộc Pháp</option>
+                        <option value="Lãnh thổ phía Nam của Pháp">Lãnh thổ phía Nam của Pháp</option>
+                        <option value="Gabon">Gabon</option>
+                        <option value="Gambia">Gambia</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="nước Đức">nước Đức</option>
+                        <option value="Ghana">Ghana</option>
+                        <option value="Gibraltar">Gibraltar</option>
+                        <option value="Hy Lạp">Hy Lạp</option>
+                        <option value="Greenland">Greenland</option>
+                        <option value="Grenada">Grenada</option>
+                        <option value="Guadeloupe">Guadeloupe</option>
+                        <option value="Guam">Guam</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Guernsey">Guernsey</option>
+                        <option value="Guinea">Guinea</option>
+                        <option value="Guinea-Bissau">Guinea-Bissau</option>
+                        <option value="Guyana">Guyana</option>
+                        <option value="Haiti">Haiti</option>
+                        <option value="Đảo Heard và Quần đảo McDonald">Đảo Heard và Quần đảo McDonald</option>
+                        <option value="Tòa thánh (Nhà nước thành phố Vatican)">Tòa thánh (Nhà nước thành phố Vatican)
+                        </option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="Hồng Kông">Hồng Kông</option>
+                        <option value="Hungary">Hungary</option>
+                        <option value="Nước Iceland">Nước Iceland</option>
+                        <option value="Ấn Độ">Ấn Độ</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Iran (Cộng hòa Hồi giáo">Iran (Cộng hòa Hồi giáo</option>
+                        <option value="I-rắc">I-rắc</option>
+                        <option value="Ireland">Ireland</option>
+                        <option value="Đảo Man">Đảo Man</option>
+                        <option value="Người israel">Người israel</option>
+                        <option value="Nước Ý">Nước Ý</option>
+                        <option value="Jamaica">Jamaica</option>
+                        <option value="Nhật Bản">Nhật Bản</option>
+                        <option value="Jersey">Jersey</option>
+                        <option value="Jordan">Jordan</option>
+                        <option value="Kazakhstan">Kazakhstan</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Kiribati">Kiribati</option>
+                        <option value="Hàn Quốc, Cộng hòa Dân chủ Nhân dân">Hàn Quốc, Cộng hòa Dân chủ Nhân dân</option>
+                        <option value="Hàn Quốc, Cộng hòa">Hàn Quốc, Cộng hòa</option>
+                        <option value="Kosovo">Kosovo</option>
+                        <option value="Kuwait">Kuwait</option>
+                        <option value="Kyrgyzstan">Kyrgyzstan</option>
+                        <option value="Cộng hòa Dân chủ nhân dân Lào">Cộng hòa Dân chủ nhân dân Lào</option>
+                        <option value="Latvia">Latvia</option>
+                        <option value="Lebanon">Lebanon</option>
+                        <option value="Lesotho">Lesotho</option>
+                        <option value="Liberia">Liberia</option>
+                        <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                        <option value="Liechtenstein">Liechtenstein</option>
+                        <option value="Lithuania">Lithuania</option>
+                        <option value="Luxembourg">Luxembourg</option>
+                        <option value="Macao">Macao</option>
+                        <option value="Macedonia, Cộng hòa Nam Tư cũ của">Macedonia, Cộng hòa Nam Tư cũ của</option>
+                        <option value="Madagascar">Madagascar</option>
+                        <option value="Malawi">Malawi</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Maldives">Maldives</option>
+                        <option value="Mali">Mali</option>
+                        <option value="Malta">Malta</option>
+                        <option value="đảo Marshall">đảo Marshall</option>
+                        <option value="Martinique">Martinique</option>
+                        <option value="Mauritania">Mauritania</option>
+                        <option value="Mauritius">Mauritius</option>
+                        <option value="Mayotte">Mayotte</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Micronesia, Liên bang">Micronesia, Liên bang</option>
+                        <option value="Moldova, Cộng hòa">Moldova, Cộng hòa</option>
+                        <option value="Monaco">Monaco</option>
+                        <option value="Mông Cổ">Mông Cổ</option>
+                        <option value="Montenegro">Montenegro</option>
+                        <option value="Montserrat">Montserrat</option>
+                        <option value="Maroc">Maroc</option>
+                        <option value="Mozambique">Mozambique</option>
+                        <option value="Myanmar">Myanmar</option>
+                        <option value="Namibia">Namibia</option>
+                        <option value="Nauru">Nauru</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="nước Hà Lan">nước Hà Lan</option>
+                        <option value="Đảo Antilles của Hà Lan">Đảo Antilles của Hà Lan</option>
+                        <option value="New Caledonia">New Caledonia</option>
+                        <option value="New Zealand">New Zealand</option>
+                        <option value="Nicaragua">Nicaragua</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Niue">Niue</option>
+                        <option value="Đảo Norfolk">Đảo Norfolk</option>
+                        <option value="Quần đảo Bắc Mariana">Quần đảo Bắc Mariana</option>
+                        <option value="Na Uy">Na Uy</option>
+                        <option value="Oman">Oman</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Palau">Palau</option>
+                        <option value="Lãnh thổ Palestine, bị chiếm đóng">Lãnh thổ Palestine, bị chiếm đóng</option>
+                        <option value="Panama">Panama</option>
+                        <option value="Papua New Guinea">Papua New Guinea</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Phi-líp-pin">Phi-líp-pin</option>
+                        <option value="Pitcairn">Pitcairn</option>
+                        <option value="Ba lan">Ba lan</option>
+                        <option value="Bồ Đào Nha">Bồ Đào Nha</option>
+                        <option value="Puerto Rico">Puerto Rico</option>
+                        <option value="Qatar">Qatar</option>
+                        <option value="Sum họp">Sum họp</option>
+                        <option value="Romania">Romania</option>
+                        <option value="Liên bang Nga">Liên bang Nga</option>
+                        <option value="Rwanda">Rwanda</option>
+                        <option value="Saint Barthelemy">Saint Barthelemy</option>
+                        <option value="Saint Helena">Saint Helena</option>
+                        <option value="Saint Kitts và Nevis">Saint Kitts và Nevis</option>
+                        <option value="Saint Lucia">Saint Lucia</option>
+                        <option value="Saint martin">Saint martin</option>
+                        <option value="Saint Pierre và Miquelon">Saint Pierre và Miquelon</option>
+                        <option value="Saint Vincent và Grenadines">Saint Vincent và Grenadines</option>
+                        <option value="Samoa">Samoa</option>
+                        <option value="San Marino">San Marino</option>
+                        <option value="Sao Tome và Principe">Sao Tome và Principe</option>
+                        <option value="Ả Rập Saudi">Ả Rập Saudi</option>
+                        <option value="Senegal">Senegal</option>
+                        <option value="Xéc-bi-a">Xéc-bi-a</option>
+                        <option value="Serbia và Montenegro">Serbia và Montenegro</option>
+                        <option value="Seychelles">Seychelles</option>
+                        <option value="Sierra Leone">Sierra Leone</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="St Martin">St Martin</option>
+                        <option value="Xlô-va-ki-a">Xlô-va-ki-a</option>
+                        <option value="Slovenia">Slovenia</option>
+                        <option value="Quần đảo Solomon">Quần đảo Solomon</option>
+                        <option value="Somalia">Somalia</option>
+                        <option value="Nam Phi">Nam Phi</option>
+                        <option value="Nam Georgia và Quần đảo Nam Sandwich">Nam Georgia và Quần đảo Nam Sandwich
+                        </option>
+                        <option value="phía nam Sudan">phía nam Sudan</option>
+                        <option value="Tây ban nha">Tây ban nha</option>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                        <option value="Sudan">Sudan</option>
+                        <option value="Suriname">Suriname</option>
+                        <option value="Svalbard và Jan Mayen">Svalbard và Jan Mayen</option>
+                        <option value="Swaziland">Swaziland</option>
+                        <option value="Thụy Điển">Thụy Điển</option>
+                        <option value="Thụy sĩ">Thụy sĩ</option>
+                        <option value="Cộng Hòa Arab Syrian">Cộng Hòa Arab Syrian</option>
+                        <option value="Đài Loan, tỉnh của Trung Quốc">Đài Loan, tỉnh của Trung Quốc</option>
+                        <option value="Tajikistan">Tajikistan</option>
+                        <option value="Tanzania, Cộng hòa Thống nhất">Tanzania, Cộng hòa Thống nhất</option>
+                        <option value="nước Thái Lan">nước Thái Lan</option>
+                        <option value="Timor-Leste">Timor-Leste</option>
+                        <option value="Đi">Đi</option>
+                        <option value="Tokelau">Tokelau</option>
+                        <option value="Tonga">Tonga</option>
+                        <option value="Trinidad và Tobago">Trinidad và Tobago</option>
+                        <option value="Tunisia">Tunisia</option>
+                        <option value="gà tây">gà tây</option>
+                        <option value="Turkmenistan">Turkmenistan</option>
+                        <option value="Quần đảo Turks và Caicos">Quần đảo Turks và Caicos</option>
+                        <option value="Tuvalu">Tuvalu</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="các Tiểu Vương Quốc Ả Rập Thống Nhất">các Tiểu Vương Quốc Ả Rập Thống Nhất
+                        </option>
+                        <option value="Vương quốc Anh">Vương quốc Anh</option>
+                        <option value="Hoa Kỳ">Hoa Kỳ</option>
+                        <option value="Các đảo nhỏ xa xôi hẻo lánh của Hoa Kỳ">Các đảo nhỏ xa xôi hẻo lánh của Hoa Kỳ
+                        </option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="U-dơ-bê-ki-xtan">U-dơ-bê-ki-xtan</option>
+                        <option value="Vanuatu">Vanuatu</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="Việt Nam" selected>Việt Nam</option>
+                        <option value="Quần đảo Virgin thuộc Anh">Quần đảo Virgin thuộc Anh</option>
+                        <option value="Quần đảo Virgin, Hoa Kỳ">Quần đảo Virgin, Hoa Kỳ</option>
+                        <option value="Wallis và Futuna">Wallis và Futuna</option>
+                        <option value="Phía tây Sahara">Phía tây Sahara</option>
+                        <option value="Yemen">Yemen</option>
+                        <option value="Zambia">Zambia</option>
+                        <option value="Zimbabwe">Zimbabwe</option>
+                    </select>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 pr-0 pl-sm-0px">
+                    <label id="label_from">Từ</label>
+                    <select id="to-country" name="country" class="select2">
+                        <option>Chọn quốc gia</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Quần đảo Aland">Quần đảo Aland</option>
+                        <option value="Albania">Albania</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="American Samoa">American Samoa</option>
+                        <option value="Andorra">Andorra</option>
+                        <option value="Angola">Angola</option>
+                        <option value="Anguilla">Anguilla</option>
+                        <option value="Nam Cực">Nam Cực</option>
+                        <option value="Antigua và Barbuda">Antigua và Barbuda</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Armenia">Armenia</option>
+                        <option value="Aruba">Aruba</option>
+                        <option value="Châu Úc">Châu Úc</option>
+                        <option value="Áo">Áo</option>
+                        <option value="Azerbaijan">Azerbaijan</option>
+                        <option value="Bahamas">Bahamas</option>
+                        <option value="Bahrain">Bahrain</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Barbados">Barbados</option>
+                        <option value="Belarus">Belarus</option>
+                        <option value="nước Bỉ">nước Bỉ</option>
+                        <option value="Belize">Belize</option>
+                        <option value="Benin">Benin</option>
+                        <option value="Bermuda">Bermuda</option>
+                        <option value="Bhutan">Bhutan</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Bonaire, Sint Eustatius và Saba">Bonaire, Sint Eustatius và Saba</option>
+                        <option value="Bosnia và Herzegovina">Bosnia và Herzegovina</option>
+                        <option value="Botswana">Botswana</option>
+                        <option value="Đảo Bouvet">Đảo Bouvet</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Lãnh thổ Ấn Độ Dương thuộc Anh">Lãnh thổ Ấn Độ Dương thuộc Anh</option>
+                        <option value="Vương quốc Bru-nây">Vương quốc Bru-nây</option>
+                        <option value="Bungari">Bungari</option>
+                        <option value="Burkina Faso">Burkina Faso</option>
+                        <option value="Burundi">Burundi</option>
+                        <option value="Campuchia">Campuchia</option>
+                        <option value="Cameroon">Cameroon</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Cape Verde">Cape Verde</option>
+                        <option value="Quần đảo Cayman">Quần đảo Cayman</option>
+                        <option value="Cộng hòa trung phi">Cộng hòa trung phi</option>
+                        <option value="Chad">Chad</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Trung Quốc">Trung Quốc</option>
+                        <option value="Đảo giáng sinh">Đảo giáng sinh</option>
+                        <option value="Quần đảo Cocos (Keeling)">Quần đảo Cocos (Keeling)</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Comoros">Comoros</option>
+                        <option value="Congo">Congo</option>
+                        <option value="Congo, Cộng hòa Dân chủ Congo">Congo, Cộng hòa Dân chủ Congo</option>
+                        <option value="Quần đảo Cook">Quần đảo Cook</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Cote D'Ivoire">Cote D'Ivoire</option>
+                        <option value="Croatia">Croatia</option>
+                        <option value="Cuba">Cuba</option>
+                        <option value="rượu cam bì">rượu cam bì</option>
+                        <option value="Síp">Síp</option>
+                        <option value="Cộng hòa Séc">Cộng hòa Séc</option>
+                        <option value="Đan mạch">Đan mạch</option>
+                        <option value="Djibouti">Djibouti</option>
+                        <option value="Dominica">Dominica</option>
+                        <option value="Cộng hòa Dominica">Cộng hòa Dominica</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Ai cập">Ai cập</option>
+                        <option value="El Salvador">El Salvador</option>
+                        <option value="Equatorial Guinea">Equatorial Guinea</option>
+                        <option value="Eritrea">Eritrea</option>
+                        <option value="Estonia">Estonia</option>
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="Quần đảo Falkland (Malvinas)">Quần đảo Falkland (Malvinas)</option>
+                        <option value="Quần đảo Faroe">Quần đảo Faroe</option>
+                        <option value="Fiji">Fiji</option>
+                        <option value="Phần Lan">Phần Lan</option>
+                        <option value="Nước pháp">Nước pháp</option>
+                        <option value="Guiana thuộc Pháp">Guiana thuộc Pháp</option>
+                        <option value="Polynesia thuộc Pháp">Polynesia thuộc Pháp</option>
+                        <option value="Lãnh thổ phía Nam của Pháp">Lãnh thổ phía Nam của Pháp</option>
+                        <option value="Gabon">Gabon</option>
+                        <option value="Gambia">Gambia</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="nước Đức">nước Đức</option>
+                        <option value="Ghana">Ghana</option>
+                        <option value="Gibraltar">Gibraltar</option>
+                        <option value="Hy Lạp">Hy Lạp</option>
+                        <option value="Greenland">Greenland</option>
+                        <option value="Grenada">Grenada</option>
+                        <option value="Guadeloupe">Guadeloupe</option>
+                        <option value="Guam">Guam</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Guernsey">Guernsey</option>
+                        <option value="Guinea">Guinea</option>
+                        <option value="Guinea-Bissau">Guinea-Bissau</option>
+                        <option value="Guyana">Guyana</option>
+                        <option value="Haiti">Haiti</option>
+                        <option value="Đảo Heard và Quần đảo McDonald">Đảo Heard và Quần đảo McDonald</option>
+                        <option value="Tòa thánh (Nhà nước thành phố Vatican)">Tòa thánh (Nhà nước thành phố Vatican)
+                        </option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="Hồng Kông">Hồng Kông</option>
+                        <option value="Hungary">Hungary</option>
+                        <option value="Nước Iceland">Nước Iceland</option>
+                        <option value="Ấn Độ">Ấn Độ</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Iran (Cộng hòa Hồi giáo">Iran (Cộng hòa Hồi giáo</option>
+                        <option value="I-rắc">I-rắc</option>
+                        <option value="Ireland">Ireland</option>
+                        <option value="Đảo Man">Đảo Man</option>
+                        <option value="Người israel">Người israel</option>
+                        <option value="Nước Ý">Nước Ý</option>
+                        <option value="Jamaica">Jamaica</option>
+                        <option value="Nhật Bản">Nhật Bản</option>
+                        <option value="Jersey">Jersey</option>
+                        <option value="Jordan">Jordan</option>
+                        <option value="Kazakhstan">Kazakhstan</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Kiribati">Kiribati</option>
+                        <option value="Hàn Quốc, Cộng hòa Dân chủ Nhân dân">Hàn Quốc, Cộng hòa Dân chủ Nhân dân</option>
+                        <option value="Hàn Quốc, Cộng hòa">Hàn Quốc, Cộng hòa</option>
+                        <option value="Kosovo">Kosovo</option>
+                        <option value="Kuwait">Kuwait</option>
+                        <option value="Kyrgyzstan">Kyrgyzstan</option>
+                        <option value="Cộng hòa Dân chủ nhân dân Lào">Cộng hòa Dân chủ nhân dân Lào</option>
+                        <option value="Latvia">Latvia</option>
+                        <option value="Lebanon">Lebanon</option>
+                        <option value="Lesotho">Lesotho</option>
+                        <option value="Liberia">Liberia</option>
+                        <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                        <option value="Liechtenstein">Liechtenstein</option>
+                        <option value="Lithuania">Lithuania</option>
+                        <option value="Luxembourg">Luxembourg</option>
+                        <option value="Macao">Macao</option>
+                        <option value="Macedonia, Cộng hòa Nam Tư cũ của">Macedonia, Cộng hòa Nam Tư cũ của</option>
+                        <option value="Madagascar">Madagascar</option>
+                        <option value="Malawi">Malawi</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Maldives">Maldives</option>
+                        <option value="Mali">Mali</option>
+                        <option value="Malta">Malta</option>
+                        <option value="đảo Marshall">đảo Marshall</option>
+                        <option value="Martinique">Martinique</option>
+                        <option value="Mauritania">Mauritania</option>
+                        <option value="Mauritius">Mauritius</option>
+                        <option value="Mayotte">Mayotte</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Micronesia, Liên bang">Micronesia, Liên bang</option>
+                        <option value="Moldova, Cộng hòa">Moldova, Cộng hòa</option>
+                        <option value="Monaco">Monaco</option>
+                        <option value="Mông Cổ">Mông Cổ</option>
+                        <option value="Montenegro">Montenegro</option>
+                        <option value="Montserrat">Montserrat</option>
+                        <option value="Maroc">Maroc</option>
+                        <option value="Mozambique">Mozambique</option>
+                        <option value="Myanmar">Myanmar</option>
+                        <option value="Namibia">Namibia</option>
+                        <option value="Nauru">Nauru</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="nước Hà Lan">nước Hà Lan</option>
+                        <option value="Đảo Antilles của Hà Lan">Đảo Antilles của Hà Lan</option>
+                        <option value="New Caledonia">New Caledonia</option>
+                        <option value="New Zealand">New Zealand</option>
+                        <option value="Nicaragua">Nicaragua</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Niue">Niue</option>
+                        <option value="Đảo Norfolk">Đảo Norfolk</option>
+                        <option value="Quần đảo Bắc Mariana">Quần đảo Bắc Mariana</option>
+                        <option value="Na Uy">Na Uy</option>
+                        <option value="Oman">Oman</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Palau">Palau</option>
+                        <option value="Lãnh thổ Palestine, bị chiếm đóng">Lãnh thổ Palestine, bị chiếm đóng</option>
+                        <option value="Panama">Panama</option>
+                        <option value="Papua New Guinea">Papua New Guinea</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Phi-líp-pin">Phi-líp-pin</option>
+                        <option value="Pitcairn">Pitcairn</option>
+                        <option value="Ba lan">Ba lan</option>
+                        <option value="Bồ Đào Nha">Bồ Đào Nha</option>
+                        <option value="Puerto Rico">Puerto Rico</option>
+                        <option value="Qatar">Qatar</option>
+                        <option value="Sum họp">Sum họp</option>
+                        <option value="Romania">Romania</option>
+                        <option value="Liên bang Nga">Liên bang Nga</option>
+                        <option value="Rwanda">Rwanda</option>
+                        <option value="Saint Barthelemy">Saint Barthelemy</option>
+                        <option value="Saint Helena">Saint Helena</option>
+                        <option value="Saint Kitts và Nevis">Saint Kitts và Nevis</option>
+                        <option value="Saint Lucia">Saint Lucia</option>
+                        <option value="Saint martin">Saint martin</option>
+                        <option value="Saint Pierre và Miquelon">Saint Pierre và Miquelon</option>
+                        <option value="Saint Vincent và Grenadines">Saint Vincent và Grenadines</option>
+                        <option value="Samoa">Samoa</option>
+                        <option value="San Marino">San Marino</option>
+                        <option value="Sao Tome và Principe">Sao Tome và Principe</option>
+                        <option value="Ả Rập Saudi">Ả Rập Saudi</option>
+                        <option value="Senegal">Senegal</option>
+                        <option value="Xéc-bi-a">Xéc-bi-a</option>
+                        <option value="Serbia và Montenegro">Serbia và Montenegro</option>
+                        <option value="Seychelles">Seychelles</option>
+                        <option value="Sierra Leone">Sierra Leone</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="St Martin">St Martin</option>
+                        <option value="Xlô-va-ki-a">Xlô-va-ki-a</option>
+                        <option value="Slovenia">Slovenia</option>
+                        <option value="Quần đảo Solomon">Quần đảo Solomon</option>
+                        <option value="Somalia">Somalia</option>
+                        <option value="Nam Phi">Nam Phi</option>
+                        <option value="Nam Georgia và Quần đảo Nam Sandwich">Nam Georgia và Quần đảo Nam Sandwich
+                        </option>
+                        <option value="phía nam Sudan">phía nam Sudan</option>
+                        <option value="Tây ban nha">Tây ban nha</option>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                        <option value="Sudan">Sudan</option>
+                        <option value="Suriname">Suriname</option>
+                        <option value="Svalbard và Jan Mayen">Svalbard và Jan Mayen</option>
+                        <option value="Swaziland">Swaziland</option>
+                        <option value="Thụy Điển">Thụy Điển</option>
+                        <option value="Thụy sĩ">Thụy sĩ</option>
+                        <option value="Cộng Hòa Arab Syrian">Cộng Hòa Arab Syrian</option>
+                        <option value="Đài Loan, tỉnh của Trung Quốc">Đài Loan, tỉnh của Trung Quốc</option>
+                        <option value="Tajikistan">Tajikistan</option>
+                        <option value="Tanzania, Cộng hòa Thống nhất">Tanzania, Cộng hòa Thống nhất</option>
+                        <option value="nước Thái Lan">nước Thái Lan</option>
+                        <option value="Timor-Leste">Timor-Leste</option>
+                        <option value="Đi">Đi</option>
+                        <option value="Tokelau">Tokelau</option>
+                        <option value="Tonga">Tonga</option>
+                        <option value="Trinidad và Tobago">Trinidad và Tobago</option>
+                        <option value="Tunisia">Tunisia</option>
+                        <option value="gà tây">gà tây</option>
+                        <option value="Turkmenistan">Turkmenistan</option>
+                        <option value="Quần đảo Turks và Caicos">Quần đảo Turks và Caicos</option>
+                        <option value="Tuvalu">Tuvalu</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="các Tiểu Vương Quốc Ả Rập Thống Nhất">các Tiểu Vương Quốc Ả Rập Thống Nhất
+                        </option>
+                        <option value="Vương quốc Anh">Vương quốc Anh</option>
+                        <option value="Hoa Kỳ">Hoa Kỳ</option>
+                        <option value="Các đảo nhỏ xa xôi hẻo lánh của Hoa Kỳ">Các đảo nhỏ xa xôi hẻo lánh của Hoa Kỳ
+                        </option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="U-dơ-bê-ki-xtan">U-dơ-bê-ki-xtan</option>
+                        <option value="Vanuatu">Vanuatu</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="Việt Nam">Việt Nam</option>
+                        <option value="Quần đảo Virgin thuộc Anh">Quần đảo Virgin thuộc Anh</option>
+                        <option value="Quần đảo Virgin, Hoa Kỳ">Quần đảo Virgin, Hoa Kỳ</option>
+                        <option value="Wallis và Futuna">Wallis và Futuna</option>
+                        <option value="Phía tây Sahara">Phía tây Sahara</option>
+                        <option value="Yemen">Yemen</option>
+                        <option value="Zambia">Zambia</option>
+                        <option value="Zimbabwe">Zimbabwe</option>
+                    </select>
+                </div>
+                <div class="col-12 p-0">
+                    <label>Số tiền dự kiến</label>
+                    <select class="address-select">
+                        <option value="0" selected class="font-italic">Số tiền dự kiến</option>
+                        <option value="1">Dưới 5000$</option>
+                        <option value="2">Trên 5000$</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <div class="row w-100 text-center flex justify-center bottom-btn">
+                        <div class="col-lg-3 col-md-4 col-8 pl-sm-0px">
+                            <a class="btn-calculate calculate1"><span class="gilroy-bold mt-3px">Tra cứu</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 pr-0 pl-0 pt-15px rate-result1 hide flex-item">
+                    <table class="table tbl-rate-all  table-bordered">
+                        <thead>
+                        <tr>
+                            <td>#</td>
+                            <td>Đối Tác</td>
+                            <td>Thông tin</td>
+                            <td>Website</td>
+                            <td></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Western Union</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                            <td><a href="#">vietinbank.com.vn</a></td>
+                            <td colspan="5" rowspan="5"
+                                style="vertical-align : middle;text-align:center;font-size: 16px;"><a href="#"> Yêu
+                                cầu<br> tư vấn trực tiếp</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Western Union</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                            <td><a href="#">vietinbank.com.vn</a></td>
+
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Western Union</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                            <td><a href="#">vietinbank.com.vn</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Western Union</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                            <td><a href="#">vietinbank.com.vn</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Western Union</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                            <td><a href="#">vietinbank.com.vn</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Start Footer Area -->
+<footer class="footer">
+    <!-- Footer Top -->
+    <div class="footer-top section">
+        <div class="container">
+            <div class="row desktop-foot" id="footer-menu">
+                <div class="col-lg-2 col-3">
+                    <!-- Single Widget -->
+                    <div class="single-footer links">
+                        <ul id="contact">
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Tuyển dụng</a></li>
+                            <li class="site-map"><a href="#">Nhà đầu tư</a></li>
+                        </ul>
+                    </div>
+                    <!-- End Single Widget -->
+                </div>
+                <div class="col-lg-2 col-4">
+                    <!-- Single Widget -->
+                    <div class="single-footer links">
+                        <ul id="sitemap">
+                            <li><a href="#">Điều kiện giao dịch</a></li>
+                            <li><a href="#">Tải tài liệu</a></li>
+                            <li class="right-map"><a href="#">Sitemap</a></li>
+                            <li class="right-map"><a href="#">Kết nối với chúng tôi</a></li>
+                        </ul>
+                    </div>
+                    <!-- End Single Widget -->
+                </div>
+                <div class="col-lg-4 col-12">
+                    <!-- Single Widget -->
+                    <div class="single-footer links">
+                        <!-- Single Widget -->
+                        <div class="contact">
+                            <span class="blue-top">Trụ sở: Tầng 3, tòa nhà VietinBank, 126 Đội Cấn, Ba đình, Hà nội</span>
+                            <ul class="address-bot">
+                                <li><a href="#">T: (84) 24 3942 8690/ (84) 24 3942 8691</a></li>
+                                <li><a href="#">F: (84) 24 3942 8693</a></li>
+                                <li><a href="#">E: kieuhoi@vietinbank.vn</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <!-- End Single Widget -->
+                </div>
+                <div class="col-lg-4 col-12 single-footer">
+                    <div class="row">
+                        <div class="col-12 lisence">
+                            <span class="blue-top">&#169;2014 - Bản quyền thuộc về Ngân hàng TMCP Công Thương Việt Nam Giấy phép số 22/GP-TTĐT của Bộ TTTT</span>
+                        </div>
+                    </div>
+                    <div class="row connect-mobile">
+                        <div class="col-4 p-0">
+                            <div class="row">
+                                <span class="blue-top connect">Kết nối với chúng tôi</span>
+                            </div>
+                            <div class="row foot-group-icon">
+                                <a href="#">
+                                    <img class="pl-10" src="images/icon/fb.svg"/>
+                                </a>
+                                <a href="#">
+                                    <img src="images/icon/youtube.svg"/>
+                                </a>
+                                <a href="#">
+                                    <img src="images/icon/linkedin.svg"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 pr-0 app-download">
+                            <div class="row">
+                                <span class="blue-top connect">Tải iPay mobile tại</span>
+                            </div>
+                            <div class="row foot-group-icon">
+                                <a href="#">
+                                    <img src="images/icon/appstore.svg"/>
+                                </a>
+                                <a href="#">
+                                    <img src="images/icon/chplay.svg"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 text-right contact connect-right flex-end justify-end">
+                            <div class="row flex-item scrollUp">
+                                <a href="#" class="flex-item">
+                                        <span class="blue-top font-weight-bold">
+                                            VỀ ĐẦU TRANG
+                                        </span>
+                                </a>
+                                <a href="#" class="flex-item">
+                                    <img class="social-icon" src="images/icon/to-top.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mobile-foot" id="footer-menu">
+                <div class="col-lg-2 pr-0 col-3 pl-sm-7-5">
+                    <!-- Single Widget -->
+                    <div class="single-footer links">
+                        <ul id="contact">
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Tuyển dụng</a></li>
+                        </ul>
+                    </div>
+                    <!-- End Single Widget -->
+                </div>
+                <div class="col-lg-2 pr-0 col-4 pl-sm-7-5">
+                    <!-- Single Widget -->
+                    <div class="single-footer links">
+                        <ul id="sitemap">
+                            <li class="site-map"><a href="#">Nhà đầu tư</a></li>
+                            <li><a href="#">Điều kiện giao dịch</a></li>
+                            <li><a href="#">Tải tài liệu</a></li>
+                        </ul>
+                    </div>
+                    <!-- End Single Widget -->
+                </div>
+                <div class="col-5 foot-mobile pl-sm-7-5">
+                    <div class="single-footer links">
+                        <ul id="rightmap">
+                            <li class="right-map"><a href="#">Sitemap</a></li>
+                            <li class="right-map"><a href="#">Kết nối với chúng tôi</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 address-link">
+                    <!-- Single Widget -->
+                    <div class="single-footer links">
+                        <!-- Single Widget -->
+                        <div class="contact">
+                            <span class="blue-top">Trụ sở: Tầng 3, tòa nhà VietinBank, 126 Đội Cấn, Ba đình, Hà nội</span>
+                            <ul class="address-bot">
+                                <li><a href="#">T: (84) 24 3942 8690/ (84) 24 3942 8691</a></li>
+                                <li><a href="#">F: (84) 24 3942 8693</a></li>
+                                <li><a href="#">E: kieuhoi@vietinbank.vn</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <!-- End Single Widget -->
+                </div>
+                <div class="col-lg-4 col-12 single-footer">
+                    <div class="row">
+                        <div class="col-12 lisence">
+                            <span class="blue-top">&#169;2014 - Bản quyền thuộc về Ngân hàng TMCP Công Thương Việt Nam Giấy phép số 22/GP-TTĐT của Bộ TTTT</span>
+                        </div>
+                    </div>
+                    <div class="row pt-10 connect-mobile">
+                        <div class="col-5 pl-0">
+                            <span class="blue-top connect">Kết nối với chúng tôi</span>
+                        </div>
+                        <div class="col-7 p-0 position-absolute app-download">
+                            <span class="blue-top connect">Tải iPay mobile tại:</span>
+                        </div>
+                    </div>
+                    <div class="row pt-10 top-icon">
+                        <div class="col-lg-7 col-md-6 col-sm-5 col-7 connect-left">
+                            <div class="row">
+                                <a href="#">
+                                    <img class="pl-10" src="images/icon/fb.svg"/>
+                                </a>
+                                <a href="#">
+                                    <img src="images/icon/youtube.svg"/>
+                                </a>
+                                <a href="#" class="connect-mobile">
+                                    <img src="images/icon/linkedin.svg"/>
+                                </a>
+                                <a href="#" class="connect-mobile">
+                                    <img src="images/icon/appstore.svg"/>
+                                </a>
+                                <a href="#" class="connect-mobile">
+                                    <img src="images/icon/chplay.svg"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6 col-sm-7 col-5">
+                            <div class="row flex-item scrollUp">
+                                <div class="col-12 p-0 flex-item text-right justify-end">
+                                    <a href="#" class="mr-5px">
+                                            <span class="blue-top font-weight-bold">
+                                                VỀ ĐẦU TRANG
+                                            </span>
+                                    </a>
+                                    <a href="#">
+                                        <img class="social-icon" src="images/icon/to-top.svg"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-inner position-relative">
+        <div class="menu-left"></div>
+        <div class="container z-999 top-border">
+            <div class="row">
+                <div class="col-lg-5 col-12">
+                </div>
+                <div class="col-lg-7 col-12 menu-top top-border">
+                </div>
+            </div>
+        </div>
+        <div class="menu-right"></div>
+    </div>
+</footer>
+<!-- /End Footer Area -->
+<!-- Jquery -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.0.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<!-- Slicknav JS -->
+<script src="js/slicknav.min.js"></script>
+<!-- Owl Carousel JS -->
+<script src="js/owl-carousel.js"></script>
+<!-- Nice Select JS -->
+<script src="js/nicesellect.js"></script>
+<!-- ScrollUp JS -->
+<script src="js/scrollup.js"></script>
+<!-- Easing JS -->
+<script src="js/easing.js"></script>
+<!-- Active JS -->
+<script src="js/news/news-interest.js"></script>
+<script src="js/active.js"></script>
+<script>
+    $("#select-chose").change(function () {
+        var chose = $(this).val();
+        if (chose == 1) {
+            $('#label_to').text('Tiền tới');
+            $('#label_from').text('Từ');
+        } else {
+            $('#label_to').text('Tiền từ');
+            $('#label_from').text('Đến');
+        }
+    });
+</script>
+</body>
+</html>
