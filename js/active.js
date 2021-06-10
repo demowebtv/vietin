@@ -53,6 +53,7 @@ let imgType = {
         window.onresize = windowResizeHandle;
         showTabletProducts();
         showProducts();
+        showProducttwo();
         showProduct();
     });
 
@@ -79,6 +80,7 @@ function windowResizeHandle() {
     setOffsetSelectWidth();
     showProducts();
     showProduct();
+    showProducttwo();
     showBorrowOptions();
     showTabletMenu();
 }
@@ -103,7 +105,7 @@ function showProducts() {
                 loop: true,
                 nav: true,
                 merge: true,
-                dots: true,
+                dots: false,
                 navText: ['<img src="images/icon/left-arrow.svg" />', '<img src="images/icon/right-arrow.svg" />'],
                 responsive: {
                     0: {
@@ -154,7 +156,7 @@ function showProduct() {
                 loop: true,
                 nav: true,
                 merge: true,
-                dots: true,
+                dots: false,
                 navText: ['<img src="images/icon/left-arrow.svg" />', '<img src="images/icon/right-arrow.svg" />'],
                 responsive: {
                     0: {
@@ -186,6 +188,57 @@ function showProduct() {
 
 }
 
+const solutionSlidetwo = $('.chuyentien-sanpham-two-slider').length > 0 ? $('.chuyentien-sanpham-two-slider')[0].cloneNode(true) : null;
+function showProducttwo() {
+    if (!solutionSlidetwo) {
+        return;
+    }
+
+    let owl = $('.chuyentien-sanpham-two-slider').find('.owl-stage-outer');
+    if (window.innerWidth > 450) {
+        if (owl.length == 0) {
+            $('.chuyentien-sanpham-two-slider').owlCarousel({
+                items: 1,
+                autoplay: false,
+                autoplayTimeout: 3000,
+                smartSpeed: 400,
+                animateIn: 'fadeIn',
+                animateOut: 'fadeOut',
+                autoplayHoverPause: true,
+                loop: true,
+                nav: true,
+                merge: true,
+                dots: false,
+                navText: ['<img src="images/icon/left-arrow.svg" />', '<img src="images/icon/right-arrow.svg" />'],
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    300: {
+                        items: 2,
+                    },
+                    480: {
+                        items: 2,
+                    },
+                    768: {
+                        items: 2,
+                    },
+                    1170: {
+                        items: 2,
+                    },
+                }
+            });
+        }
+    }
+    else {
+        $('.chuyentien-sanpham-two-slider').remove();
+        $('.product-slide').append(solutionSlidetwo);
+        $('.chuyentien-sanpham-two-slider').css('display', 'block');
+    }
+
+    changeEnterpriseProductsImg();
+
+}
 function changeEnterpriseProductsImg() {
     if ($('.solution-slider').length > 0) {
         let allImgSrc = [];
