@@ -447,6 +447,7 @@
 }
 /* Mobile Screen */
 @media only screen and (max-width: 767px) {
+    .banking{display: flex;}
     .new-list-img {
         max-height: 120px;
     }
@@ -1383,6 +1384,7 @@
 }
 /* Mobile Screen */
 @media only screen and (max-width: 450px) {
+    .banking{display: flex;}
     .new-list-img {
         max-height: 100px;
     }
@@ -2639,8 +2641,9 @@
 
 @media only screen and (min-width: 992px) {
     .header .nav li a {
-        padding: 11px 14px;
-    }
+        padding-left: 0;
+        padding-right: 30px;
+}
 
     .mobile-head {
         display: none;
@@ -2655,7 +2658,7 @@
     }
 
     .scrollUp a:first-child {
-        padding-right: 2px;
+        padding-right: 5px;
     }
 
     .scrollUp a:last-child {
@@ -2761,6 +2764,7 @@
     }
 
     .banking {
+        display: none;
         border-radius: 15px;
         border: 1px solid #eee;
         height: 130px;
@@ -2768,7 +2772,6 @@
         z-index: 9;
         right: 0px;
         top: 165px;
-        display: flex;
         align-items: center;
         box-shadow: 0px 3px 5px #3333334d;
         background-color: #fff;
@@ -2795,8 +2798,8 @@
         height: 100%;
         display: none;
         position: absolute;
-        right: -173%;
-        width: 173%;
+        right: -120%;
+        width: 120%;
         margin-left: 0px;
         top: 0px;
         z-index: 1;

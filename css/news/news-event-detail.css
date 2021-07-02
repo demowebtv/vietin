@@ -22,7 +22,7 @@
     }
 
     .more {
-        line-height: 18px !important;
+        line-height: 24px !important;
     }
 
         .more a, .more span {
@@ -81,6 +81,7 @@
     .share-bot {
         display: block !important;
         padding-top: 15px !important;
+        padding-left: 0px;
     }
 
         .share-bot .col-12 .row {
@@ -181,7 +182,7 @@
 }
 
 .share-bot {
-    display: none;
+   padding-left: 10px;
 }
 
 .comment {

@@ -105,7 +105,6 @@ s.btn {
     transition: all 0.1s ease 0s;
     opacity: 0;
     visibility: hidden;
-    left: 0;
     margin: 0;
 }
 
@@ -317,7 +316,7 @@ s.btn {
 
     .header .nav-inner {
         margin: 0;
-        float: left;
+        width: 100%;display: flex;
     }
 
     .header .topbar {
@@ -2677,7 +2676,7 @@ b,strong{
 }
 
     .connect-right img {
-        width: 30px;
+        width: 26px;
     }
 
 .l-0 {
@@ -2880,11 +2879,44 @@ b,strong{
     max-height: 30px;
     align-items: center;
     padding: 0;
+    padding-top: 5px;
 }
-
+.phone-head-icon{margin-left: -10px;}
     .head-phone-item li a {
         color: #005993;
         font-family: 'svn-gilroy-semibold',sans-serif;
     }
-
-
+@media all and (min-width: 992px) {
+    .banking-menu .dropdown-menu-end{ right:0; left: auto;  }
+    .banking-menu .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+    .banking-menu .nav-item:hover .nav-link{ color: #fff;  }
+    .banking-menu .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+    .banking-menu .dropdown-menu.fade-up{ top:180%;  }
+    .banking-menu .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}
+.banking-menu{padding-top: 12px;}
+.banking-menu a{font-family: 'svn-gilroy-semibold',sans-serif;font-size: 16px; color: #7ed3f7;}
+.banking-sub li:hover{ background-color: #7ed3f7;
+                          color: #005793 !important;}
+.banking-sub a{font-family: 'svn-gilroy-semibold',sans-serif; color: #686868;position: initial;padding: 2px;}
+.banking-sub{padding-bottom: 0; padding-top: 0; margin-top: 15px !important;}
+.banking-sub li:last-child{border-bottom: 0;}
+.banking-sub li:last-child a{color: #005993;}
+.banking-sub .option-icon{padding-top: 5px;}
+.banking-sub .option {
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 40px;
+    list-style: none;
+    min-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 29px;
+    text-align: left;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #EBEBEB;
+}
+.banking-menu .dropdown-menu{width: 120% !important;right: 0 !important;left: auto;}
