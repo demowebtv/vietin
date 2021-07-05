@@ -447,6 +447,7 @@
 }
 /* Mobile Screen */
 @media only screen and (max-width: 767px) {
+    .menu-footer{display: none;}
     .banking{display: flex;}
     .new-list-img {
         max-height: 120px;
