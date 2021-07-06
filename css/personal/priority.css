@@ -69,7 +69,6 @@
 .header.sticky .header-inner .nav li .dropdown li a:hover {
     color: #fff;
 }
-
 .menu2-right>li{padding-bottom: 1px !important;}
 .menu2-left>li:first-child>.menu-hover{border-top-left-radius: 7px !important;border-top-right-radius: 7px !important;}
 .menu2-left>li:first-child>a:hover{border-top-left-radius: 7px !important;border-top-right-radius: 7px !important;}

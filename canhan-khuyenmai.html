@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Title Tag  -->
-    <title>Vietin Bank</title>
+    <title>VietinBank</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/icon/favicon.ico">
     <!-- Web Font -->
@@ -37,10 +37,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Home css -->
-    <link href="css/enterprise/enterprise-home.css" rel="stylesheet"/>
+    <link href="css/enterprise/enterprise-payment-account.css" rel="stylesheet"/>
     <link href="css/footer-icon.css" rel="stylesheet"/>
     <link href="css/enterprise/enterprise-all.css" rel="stylesheet"/>
-    <link href="css/personal/priority.css" rel="stylesheet"/>
+    <link href="css/enterprise/enterprise-account-service.css" rel="stylesheet"/>
+    <link href="css/enterprise/enterprise-product-content.css" rel="stylesheet"/>
 </head>
 <body class="js">
 <!-- Header -->
@@ -73,13 +74,13 @@
                         </div>
                         <div class="col-lg-10 col-md-10 col-sm-10 left-logo text-center">
                             <a href="index.html" class="single-icon m-auto">
-                                <img src="images/icon/logo_priority.png">
+                                <img class="w-100" src="images/icon/logo.svg">
                             </a>
                         </div>
                         <div class="col-lg-4 col-md-4 p-0 head-phone">
                             <ul class="head-phone-item">
                                 <li class="mr-0 flex-item phone-head-icon">
-                                    <img class="phone-icon" src="images/icon/priority_phone.png">
+                                    <img class="phone-icon" src="images/icon/phone.png">
                                 </li>
                                 <li class="pt-1"><a href="#" class="pr-0 pl-5"> 1900 558 868</a></li>
                                 <li class="mr-0 pt-1"><a href="#" class="p-0"><i class="fa fa-circle dot-icon f-4"
@@ -91,7 +92,7 @@
                             <div class="row search-left search-control">
                                 <div class="col-2 search-bar-top text-left">
                                     <a onclick="showSearchBox()">
-                                        <img class="search-icon" src="images/icon/priority_search.png">
+                                        <img class="search-icon" src="images/icon/search.svg">
                                     </a>
                                 </div>
                             </div>
@@ -102,7 +103,7 @@
                                 </div>
                                 <div class="col-2 search-bar-top text-left ">
                                     <a href="#0" onclick="search()">
-                                        <img class="search-icon icon-right" src="images/icon/priority_search.png">
+                                        <img class="search-icon icon-right" src="images/icon/search.svg">
                                     </a>
                                 </div>
                             </div>
@@ -113,14 +114,38 @@
                 <div class="col-lg-2 col-12 right-logo">
                     <div class="row col-12 text-center h-100 m-auto pr-0">
                         <a href="index.html" class="single-icon m-auto">
-                            <img class="w-100" src="images/icon/logo_priority.png">
+                            <img class="w-100" src="images/icon/logo.svg">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="position-relative top-line line-mobile">
+            <div class="menu-left"></div>
+            <div class="container z-999 top-border">
+                <div class="row">
+                    <div class="col-lg-5 col-12">
+                    </div>
+                    <div class="col-lg-7 col-12 menu-top top-border">
+                    </div>
+                </div>
+            </div>
+            <div class="menu-right"></div>
+        </div>
     </div>
     <!-- Header Inner -->
+    <div class="position-relative top-line desktop-line">
+        <div class="menu-left"></div>
+        <div class="container z-999 top-border">
+            <div class="row">
+                <div class="col-lg-5 col-12">
+                </div>
+                <div class="col-lg-7 col-12 menu-top top-border">
+                </div>
+            </div>
+        </div>
+        <div class="menu-right"></div>
+    </div>
     <div class="header-inner position-relative">
         <div class="container z-999 menu-h">
             <div class="cat-nav-head h-100">
@@ -402,7 +427,7 @@
                                                                         </ul>
                                                                     </li>
                                                                     <li>
-                                                                        <div class="row plr-15 pt-15px pb-15px">
+                                                                        <div class="row plr-15 pt-15px">
                                                                             <div class="col-12">
                                                                                 <div class="row">
                                                                                     <div class="col-6 pr-0 br-1">
@@ -566,170 +591,195 @@
 </header>
 <!--/ End Header -->
 <!-- Slider Area -->
-<section class="hero-slider position-relative top-slide priority-slider">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-8 col-12">
-                <div class="owl-carousel owl-theme home-slide">
-                    <div class="item">
-                        <a href="#" target="_self">
-                            <img src="images/personal/priority/1-desktop.jpg"/>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#" target="_self">
-                            <img src="images/personal/priority/1-desktop.jpg"/>
-                        </a>
-                    </div>
-                </div>
+<section class="hero-slider position-relative top-slide">
+    <div class="row">
+        <div class="owl-carousel owl-theme home-slide">
+            <div class="item">
+                <a href="#" target="_self">
+                    <img src="images/personal/banner/1-desktop.jpg"/>
+                </a>
             </div>
+            <div class="item">
+                <a href="#" target="_self">
+                    <img src="images/personal/banner/1-desktop.jpg"/>
+                </a>
+            </div>
+
         </div>
     </div>
 </section>
-<!--/ End Slider Area -->
 <!-- Start Most Popular -->
-<div class="product-area most-popular pt-30px pb-30px">
+<div class="pt-30px pb-30px">
     <div class="container">
-        <div class="row">
-            <div class="col-12 product-slide pl-30px pr-30px">
-                <div class="owl-carousel solution-slider">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a class="slide-content" href="#">
-                                <img class="default-img" src="images/personal/products/nhdientu.jpg" alt="#">
-                            </a>
-                        </div>
-                        <a href="#" class="bg-content"></a>
-                        <div class="product-content">
-                            <div class="row">
-                                <a href="#">
-                                    <div class="row justify-center">
-                                        <span>Tài khoản 0 phí</span>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-12 pt-15px more text-center position-absolute opc-8 l-0">
-                                            <span href="#" class="text-white fs-14">Xem chi tiết</span>
-                                            <svg class="right-arrow" version="1.1" id="Capa_1"
-                                                 xmlns="http://www.w3.org/2000/svg"
-                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
-                                                 height="20px" viewBox="0 0 451.846 451.847"
-                                                 style="enable-background:new 0 0 451.846 451.847;"
-                                                 xml:space="preserve"><g>	<path
-                                                    d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/></g></svg>
-                                        </div>
-                                    </div>
+        <div class="pt-30px pb-30px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <div class="row news-body">
+                            <div class="col-lg-3 col-md-3 col-12 p-0">
+                                <span class="title-news mobile pt-15px">“Vui ra mắt - Cashback x3” từ VietinBank</span>
+                                <img src="images/personal/priority/new0.png">
+                            </div>
+                            <div class="col-lg-8 offset-lg-1 col-md-8 offset-md-1 col-12 pl-0 pr-30px">
+                                <span class="title-news desktop">“Vui ra mắt - Cashback x3” từ VietinBank</span>
+                                <span class="justify-text">Là các chủ thẻ tín dụng VietinBank Cashback, khách hàng không chỉ được hoàn tiền không giới hạn đến 6% giá trị chi tiêu; mà còn được tham gia Chương trình khuyến mãi (CTKM) “Vui ra mắt - Cashback x3” (Chương trình).</span>
+                                <a class="news-more" href="canhan-khuyenmai-chitiet.html">
+                                    Xem chi tiết
+                                    <svg class="right-arrow" version="1.1" id="Capa_1"
+                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         x="0px" y="0px" width="20px" height="20px" viewBox="0 0 451.846 451.847"
+                                         style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve"><g>	<path
+                                            d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></g></svg>
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a class="slide-content" href="#">
-                                <img class="default-img" src="images/personal/products/tiengui.jpg" alt="#">
-                            </a>
-                        </div>
-                        <a href="#" class="bg-content"></a>
-                        <div class="product-content">
-                            <div class="row">
-                                <a href="#">
-                                    <div class="row justify-center">
-                                        <span>Trả góp miễn lãi <br>Thoải mái tiêu sài</span>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-12 pt-15px more text-center position-absolute opc-8 l-0">
-                                            <span href="#" class="text-white fs-14">Xem chi tiết</span>
-                                            <svg class="right-arrow" version="1.1" id="Capa_1"
-                                                 xmlns="http://www.w3.org/2000/svg"
-                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
-                                                 height="20px" viewBox="0 0 451.846 451.847"
-                                                 style="enable-background:new 0 0 451.846 451.847;"
-                                                 xml:space="preserve"><g>	<path
-                                                    d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/></g></svg>
-                                        </div>
-                                    </div>
+                        <div class="row news-body bottom-news"></div>
+                        <div class="row news-body">
+                            <div class="col-lg-3 col-md-3 col-12 p-0">
+                                <span class="title-news mobile pt-15px">“Vui ra mắt - Cashback x3” từ VietinBank</span>
+                                <img src="images/personal/priority/new1.png">
+                            </div>
+                            <div class="col-lg-8 offset-lg-1 col-md-8 offset-md-1 col-12 pl-0 pr-30px">
+                                <span class="title-news desktop">“Vui ra mắt - Cashback x3” từ VietinBank</span>
+                                <span class="justify-text">Là các chủ thẻ tín dụng VietinBank Cashback, khách hàng không chỉ được hoàn tiền không giới hạn đến 6% giá trị chi tiêu; mà còn được tham gia Chương trình khuyến mãi (CTKM) “Vui ra mắt - Cashback x3” (Chương trình).</span>
+                                <a class="news-more" href="canhan-khuyenmai-chitiet.html">
+                                    Xem chi tiết
+                                    <svg class="right-arrow" version="1.1" id="Capa_1"
+                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         x="0px" y="0px" width="20px" height="20px" viewBox="0 0 451.846 451.847"
+                                         style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve"><g>	<path
+                                            d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></g></svg>
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a class="slide-content" href="#">
-                                <img class="default-img" src="images/personal/products/the.jpg" alt="#">
-                            </a>
-                        </div>
-                        <a href="#" class="bg-content"></a>
-                        <div class="product-content">
-                            <div class="row">
-                                <a href="#">
-                                    <div class="row justify-center">
-                                        <span>Tài khoản phát sinh<br>hàng hoá</span>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-12 pt-15px more text-center position-absolute opc-8 l-0">
-                                            <span href="#" class="text-white fs-14">Xem chi tiết</span>
-                                            <svg class="right-arrow" version="1.1" id="Capa_1"
-                                                 xmlns="http://www.w3.org/2000/svg"
-                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
-                                                 height="20px" viewBox="0 0 451.846 451.847"
-                                                 style="enable-background:new 0 0 451.846 451.847;"
-                                                 xml:space="preserve"><g>	<path
-                                                    d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/></g></svg>
-                                        </div>
-                                    </div>
+                        <div class="row news-body bottom-news"></div>
+                        <div class="row news-body">
+                            <div class="col-lg-3 col-md-3 col-12 p-0">
+                                <span class="title-news mobile pt-15px">“Vui ra mắt - Cashback x3” từ VietinBank</span>
+                                <img src="images/personal/priority/new2.png">
+                            </div>
+                            <div class="col-lg-8 offset-lg-1 col-md-8 offset-md-1 col-12 pl-0 pr-30px">
+                                <span class="title-news desktop">“Vui ra mắt - Cashback x3” từ VietinBank</span>
+                                <span class="justify-text">Là các chủ thẻ tín dụng VietinBank Cashback, khách hàng không chỉ được hoàn tiền không giới hạn đến 6% giá trị chi tiêu; mà còn được tham gia Chương trình khuyến mãi (CTKM) “Vui ra mắt - Cashback x3” (Chương trình).</span>
+                                <a class="news-more" href="canhan-khuyenmai-chitiet.html">
+                                    Xem chi tiết
+                                    <svg class="right-arrow" version="1.1" id="Capa_1"
+                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         x="0px" y="0px" width="20px" height="20px" viewBox="0 0 451.846 451.847"
+                                         style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve"><g>	<path
+                                            d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></g></svg>
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a class="slide-content" href="#">
-                                <img class="default-img" src="images/personal/products/chovay.jpg" alt="#">
-                            </a>
-                        </div>
-                        <a href="#" class="bg-content"></a>
-                        <div class="product-content">
-                            <div class="row">
-                                <a href="#">
-                                    <div class="row justify-center">
-                                        <span>Ưu đãi<br>Hoàn phí thường niên</span>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-12 pt-15px more text-center position-absolute opc-8 l-0">
-                                            <span href="#" class="text-white fs-14">Xem chi tiết</span>
-                                            <svg class="right-arrow" version="1.1" id="Capa_1"
-                                                 xmlns="http://www.w3.org/2000/svg"
-                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
-                                                 height="20px" viewBox="0 0 451.846 451.847"
-                                                 style="enable-background:new 0 0 451.846 451.847;"
-                                                 xml:space="preserve"><g>	<path
-                                                    d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/></g></svg>
-                                        </div>
-                                    </div>
+                        <div class="row news-body bottom-news"></div>
+                        <div class="row news-body">
+                            <div class="col-lg-3 col-md-3 col-12 p-0">
+                                <span class="title-news mobile pt-15px">“Vui ra mắt - Cashback x3” từ VietinBank</span>
+                                <img src="images/personal/priority/new3.png">
+                            </div>
+                            <div class="col-lg-8 offset-lg-1 col-md-8 offset-md-1 col-12 pl-0 pr-30px">
+                                <span class="title-news desktop">“Vui ra mắt - Cashback x3” từ VietinBank</span>
+                                <span class="justify-text">Là các chủ thẻ tín dụng VietinBank Cashback, khách hàng không chỉ được hoàn tiền không giới hạn đến 6% giá trị chi tiêu; mà còn được tham gia Chương trình khuyến mãi (CTKM) “Vui ra mắt - Cashback x3” (Chương trình).</span>
+                                <a class="news-more" href="canhan-khuyenmai-chitiet.html">
+                                    Xem chi tiết
+                                    <svg class="right-arrow" version="1.1" id="Capa_1"
+                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         x="0px" y="0px" width="20px" height="20px" viewBox="0 0 451.846 451.847"
+                                         style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve"><g>	<path
+                                            d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></g></svg>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="row pt-30px">
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- End Most Popular Area -->
-<div class="product-area most-popular care">
-</div>
-<div class="menu-footer py-3 care">
-    <div class="container position-relative text-center">
-        <div class="row mx-3">
-            <div class="col-2 line-tab"><a href="#">Biểu phí</a></div>
-            <div class="col-2 line-tab"><a href="#">Công cụ tiện ích</a></div>
-            <div class="col-2 line-tab"><a href="#">Đăng ký tư vấn</a></div>
-            <div class="col-2 line-tab"><a href="#">Trả góp lại xuất 0%</a></div>
-            <div class="col-2 line-tab"><a href="#">Điểm ưu đãi</a></div>
-            <div class="col-2 line-tab"><a href="canhan-khuyenmai.html">Khuyến mãi</a></div>
+        <div class="row pt-100px pl-15px care-about">
+        </div>
+        <div class="row menu-expand mobile plr-15px pt-15px">
+            <div class="col-12">
+                <ul class="menu-expand-1">
+                    <li>
+                        <a class="lvl1-title brd-top-1px">
+                            <span>Dịch vụ tài khoản và tiền gửi</span>
+                        </a>
+                        <ul class="menu-expand-2 hide">
+                            <li><a href="dn-taikhoan-tt.html">Tài khoản thanh toán</a></li>
+                            <li><a href="#">Tài khoản vốn và dịch vụ đại lý tín thác</a></li>
+                            <li><a href="#">Tiền gửi có kỳ hạn</a></li>
+                            <li><a href="#">Tiền gửi có kỳ hạn online</a></li>
+                            <li><a href="#">Tiền gửi ký quỹ</a></li>
+                            <li><a href="#">Tiền gửi đầu tư tự động</a></li>
+                            <li><a href="#">Giấy tờ có giá</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="lvl1-title">
+                            <span>Thanh toán & Quản lý dòng tiền</span>
+                        </a>
+                        <ul class="menu-expand-2 hide">
+                            <li><a href="#">Chuyển tiền VND trong nước</a></li>
+                            <li><a href="#">Quản lý khoản phải thu</a></li>
+                            <li><a href="#">Quản lý khoản phải chi</a></li>
+                            <li><a href="#">Quản lý dòng tiền</a></li>
+                            <li><a href="#">Quản lý thanh khoản</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="lvl1-title">
+                            <span>Ngân hàng điện tử</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="lvl1-title">
+                            <span>Bảo lãnh</span>
+                        </a>
+                        <ul class="menu-expand-2 hide">
+                            <li><a href="#">Dành cho doanh nghiệp được bảo lãnh</a></li>
+                            <li><a href="#">Dành cho doanh nghiệp thụ hưởng bảo lãnh</a></li>
+                            <li><a href="#">Dành các tổ chức tín dụng hợp tác với Vietinbank</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="lvl1-title">
+                            <span>TT quốc tế & Tài trợ TM</span>
+                        </a>
+                        <ul class="menu-expand-2 hide">
+                            <li><a href="#">Chuyển tiền ngoại tệ đến</a></li>
+                            <li><a href="#">Chuyển tiền ngoại tệ đi</a></li>
+                            <li><a href="#">Tài trợ thương mại dành cho KH xuất khẩu</a></li>
+                            <li><a href="#">Tài trợ thương mại dành cho KH nhập khẩu</a></li>
+                            <li><a href="#">Tài trợ thương mại nội địa</a></li>
+                            <li><a href="#">Vietinbank Trade Portal</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="lvl1-title">
+                            <span>Ngoại hối & Thị trường vốn</span>
+                        </a>
+                        <ul class="menu-expand-2 hide">
+                            <li><a href="#">Kinh doanh ngoại hối</a></li>
+                            <li><a href="#">Sản phẩm phái sinh lãi suất</a></li>
+                            <li><a href="#">Dịch vụ Ngân hàng đầu tư</a></li>
+                            <li><a href="#">Sản phẩm phái sinh hàng hóa</a></li>
+                            <li><a href="#">Ngân hàng lưu ký giám sát</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="lvl1-title">
+                            <span>Các dịch vụ khác</span>
+                        </a>
+                        <ul class="menu-expand-2 hide">
+                            <li><a href="#">Dịch vụ thẻ</a></li>
+                            <li><a href="#">Dịch vụ bảo hiểm</a></li>
+                            <li><a href="#">Dịch vụ kết nối Ngân hàng Doanh nghiệp</a></li>
+                            <li><a href="#" class="brd-1px">Trái phiếu doanh nghiệp</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -772,6 +822,18 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+<div class="menu-footer py-3 care">
+    <div class="container position-relative text-center">
+        <div class="row mx-3">
+            <div class="col-2 line-tab"><a href="#">Biểu phí</a></div>
+            <div class="col-2 line-tab"><a href="#">Công cụ tiện ích</a></div>
+            <div class="col-2 line-tab"><a href="#">Đăng ký tư vấn</a></div>
+            <div class="col-2 line-tab"><a href="#">Trả góp lại xuất 0%</a></div>
+            <div class="col-2 line-tab"><a href="#">Điểm ưu đãi</a></div>
+            <div class="col-2 line-tab"><a href="canhan-khuyenmai.html">Khuyến mãi</a></div>
         </div>
     </div>
 </div>
@@ -834,13 +896,13 @@
                             </div>
                             <div class="row foot-group-icon">
                                 <a href="#">
-                                    <img class="pl-10" src="images/icon/priority_fb.png"/>
+                                    <img class="pl-10" src="images/icon/fb.svg"/>
                                 </a>
                                 <a href="#">
-                                    <img src="images/icon/priority_video.png"/>
+                                    <img src="images/icon/youtube.svg"/>
                                 </a>
                                 <a href="#">
-                                    <img src="images/icon/priority_in.png"/>
+                                    <img src="images/icon/linkedin.svg"/>
                                 </a>
                             </div>
                         </div>
@@ -850,10 +912,10 @@
                             </div>
                             <div class="row foot-group-icon">
                                 <a href="#">
-                                    <img src="images/icon/priority_appstore.png"/>
+                                    <img src="images/icon/appstore.svg"/>
                                 </a>
                                 <a href="#">
-                                    <img src="images/icon/priority_play.png"/>
+                                    <img src="images/icon/chplay.svg"/>
                                 </a>
                             </div>
                         </div>
@@ -865,7 +927,7 @@
                                         </span>
                                 </a>
                                 <a href="#" class="flex-item">
-                                    <img class="social-icon" src="images/icon/priority_top.png">
+                                    <img class="social-icon" src="images/icon/to-top.svg">
                                 </a>
                             </div>
                         </div>
@@ -930,13 +992,13 @@
                             <div class="row">
                                 <div class="col-12 p-0">
                                     <a href="#">
-                                        <img class="pl-10" src="images/icon/priority_fb.png"/>
+                                        <img class="pl-10" src="images/icon/fb.svg"/>
                                     </a>
                                     <a href="#">
-                                        <img src="images/icon/priority_video.png"/>
+                                        <img src="images/icon/youtube.svg"/>
                                     </a>
                                     <a href="#">
-                                        <img src="images/icon/priority_in.png"/>
+                                        <img src="images/icon/linkedin.svg"/>
                                     </a>
                                 </div>
                             </div>
@@ -945,10 +1007,10 @@
                             <div class="row">
                                 <div class="col-12 p-0">
                                     <a href="#">
-                                        <img src="images/icon/priority_appstore.png"/>
+                                        <img src="images/icon/appstore.svg"/>
                                     </a>
                                     <a href="#">
-                                        <img src="images/icon/priority_play.png"/>
+                                        <img src="images/icon/chplay.svg"/>
                                     </a>
                                 </div>
                             </div>
@@ -960,7 +1022,7 @@
                                         <img src="images/icon/foot-home.svg">
                                     </a>
                                     <a href="#">
-                                        <img src="images/icon/priority_top.png">
+                                        <img src="images/icon/to-top.svg">
                                     </a>
                                 </div>
                             </div>
