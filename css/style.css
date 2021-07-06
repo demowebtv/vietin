@@ -3021,7 +3021,9 @@ b, strong {
     right: 0 !important;
     left: auto;
 }
-
+.menu-footer,.menu-footer a{font-family: 'svn-gilroy-bold',sans-serif;font-size: 16px;color: #005993;}
+.menu-footer .line-tab{border-bottom: 1px solid #C9E8FB;}
+.menu-footer .line-tab:hover{border-bottom: 2px solid #005993;border-radius: 1px;}
 .header .nav li .dropdown li {
     border-bottom: 1px solid #CCCCCC;
 }
