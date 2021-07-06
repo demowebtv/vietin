@@ -3090,7 +3090,7 @@ b, strong {
     width: 110% !important;
 }
 
-.menu2-left, .menu2-right {
+.left-item, .menu2-right {
     border: 1px solid #CCC !important;
     border-radius: 7px;
 }
