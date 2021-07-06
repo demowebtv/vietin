@@ -447,6 +447,7 @@
 }
 /* Mobile Screen */
 @media only screen and (max-width: 767px) {
+    .menu2-left, .menu2-right{border: none !important;}
     .menu-footer{display: none;}
     .banking{display: flex;}
     .new-list-img {
@@ -2686,10 +2687,6 @@
         width: 16.6666667%;
     }
 
-    .menu2 .left-item {
-        border-right: 1px solid #eee;
-    }
-
     .menu2-right {
         border-bottom-right-radius: 5px;
     }
@@ -2804,9 +2801,6 @@
         margin-left: 0px;
         top: 0px;
         z-index: 1;
-        border-right: 1px solid #eee;
-        border-top-right-radius: 5px;
-        box-shadow: 0px 3px 5px #3333334d;
     }
 
     .left-logo {
