@@ -447,6 +447,7 @@
 }
 /* Mobile Screen */
 @media only screen and (max-width: 767px) {
+    .most-popular{padding-top: 0;}
     .left-item, .menu2-right{border: none !important;}
     .menu-footer{display: none;}
     .banking{display: flex;}
@@ -2667,9 +2668,6 @@
         padding-bottom: 2px;
     }
 
-    .link-menu2 {
-        margin-top: 1px;
-    }
 
     .home-body {
         padding-bottom: 30px !important;
@@ -2801,6 +2799,7 @@
         margin-left: 0px;
         top: 0px;
         z-index: 1;
+        background: transparent !important;
     }
 
     .left-logo {

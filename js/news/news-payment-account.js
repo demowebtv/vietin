@@ -58,7 +58,7 @@ function loadFeeTable(index) {
     var tblFee = $('.tbl-fee');
     for (var i = 0; i < tblFee.length; i++) {
         if ($(tblFee[i]).data('index') == index) {
-            $(tblFee[i]).css('display', 'block');
+            $(tblFee[i]).css('display', 'table');
             break;
         }
     }

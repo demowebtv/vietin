@@ -319,7 +319,7 @@ function initRightContact() {
 
 function initMenu() {
     $('.menu2').css('background', 'transparent');
-    $('.left-item').css('background', '#fff');
+    $('.left-item').css('background', 'transparent');
 
     $('.menu1-text').on('mouseover', (e) => {
         let menu1 = $(e.currentTarget)[0];
@@ -339,16 +339,16 @@ function initMenu() {
                 let totalright = menu2.nextElementSibling.children.length;
                 let menu3Heigth = menu2.nextElementSibling.scrollHeight;
 
-                if (totalLeft < totalright) {
-                    $(menu2.offsetParent).height(menu3Heigth);
-                }
-                else {
-                    $(menu2.offsetParent).height(menu2.offsetParent.dataset.height);
-                }
+                // if (totalLeft < totalright) {
+                //     $(menu2.offsetParent).height(menu3Heigth);
+                // }
+                // else {
+                //     $(menu2.offsetParent).height(menu2.offsetParent.dataset.height);
+                // }
             }
             else {
                 $('.menu2').css('background', 'transparent');
-                $('.left-item').css('background', '#fff');
+                $('.left-item').css('background', 'transparent');
             }
         }
     });

@@ -521,7 +521,7 @@ s.btn {
 
 .header .nav li .dropdown li a {
     font-weight: 400;
-    line-height: 17px;
+    line-height: 20px;
     font-size: 14px;
     color: #686868;
 }
@@ -1577,7 +1577,6 @@ span {
 
 .menu2-left li:hover .menu2-right {
     display: block;
-    background-color: #fff;
 }
 
 .menu2-left:last-child {
@@ -2231,7 +2230,7 @@ tool:after {
 .contact-detail .detail {
     line-height: 35px;
     width: 100%;
-    display: block;
+    display: block;font-size: 12px;
 }
 
 .icon-contact:hover .contact-detail {
@@ -3026,8 +3025,12 @@ b, strong {
 .menu-footer .line-tab:hover{border-bottom: 2px solid #005993;border-radius: 1px;}
 .header .nav li .dropdown li {
     border-bottom: 1px solid #CCCCCC;
+    background: #FFF;
+    border-left:1px solid #CCCCCC;
+    border-right:1px solid #CCCCCC;
 }
-
+.header .nav li .dropdown li:first-child{border-top-left-radius: 7px;border-top-right-radius: 7px;border-top: 1px solid #CCCCCC;}
+.header .nav li .dropdown li:last-child{border-bottom-left-radius: 7px;border-bottom-right-radius: 7px;border-bottom: 1px solid #CCCCCC !important;}
 .menu2 .left-item {
     padding: 0;
     border: none;
@@ -3078,9 +3081,6 @@ b, strong {
     margin-bottom: 0;
 }
 
-.header .nav li .dropdown li:last-child {
-    border-bottom: none;
-}
 
 .menu2-right li a {
     border-bottom: none;
@@ -3092,14 +3092,10 @@ b, strong {
     width: 110% !important;
 }
 
-.left-item, .menu2-right {
-    border: 1px solid #CCC !important;
-    border-radius: 7px;
-}
-
-.menu2-right > li {
-    padding-bottom: 1px !important;
-}
+/*.left-item, .menu2-right {*/
+/*    border: 1px solid #CCC !important;*/
+/*    border-radius: 7px;*/
+/*}*/
 
 .menu2-left > li:first-child > .menu-hover {
     border-top-left-radius: 7px !important;
@@ -3116,7 +3112,8 @@ b, strong {
     border-top-right-radius: 7px !important;
 }
 
-.menu2-left > li:last-child > a:hover {
+.menu2-left > li:last-child > a:hover,.menu2-right > li:last-child > a:hover{
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
 }
+.most-popular{padding-top: 30px;}

@@ -1,4 +1,4 @@
-﻿@media only screen and (max-width:991px) {
+﻿@media only screen and (max-width: 991px) {
     .tab-branch .col-12 {
         padding-right: 0px;
     }
@@ -22,7 +22,7 @@
     }
 }
 
-@media only screen and (max-width:450px) {
+@media only screen and (max-width: 450px) {
     .nav-tabs li a {
         font-size: 14px !important;
     }
@@ -32,7 +32,7 @@
     }
 }
 
-@media only screen and (max-width:991px) {
+@media only screen and (max-width: 991px) {
     .content-fee {
         padding: 15px 0px !important;
     }
@@ -46,7 +46,7 @@
 }
 
 .branch-tab li a {
-    padding: 0px 10px;
+    padding: 0px 15px;
     position: relative;
 }
 
@@ -75,14 +75,7 @@
     padding-right: 15px !important;
 }
 
-.branch-tab li a:after {
-    content: '|';
-    padding-left: 8px;
-    position: absolute;
-    bottom: 2px;
-    font-size: 12px;
-    color: #686868;
-}
+.branch-tab{min-width:auto!important;}
 
 .branch-tab li .active {
     color: #005993 !important;
@@ -97,6 +90,7 @@
 }
 
 .nav-bot {
+    display: none;min-width: auto !important;
     position: relative;
     bottom: 2px;
     width: 100%;
@@ -115,10 +109,10 @@
 }
 
 
-    .nice-select:after {
-        border-bottom: 2px solid #005993;
-        border-right: 2px solid #005993;
-    }
+.nice-select:after {
+    border-bottom: 2px solid #005993;
+    border-right: 2px solid #005993;
+}
 
 .branch-tab-content .current {
     display: block;
@@ -132,25 +126,25 @@
 
 .nice-select .option {
     color: #686868 !important;
-    font-family: 'svn-gilroy-regular',sans-serif !important;
+    font-family: 'svn-gilroy-regular', sans-serif !important;
     font-size: 14px;
 }
 
 .address-select .current {
-    font-family: 'svn-gilroy-medium-italic',sans-serif;
+    font-family: 'svn-gilroy-medium-italic', sans-serif;
 }
 
 .branch-table thead tr {
     background: #C9E8FB;
 }
 
-    .branch-table thead tr td {
-        border: none;
-        font-family: 'svn-gilroy-bold',sans-serif;
-        color: #686868;
-        padding: 10px 0px;
-        text-align: center;
-    }
+.branch-table thead tr td {
+    border: none;
+    font-family: 'svn-gilroy-bold', sans-serif;
+    color: #686868;
+    padding: 10px 0px;
+    text-align: center;
+}
 
 .branch-table tbody tr td {
     border: none;
@@ -232,27 +226,27 @@
     display: none;
 }
 
-    .fee-options li a {
-        font-size: 12px;
-        padding: 5px 10px;
-        display: block;
-        width: 100%;
-    }
+.fee-options li a {
+    font-size: 12px;
+    padding: 5px 10px;
+    display: block;
+    width: 100%;
+}
 
-    .fee-options li:first-child a {
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-    }
+.fee-options li:first-child a {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
 
-    .fee-options li:last-child a {
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-    }
+.fee-options li:last-child a {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 
-    .fee-options li a:hover {
-        color: #005993;
-        background: #7ed3f7;
-    }
+.fee-options li a:hover {
+    color: #005993;
+    background: #7ed3f7;
+}
 
 .tbl-fee thead tr:first-child td:first-child {
     border-top-left-radius: 10px;
@@ -279,12 +273,13 @@
 }
 
 .tbl-fee thead tr td {
+    vertical-align: middle;
     border-top: 0px;
     text-align: center;
     color: #686868;
     text-transform: uppercase;
     background: #c9e8fb;
-    font-family: 'svn-gilroy-bold',sans-serif;
+    font-family: 'svn-gilroy-bold', sans-serif;
 }
 
 .tbl-fee tbody tr td {
@@ -292,9 +287,9 @@
     text-align: center;
 }
 
-    .tbl-fee tbody tr td:not(:last-child) {
-        border-right: 2px solid #dfeffc;
-    }
+.tbl-fee tbody tr td:not(:last-child) {
+    border-right: 2px solid #dfeffc;
+}
 
 .tbl-fee tbody tr:nth-child(2n) {
     background: #c9e8fb;
@@ -305,15 +300,15 @@
 }
 
 .br-1 {
-    border-right: 2px solid #fff;
+
 }
 
 .bt-1 {
-    border-top: 2px solid #fff;
+
 }
 
 .bb-1 {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #dfeffc;
 }
 
 .bl-1 {
@@ -344,7 +339,6 @@
     min-width: 1500px;
 }
 
-    .branch-tab li {
-        display: flex;
-        align-items: flex-end;
-    }
+.branch-tab li {
+    display: -webkit-box;width: 100%;
+}
