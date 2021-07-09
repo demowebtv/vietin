@@ -277,7 +277,6 @@ function initMobileMenu() {
         }
     })
 }
-
 function initLanguageSelect() {
     //append image to each option on change event
     $('.lang-select .current').prepend('<img class="lang-select-icon" src="images/icon/flag/united-kingdom.svg" />')

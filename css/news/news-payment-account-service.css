@@ -285,6 +285,7 @@
 .tbl-fee tbody tr td {
     color: #686868;
     text-align: center;
+    vertical-align: middle;
 }
 
 .tbl-fee tbody tr td:not(:last-child) {
