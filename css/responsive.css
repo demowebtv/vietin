@@ -447,6 +447,9 @@
 }
 /* Mobile Screen */
 @media only screen and (max-width: 767px) {
+    .sale-info{margin-top: 20px;}
+    .home-chuyentien{padding-top: 20px !important;
+        padding-bottom: 20px;}
     .most-popular{padding-top: 0;}
     .left-item, .menu2-right{border: none !important;}
     .menu-footer{display: none;}
@@ -1368,6 +1371,10 @@
         .quickview-content .add-to-cart .btn.min {
             line-height: 41px;
         }
+    .lang-select .nice-select:after{display: none;}
+    .priority-icon {display: initial;}
+    .lang-select .nice-select .current{color: transparent;}
+    .lang-select .nice-select .list li{color: transparent!important;}
 }
 
 @media only screen and (min-width: 451px) and (max-width: 767px) {
@@ -2560,7 +2567,7 @@
     }
 
     .tab-item {
-        margin-top: 20px;
+        margin-top: 0px;
         margin-bottom: 20px;
     }
 

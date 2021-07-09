@@ -3118,3 +3118,11 @@ b, strong {
 }
 .most-popular{padding-top: 30px;}
 .tbl-fee td, .table th{padding: 8px 4px 4px 4px;}
+.priority-icon {
+    width: auto;
+    height: 18px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+    display: none;
+}

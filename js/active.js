@@ -83,6 +83,7 @@ function windowResizeHandle() {
     showProducttwo();
     showBorrowOptions();
     showTabletMenu();
+    initLanguageSelect();
 }
 
 const solutionSlides = $('.solution-slider').length > 0 ? $('.solution-slider')[0].cloneNode(true) : null;
@@ -278,19 +279,47 @@ function initMobileMenu() {
     })
 }
 function initLanguageSelect() {
-    //append image to each option on change event
-    $('.lang-select .current').prepend('<img class="lang-select-icon" src="images/icon/flag/united-kingdom.svg" />')
-    $('.lang-select .nice-select').on('change', () => {
-        $('.lang-select .current .lang-select-icon').remove();
-        let selected = $("#lang-select").val();
-        let selectLiTag = $('.lang-select').find('li')[selected];
-        let img = $(selectLiTag).find('img')[0].cloneNode(true);
-        $('.lang-select .current').prepend($(img))
-    })
-
-    let langSelectLiTags = $('.lang-select').find('li');
-    $(langSelectLiTags[0]).prepend('<img class="lang-select-icon" src="images/icon/flag/united-kingdom.svg" />');
-    $(langSelectLiTags[1]).prepend('<img class="lang-select-icon" src="images/icon/flag/vietnam.svg" />');
+    if (window.innerWidth < 768) {
+        //append image to each option on change event
+        $('.lang-select .current').html('<img class="lang-select-icon" src="images/icon/flag/united-kingdom.svg" /><img class="priority-icon" src="images/icon/icon_blue.png" />')
+        $('.lang-select .nice-select').on('change', () => {
+            $('.lang-select .current .lang-select-icon').remove();
+            let selected = $("#lang-select").val();
+            let selectLiTag = $('.lang-select').find('li')[selected];
+            let img = $(selectLiTag).find('img')[0].cloneNode(true);
+            $('.lang-select .current').html($(img));
+            $('.lang-select .current').append('<img class="priority-icon" src="images/icon/icon_blue.png" />');
+        })
+        let langSelectLiTags = $('.lang-select').find('li');
+        $(langSelectLiTags[0]).html('<img class="lang-select-icon" src="images/icon/flag/united-kingdom.svg" />');
+        $(langSelectLiTags[1]).html('<img class="lang-select-icon" src="images/icon/flag/vietnam.svg" />');
+    } else {
+        $('.lang-select .current').html('<img class="lang-select-icon" src="images/icon/flag/united-kingdom.svg" /><img class="priority-icon" src="images/icon/icon_blue.png" />ENG')
+        $('.lang-select .nice-select').on('change', () => {
+            $('.lang-select .current .lang-select-icon').remove();
+            let selected = $("#lang-select").val();
+            let selectLiTag = $('.lang-select').find('li')[selected];
+            let img = $(selectLiTag).find('img')[0].cloneNode(true);
+            $('.lang-select .current').html($(img))
+            $('.lang-select .current').append(selectLiTag.innerText);
+        })
+        let langSelectLiTags = $('.lang-select').find('li');
+        $(langSelectLiTags[0]).html('<img class="lang-select-icon" src="images/icon/flag/united-kingdom.svg" /> ENG');
+        $(langSelectLiTags[1]).html('<img class="lang-select-icon" src="images/icon/flag/vietnam.svg" /> VIE');
+    }
+    // //append image to each option on change event
+    // $('.lang-select .current').prepend('<img class="lang-select-icon" src="images/icon/flag/united-kingdom.svg" />')
+    // $('.lang-select .nice-select').on('change', () => {
+    //     $('.lang-select .current .lang-select-icon').remove();
+    //     let selected = $("#lang-select").val();
+    //     let selectLiTag = $('.lang-select').find('li')[selected];
+    //     let img = $(selectLiTag).find('img')[0].cloneNode(true);
+    //     $('.lang-select .current').prepend($(img))
+    // })
+    //
+    // let langSelectLiTags = $('.lang-select').find('li');
+    // $(langSelectLiTags[0]).prepend('<img class="lang-select-icon" src="images/icon/flag/united-kingdom.svg" />');
+    // $(langSelectLiTags[1]).prepend('<img class="lang-select-icon" src="images/icon/flag/vietnam.svg" />');
 }
 
 function initRightContact() {
