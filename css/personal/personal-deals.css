@@ -1,0 +1,293 @@
+
+.fee-item span {
+    position: relative;
+}
+
+.fee-item svg {
+    position: absolute;
+    right: -25px;
+    top: 5px;
+    height: 8px;
+}
+
+
+.left-options {
+    right: 10px;
+}
+
+.right-options {
+    left: 30px;
+}
+
+
+.fee-item img {
+    max-height: 20px;
+    margin-top: -3px;
+    margin-right: 5px;
+}
+
+.content-fee {
+    padding: 15px 180px;
+}
+
+.fee-options {
+    text-align: left;
+    background: #fff;
+    max-width: 100%;
+    border-radius: 5px;
+    z-index: 9;
+    position: absolute;
+    display: none;
+    border: 1px solid #ebebeb;
+    min-width: 70%;
+}
+
+.fee-options li a {
+    font-size: 14px;
+    padding: 5px 20px;
+    display: block;
+    width: 100%;
+    font-family: 'svn-gilroy-bold', sans-serif;
+    color: #686868;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.fee-options li:last-child a {
+    border-bottom: none;
+}
+
+.fee-options li:first-child a {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.fee-options li:last-child a {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.fee-options li a:hover {
+    color: #005993;
+}
+
+.canhan-breadcrumb {
+    background: #7fd3f7;
+    padding: 15px 10px 10px 20px;
+    font-family: 'svn-gilroy-regular', sans-serif;
+    color: #03588f;
+    font-size: 17px;
+}
+
+.canhan-breadcrumb-sub {
+    background: #F2F2F2;
+    padding: 15px 0;
+    font-family: 'svn-gilroy', sans-serif;
+    color: #03588f;
+    font-size: 17px;
+}
+
+.canhan-breadcrumb span {
+    font-family: 'svn-gilroy-bold', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.deals-list {
+    width: 100%;
+    float: left;
+}
+
+.item-news-common {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.item-news-common .thumb {
+    width: auto;
+    height: 130px;
+    float: left;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.item-news-common .thumb img {
+    width: auto;
+    height: 100%;
+}
+
+.deal-desc {
+    line-height: 20px;
+}
+
+a.inc-title {
+    font-family: 'svn-gilroy-bold', sans-serif;
+    color: #03588f;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+a.read-more {
+    color: #03588f;
+    font-family: 'svn-gilroy', sans-serif;
+}
+
+.deal-title img, .deal-text img, .deal-time img {
+    max-width: 20px;
+    margin-right: 10px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.deal-title, .deal-text, .deal-time {
+    display: inline-flex;
+    line-height: 20px;
+}
+
+.text-pink {
+    color: #d71049 !important;
+}
+
+.deal-time span {
+    font-family: 'svn-gilroy-bold', sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+.border-white-4px {
+    border: 4px solid #FFF;
+}
+
+a.read-more img {
+    width: 10px !important;
+    display: inline !important;
+}
+
+.read-more {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.one-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.two-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.three-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.scroll-div {
+    overflow-y: auto;
+    scrollbar-color: #6CC1EC #fff;
+    scrollbar-width: thin;
+    margin-right: -3px;
+}
+
+/* width */
+.scroll-div::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 3px;
+}
+
+/* Track */
+.scroll-div::-webkit-scrollbar-track {
+    border-radius: 3px;
+}
+
+/* Handle */
+.scroll-div::-webkit-scrollbar-thumb {
+    background: #6CC1EC;
+    border-radius: 3px;
+}
+
+/* Handle on hover */
+.scroll-div::-webkit-scrollbar-thumb:hover {
+    background: #6CC1EC;
+}
+
+.scroll-div::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 50px;
+}
+
+.scroll-div::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+}
+
+.deal-detail-content {
+    border-right: 1px solid #6CC1EC;
+    height: 100%;
+}
+
+.deal-detail-content-scroll {
+    height: 385px;padding: 10px;
+}
+
+.deal-detail-content-scroll h1 {
+    font-family: 'svn-gilroy-bold', sans-serif;
+    color: #03588f;
+    font-size: 24px;
+    padding: 5px 0;
+}
+.text-vietin {color: #005993; font-family: 'svn-gilroy-regular', sans-serif;padding: 20px;
+    font-size: 18px;}
+.deal-detail-content-scroll h2 {
+    padding: 5px 0;
+    font-family: 'svn-gilroy-bold', sans-serif;
+    color: #03588f;
+    font-size: 18px;
+}
+.deal-detail-content-scroll p{color: #000000;font-family: 'svn-gilroy-regular', sans-serif; }
+.deal-detail-content-scroll p::before{color: #005993; content: "\2022";font-size: 25px;margin-right: 5px;position: relative;
+    top: 4px;}
+.deal-detail-content-scroll img{width: 20px;height: 20px;padding-bottom: 5px;}
+.deal-detail-right img{padding: 2px;}
+.deal-detail-more a{color: #808080;font-family: 'svn-gilroy-medium-italic', sans-serif;font-size: 16px;}
+.deal-detail-more{border-bottom: 1px solid #A0A0A4; margin:10px 15px;}
+
+.most-popular .owl-nav {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -25px;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    background: none;
+}
+
+.most-popular .owl-carousel .owl-nav div:hover {
+    color: #005993;
+    background: none;
+}
+.product-list{padding: 0 40px;}
+.product-slider .items{padding:0 10px;}
+.deal-btn{max-width: 250px;}
+.tab-list{cursor: pointer;}
+.tab-lead{height: 45px; text-transform: uppercase;font-size: 14px;font-family: 'svn-gilroy-bold', sans-serif; text-align: center;line-height: 18px;}
+@media only screen and (min-width: 451px) and (max-width: 767px) {
+    .tab-list img{margin: 15px;}
+    .tab-lead{height: 35px;}
+}
+@media only screen and (max-width: 450px) {
+    .tab-list img{margin-bottom: 20px;}
+    .tab-lead{height: 35px;}
+    .tab-list{padding:0; }
+}

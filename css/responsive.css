@@ -447,12 +447,14 @@
 }
 /* Mobile Screen */
 @media only screen and (max-width: 767px) {
+    .menu-footer{padding-top: 0!important;}
+    .menu-footer .line-tab{border-bottom:0;padding: 5px 0;}
+    .menu-footer, .menu-footer a{font-size: 12px;}
     .sale-info{margin-top: 20px;}
     .home-chuyentien{padding-top: 20px !important;
         padding-bottom: 20px;}
     .most-popular{padding-top: 0;}
     .left-item, .menu2-right{border: none !important;}
-    .menu-footer{display: none;}
     .banking{display: flex;}
     .new-list-img {
         max-height: 120px;
@@ -1375,6 +1377,9 @@
     .priority-icon {display: initial;}
     .lang-select .nice-select .current{color: transparent;}
     .lang-select .nice-select .list li{color: transparent!important;}
+    .scrollUp .flex-item{flex-direction: column;}
+    .scrollUp .flex-item a:first-child{padding-top: 5px;}
+    .scrollUp .flex-item a:last-child{margin-top: -12px;}
 }
 
 @media only screen and (min-width: 451px) and (max-width: 767px) {

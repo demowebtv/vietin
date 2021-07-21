@@ -1795,18 +1795,22 @@ body {
 }
 
 .partner-btn {
-    padding: 20px;
-    background: #005993;
+    padding: 15px;
     width: 100%;
     font-size: 20px !important;
     color: #FFF !important;
-    max-width: 500px;
+    max-width: 320px;
     display: inline-block;
     font-weight: bold;
+    border-radius: 50px;
+    background-image: linear-gradient(
+            -90deg
+            ,#d71249 0%, #1e508a 60%,  #005993 100%);
 }
 
 .partner-btn:hover {
     font-size: 22px !important;
+    box-shadow: 2px 2px 1px #5f91b4, 0px 0px 0px #c9e8fb, 0px 3px 8px #41457e;
 }
 
 .chuyentien-title-head {
@@ -2864,7 +2868,6 @@ b, strong {
 .scrollUp a span {
     font-family: 'svn-gilroy-bold', sans-serif !important;
 }
-
 .mr-5px {
     margin-right: 5px;
 }
@@ -3126,3 +3129,4 @@ b, strong {
     margin-bottom: 1px;
     display: none;
 }
+.tuvan-select{background-color:#FFF !important;border: 1px solid #73d3f7 !important;}
