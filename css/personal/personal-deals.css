@@ -233,6 +233,21 @@ a.read-more img {
     -webkit-line-clamp: 3; /* number of lines to show */
     -webkit-box-orient: vertical;
 }
+.scroll-select {
+    overflow-y: auto;
+    scrollbar-color: #6CC1EC #fff;
+    scrollbar-width: thin;
+    margin-right: -3px;
+    height: 175px;
+}
+.scroll-select::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 3px;
+}
+.scroll-select::-webkit-scrollbar-thumb {
+    background: #6CC1EC;
+    border-radius: 3px;
+}
 
 .scroll-div {
     overflow-y: auto;
@@ -242,6 +257,7 @@ a.read-more img {
 }
 
 /* width */
+
 .scroll-div::-webkit-scrollbar {
     width: 5px;
     border-radius: 3px;
