@@ -91,7 +91,49 @@
     font-size: 17px;
     text-transform: uppercase;
 }
+.canhan-breadcrumb span::after {
+    display: inline-block;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: #03588f;
+    content: " \01C0";
+    font-family: 'svn-gilroy-bold', sans-serif;
+    font-size: 17px;
+}
 
+.paging {
+    display: inline-flex;
+    border-radius: 5px;
+    align-items: center;
+    border: 1px solid #7ed3f7;
+}
+
+.paging li {
+    padding: 5px 13px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+.paging li:first-child {
+    border-right: 1px solid #7ed3f7;
+}
+
+.paging li:last-child {
+    border-left: 1px solid #7ed3f7;
+}
+
+.paging li a {
+    color: #005993;
+    display: block;
+    width: 100%;
+    font-family: 'svn-gilroy-bold',sans-serif;
+}
+
+.paging li a svg {
+    margin-top: 5px;
+}
 .deals-list {
     width: 100%;
     float: left;
@@ -236,7 +278,7 @@ a.read-more img {
 }
 
 .deal-detail-content-scroll {
-    height: 385px;padding: 10px;
+    height: 430px;padding: 10px;
 }
 
 .deal-detail-content-scroll h1 {
@@ -253,7 +295,7 @@ a.read-more img {
     color: #03588f;
     font-size: 18px;
 }
-.deal-detail-content-scroll p{color: #000000;font-family: 'svn-gilroy-regular', sans-serif; }
+.deal-detail-content-scroll p{color: #686868;font-family: 'svn-gilroy-regular', sans-serif; }
 .deal-detail-content-scroll p::before{color: #005993; content: "\2022";font-size: 25px;margin-right: 5px;position: relative;
     top: 4px;}
 .deal-detail-content-scroll img{width: 20px;height: 20px;padding-bottom: 5px;}
@@ -264,7 +306,7 @@ a.read-more img {
 .most-popular .owl-nav {
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 35%;
     width: 100%;
     margin-top: -25px;
 }

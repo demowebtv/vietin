@@ -42,7 +42,7 @@ s.btn {
     color: #fff;
     box-shadow: 0px 4px 19px #00000038;
 }
-
+.w-30px{width: 30px;}
 .scrollUp i:hover {
     background: #fff;
     color: #fff;
